@@ -1,0 +1,15 @@
+.textbox {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: calc(80rem / 16);
+  background-color: var(--secondary-background);
+  border-radius: calc(20rem / 16);
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .textbox {
+    align-items: center;
+  }
+}

@@ -1,0 +1,9 @@
+.word:hover {
+  text-shadow: var(--primary-accent) 0 0 calc(20rem / 16);
+  text-anchor: "middle";
+  cursor: default;
+}
+
+.word {
+  transition: text-shadow 0.25s ease-out;
+}

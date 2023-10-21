@@ -1,0 +1,30 @@
+.barBackground {
+  fill: var(--card-background);
+  transition: fill 0.5s ease-out;
+}
+
+.bar {
+  fill: var(--primary-accent-light);
+  transition: fill 0.5s ease-out;
+}
+
+.barGroup {
+  transition: fill 0.5s ease-out;
+}
+
+.barGroup:hover .bar {
+  fill: var(--primary-accent);
+  filter: drop-shadow(0 0 calc(4rem / 16) var(--primary-accent));
+}
+
+.tickLabel {
+  font-family: "Inconsolata", monospace;
+  font-weight: 800;
+  fill: var(--label);
+}
+
+.axisLabel {
+  font-family: "Inconsolata", monospace;
+  font-weight: 800;
+  fill: var(--label);
+}

@@ -1,0 +1,44 @@
+{
+  "name": "class-profile-2023",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "preview": "bun run build && bun start",
+    "lint": "eslint \"{app,components}/**/*.{js,ts,jsx,tsx}\"",
+    "lint:fix": "eslint \"{app,components}/**/*.{js,ts,jsx,tsx}\" --fix"
+  },
+  "dependencies": {
+    "@visx/axis": "^3.5.0",
+    "@visx/event": "^3.3.0",
+    "@visx/grid": "^3.5.0",
+    "@visx/group": "^3.3.0",
+    "@visx/legend": "^3.5.0",
+    "@visx/mock-data": "^3.3.0",
+    "@visx/scale": "^3.5.0",
+    "@visx/shape": "^3.5.0",
+    "@visx/stats": "^3.5.0",
+    "@visx/text": "^3.3.0",
+    "@visx/tooltip": "^3.3.0",
+    "@visx/wordcloud": "^3.3.0",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5"
+  }
+}

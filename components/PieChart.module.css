@@ -1,0 +1,21 @@
+.piePath {
+  fill: var(--tertiary-background);
+  stroke: var(--label);
+  stroke-width: 1px;
+  stroke-dasharray: 0;
+  stroke-linecap: round;
+  transition: fill 0.5s ease-out;
+}
+
+.labelPath {
+  fill-opacity: 0;
+}
+
+.labelText {
+  fill: white;
+}
+
+.group:hover > .piePath {
+  fill: var(--primary-accent);
+  filter: drop-shadow(0px 0px calc(6rem / 16) var(--primary-accent));
+}
