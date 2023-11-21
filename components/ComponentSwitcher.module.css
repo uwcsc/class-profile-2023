@@ -20,7 +20,7 @@
   vertical-align: bottom;
   white-space: nowrap;
   border: calc(3rem / 16) solid var(--border-color);
-  font-family: "Inconsolata", monospace;
+  font-family: "Lexend", sans-serif;
   transition:
     0.15s background-color,
     0.15s border-color,
