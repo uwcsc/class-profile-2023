@@ -17,7 +17,7 @@ interface ContributorGroupProps {
   group: Array<ContributorProfile>;
 }
 
-export function ContributorGroup({ group }: ContributorGroupProps) {
+function ContributorGroup({ group }: ContributorGroupProps) {
   return (
     <ul>
       {group
