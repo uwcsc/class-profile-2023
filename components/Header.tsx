@@ -1,10 +1,12 @@
+"use client";
+
 import { pageRoutes } from "@/data/routes";
-import { basePath } from "@/utils/getBasePath";
 import Link from "next/link";
 import { useState } from "react";
 
 import { Sections } from "./Sections";
 
+import Image from "next/image";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -27,7 +29,7 @@ export function Header() {
             setIsShowingMenu(true);
           }}
           className={styles.menuIcon}>
-          <img src={basePath + "/images/menuIcon.svg"} width="50" height="50" draggable="false" />
+          <Image src="/images/menuIcon.svg" alt="Menu Icon" width="50" height="50" draggable="false" />
         </button>
       </div>
 
@@ -39,7 +41,7 @@ export function Header() {
             onClick={() => {
               setIsShowingMenu(false);
             }}>
-            <img src={basePath + "/images/rightArrow.svg"} className={styles.arrowIcon} width="50" height="50" draggable="false" />
+            <Image src="/images/rightArrow.svg" alt="Right Arrow" className={styles.arrowIcon} width="50" height="50" draggable="false" />
           </button>
         </div>
         <div className={styles.sectionsWrapper}>

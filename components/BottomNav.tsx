@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 import styles from "./BottomNav.module.css";
 
@@ -25,24 +24,20 @@ export function BottomNav(props: PagesInfo) {
       {props.leftPage ? (
         <div className={styles.subBox + " " + styles.subBoxLeft}>
           <Link href={props.leftPage.url} scroll={true}>
-            <a>
-              <Arrow />
-            </a>
+            <Arrow />
           </Link>
-          <Link href={props.leftPage.url} scroll={true}>
-            <a className={styles.item + " " + styles.leftItem}>{props.leftPage.name}</a>
+          <Link href={props.leftPage.url} scroll={true} className={styles.item + " " + styles.leftItem}>
+            {props.leftPage.name}
           </Link>
         </div>
       ) : null}
       {props.rightPage ? (
         <div className={styles.subBox}>
-          <Link href={props.rightPage.url} scroll={true}>
-            <a className={styles.item}>{props.rightPage.name}</a>
+          <Link href={props.rightPage.url} scroll={true} className={styles.item}>
+            {props.rightPage.name}
           </Link>
           <Link href={props.rightPage.url} scroll={true}>
-            <a>
-              <Arrow isPointingRight />
-            </a>
+            <Arrow isPointingRight />
           </Link>
         </div>
       ) : null}
