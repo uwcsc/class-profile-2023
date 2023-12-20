@@ -87,6 +87,8 @@ body {
   --card-background: var(--dark--card-background);
   --label: var(--dark--label);
 
+  --navbar-background-rgb: 25, 27, 33;
+
   background-color: var(--primary-background);
   color: var(--primary-text);
   font-family: "Lexend", sans-serif;

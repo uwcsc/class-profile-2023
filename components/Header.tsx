@@ -1,16 +1,17 @@
 "use client";
 
 import { pageRoutes } from "@/data/routes";
+import { useWindowScroll } from "@uidotdev/usehooks";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-import { Sections } from "./Sections";
-
-import Image from "next/image";
 import styles from "./Header.module.css";
+import { Sections } from "./Sections";
 
 export function Header() {
   const [isShowingMenu, setIsShowingMenu] = useState(false);
+  const [state] = useWindowScroll();
+  const verticalPadding = `${0.75 - Math.min(0.5, (state.y ?? 0) / 400)}rem`;
 
   return (
     <>
@@ -20,8 +21,14 @@ export function Header() {
           setIsShowingMenu(false);
         }}
       />
-      <div className={styles.headerWrapper}>
-        <h1 className={styles.titleHeader}>
+      <div
+        className={styles.headerWrapper}
+        style={{
+          backgroundColor: `rgb(var(--navbar-background-rgb), ${(state.y ?? 0) / 200})`,
+          paddingTop: verticalPadding,
+          paddingBottom: verticalPadding,
+        }}>
+        <h1 className={styles.titleHeader} style={{ fontSize: `${3 - Math.min(0.5, (state.y ?? 0) / 400)}rem` }}>
           <Link href="/">CS 2022</Link>
         </h1>
         <button
