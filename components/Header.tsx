@@ -2,7 +2,7 @@
 
 import { pageRoutes } from "@/data/routes";
 import { useWindowScroll } from "@uidotdev/usehooks";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./Header.module.css";

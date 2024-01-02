@@ -8,75 +8,80 @@
   margin-bottom: calc(65rem / 16);
 }
 
-.title {
+.top {
+  margin: 0 10%;
   position: relative;
-  width: 80vw;
-  height: 90vh;
 }
 
-.titleImage {
+.title {
+  margin-top: 12rem;
+  margin-right: 25%;
+  font-size: 600%;
+  background: linear-gradient(285deg, #fff0bb 34.7%, #faa3bd 79.88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.space {
   position: absolute;
-  top: 10vh;
-  margin: auto;
-  max-width: 800px;
+  right: 10%;
 }
 
-.titleImage img {
-  max-width: 100%;
-  height: auto;
-}
-
-.blurb {
+.planet {
   position: absolute;
-  bottom: 10vh;
-  right: 10vw;
-  width: fit-content;
-  height: fit-content;
-  padding: calc(30rem / 16);
-  background-color: var(--translucent-accent);
-  border: calc(2rem / 16) solid var(--primary-text);
-  box-shadow: 0 calc(1rem / 16) calc(10rem / 16) var(--primary-accent);
-  border-radius: calc(50rem / 16);
-  z-index: 1;
+  right: 10%;
 }
 
-.blurb h1 {
-  margin-top: 0;
+.planetBody {
+  padding: 50px;
 }
 
-.classYear {
-  color: var(--primary-text);
-}
-
-.classProfile {
-  color: var(--primary-heading);
-}
-
-.blurb h3 {
-  color: var(--primary-accent-light);
-}
-
-.decoratorSolid {
+.planet img {
   position: absolute;
-  top: 2vh;
-  right: 13vw;
-  width: 16vw;
-  height: 24vh;
-  background-color: var(--primary-accent-lighter);
-  opacity: 50%;
-  border-radius: calc(50rem / 16);
 }
 
-.decoratorDots {
+.moon {
   position: absolute;
-  top: 40vh;
-  right: 0.8vw;
-  width: 11vw;
-  height: 36vh;
-  background-image: radial-gradient(var(--link) 35%, transparent 35%);
-  background-position: 0 0;
-  background-size: calc(25rem / 16) calc(25rem / 16);
-  z-index: -1;
+  right: 32px;
+  top: 300px;
+}
+
+.curves {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.topCurve {
+  position: absolute;
+}
+
+.bottomCurve {
+  margin-top: 320px;
+  margin-bottom: -400px;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateY(10px);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.downButton {
+  position: absolute;
+  z-index: 10;
+  top: 80vh;
+  width: 50px;
+  animation: 0.75s ease 0s infinite alternate none running oscillate;
 }
 
 .viewButton {
