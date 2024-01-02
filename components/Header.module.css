@@ -41,7 +41,7 @@
 }
 
 .backgroundTintCommon {
-  background-color: var(--label);
+  background-color: var(--label-overlay);
   animation: fadeIn 1s;
   position: fixed;
   z-index: 99;
@@ -57,7 +57,7 @@
 .backgroundTintShow {
   composes: backgroundTintCommon;
   visibility: visible;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .backgroundTintHidden {

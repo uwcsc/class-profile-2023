@@ -66,6 +66,7 @@ body {
   --dark--secondary-text: var(--light-pink);
   --dark--card-background: #2c3651;
   --dark--label: #ffffff;
+  --dark--overlay: #000000;
 
   --primary-background: var(--dark--primary-background);
   --secondary-background: var(--dark--secondary-background);
@@ -86,6 +87,7 @@ body {
   --primary-text: var(--dark--primary-text);
   --card-background: var(--dark--card-background);
   --label: var(--dark--label);
+  --label-overlay: var(--dark--overlay);
 
   background-color: var(--primary-background);
   color: var(--primary-text);
@@ -169,6 +171,7 @@ a:hover {
     --primary-text: var(--dark--primary-text);
     --card-background: var(--dark--card-background);
     --label: var(--dark--label);
+    --label-overlay: var(--dark--overlay);
   }
 }
 
