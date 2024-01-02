@@ -27,7 +27,7 @@
   z-index: 100;
   padding: 0;
   padding-right: calc(20rem / 16);
-  transition: transform 0.8s;
+  transition: transform 0.4s;
   overflow: auto;
 }
 
