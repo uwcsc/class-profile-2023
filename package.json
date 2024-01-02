@@ -11,6 +11,7 @@
     "lint:fix": "eslint \"{app,components}/**/*.{js,ts,jsx,tsx}\" --fix"
   },
   "dependencies": {
+    "@uidotdev/usehooks": "^2.4.1",
     "@visx/axis": "^3.5.0",
     "@visx/event": "^3.3.0",
     "@visx/grid": "^3.5.0",

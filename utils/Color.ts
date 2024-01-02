@@ -20,7 +20,7 @@ const colorNames = [
 ] as const;
 
 // This type is needed for smart autocomplete
-type ColorName = typeof colorNames[number];
+type ColorName = (typeof colorNames)[number];
 
 export const Color: { [key in ColorName]: string } = {
   primaryBackground: "var(--primary-background)",
