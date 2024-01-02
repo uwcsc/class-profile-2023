@@ -1,6 +1,7 @@
 .aboutWrapper {
   position: relative;
   width: 90%;
+  scroll-margin-top: 50px;
 }
 
 .about {
