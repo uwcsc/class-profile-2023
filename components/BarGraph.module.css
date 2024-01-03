@@ -3,8 +3,32 @@
   transition: fill 0.5s ease-out;
 }
 
+.blue {
+  --fill: var(--chart-blue-light);
+  --hover-fill: var(--chart-blue-heavy);
+  --hover-shadow: var(--chart-blue-shadow);
+}
+
+.yellow {
+  --fill: var(--chart-yellow-light);
+  --hover-fill: var(--chart-yellow-heavy);
+  --hover-shadow: var(--chart-yellow-shadow);
+}
+
+.green {
+  --fill: var(--chart-green-light);
+  --hover-fill: var(--chart-green-heavy);
+  --hover-shadow: var(--chart-green-shadow);
+}
+
+.pink {
+  --fill: var(--chart-pink-light);
+  --hover-fill: var(--chart-pink-heavy);
+  --hover-shadow: var(--chart-pink-shadow);
+}
+
 .bar {
-  fill: var(--primary-accent-light);
+  fill: var(--fill);
   transition: fill 0.5s ease-out;
 }
 
@@ -13,8 +37,18 @@
 }
 
 .barGroup:hover .bar {
-  fill: var(--primary-accent);
-  filter: drop-shadow(0 0 calc(4rem / 16) var(--primary-accent));
+  fill: var(--hover-fill);
+  filter: drop-shadow(0 0 calc(4rem / 16) var(--hover-shadow));
+}
+
+.barGroup text {
+  transition: opacity 0.5s ease-out;
+  stroke: none;
+  fill: var(--chart-label);
+}
+
+.barGroup:not(:hover) text {
+  opacity: 0;
 }
 
 .tickLabel {
