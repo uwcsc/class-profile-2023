@@ -31,10 +31,10 @@ export default function IntimacyAndDrugs() {
         <GroupedBarGraphHorizontal
           className={styles.barGraphDemo}
           data={I2}
-          barColors={[Color.primaryAccentLight, Color.primaryAccentDark]}
+          barColors={[Color.chartBlueLight, Color.chartPinkLight]}
           barHoverColorsMap={{
-            [Color.primaryAccentLight]: Color.primaryAccentLighter,
-            [Color.primaryAccentDark]: Color.primaryAccentDarker,
+            [Color.chartBlueLight]: Color.chartBlueHeavy,
+            [Color.chartPinkLight]: Color.chartPinkHeavy,
           }}
           width={barGraphWidth(isMobile, pageWidth)}
           minWidth={700}
@@ -52,10 +52,10 @@ export default function IntimacyAndDrugs() {
         <GroupedBarGraphVertical
           className={styles.barGraphDemo}
           data={I1}
-          barColors={[Color.primaryAccentLight, Color.primaryAccentDark]}
+          barColors={[Color.chartBlueLight, Color.chartPinkLight]}
           barHoverColorsMap={{
-            [Color.primaryAccentLight]: Color.primaryAccentLighter,
-            [Color.primaryAccentDark]: Color.primaryAccentDarker,
+            [Color.chartBlueLight]: Color.chartBlueHeavy,
+            [Color.chartPinkLight]: Color.chartPinkHeavy,
           }}
           width={barGraphWidth(isMobile, pageWidth)}
           height={700}
