@@ -20,9 +20,9 @@ export default function Home() {
             <Image src="/images/frontPageTitle.png" alt="A picture of the University of Waterloo campus" width="800" height="800" />
           </div>
           <div className={styles.blurb}>
-            <h1 className={styles.classYear}>UW Computer Science 2022</h1>
+            <h1 className={styles.classYear}>UW Computer Science 2023</h1>
             <h1 className={styles.classProfile}>Class Profile</h1>
-            <h3>Welcome to UW Computer Science 2022 Class Profile.</h3>
+            <h3>Welcome to UW Computer Science 2023 Class Profile.</h3>
             <a href="#about">
               <button className={styles.viewButton}>View</button>
             </a>
@@ -34,7 +34,7 @@ export default function Home() {
         <CenterWrapper>
           <h1>Preface</h1>
           <p>
-            The 2022 CS Class Profile consists of data relevant to CS, CFM, and CS/BBA students completing their undergrad in 2022. These were combined with the
+            The 2023 CS Class Profile consists of data relevant to CS, CFM, and CS/BBA students completing their undergrad in 2023. These were combined with the
             knowledge that students in these programs tend to have similar experiences, as they share many core courses. In the standard co-op offering, CS and
             CFM take 4 years and 2 terms to complete, while CS/BBA can take up to a full 5 years.
           </p>
