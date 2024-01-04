@@ -147,6 +147,53 @@
   .viewButton {
     font-size: calc(25rem / 16);
   }
+
+  .top {
+    margin: 0 5%;
+    position: relative;
+  }
+
+  .title {
+    margin-top: 5rem;
+    margin-right: 10%;
+    font-size: 300%;
+  }
+
+  .space {
+    top: 225px;
+    right: 25%;
+  }
+
+  .planetBody {
+    padding: 24px;
+    width: 102px;
+    height: 102px;
+  }
+
+  .planetRing {
+    width: 150px;
+    height: 150px;
+  }
+
+  .moon {
+    position: absolute;
+    right: 12px;
+    top: 140px;
+  }
+
+  .moon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .topCurve {
+    position: absolute;
+  }
+
+  .bottomCurve {
+    margin-top: 100px;
+    margin-bottom: 175px;
+  }
 }
 
 .homeSectionsStyles {
