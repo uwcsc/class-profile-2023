@@ -52,11 +52,26 @@ export default function Demographics() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Please indicate the pronouns that you use.">
+      <ComponentWrapper
+        heading="Please indicate the pronouns that you use."
+        bodyText={
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+        }>
         <div className={styles.graphContainer}>
           <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
+
+      {/* <ComponentWrapper heading="Please indicate the pronouns that you use.">
+        <div className={styles.graphContainer}>
+          <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+        </div>
+      </ComponentWrapper> */}
 
       <ComponentWrapper
         heading="Please select the racial category or categories with which you primarily identify."

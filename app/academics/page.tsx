@@ -86,7 +86,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What is your favourite text editor or IDE?"
         bodyText="The class favours VS Code, a versatile and customizable code editor. This is no surprise as VS Code is known to be a sweet spot between Vim and more complex IDEs like IntelliJ. It's fast, lightweight, easy to use, powerful with its extensions, and offers a plethora of themes. Shout out to the one Microsoft Word user out there!"
-        align="right">
+        align="left">
         <BarGraphHorizontal
           data={A3}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -98,7 +98,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What is your favourite programming language?"
         bodyText="The favourite programming language award for the class of 2022 goes to… PYTHON! No surprise here - it reads the most like English. C++ is a very notable language as a part of the CS program; thus, it’s no surprise it comes in second. It looks like we’ve come a long way from the days of Racket in first year!"
-        align="center"
+        align="right"
         noBackground>
         <BarGraphHorizontal data={A4} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
@@ -141,7 +141,7 @@ export default function Academics() {
             being crowd favourites!
           </p>
         }
-        align="center"
+        align="right"
         noBackground>
         <WordCloud
           data={A8}
@@ -164,7 +164,7 @@ export default function Academics() {
             many places. No wonder this course is so well-liked!
           </p>
         }
-        align="right">
+        align="left">
         <WordCloud
           data={A9}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -187,6 +187,7 @@ export default function Academics() {
             Some common complaints of these courses include organization of the course and how interesting the course content is.
           </p>
         }
+        align="right"
         noBackground>
         <WordCloud
           data={A10}
@@ -222,6 +223,7 @@ export default function Academics() {
         heading="Did you take any advanced/enriched courses?"
         bodyText="45% of the class has taken at least 1 advanced/enriched course before their graduation. Advanced and enriched courses have a reputation to be time-consuming and contain much more difficult course material, which can already be hard in the first place! However, for those seeking an academic challenge or are curious about math and computer science topics, this deeper dive into the content can be worth the additional struggle. Additionally, many students claim that some courses are simply taught better. Ultimately, it is up to every individual student to decide what they are capable of and desire. Looks like most of the participants were not afraid to take on this challenge!
           "
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A12} {...pieChartProps(isMobile, pageWidth)} />
@@ -230,8 +232,7 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="If you took any advanced or enriched courses, how much did you enjoy each course?"
-        bodyText="Advanced/enriched CS courses are rated pretty high overall, and it looks like most respondents decide to take them in earlier terms. Trying out advanced courses early and seeing if they’re right for you can be a good strategy to figure out what you’re comfortable with before the workload starts ramping up."
-        align="right">
+        bodyText="Advanced/enriched CS courses are rated pretty high overall, and it looks like most respondents decide to take them in earlier terms. Trying out advanced courses early and seeing if they’re right for you can be a good strategy to figure out what you’re comfortable with before the workload starts ramping up.">
         <StackedBarGraphHorizontal
           width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
@@ -257,7 +258,6 @@ export default function Academics() {
             has poured their passion into teaching. This has helped the CS Class of 2022 grow and succeed! You guys are all amazing! ❤️
           </p>
         }
-        align="right"
         noBackground>
         <WordCloud
           data={A14}
@@ -278,7 +278,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What were your termly and cumulative averages?"
         bodyText="The majority of people did their best in 1A and their worst in 1B, 2A, or 2B, likely because of the mandatory challenging computer science and math courses that lie around that period of time. Students started getting better grades in 3A, correlating with the term difficulty question. As a clarification, CAV stands for Cumulative Average."
-        align="center"
+        align="right"
         noBackground>
         <StackedBarGraphVertical
           width={600}
@@ -302,20 +302,21 @@ export default function Academics() {
       <ComponentWrapper
         heading="How many classes have you failed?"
         bodyText="Most people tend to complete their degree without failing a course, but clearly it's not over if you have failed some."
-        align="right">
+        align="left">
         <BarGraphVertical data={A20} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Did you complete an option, specialization or minor?"
         bodyText="50% of the students have completed some form of option, specialization, or minor during their undergrad. These are ways you can add qualifications to your degree using the electives that you have. That's what they mean when they say you can customize your CS degree!"
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A18} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which option(s), specialization(s), or minor(s) did you complete?">
+      <ComponentWrapper heading="Which option(s), specialization(s), or minor(s) did you complete?" bodyText=" ">
         <WordCloud
           data={A18i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -327,13 +328,13 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What made you want to complete the option, specialization or minor?" align="center" noBackground>
+      <ComponentWrapper heading="What made you want to complete the option, specialization or minor?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A18ii} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Have you overloaded any of your semesters?" align="right">
+      <ComponentWrapper heading="Have you overloaded any of your semesters?" bodyText=" " align="left">
         <div className={styles.graphContainer}>
           <PieChart data={A19} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -342,6 +343,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="How many overloaded semesters did you take?"
         bodyText="UW academic terms can already be challenging; however, over 45% of participants were able to overload at least 1 term. 20% of students overloaded 3 or more terms. 🤯"
+        align="right"
         noBackground>
         <BarGraphVertical data={A19i} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
@@ -358,21 +360,21 @@ export default function Academics() {
       <ComponentWrapper
         heading="What program did you transfer from?"
         bodyText="Most transfers came from Math and CFM. Math and CS share a lot of courses through the first year of the degree, which might have resulted in many of those students pursuing their passion for CS directly by transferring. CFM transfers may be due to students disliking the finance side of their degree."
+        align="right"
         noBackground>
         <BarGraphVertical data={A13i} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="What term did you transfer into your program?"
-        bodyText="Most of the transfers occurred during 2A and 2B terms, which makes sense since students have time to re-evaluate their academic/career path after spending a year in their original program."
-        align="right">
+        bodyText="Most of the transfers occurred during 2A and 2B terms, which makes sense since students have time to re-evaluate their academic/career path after spending a year in their original program.">
         <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="What was your reasoning behind transferring?"
-        bodyText="Program interest, flexible course requirements, and a flexible schedule were the most common reasons people transferred into their current program. Many respondents also justified their transfer due to future job prospects and to avoid mandatory courses in their original program. With so many industries relying on technology, it's no wonder computing degrees are so in demand!
-  "
+        bodyText="Program interest, flexible course requirements, and a flexible schedule were the most common reasons people transferred into their current program. Many respondents also justified their transfer due to future job prospects and to avoid mandatory courses in their original program. With so many industries relying on technology, it's no wonder computing degrees are so in demand!"
+        align="right"
         noBackground>
         <BarGraphVertical data={A13iii} widthAlternatingLabel={1000} alternatingLabelSpace={200} lowerLabelDy="60px" {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
@@ -390,16 +392,14 @@ export default function Academics() {
       <ComponentWrapper
         heading="What term did you take an exchange in?"
         bodyText="Only 7% of students decided to take an exchange term during their undergrad with most students going during their 3A and 4B terms. Unfortunately, 21% of students were interested in going on an exchange term but were interrupted and unable to go due to the COVID-19 pandemic."
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A21i} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="Where did you take your exchange term?"
-        bodyText="Only three people declared exactly where their exchange term was."
-        align="right">
+      <ComponentWrapper heading="Where did you take your exchange term?" bodyText="Only three people declared exactly where their exchange term was.">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A21ii} circleDiameter={0} />
         </div>
@@ -408,13 +408,14 @@ export default function Academics() {
       <ComponentWrapper
         heading="Were you unable to complete an exchange term due to the COVID-19 pandemic?"
         bodyText="With the severity of the pandemic restrictions in Canada extending from the beginning of 2020 until 2022, it is understandable that most 2022 graduates’ exchange terms were interrupted. Unfortunately, our results show that a lot more people would have gone on exchange if it wasn’t for the pandemic."
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A21iii} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was the hardest thing about going on exchange?">
+      <ComponentWrapper heading="What was the hardest thing about going on exchange?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A21iv} circleDiameter={0} />
         </div>
@@ -423,6 +424,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What is your favourite memory from your time during the exchange?"
         bodyText="Hopefully more students in future classes will have the chance to experience cool opportunities like these as well."
+        align="right"
         noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A21v} circleDiameter={0} />

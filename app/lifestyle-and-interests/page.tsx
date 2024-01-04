@@ -73,15 +73,14 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading='Rate how strongly you agree with the following statement: "Throughout my university experience, I felt like I had enough time to pursue my own hobbies."'
-        bodyText="52 respondents agree or strongly agree with this statement, contrasted to the 33 who disagree or strongly disagree. Based on our data, It seems like many people did not find enough time for their hobbies. Workload can often pile up."
-        align="right">
+        bodyText="52 respondents agree or strongly agree with this statement, contrasted to the 33 who disagree or strongly disagree. Based on our data, It seems like many people did not find enough time for their hobbies. Workload can often pile up.">
         <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How often did you attend parties/gatherings?"
         bodyText="A lot of students attend social events to relieve some stress and build relationships. Many UW students are no exception. Although we are not known for our parties, they can still frequently be found in residential areas around campus."
-        align="left"
+        align="right"
         noBackground>
         <BarGraphHorizontal
           data={L8}
@@ -91,28 +90,28 @@ export default function LifestyleAndInterests() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What time do you usually sleep?" bodyText="Looks like we have a lot of night owls!" align="right">
+      <ComponentWrapper heading="What time do you usually sleep?" bodyText="Looks like we have a lot of night owls!">
         <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How many hours of sleep do you get on average per night?"
         bodyText="Although many of our respondents sleep late, most people are getting 7+ hours every night. Our class schedules are typically somewhat flexible and morning classes are usually not super popular among students."
-        align="left"
+        align="right"
         noBackground>
         <BarGraphVertical data={L10} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="While on campus, how many days of the week do you eat out at a restaurant?"
-        bodyText="Waterloo students have a wide variety of options when it comes to food. We have a plaza filled with restaurants that serve all sorts of food such as Mexican, East Asian, Persian, Indian, etc. Although most students have learned to cook, we still enjoy eating out every so often."
-        align="right">
+        bodyText="Waterloo students have a wide variety of options when it comes to food. We have a plaza filled with restaurants that serve all sorts of food such as Mexican, East Asian, Persian, Indian, etc. Although most students have learned to cook, we still enjoy eating out every so often.">
         <BarGraphVertical data={L11} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="What is your favourite restaurant to go to on/around campus?"
         bodyText="With all the diverse restaurants around campus, it seems like the most popular food choices are sushi, noodles, and shawarma."
+        align="right"
         noBackground>
         <WordCloud
           data={L12}
@@ -126,8 +125,7 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading="What is your LeetCode proficiency level?"
-        bodyText="Most respondents can consistently solve medium LeetCode questions, which are often asked by large tech companies during interviews. Some people also responded with being able to solve hard level questions on LeetCode, going above and beyond."
-        align="right">
+        bodyText="Most respondents can consistently solve medium LeetCode questions, which are often asked by large tech companies during interviews. Some people also responded with being able to solve hard level questions on LeetCode, going above and beyond.">
         <BarGraphHorizontal
           data={L13}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -138,16 +136,15 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading="How many side projects have you completed during university, if any?"
-        bodyText="Students invest time into side projects to show companies their software experiences and skills. Building side projects is a great way to compensate for a lack of relevant work experience. Many of our respondents have completed a few side projects. However, a large number of them have indicated that they have not done any at all during university. This could be explained by the time-consuming academic obligations that take away time to do projects. Furthermore, this also demonstrates that recent side projects are not the only factor to landing a job.
-  "
+        bodyText="Students invest time into side projects to show companies their software experiences and skills. Building side projects is a great way to compensate for a lack of relevant work experience. Many of our respondents have completed a few side projects. However, a large number of them have indicated that they have not done any at all during university. This could be explained by the time-consuming academic obligations that take away time to do projects. Furthermore, this also demonstrates that recent side projects are not the only factor to landing a job."
+        align="right"
         noBackground>
         <BarGraphVertical data={L14} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How often do you attend hackathons now?"
-        bodyText="Similar to side projects, hackathons allow students to show companies their software skills and passion in technology. Despite this, hackathons are definitely not a necessity for graduating students. In fact, we see that the vast majority of our respondents never or very rarely attend hackathons currently."
-        align="right">
+        bodyText="Similar to side projects, hackathons allow students to show companies their software skills and passion in technology. Despite this, hackathons are definitely not a necessity for graduating students. In fact, we see that the vast majority of our respondents never or very rarely attend hackathons currently.">
         <div className={styles.graphContainer}>
           <PieChart data={L16} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} minWidth={600} />
         </div>
@@ -156,6 +153,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="Which extracurricular activities did you participate in?"
         bodyText="Many of our respondents are involved with one or more extracurricular activities during university. These include sports, programming, council positions, and many more!"
+        align="right"
         noBackground>
         <WordCloud
           data={L17}
@@ -169,8 +167,7 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading="Where is your favourite place to study on campus?"
-        bodyText="The most popular study locations according to our respondents are the Mathematics & Computer Building (MC) and the William G. Davis Computer Research Centre (DC), having 23 and 22 votes respectively. Other popular places include on residence, QNC, and E7."
-        align="right">
+        bodyText="The most popular study locations according to our respondents are the Mathematics & Computer Building (MC) and the William G. Davis Computer Research Centre (DC), having 23 and 22 votes respectively. Other popular places include on residence, QNC, and E7.">
         <BarGraphHorizontal
           data={L18}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -182,6 +179,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="Have you done an Undergraduate Research Assistantship (URA)?"
         bodyText="URAs are great for students interested in gaining research experience. Students work under a professor of their choice and also get paid! Almost a quarter of the respondents had completed a URA."
+        align="right"
         noBackground>
         <PieChart data={L19} {...pieChartProps(isMobile, pageWidth)} />
       </ComponentWrapper>
