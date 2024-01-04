@@ -26,8 +26,7 @@ export default function Miscellaneous() {
 
       <ComponentWrapper
         heading="How often did you cry per school term?"
-        bodyText="University is an experience where students face all kinds of rough patches as they grow. To those reading this and feeling down, it does get better! We all need someone to talk to when things don't go well, so don't bury your feelings away with you."
-        noBackground>
+        bodyText="University is an experience where students face all kinds of rough patches as they grow. To those reading this and feeling down, it does get better! We all need someone to talk to when things don't go well, so don't bury your feelings away with you.">
         <BarGraphVertical data={M1} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
@@ -40,14 +39,14 @@ export default function Miscellaneous() {
             even has some profs on there too! Check it out if you haven’t heard of it!
           </p>
         }
-        align="right">
+        align="right"
+        noBackground>
         <BarGraphVertical data={M2} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="If you had to restart university, what program would you enroll in?"
-        bodyText="As expected, most respondents would still choose CS if given the chance to start over, but it’s great to see some respondents wanting to branch out into other areas like business and psychology! University provides you a great avenue to explore your interests, and it’s totally okay if the program you start out in is different from what you end up liking!"
-        noBackground>
+        bodyText="As expected, most respondents would still choose CS if given the chance to start over, but it’s great to see some respondents wanting to branch out into other areas like business and psychology! University provides you a great avenue to explore your interests, and it’s totally okay if the program you start out in is different from what you end up liking!">
         <BarGraphHorizontal
           data={M3}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -59,7 +58,8 @@ export default function Miscellaneous() {
       <ComponentWrapper
         heading="Have you considered dropping/transferring out of your program?"
         bodyText="Roughly a quarter of respondents have considered dropping out at some point. Staying in a program that doesn't align with your interests or is too demanding are probably the main reasons a student might consider switching out to another program."
-        align="right">
+        align="right"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={M4} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -67,8 +67,7 @@ export default function Miscellaneous() {
 
       <ComponentWrapper
         heading="Have you considered dropping out of university or transferring to another university?"
-        bodyText="Around one in six respondents thought about leaving or transferring, so you’re not alone if you have also considered this option! Wanting to transfer to another university can be caused by students feeling lonely in their program, feeling overwhelmed by the schoolwork required in that program, or disliking the UW campus/campus life."
-        noBackground>
+        bodyText="Around one in six respondents thought about leaving or transferring, so you’re not alone if you have also considered this option! Wanting to transfer to another university can be caused by students feeling lonely in their program, feeling overwhelmed by the schoolwork required in that program, or disliking the UW campus/campus life.">
         <div className={styles.graphContainer}>
           <PieChart data={M5} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -77,7 +76,8 @@ export default function Miscellaneous() {
       <ComponentWrapper
         heading="If you couldn't go to UW, what would you have done instead?"
         bodyText="The University of Toronto (UofT) was a popular answer possibly due to similarly reputable CS programs and for their research, but for better or for worse, all of our students choose UW instead. Meanwhile, the University of British Columbia (UBC) is known for its visually-appealing campus and number of highly-ranked programs, which could also explain its popularity."
-        align="right">
+        align="right"
+        noBackground>
         <WordCloud
           data={M6}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -90,9 +90,7 @@ export default function Miscellaneous() {
 
       <ComponentWrapper
         heading="In what areas have you grown that are unrelated to CS?"
-        bodyText="University is an unforgettable, life-changing, and learning experience that we only get once in a lifetime! Make the most out of it!"
-        align="center"
-        noBackground>
+        bodyText="University is an unforgettable, life-changing, and learning experience that we only get once in a lifetime! Make the most out of it!">
         <WordCloud
           data={M7}
           width={wordCloudWidth(isMobile, pageWidth)}
