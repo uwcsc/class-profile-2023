@@ -19,19 +19,25 @@
 
 .about aside {
   flex: 1;
-  margin-right: calc(40rem / 16);
+  justify-content: space-between;
+  margin-right: calc(40rem / 18);
 }
 
 .about aside h1 {
-  color: var(--secondary-accent);
+  color: var(--primary-pink);
+  margin-bottom: calc(40rem / 10);
 }
 
-.about aside p {
-  color: var(--primary-accent-lighter);
+.about aside h4 {
+  color: var(--primary-text);
 }
 
 .about article {
   flex: 3;
+}
+
+.about article h4 {
+  color: var(--primary-yellow);
 }
 
 .about article p {
@@ -47,7 +53,7 @@
 }
 
 .anglePath {
-  stroke: var(--primary-accent-light);
+  stroke: var(--primary-text);
 }
 
 .left.angle {

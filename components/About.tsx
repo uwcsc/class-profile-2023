@@ -9,7 +9,7 @@ export function About() {
       <section className={styles.about}>
         <aside>
           <h1>About the Programs</h1>
-          <p>Getting an overview of the CS programs in UW</p>
+          <h4>Getting an overview of the CS programs in UW</h4>
         </aside>
         <article>
           <h4>Computer Science</h4>
