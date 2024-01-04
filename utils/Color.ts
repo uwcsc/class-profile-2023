@@ -1,28 +1,16 @@
-const colorNames = [
-  "primaryBackground",
-  "secondaryBackground",
-  "tertiaryBackground",
-  "primaryAccent",
-  "primaryAccentLight",
-  "primaryAccentLighter",
-  "primaryAccentDark",
-  "primaryAccentDarker",
-  "secondaryAccent",
-  "secondaryAccentLight",
-  "secondaryAccentLighter",
-  "primaryHeading",
-  "secondaryHeading",
-  "link",
-  "linkHover",
-  "primaryText",
-  "cardBackground",
-  "label",
-] as const;
+type ColorName =
+  | `${"primary" | "secondary" | "tertiary"}Background`
+  | `${"primary" | "secondary"}Accent${"" | "Light" | "Lighter"}`
+  | `primaryAccent${"Dark" | "Darker"}`
+  | `${"primary" | "secondary"}Heading`
+  | "link"
+  | "linkHover"
+  | "primaryText"
+  | "cardBackground"
+  | "label"
+  | `chart${"Blue" | "Yellow" | "Green" | "Pink"}${"Light" | "Heavy"}`;
 
-// This type is needed for smart autocomplete
-type ColorName = (typeof colorNames)[number];
-
-export const Color: { [key in ColorName]: string } = {
+export const Color: Record<ColorName, string> = {
   primaryBackground: "var(--primary-background)",
   secondaryBackground: "var(--secondary-background)",
   tertiaryBackground: "var(--tertiary-background)",
@@ -41,4 +29,12 @@ export const Color: { [key in ColorName]: string } = {
   primaryText: "var(--primary-text)",
   cardBackground: "var(--card-background)",
   label: "var(--label)",
+  chartBlueLight: "var(--chart-blue-light)",
+  chartBlueHeavy: "var(--chart-blue-heavy)",
+  chartYellowLight: "var(--chart-yellow-light)",
+  chartYellowHeavy: "var(--chart-yellow-heavy)",
+  chartGreenLight: "var(--chart-green-light)",
+  chartGreenHeavy: "var(--chart-green-heavy)",
+  chartPinkLight: "var(--chart-pink-light)",
+  chartPinkHeavy: "var(--chart-pink-heavy)",
 };
