@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className={styles.title}>UW Computer Science 2023 Class Profile</h1>
           <div className={styles.space}>
             <div className={styles.planet}>
-              <Image src="/images/planet-ring.svg" alt="Planet Ring" width={300} height={300} />
+              <Image className={styles.planetRing} src="/images/planet-ring.svg" alt="Planet Ring" width={300} height={300} />
               <Image className={styles.planetBody} src="/images/planet-body.svg" alt="Planet Body" width={200} height={200} />
             </div>
             <div className={styles.moon}>
