@@ -8,7 +8,7 @@ import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { D1, D10, D11, D2, D3, D4, D5, D6, D7, D8, D9 } from "@/data/demographics";
+import { D1, D10, D11, D2, D3, D4, D5, D6, D7, D8, D8i, D9, D12, D13, D14, D15, D16, D16i, D17, D18, D19 } from "@/data/demographics";
 import { pageRoutes } from "@/data/routes";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -33,7 +33,7 @@ export default function Demographics() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Please select the gender identity option(s) with which you identify."
+        heading="What is your gender identity?"
         bodyText={
           <p>
             Unsurprisingly, most respondents were men at around 69%. About 31% of students identified as women or gender non-conforming. This statistic has been
@@ -52,14 +52,14 @@ export default function Demographics() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Please indicate the pronouns that you use.">
+      <ComponentWrapper heading="What are your pronouns?">
         <div className={styles.graphContainer}>
           <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Please select the racial category or categories with which you primarily identify."
+        heading="What is your birth year?"
         bodyText={
           <p>
             The largest racial group was East Asian at about 64%, followed by White at 17%, and South Asian at 12%. Note that certain respondents have chosen
@@ -67,19 +67,38 @@ export default function Demographics() {
             <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink>, which supports ethnic minorities in tech!
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <BarGraphVertical data={D4} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="What was your high school admissions average?"
-        bodyText="With a mean average of roughly 95.5%, getting into any of these programs is no easy feat. That makes everyone special from the day they were admitted into the school!">
-        <BarGraphVertical data={D5} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        heading="What is the racial category or categories with which you primarily identify?"
+        bodyText={
+          <p>
+            The largest racial group was East Asian at about 64%, followed by White at 17%, and South Asian at 12%. Note that certain respondents have chosen
+            two or more of the listed categories. We have counted each of them as a separate entry rather than a category itself. Check out clubs such as
+            <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink>, which supports ethnic minorities in tech!
+          </p>
+        }>
+        <BarGraphVertical data={D5} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Please select the sexual identity option(s) you identify with."
+        heading="What is your religion and/or spiritual affiliation?"
+        bodyText="80 respondents identified themselves as non-religious, which is a surprising 72% of the total responses to this question. According to Statistics Canada, in 2019, 68% of Canadians reported being religious. However, this number has decreased over the years, and this is heavily reflected in the younger generations such as the students in this class profile."
+        align="right"
+        noBackground>
+        <BarGraphHorizontal
+          data={D6}
+          width={barGraphWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          margin={{ ...barGraphMargin, ...{ left: 220 } }}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What is the sexual identity or identities with which you identify?"
         bodyText={
           <p>
             Over 27% of respondents identified as LGBTQ+. UW has plenty of groups that support the LGBTQ+ community that can be found
@@ -88,18 +107,34 @@ export default function Demographics() {
             and <BodyLink href="https://ostem.clubs.wusa.ca/"> oSTEM </BodyLink>
             support queer and trans students in tech and STEM environments!
           </p>
-        }
-        align="right"
-        noBackground>
-        <BarGraphVertical data={D6} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
+        }>
+        <BarGraphVertical data={D7} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="How many languages are you fluent in?" bodyText=" " align="right" noBackground>
+        <BarGraphVertical data={D8} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="Besides English, what languages are you fluent in?" bodyText=" ">
+        <WordCloud
+          data={D8i}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is your political alignment?" bodyText=" " align="right" noBackground>
+        <PieChart data={D9} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Where did you live before coming to UW?"
-        bodyText="The UW computing programs receive the most students from the GTA/Toronto, as most people may expect. But it’s always great to meet people from all over the world."
-        align="right">
+        bodyText="The UW computing programs receive the most students from the GTA/Toronto, as most people may expect. But it’s always great to meet people from all over the world.">
         <WordCloud
-          data={D7}
+          data={D10}
           width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           wordPadding={7}
@@ -111,8 +146,9 @@ export default function Demographics() {
       <ComponentWrapper
         heading="What is the highest education level of your parents?"
         bodyText="The most common education level of parents indicated by respondents was a Bachelor's Degree. That means that students will meet or surpass this level of education! The trend seems to be that children will follow in their parents' footsteps to graduate from a university. Find out later in the class profile how students want to continue past this stage of education..."
+        align="right"
         noBackground>
-        <BarGraphVertical data={D8} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={D11} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -124,11 +160,10 @@ export default function Demographics() {
             among families. To sustain a first-year tuition fee that can hover between $8,000 to $55,000, it would make sense for many families to rely on other
             sources of financial support.
           </p>
-        }
-        align="right">
+        }>
         <BarGraphVertical
           // TODO: change when histogram component is ready
-          data={D9}
+          data={D12}
           {...barGraphProps(isMobile, pageWidth)}
         />
       </ComponentWrapper>
@@ -136,21 +171,48 @@ export default function Demographics() {
       <ComponentWrapper
         heading="How many close relatives have attended UW?"
         bodyText="Wow! The vast majority of students are the first in the family to be a UW graduate. This could be explained by older relatives receiving education in other countries, or simply the vast number of other universities in Canada."
-        align="left"
+        align="right"
         noBackground>
-        <BarGraphVertical data={D10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphHorizontal data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What immigrant generation do you belong to?">
+        <div className={styles.graphContainer}>
+          <PieChart data={D14} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+        </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Please indicate your religion and/or spiritual affiliation."
-        bodyText="80 respondents identified themselves as non-religious, which is a surprising 72% of the total responses to this question. According to Statistics Canada, in 2019, 68% of Canadians reported being religious. However, this number has decreased over the years, and this is heavily reflected in the younger generations such as the students in this class profile."
-        align="right">
-        <BarGraphHorizontal
-          data={D11}
-          width={barGraphWidth(isMobile, pageWidth)}
+        heading="What was your high school admissions average?"
+        bodyText="With a mean average of roughly 95.5%, getting into any of these programs is no easy feat. That makes everyone special from the day they were admitted into the school!"
+        align="right"
+        noBackground>
+        <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="Was your current program your first choice out of all of the programs you applied to in high school?">
+        <div className={styles.graphContainer}>
+          <PieChart data={D16} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="Which of the following specialized high school programs did you do?" bodyText=" " align="right" noBackground>
+        <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" bodyText=" ">
+        <WordCloud
+          data={D18}
+          width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 220 } }}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
         />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is your MBTI type?" bodyText=" " align="right" noBackground>
+        <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <BottomNav leftPage={pageRoutes.home} rightPage={pageRoutes.academics} />

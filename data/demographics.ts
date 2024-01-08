@@ -197,24 +197,28 @@ export const D7 = [
 
 export const D8 = [
   {
-    text: "1",
+    category: "1",
     value: 28,
   },
   {
-    text: "1.5",
+    category: "1.5",
     value: 1,
   },
   {
-    text: "2",
+    category: "2",
     value: 88,
   },
   {
-    text: "3",
+    category: "3",
     value: 13,
   },
   {
-    text: "4",
+    category: "4",
     value: 1,
+  },
+  {
+    category: "4+",
+    value: 4,
   },
 ];
 
@@ -274,10 +278,10 @@ export const D8i = [
 ];
 
 export const D9 = [
+  { category: "Moderate Right", value: 12.3 },
   { category: "Moderate", value: 27 },
   { category: "Left", value: 24.6 },
   { category: "Moderate Left", value: 33.6 },
-  { category: "Moderate Right", value: 12.3 },
   { category: "Right", value: 0.2 },
 ];
 
@@ -432,15 +436,15 @@ export const D13 = [
 export const D14 = [
   {
     category: "First",
-    value: 70,
+    value: 53,
   },
   {
     category: "Second",
-    value: 50,
+    value: 37.9,
   },
   {
     category: "Third and higher",
-    value: 12,
+    value: 9.1,
   },
 ];
 
@@ -582,124 +586,124 @@ export const D17 = [
 
 export const D18 = [
   {
-    category: "2000",
+    text: "2000",
     value: 32,
   },
   {
-    category: "2500",
+    text: "2500",
     value: 2,
   },
   {
-    category: "3000",
+    text: "3000",
     value: 3,
   },
   {
-    category: "3500",
+    text: "3500",
     value: 3,
   },
   {
-    category: "4000",
+    text: "4000",
     value: 8,
   },
   {
-    category: "4500",
+    text: "4500",
     value: 1,
   },
   {
-    category: "4745",
+    text: "4745",
     value: 1,
   },
   {
-    category: "5000",
+    text: "5000",
     value: 9,
   },
   {
-    category: "6000",
+    text: "6000",
     value: 2,
   },
   {
-    category: "7000",
+    text: "7000",
     value: 5,
   },
   {
-    category: "8000",
+    text: "8000",
     value: 5,
   },
   {
-    category: "10000",
+    text: "10000",
     value: 11,
   },
   {
-    category: "11000",
+    text: "11000",
     value: 2,
   },
   {
-    category: "11500",
+    text: "11500",
     value: 1,
   },
   {
-    category: "12250",
+    text: "12250",
     value: 1,
   },
   {
-    category: "14000",
+    text: "14000",
     value: 2,
   },
   {
-    category: "15000",
+    text: "15000",
     value: 3,
   },
   {
-    category: "18000",
+    text: "18000",
     value: 1,
   },
   {
-    category: "20000",
+    text: "20000",
     value: 1,
   },
   {
-    category: "25000",
+    text: "25000",
     value: 1,
   },
   {
-    category: "30000",
+    text: "30000",
     value: 1,
   },
   {
-    category: "35000",
+    text: "35000",
     value: 1,
   },
   {
-    category: "40000",
+    text: "40000",
     value: 1,
   },
   {
-    category: "41234",
+    text: "41234",
     value: 1,
   },
   {
-    category: "93000",
+    text: "93000",
     value: 1,
   },
   {
-    category: "N/A",
+    text: "N/A",
     value: 36,
   },
 ];
 
 export const D19 = [
-  { category: "Virtuoso (ISTP-A/T)", value: 7 },
-  { category: "Architect (INTJ-A/T)", value: 13 },
-  { category: "Advocate (INFJ-A/T)", value: 8 },
-  { category: "Logician (INTP-A/T)", value: 18 },
-  { category: "Debater (ENTP-A/T)", value: 11 },
-  { category: "Consul (ESFJ-A/T)", value: 3 },
-  { category: "Protagonist (ENFJ-A/T)", value: 9 },
-  { category: "Commander (ENTJ-A/T)", value: 6 },
-  { category: "Defender (ISFJ-A/T)", value: 5 },
-  { category: "Mediator (INFP-A/T)", value: 10 },
-  { category: "Logistician (ISTJ-A/T)", value: 10 },
-  { category: "Adventurer (ISFP-A/T)", value: 1 },
-  { category: "Entrepreneur (ESTP-A/T)", value: 4 },
-  { category: "Campaigner (ENFP-A/T)", value: 7 },
+  { category: "ISTP", value: 7 },
+  { category: "INTJ", value: 13 },
+  { category: "INFJ", value: 8 },
+  { category: "INTP", value: 18 },
+  { category: "ENTP", value: 11 },
+  { category: "ESFJ", value: 3 },
+  { category: "ENFJ", value: 9 },
+  { category: "ENTJ", value: 6 },
+  { category: "ISFJ", value: 5 },
+  { category: "INFP", value: 10 },
+  { category: "ISTJ", value: 10 },
+  { category: "ISFP", value: 1 },
+  { category: "ESTP", value: 4 },
+  { category: "ENFP", value: 7 },
 ];
