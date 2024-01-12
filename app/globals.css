@@ -21,13 +21,14 @@ html {
 body {
   /* Theme colours */
   --pink: #ef839d;
-  --light-pink: #ffcad0;
+  --light-pink: #faa3bd;
+  /* Above is New Header 1 Colour */
   --lighter-pink: #ffe7e7;
   --orange: #f5917b;
   --light-orange: #ffc4a9;
   --lighter-orange: #ffddcd;
-  /* --navy: #252d41; */
-  --navy: #0b2041;
+  --navy: #0b2041; 
+  /* Above is New Background Colour */
   --light-navy: #354265;
   --dark-navy: #141d34;
   --side-panel: #a1ccf220;
@@ -78,12 +79,18 @@ body {
   --dark--secondary-accent-light: var(--light-orange);
   --dark--secondary-accent-lighter: var(--lighter-orange);
   --dark--translucent-accent: rgba(239, 131, 157, 0.75);
-  --dark--primary-heading: #ffc48d;
-  --dark--secondary-heading: var(--pink);
+  /* --dark--primary-heading: #ffc48d; */
+  --dark--primary-heading: #a1ccf2;
+  /* Above is New H2 */
+  /* --dark--secondary-heading: var(--pink); */
+  --dark--secondary-heading: #FFF0BB;
+  /* Above is New H3 */
   --dark--link: var(--pink);
+  --dark--4-heading: #91F1AC;
+  /* Above is New H4 */
   --dark--link-hover: var(--light-pink);
-  /* --dark--primary-text: #fdf5ed; */
   --dark--primary-text: #fdf9ec;
+  /* Above is New Primary Text */
   --dark--secondary-text: var(--light-pink);
   --dark--card-background: #2c3651;
   --dark--label: #ffffff;
@@ -162,7 +169,7 @@ h3 {
 h4 {
   font-size: calc(26rem / 16);
   font-weight: 700;
-  color: var(--secondary-heading);
+  color: var(-dark--4-heading);
   margin-top: calc(24rem / 16);
   margin-bottom: calc(8rem / 16);
   letter-spacing: 0.05rem;
