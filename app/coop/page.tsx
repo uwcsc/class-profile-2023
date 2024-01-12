@@ -60,8 +60,7 @@ export default function Coop() {
       {/* C2 */}
       <ComponentWrapper
         heading="What was your favourite co-op location?"
-        bodyText="32% of students enjoyed their co-op terms in Toronto. Students really enjoyed their time working in California as a close second."
-        align="right">
+        bodyText="32% of students enjoyed their co-op terms in Toronto. Students really enjoyed their time working in California as a close second.">
         <WordCloud
           data={C2}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -76,7 +75,7 @@ export default function Coop() {
       <ComponentWrapper
         heading="What company did you work for?"
         bodyText="There are lots of companies that people have worked at! This just goes to show that the software world is HUGE."
-        align="center"
+        align="right"
         noBackground>
         <ComponentSwitcher
           graphList={C7i.map((coopTerm, i) => (
@@ -122,8 +121,7 @@ export default function Coop() {
       {/* c5 */}
       <ComponentWrapper
         heading="Were you ever banned from WaterlooWorks for renegotiating an offer/match?"
-        bodyText="Reneging an offer can be a risky move, but it can still be beneficial when you believe that your other contract or salary can be better."
-        align="right">
+        bodyText="Reneging an offer can be a risky move, but it can still be beneficial when you believe that your other contract or salary can be better.">
         <div className={styles.graphContainer}>
           <PieChart data={C5} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -133,6 +131,7 @@ export default function Coop() {
       <ComponentWrapper
         heading="How many co-op positions did you lose due to COVID-19, if any?"
         bodyText="Most people probably lost a position immediately when the pandemic began (Winter 2020), but it seems that the effects have not spread too much. Most CS / CFM / CS/BBA students hold software-related jobs, which make for a relatively easy transition to a remote work environment."
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={C6} {...pieChartProps(isMobile, pageWidth)} />
@@ -142,8 +141,7 @@ export default function Coop() {
       {/* C7iii */}
       <ComponentWrapper
         heading="What was your salary per hour in CAD (excluding other forms of compensation)?"
-        bodyText="Compensation generally increased throughout the terms! For reference, in 2021, the average co-op salaries in the Faculty of Mathematics in Canada were $20.15, $22.05, $24.98, $27.60, $28.96, and $30.95 CAD, respectively. The same amounts in the USA were $28.08, $30.82, $33.65, $34.50, $37.15, and $37.60 USD, respectively. So, CS students tend to get paid more than the faculty average."
-        align="right">
+        bodyText="Compensation generally increased throughout the terms! For reference, in 2021, the average co-op salaries in the Faculty of Mathematics in Canada were $20.15, $22.05, $24.98, $27.60, $28.96, and $30.95 CAD, respectively. The same amounts in the USA were $28.08, $30.82, $33.65, $34.50, $37.15, and $37.60 USD, respectively. So, CS students tend to get paid more than the faculty average.">
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 500}
           height={DefaultProp.graphHeight}
@@ -159,6 +157,7 @@ export default function Coop() {
       <ComponentWrapper
         heading="How much did you receive in other forms of compensation in CAD? (i.e. bonuses, stock options, relocation, housing, etc.)"
         bodyText="Additional compensation had increased as terms progressed and students got better jobs. It’s great to see students having accommodations to make their lives easier. We can also note that most participants didn't get any other form of compensation which explains why the first quartile and the minimum is at 0 for all terms."
+        align="right"
         noBackground>
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 600}
@@ -213,8 +212,7 @@ export default function Coop() {
       {/* C7vii */}
       <ComponentWrapper
         heading="How did you find your co-op?"
-        bodyText="People found more co-ops externally and through return offers as the terms progressed, which makes sense as people gain more experience as they learn and grow. WaterlooWorks was still really good in helping people find jobs in the main and continuous rounds."
-        align="right">
+        bodyText="People found more co-ops externally and through return offers as the terms progressed, which makes sense as people gain more experience as they learn and grow. WaterlooWorks was still really good in helping people find jobs in the main and continuous rounds.">
         <div style={{ padding: "10px" }}>
           <LineGraph
             data={C7vii}
