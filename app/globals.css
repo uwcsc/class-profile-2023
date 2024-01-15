@@ -29,7 +29,8 @@ body {
   /* --navy: #252d41; */
   --navy: #0b2041;
   --light-navy: #354265;
-  --dark-navy: #141d34;
+  /* 50% Intensity of the colour on the figma */
+  --dark-navy: #a1ccf280;
   --menu-icon: #e18e89;
   --menu-icon-hover: #eaa9a6;
   --menu-close-icon: #603e2f;
