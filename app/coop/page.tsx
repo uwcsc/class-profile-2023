@@ -10,10 +10,11 @@ import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { StackedBarGraphHorizontal, StackedBarGraphVertical } from "@/components/StackedBarGraph";
 import { WordCloud } from "@/components/WordCloud";
-import { C1, C2, C3, C4, C5, C6, C7i, C7ii, C7iii, C7iv, C7v, C7vKey, C7vi, C7viKey, C7vii, C7viii, C7viiiKey } from "@/data/coop";
+import { BarGraphVertical } from "@/components/BarGraph";
+import { C1, C2, C3, C4, C5, C6i, C7ii, C7iii, C7iv, C7v, C7vKey, C7vi, C7viKey, C7vii, C7viii, C7viiiKey } from "@/data/coop";
 import { pageRoutes } from "@/data/routes";
 import { Color } from "@/utils/Color";
-import { DefaultProp, barGraphMargin, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
+import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -29,39 +30,14 @@ export default function Coop() {
       <Header />
       <SectionHeader title="Co-op" subtitle="Explore careers, gain experience and earn money through UWaterloo's co-op program!" />
       {/* C1 */}
-      <ComponentWrapper
-        heading="Are you in a co-op program?"
-        bodyText="Surprisingly, all 106 individuals that participated in this class profile were in a co-op program! Most don't opt out of it because co-op can be one of the best experiences you can get from attending UW!">
+      <ComponentWrapper heading="Are you in a co-op program?" bodyText=" ">
         <div className={styles.graphContainer}>
           <PieChart data={C1} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      {/* C7ii */}
-      <ComponentWrapper
-        heading="Where were you located during work?"
-        bodyText="Many students started in the GTA/Toronto or Waterloo region, then slowly progressed to the USA. Software jobs in California in particular are known for their prestige and high paying salary, which may explain why most students eventually try them out. However, due to the pandemic, the last 3 co-op placements were predominantly remote."
-        align="right"
-        noBackground>
-        <LineGraph
-          data={C7ii}
-          width={isMobile ? pageWidth / 1.5 : 600}
-          height={DefaultProp.graphHeight}
-          margin={{
-            top: 20,
-            bottom: 80,
-            left: 30,
-            right: 20,
-          }}
-          colorRange={colorRange}
-        />
-      </ComponentWrapper>
-
       {/* C2 */}
-      <ComponentWrapper
-        heading="What was your favourite co-op location?"
-        bodyText="32% of students enjoyed their co-op terms in Toronto. Students really enjoyed their time working in California as a close second."
-        align="right">
+      <ComponentWrapper heading=" What was your favourite co-op location?" bodyText=" " align="right" noBackground>
         <WordCloud
           data={C2}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -72,14 +48,19 @@ export default function Coop() {
         />
       </ComponentWrapper>
 
-      {/* C7i */}
+      {/* C5 */}
+      <ComponentWrapper heading="How many co-op offers did you have rescinded?" bodyText=" ">
+        <BarGraphVertical data={C5} {...barGraphProps(isMobile, pageWidth)} />
+      </ComponentWrapper>
+
+      {/* c6i */}
       <ComponentWrapper
         heading="What company did you work for?"
         bodyText="There are lots of companies that people have worked at! This just goes to show that the software world is HUGE."
         align="center"
         noBackground>
         <ComponentSwitcher
-          graphList={C7i.map((coopTerm, i) => (
+          graphList={C6i.map((coopTerm, i) => (
             <WordCloud
               data={coopTerm}
               width={wordCloudWidth(isMobile, pageWidth)}
@@ -90,7 +71,7 @@ export default function Coop() {
               key={i}
             />
           ))}
-          buttonList={C7i.map((_, i) => "Co-op #" + (i + 1).toString())}
+          buttonList={C6i.map((_, i) => "Co-op #" + (i + 1).toString())}
         />
       </ComponentWrapper>
 
@@ -119,23 +100,13 @@ export default function Coop() {
         </div>
       </ComponentWrapper>
 
-      {/* c5 */}
+      {/* c4 */}
       <ComponentWrapper
         heading="Were you ever banned from WaterlooWorks for renegotiating an offer/match?"
         bodyText="Reneging an offer can be a risky move, but it can still be beneficial when you believe that your other contract or salary can be better."
         align="right">
         <div className={styles.graphContainer}>
-          <PieChart data={C5} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      {/* c6 */}
-      <ComponentWrapper
-        heading="How many co-op positions did you lose due to COVID-19, if any?"
-        bodyText="Most people probably lost a position immediately when the pandemic began (Winter 2020), but it seems that the effects have not spread too much. Most CS / CFM / CS/BBA students hold software-related jobs, which make for a relatively easy transition to a remote work environment."
-        noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={C6} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={C4} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
