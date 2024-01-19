@@ -1878,217 +1878,220 @@ export const C6iii = [
   ],
 ];
 
-export const C7iii = [
+export const C6iv = [];
+export const C6v = [];
+
+// export const C7iii = [
+//   {
+//     category: "1",
+//     min: 14,
+//     firstQuartile: 18,
+//     median: 22,
+//     thirdQuartile: 40,
+//     max: 50,
+//     outliers: [105, 147],
+//   },
+//   {
+//     category: "2",
+//     min: 17.5,
+//     firstQuartile: 22,
+//     median: 25,
+//     thirdQuartile: 36,
+//     max: 76,
+//     outliers: [105],
+//   },
+//   {
+//     category: "3",
+//     min: 16,
+//     firstQuartile: 26,
+//     median: 33,
+//     thirdQuartile: 55,
+//     max: 95,
+//     outliers: [130],
+//   },
+//   {
+//     category: "4",
+//     min: 16,
+//     firstQuartile: 30,
+//     median: 35,
+//     thirdQuartile: 60,
+//     max: 140,
+//     outliers: [],
+//   },
+//   {
+//     category: "5",
+//     min: 26,
+//     firstQuartile: 39,
+//     median: 44,
+//     thirdQuartile: 60,
+//     max: 145,
+//     outliers: [],
+//   },
+//   {
+//     category: "6",
+//     min: 24,
+//     firstQuartile: 40,
+//     median: 48,
+//     thirdQuartile: 72,
+//     max: 132,
+//     outliers: [],
+//   },
+// ];
+
+// export const C7iv = [
+//   {
+//     category: "1",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 0,
+//     thirdQuartile: 300,
+//     max: 4000,
+//     outliers: [10000],
+//   },
+//   {
+//     category: "2",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 0,
+//     thirdQuartile: 2000,
+//     max: 14000,
+//     outliers: [],
+//   },
+//   {
+//     category: "3",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 250,
+//     thirdQuartile: 10000,
+//     max: 20500,
+//     outliers: [],
+//   },
+//   {
+//     category: "4",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 0,
+//     thirdQuartile: 4000,
+//     max: 12000,
+//     outliers: [],
+//   },
+//   {
+//     category: "5",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 1250,
+//     thirdQuartile: 8000,
+//     max: 20000,
+//     outliers: [],
+//   },
+//   {
+//     category: "6",
+//     min: 0,
+//     firstQuartile: 0,
+//     median: 1000,
+//     thirdQuartile: 15000,
+//     max: 30493,
+//     outliers: [],
+//   },
+// ];
+
+export const C6viKey = ["Outstanding", "Excellent", "Very Good", "Good"];
+
+export const C6vi = [
   {
     category: "1",
-    min: 14,
-    firstQuartile: 18,
-    median: 22,
-    thirdQuartile: 40,
-    max: 50,
-    outliers: [105, 147],
+    Outstanding: 37.1,
+    Excellent: 54.3,
+    "Very Good": 8.6,
+    Good: 0,
   },
   {
     category: "2",
-    min: 17.5,
-    firstQuartile: 22,
-    median: 25,
-    thirdQuartile: 36,
-    max: 76,
-    outliers: [105],
+    Outstanding: 52.6,
+    Excellent: 43.3,
+    "Very Good": 3.1,
+    Good: 1.0,
   },
   {
     category: "3",
-    min: 16,
-    firstQuartile: 26,
-    median: 33,
-    thirdQuartile: 55,
-    max: 95,
-    outliers: [130],
+    Outstanding: 57.0,
+    Excellent: 37.6,
+    "Very Good": 5.4,
+    Good: 0,
   },
   {
     category: "4",
-    min: 16,
-    firstQuartile: 30,
-    median: 35,
-    thirdQuartile: 60,
-    max: 140,
-    outliers: [],
+    Outstanding: 43.4,
+    Excellent: 53.3,
+    "Very Good": 2.2,
+    Good: 1.1,
   },
   {
     category: "5",
-    min: 26,
-    firstQuartile: 39,
-    median: 44,
-    thirdQuartile: 60,
-    max: 145,
-    outliers: [],
-  },
-  {
-    category: "6",
-    min: 24,
-    firstQuartile: 40,
-    median: 48,
-    thirdQuartile: 72,
-    max: 132,
-    outliers: [],
-  },
-];
-
-export const C7iv = [
-  {
-    category: "1",
-    min: 0,
-    firstQuartile: 0,
-    median: 0,
-    thirdQuartile: 300,
-    max: 4000,
-    outliers: [10000],
-  },
-  {
-    category: "2",
-    min: 0,
-    firstQuartile: 0,
-    median: 0,
-    thirdQuartile: 2000,
-    max: 14000,
-    outliers: [],
-  },
-  {
-    category: "3",
-    min: 0,
-    firstQuartile: 0,
-    median: 250,
-    thirdQuartile: 10000,
-    max: 20500,
-    outliers: [],
-  },
-  {
-    category: "4",
-    min: 0,
-    firstQuartile: 0,
-    median: 0,
-    thirdQuartile: 4000,
-    max: 12000,
-    outliers: [],
-  },
-  {
-    category: "5",
-    min: 0,
-    firstQuartile: 0,
-    median: 1250,
-    thirdQuartile: 8000,
-    max: 20000,
-    outliers: [],
-  },
-  {
-    category: "6",
-    min: 0,
-    firstQuartile: 0,
-    median: 1000,
-    thirdQuartile: 15000,
-    max: 30493,
-    outliers: [],
-  },
-];
-
-export const C7vKey = ["Outstanding", "Excellent", "Very Good", "Good"];
-
-export const C7v = [
-  {
-    category: "1",
-    Outstanding: 48.9,
-    Excellent: 33.7,
-    "Very Good": 10.9,
-    Good: 4.3,
-  },
-  {
-    category: "2",
-    Outstanding: 44.6,
-    Excellent: 48.2,
-    "Very Good": 4.8,
+    Outstanding: 52.4,
+    Excellent: 36.6,
+    "Very Good": 9.8,
     Good: 1.2,
   },
   {
-    category: "3",
-    Outstanding: 54.9,
-    Excellent: 35.4,
-    "Very Good": 8.5,
-    Good: 0,
-  },
-  {
-    category: "4",
-    Outstanding: 49.4,
-    Excellent: 39.2,
-    "Very Good": 3.8,
-    Good: 0,
-  },
-  {
-    category: "5",
-    Outstanding: 54.9,
-    Excellent: 35.4,
-    "Very Good": 8.5,
-    Good: 0,
-  },
-  {
     category: "6",
-    Outstanding: 30.4,
-    Excellent: 30.4,
-    "Very Good": 10.7,
-    Good: 3.6,
+    Outstanding: 50,
+    Excellent: 46.3,
+    "Very Good": 3.7,
+    Good: 0,
   },
 ];
 
-export const C7viKey = ["1", "2", "3", "4", "5"];
+export const C6viiKey = ["1", "2", "3", "4", "5"];
 
-export const C7vi = [
+export const C6vii = [
   {
     category: "1",
-    5: 41.3,
-    4: 26.1,
-    3: 20.7,
-    2: 8.7,
-    1: 3.3,
+    5: 31.1,
+    4: 34,
+    3: 23.6,
+    2: 6.6,
+    1: 4.7,
   },
   {
     category: "2",
-    5: 37.8,
-    4: 36.6,
-    3: 14.6,
-    2: 9.8,
-    1: 1.2,
+    5: 33,
+    4: 27,
+    3: 26,
+    2: 8,
+    1: 6,
   },
   {
     category: "3",
-    5: 39.5,
-    4: 40.7,
-    3: 11.1,
-    2: 4.9,
-    1: 3.7,
+    5: 21.2,
+    4: 43.4,
+    3: 16.2,
+    2: 14.1,
+    1: 5.1,
   },
   {
     category: "4",
-    5: 33.8,
-    4: 37.7,
-    3: 18.2,
-    2: 9.1,
-    1: 1.3,
+    5: 41.2,
+    4: 33,
+    3: 18.6,
+    2: 4.1,
+    1: 3.1,
   },
   {
     category: "5",
-    5: 51.9,
-    4: 32.5,
-    3: 14.3,
-    2: 1.3,
-    1: 0,
+    5: 54.3,
+    4: 32.6,
+    3: 7.6,
+    2: 3.3,
+    1: 2.2,
   },
   {
     category: "6",
-    5: 53.7,
-    4: 20.4,
-    3: 18.5,
-    2: 5.6,
-    1: 1.9,
+    5: 70.3,
+    4: 18.8,
+    3: 6.2,
+    2: 3.1,
+    1: 1.6,
   },
 ];
 
@@ -2097,54 +2100,80 @@ export const C7vii = {
   lines: [
     {
       label: "Main rounds",
-      yValues: [66.7, 61.4, 62.2, 49.4, 52.6, 46.4],
+      yValues: [60.7, 74.3, 64.6, 64.3, 54.9, 46.4],
     },
     {
       label: "Continuous Rounds",
-      yValues: [20.4, 16.9, 13.4, 7.6, 1.3, 1.8],
+      yValues: [21.5, 6.9, 6.1, 5.1, 3.3, 0],
     },
     {
       label: "Externally",
-      yValues: [12.9, 16.9, 20.7, 35.4, 32.9, 39.3],
-    },
-    {
-      label: "Return",
-      yValues: [0, 4.8, 3.7, 7.8, 11.8, 12.5],
+      yValues: [17.8, 18.8, 29, 3, 30.6, 41.8, 52.3],
     },
   ],
 };
 
-export const C7viiiKey = ["Yes", "No"];
+export const C6ixKey = ["Yes", "No"];
 
-export const C7viii = [
+export const C6ix = [
   {
     category: "1",
-    Yes: 16.3,
-    No: 83.7,
+    Yes: 10.5,
+    No: 89.5,
   },
   {
     category: "2",
-    Yes: 6.1,
-    No: 93.9,
+    Yes: 9.9,
+    No: 90.1,
   },
   {
     category: "3",
-    Yes: 8.5,
-    No: 91.5,
+    Yes: 6,
+    No: 94,
   },
   {
     category: "4",
-    Yes: 7.7,
-    No: 92.3,
+    Yes: 10.2,
+    No: 89.8,
   },
   {
     category: "5",
-    Yes: 9.1,
-    No: 90.9,
+    Yes: 6.4,
+    No: 93.6,
   },
   {
     category: "6",
-    Yes: 5.5,
-    No: 94.5,
+    Yes: 7.7,
+    No: 92.3,
+  },
+];
+
+export const C6xKey = ["Yes", "No"];
+
+export const C6x = [
+  {
+    category: "1",
+    Yes: 92.7,
+    No: 7.3,
+  },
+  {
+    category: "2",
+    Yes: 98,
+    No: 2,
+  },
+  {
+    category: "3",
+    Yes: 98,
+    No: 2,
+  },
+  {
+    category: "4",
+    Yes: 95.9,
+    No: 4.1,
+  },
+  {
+    category: "5",
+    Yes: 69.1,
+    No: 30.9,
   },
 ];
