@@ -41,16 +41,6 @@
   filter: drop-shadow(0 0 calc(4rem / 16) var(--hover-shadow));
 }
 
-.barGroup text {
-  transition: opacity 0.5s ease-out;
-  stroke: none;
-  fill: var(--chart-label);
-}
-
-.barGroup:not(:hover) text {
-  opacity: 0;
-}
-
 .tickLabel {
   font-family: "Lexend", sans-serif;
   font-weight: 800;
