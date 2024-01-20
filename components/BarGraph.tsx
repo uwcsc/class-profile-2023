@@ -1,3 +1,4 @@
+import { Color } from "@/utils/Color";
 import { AxisBottom, AxisLeft } from "@visx/axis";
 import { bottomTickLabelProps } from "@visx/axis/lib/axis/AxisBottom";
 import { leftTickLabelProps } from "@visx/axis/lib/axis/AxisLeft";
@@ -6,8 +7,6 @@ import { Group } from "@visx/group";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import { Bar } from "@visx/shape";
 import { withTooltip } from "@visx/tooltip";
-import React from "react";
-import { Color } from "@/utils/Color";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 
@@ -53,6 +52,8 @@ interface BarGraphProps {
   defaultLabelDy?: string;
   /** Position of lower labels in x-axis, in px. Only for Vertical graphs */
   lowerLabelDy?: string;
+  /** The color of the bars */
+  color?: "blue" | "yellow" | "green" | "pink";
 }
 
 interface BarGraphData {
@@ -87,6 +88,7 @@ export const BarGraphHorizontal = withTooltip<BarGraphProps, TooltipData>(
     tooltipData,
     hideTooltip,
     showTooltip,
+    color = "blue",
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;
@@ -152,7 +154,7 @@ export const BarGraphHorizontal = withTooltip<BarGraphProps, TooltipData>(
                         });
                       }}
                       onMouseOut={hideTooltip}
-                      className={styles.bar}
+                      className={`${styles.bar} ${styles[color]}`}
                       x={0}
                       y={categoryPoint(d)}
                       width={barLength}
@@ -236,6 +238,7 @@ export const BarGraphVertical = withTooltip<BarGraphProps, TooltipData>(
     tooltipData,
     hideTooltip,
     showTooltip,
+    color = "blue",
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;
@@ -303,7 +306,7 @@ export const BarGraphVertical = withTooltip<BarGraphProps, TooltipData>(
                         });
                       }}
                       onMouseOut={hideTooltip}
-                      className={styles.bar}
+                      className={`${styles.bar} ${styles[color]}`}
                       x={categoryPoint(d)}
                       y={valueMax - barHeight}
                       width={barWidth}
