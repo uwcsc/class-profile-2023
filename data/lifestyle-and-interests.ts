@@ -1,33 +1,3 @@
-// export const L1 = [
-//   {
-//     category: "Yes",
-//     value: 85,
-//   },
-//   {
-//     category: "No",
-//     value: 15,
-//   },
-// ];
-
-// export const L2 = [
-//   {
-//     category: "3+",
-//     value: 85.5,
-//   },
-//   {
-//     category: "2",
-//     value: 12.5,
-//   },
-//   {
-//     category: "1",
-//     value: 1,
-//   },
-//   {
-//     category: "0",
-//     value: 1,
-//   },
-// ];
-
 export const L1 = [
   {
     category: "Never religious",
