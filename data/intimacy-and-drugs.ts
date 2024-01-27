@@ -1,209 +1,174 @@
 export const I1 = [
   {
-    category: "Held hands romantically",
-    values: {
-      "Experienced first before university": 55,
-      "Experienced first during university": 21,
-    },
-  },
-  {
-    category: "Been on a date",
-    values: {
-      "Experienced first before university": 50,
-      "Experienced first during university": 30,
-    },
-  },
-  {
-    category: "Kissed someone romantically",
-    values: {
-      "Experienced first before university": 47,
-      "Experienced first during university": 27,
-    },
-  },
-  {
-    category: "Been in a committed relationship",
-    values: {
-      "Experienced first before university": 41,
-      "Experienced first during university": 29,
-    },
-  },
-  {
-    category: "Been in a long distance relationship",
-    values: {
-      "Experienced first before university": 14,
-      "Experienced first during university": 42,
-    },
-  },
-  {
-    category: "Had friends with benefits",
-    values: {
-      "Experienced first before university": 12,
-      "Experienced first during university": 20,
-    },
-  },
-  {
-    category: "Sent/received nudes",
-    values: {
-      "Experienced first before university": 23,
-      "Experienced first during university": 17,
-    },
-  },
-  {
-    category: "Given/received oral sex",
-    values: {
-      "Experienced first before university": 30,
-      "Experienced first during university": 29,
-    },
-  },
-  {
-    category: "Engaged in sexual intercourse",
-    values: {
-      "Experienced first before university": 20,
-      "Experienced first during university": 33,
-    },
-  },
-  {
-    category: "Engaged in casual sex",
-    values: {
-      "Experienced first before university": 21,
-      "Experienced first during university": 8,
-    },
-  },
-  {
-    category: "Had sex with 2+ people at same time",
-    values: {
-      "Experienced first before university": 1,
-      "Experienced first during university": 3,
-    },
-  },
-];
-
-export const I2 = [
-  {
-    category: "Caffeine",
-    values: {
-      "Tried/used first before university": 80,
-      "Tried/used first during university": 9,
-    },
-  },
-  {
     category: "Alcohol",
     values: {
-      "Tried/used first before university": 63,
-      "Tried/used first during university": 22,
-    },
+      'Yes, before university': 58,
+      'Yes, during university': 48,
+      'No': 12,
+     }
   },
   {
     category: "Marijuana",
     values: {
-      "Tried/used first before university": 43,
-      "Tried/used first during university": 15,
-    },
+      'Yes, before university': 15,
+      'Yes, during university': 49,
+      'No': 53,
+     }
   },
   {
-    category: "Nicotine (Vaping)",
+    category: "Tobacco",
     values: {
-      "Tried/used first before university": 16,
-      "Tried/used first during university": 7,
-    },
-  },
-  {
-    category: "Nicotine (Other)",
-    values: {
-      "Tried/used first before university": 12,
-      "Tried/used first during university": 1,
-    },
-  },
-  {
-    category: "Cigarettes",
-    values: {
-      "Tried/used first before university": 12,
-      "Tried/used first during university": 5,
-    },
-  },
-  {
-    category: "Adderall/Ritalin",
-    values: {
-      "Tried/used first before university": 5,
-      "Tried/used first during university": 1,
-    },
+      'Yes, before university': 6,
+      'Yes, during university': 13,
+      'No': 90,
+     }
   },
   {
     category: "Magic Mushrooms",
     values: {
-      "Tried/used first before university": 0,
-      "Tried/used first during university": 10,
-    },
+      'Yes, before university': 2,
+      'Yes, during university': 11,
+      'No': 95,
+     }
   },
   {
     category: "LSD",
     values: {
-      "Tried/used first before university": 0,
-      "Tried/used first during university": 6,
-    },
+      'Yes, before university': 0,
+      'Yes, during university': 3,
+      'No': 106,
+     }
   },
   {
     category: "Cocaine",
     values: {
-      "Tried/used first before university": 0,
-      "Tried/used first during university": 5,
-    },
+      'Yes, before university': 1,
+      'Yes, during university': 1,
+      'No': 107,
+     }
   },
   {
     category: "Ecstasy",
     values: {
-      "Tried/used first before university": 0,
-      "Tried/used first during university": 5,
-    },
+      'Yes, before university': 0,
+      'Yes, during university': 1,
+      'No': 108,
+     }
+  },
+  {
+    category: "Methamphetamine",
+    values: {
+      'Yes, before university': 0,
+      'Yes, during university': 1,
+      'No': 108,
+     }
   },
   {
     category: "Other",
     values: {
-      "Tried/used first before university": 1,
-      "Tried/used first during university": 4,
-    },
+      'Yes, before university': 0,
+      'Yes, during university': 2,
+      'No': 91,
+     }
   },
 ];
 
+export const I2i = [
+  {
+    category: "Yes, before university",
+    value: 36
+  },
+  {
+    category: "Yes, during university",
+    value: 42
+  },
+  {
+    category: "No",
+    value: 41
+  }, 
+]
+
+export const I2ii = [
+  {
+    category: "Before university",
+    value: 35
+  },
+  {
+    category: "1A",
+    value: 6
+  },
+  {
+    category: "1B",
+    value: 7
+  },
+  {
+    category: "2A",
+    value: 7
+  },
+  {
+    category: "2B",
+    value: 3
+  },
+  {
+    category: "3A",
+    value: 2
+  },
+  {
+    category: "3B",
+    value: 6
+  },
+  {
+    category: "4A",
+    value: 9
+  },
+  {
+    category: "4B",
+    value: 2
+  }
+]
 export const I3 = [
   {
     category: "0",
-    value: 29,
+    value: 30,
   },
   {
     category: "1",
-    value: 39,
+    value: 59,
   },
   {
     category: "2",
-    value: 16,
+    value: 23,
   },
   {
     category: "3",
-    value: 7,
+    value: 9,
   },
   {
     category: "4",
+    value: 2,
+  },
+  {
+    category: "7",
     value: 1,
   },
   {
-    category: "5",
-    value: 3,
-  },
+    category: "56",
+    value: 1,
+  }
 ];
 
 export const I4 = [
   {
     category: "0",
-    value: 29,
+    value: 38,
   },
   {
     category: "1",
-    value: 29,
+    value: 40,
   },
   {
     category: "2",
-    value: 14,
+    value: 10,
   },
   {
     category: "3",
@@ -211,75 +176,106 @@ export const I4 = [
   },
   {
     category: "4",
-    value: 3,
+    value: 8,
   },
   {
     category: "5",
-    value: 1,
+    value: 2,
   },
   {
     category: "6",
-    value: 2,
+    value: 1,
   },
   {
     category: "8",
-    value: 2,
-  },
-  {
-    category: "11",
     value: 1,
   },
   {
-    category: "20",
+    category: "10",
     value: 1,
   },
   {
-    category: "50",
+    category: "18",
     value: 1,
   },
   {
-    category: "120",
+    category: "22",
+    value: 1,
+  },
+  {
+    category: "23",
+    value: 1,
+  },
+  {
+    category: "29",
+    value: 1,
+  },
+  {
+    category: "57",
     value: 1,
   },
 ];
 
 export const I5 = [
   {
-    category: "No",
-    value: 85,
+    category: "4+ years",
+    value: 21
   },
   {
-    category: "Yes",
-    value: 15,
+    category: "0 - 1 year",
+    value: 40
   },
-];
+  {
+    category: "1 - 2 years",
+    value: 21,
+  },
+  {
+    category: "2 - 3 years",
+    value: 10
+  },
+  {
+    category: "3 - 4 years",
+    value: 13
+  }
+]
+// export const I5 = [
+//   {
+//     category: "No",
+//     value: 85,
+//   },
+//   {
+//     category: "Yes",
+//     value: 15,
+//   },
+// ];
 
 export const I6 = [
   {
     category: "No",
-    value: 73,
+    value: 96,
   },
   {
-    category: "Yes",
-    value: 27,
-  },
-];
-
-export const I6i = [
-  {
-    category: "No",
-    value: 60,
+    category: "Yes, I've been cheated on",
+    value: 7,
   },
   {
-    category: "Yes",
-    value: 40,
+    category: "Yes, I've cheated on someone",
+    value: 4
   },
+  {
+    category: "Yes, I've helped someone cheat",
+    value: 2
+  },
+  {
+    category: "Yes, cheated on and helped",
+    value: 1
+  }
 ];
 
 export const I7 = [
   {
     category: "No",
-    value: 37,
+    value: 64,
   },
   {
     category: "Yes",
@@ -290,133 +286,463 @@ export const I7 = [
 export const I8 = [
   {
     category: "No",
-    value: 51,
+    value: 61,
   },
   {
     category: "Yes",
-    value: 44,
-  },
-  {
-    category: "It's complicated",
-    value: 3,
+    value: 39,
   },
 ];
 
-export const I8i = [
+export const I9i = [
   {
     category: "No",
-    value: 15,
+    value: 58
   },
   {
     category: "Yes",
-    value: 25,
+    value: 59
+  }
+]
+
+export const I9ii = [
+  {
+    category: "Before university",
+    value: 13
   },
   {
-    category: "Unsure",
-    value: 9,
+    category: "1A",
+    value: 13
   },
-];
+  {
+    category: "1B",
+    value: 3
+  },
+  {
+    category: "2A",
+    value: 5
+  },
+  {
+    category: "2B",
+    value: 2
+  },
+  {
+    category: "3A",
+    value: 5
+  },
+  {
+    category: "3B",
+    value: 6
+  },
+  {
+    category: "4A",
+    value: 8
+  },
+  {
+    category: "4B",
+    value: 4
+  },
+  {
+    category: "5A",
+    value: 1
+  },
+  {
+    category: "5B and afterwards",
+    value: 2
+  }
+]
 
-export const I9 = [
-  "Talk to one another. Communication is the one thing that makes or breaks your relationship and you have to learn how to properly get to the root of your problems. Sometimes resolving a problem means really understanding what your partner is worried about. Also, learn each others' core values. This is very important for long term relationships",
-  "It's drastically changed. I feel like when I was first entering university, I was really obsessed with the idea of being in a relationship it felt like if I couldn't get in one, then that meant that I was undesirable/unlovable. This is obviously not the case. Being in a relationship just means you have a higher degree of dedication and commitment to someone, and you don't always have to date with the intention to marry them/be with them forever. If it's fun now, and you're being responsible, go for it!",
-  "Communication is key! Minor inconveniences to help the other can go a very long way.",
-  "I took a course on dating but am failing the course",
-  "they're a part-time job",
-  "Relationships take a lot of work, but they're worth it with the right people.",
-  "It takes a lot of work and patience",
-  "My understanding of dating and relationships got a lot more detailed. The reality takes a lot more work and emotional maturity.",
-  "I stopped simping",
-  "I didn't know that soulmates exist, but I guess I do now.",
-  "Learning to co-exist intimately with (an)other human being(s) is almost always difficult. However, if you can make it work, it is absolutely worth it.",
-  "I have become lost in the sauce",
-  "nill",
-  "Co-dependency is bad",
-  "Relationships are very difficult to maintain, and are a lottttt of work",
-  "Relationships do not solve all your problems",
-  "Much deeper understanding ",
-  "Communication is the most important things in a relationship. You gotta figure out how to get to the root of a problem in order to truly tackle it. Sometimes what people say isn't what they're actually concerned about. Also, people often don't understand you and they don't understand themselves.",
-  "I know I am not yet wanting to be in a relationship.",
-  "Hasn't",
-  "I've changed. ",
-  "tbh it hasn't",
-  "I've become more understanding/open to long-distance relationships, especially after graduation since me and my partner are not living in the same city",
-  "I now understand relationships are different for everyone, and that there isn't a particular way to be in a relationship. As long as you are happy in your relationship, it is good for you and works for you.",
-  "Communication is very important",
-  "I'm still a mega virgin",
-  "Completely",
-  "I asked a girl out for the first time! I feel like I know more about what I don't know when it comes to relationships and dating, and feel more confident than before about social situations in general.",
-  "As someone who's been rejected and rejected, it's fine to just be single",
-  "People change",
-  "More casual now polyamorous.",
-  "How others treat me, how I treat others.",
-  "yes",
-  "I've developed a more realistic expectation and now value someone I am comfortable with and can depend on more.",
-  "You shouldn't depend on it to make you happy, your worth should come from other places too",
-  "I'm more indifferent now",
-  "a lot",
-  "lots of people are very immature/inexperienced/not self aware",
-  "It's not like the movies.",
-  "Didn't change",
-  "Having compatible lifestyles and interests is very important.",
-  "I'd really like to be in a relationship",
-  "Communication and honesty are so important!!",
-  "I thought I would hold out on the 'no sex before marriage' thing. I did not.",
-  "Relationships are really hard and don't get into one unless you are ready for the work",
-  "A lot ",
-];
+export const I9iii = [
+  {
+    text: 'High School',
+    value: 12
+  },
+  {
+    text: 'Classes',
+    value: 11
+  },
+  {
+    text: "Mutual Friends",
+    value: 16
+  },
+  {
+    text: "Party",
+    value: 2
+  },
+  {
+    text: "Dating app",
+    value: 4
+  },
+  {
+    text: "Co-op",
+    value: 2
+  },
+  {
+    text: "Orientation",
+    value: 2
+  },
+  {
+    text: "Residence",
+    value: 3
+  },
+  {
+    text: "Extracurriculars",
+    value: 6
+  },
+  {
+    text: "Lab",
+    value: 1
+  },
+  {
+    text: "Aprodite Project",
+    value: 1
+  },
+  {
+    text: "Childhood Friends",
+    value: 1
+  }
+]
 
 export const I10 = [
-  "Work on yourself, make sure you know yourself pretty well and know what you want to get into. Confidence is attractive. Learn to be better texters and try to be more emotionally, socially intelligent. Try to be genuine.",
-  "Just be yourself and don't rush it. If you love who you are and are proud of that, then people you're compatible with will start to present themselves. Get out there, meet new people and have fun!",
-  "Work on yourself! The rest will follow (don't quote me on this).",
-  "just pick one, work out the kinks when they happen",
-  "just b urself :)",
-  "Shoot your shot",
-  "You have time :) Take it easy.",
-  "Why you askin' me",
-  "Be yourself, you don't want to be spending all that time with someone while putting up a front.",
-  "Don’t rush yourself. Wait until you find someone you’re really attracted to and then ask them out. Also, be ready to be rejected. Anyone who hasn’t been rejected is someone who has gotten very lucky or has simply never made the first move.",
-  "Work on your looks (fitness, sleep/diet, grooming, plastic surgery if its bad). Improve your status (high ranking job, involvement in social activities, interesting hobbies). Work on your social skills (practice talking to random people, public speaking). Learn how to read others' body language. Work on your mental state (meditation, therapy, close friends). Acquire confidence after doing all this and go approach in social settings. Be honest, upfront, and vulnerable. Don't be overly needy (and if you are, go back to improving yourself). Avoid TheRedPill, incel forums, MGTOW. Profit!!",
-  "Be forthcoming and don't be afraid to ask :)",
-  "simping does not help you get girls",
-  "Just be yourself?",
-  "Take a risk and make the first move. Be yourself",
-  "Become a well rounded confident person",
-  "nope",
-  "Don't",
-  "Don't be afraid to explore, not everything needs to be serious.",
-  "Focus on yourself first! Then read a lot of attachment theory and put yourself out there and hope for the best. ",
-  "Don’t force it, but once you’re in it, be intentional ",
-  "Try to better yourself first, make sure you're the best version of yourself. Know your strengths and weaknesses and take every opportunity to talk to people. Figure out what type of people you vibe with and don't force anything, or you'll be in a world of hurt.",
-  "Don't lower your standards.",
-  "Don't look too hard",
-  "Dont be in one",
-  "Don't come to loo =). ",
-  "Relationships are a two way street, try all you might but if the other person puts in no effort, it won’t work",
-  "Go to clubs/events and talk to people with just making friends as your intention! This is the most natural way that relationships start.",
-  "Let it brew organically. My relationship started off as a friendship, where we spent a lot of our time talking and it made way for a relationship wherein we care deeply about each other and our interests.",
-  "Figure yourself out first",
-  "Don't listen to what I say",
-  "It's tough",
-  "Confidence comes not from knowing whether you'll succeed, but from knowing you'll be okay no matter the outcome. Stay true to yourself, and find someone such that you can make each other better.",
-  "5 years later and still don't have any to give sorry xD",
-  "without sexual more love no cheat",
-  "I hope you'll come earlier",
-  "It’ll happen when it does :)",
-  "Reciprocity",
-  "Good luck :p",
-  "Improve yourself, get self esteem, and put yourself out there! It's really not this big, super hard thing to attain for the average person. Don't get into a bad one though",
-  "am unqualified, idk",
-  "idfk",
-  "good luck :)",
-  "Enjoy your life. ",
-  "Surround yourself with the people you want to attract. Ie. If you're looking for something long term, don't hang out with the party crowd. Start by making some friends, who preferably have other friends, and you'll see your pool of possibilities grow. Most importantly, know what you're after, and if you don't know, figure it out, and be open minded to the people who you meet.",
-  "Just don't, better off on your own",
-  "Consider me, I'm alright",
-  "Be open minded and meet new people in clubs, residence and orientation",
-  "LDR is hard but possible. It depends on your priorities.",
-  "Be confident!",
-  "Date casually till you know what you want",
-  "It's a lot of work. Must be open-minded.",
-];
+  {
+    text: '73',
+    value: 3
+  },
+  { 
+    text: '68',
+    value: 2
+  },
+  {
+    text: '64',
+    value: 2
+  },
+  {
+    text: '53',
+    value: 2
+  },
+  {
+    text: '62',
+    value: 2
+  },
+  {
+    text: '54',
+    value: 3
+  },
+  {
+    text: '34',
+    value: 1
+  },
+  {
+    text: '22',
+    value: 3
+  },
+  {
+    text: '46',
+    value: 2
+  },
+  {
+    text: '49',
+    value: 1
+  },
+  {
+    text: '50',
+    value: 5
+  },
+  {
+    text: '58',
+    value: 1
+  },
+  {
+    text: '41',
+    value: 3
+  },
+  {
+    text: '72',
+    value: 1
+  },
+  {
+    text: '56',
+    value: 1
+  },
+  {
+    text: '36',
+    value: 2
+  },
+  {
+    text: '80',
+    value: 2
+  },
+  {
+    text: '66',
+    value: 2
+  },
+  {
+    text: '52',
+    value: 4
+  },
+  {
+    text: '45',
+    value: 1
+  },
+  {
+    text: '60',
+    value: 2
+  },
+  {
+    text: '38',
+    value: 1
+  },
+  {
+    text: '47',
+    value: 3
+  },
+  {
+    text: '81',
+    value: 1
+  },
+  {
+    text: '37',
+    value: 1
+  },
+  {
+    text: '57',
+    value: 2
+  },
+  {
+    text: '69',
+    value: 1
+  },
+  {
+    text: '35',
+    value: 2
+  },
+  {
+    text: '40',
+    value: 3
+  },
+  {
+    text: '70',
+    value: 1
+  },
+  {
+    text: '87',
+    value: 1
+  },
+  {
+    text: '97',
+    value: 1
+  },
+  {
+    text: '75',
+    value: 1
+  },
+  {
+    text: '33',
+    value: 1
+  },
+  {
+    text: '8',
+    value: 1
+  },
+  {
+    text: '95',
+    value: 1
+  },
+  {
+    text: '55',
+    value: 2
+  },
+  {
+    text: '82',
+    value: 1
+  },
+  {
+    text: '32',
+    value: 1
+  },
+  {
+    text: '90',
+    value: 1
+  },
+  {
+    text: '98',
+    value: 2
+  },
+  {
+    text: '88',
+    value: 1
+  },
+  {
+    text: '89',
+    value: 2
+  },
+  {
+    text: '91',
+    value: 2
+  },
+  {
+    text: '30',
+    value: 1
+  },
+  {
+    text: '48',
+    value: 1
+  },
+  {
+    text: '31',
+    value: 1
+  },
+  {
+    text: '25',
+    value: 1
+  },
+  {
+    text: '94',
+    value: 2
+  },
+  {
+    text: '63',
+    value: 1
+  },
+  {
+    text: '93',
+    value: 2
+  },
+  {
+    text: '100',
+    value: 1
+  },
+  {
+    text: '43',
+    value: 1
+  },
+  {
+    text: '42',
+    value: 1
+  },
+]
+export const I11 = [
+  'rn people are looking for other that give them *that* feeling (excluding relationships after 4+ months) - it really is just a game of giving people that feeling while not having major red flags :P',
+  'Noticing red flags',
+  "It's much more important to find someone you can care about than a perfect match.",
+  'its hard man',
+  "it hasn't",
+  'Better',
+  "Since I was never in a relationship before university, I didn't really have many expectations for a relationship coming into university. Now, I believe that one of the most important things in a relationship is that you have some activities you enjoy doing together with your partner. Once the initial novelty of the relationship wears off, you still want to be able to have fun together! Additionally, once you get more comfortable with each other it is important to discuss your values and goals for the future, to ensure that you are compatible in that regard.",
+  'I comprehend more how to empathize with people',
+  'Everyone has different love languages and sometimes you aren’t compatible - however, it’s always worth the effort to be open minded and to try in love in ways you aren’t familiar with.',
+  'I look less for perfection',
+  "I'm engaged!",
+  'Never forget to invest in yourself first',
+  "When you're young, it feels like someone you love and loves you back is easy and common, but you realize later on, finding someone like that is very rare.",
+  "If they're not making you happy anymore, it's time to walk away. Sometimes they can be the right person for you but timing/circumstance (co-op schedule :/) will make it not work out. You have to figure out if you're willing to change plans for each other or let it go.",
+  'Not everything works out perfectly, you have to put work into maintaining a relationship',
+  'Decent',
+  "You can have great relationships with people that aren't your partners (ie. friendships). Invest in them because they're what make life fulfilling. Finding a partner will happen naturally when you are confident and comfortable with yourself.",
+  'not changed',
+  'Had my very first relationship and am finding it much more exciting and less scary than I initially imagined',
+  'I used to only be able to imagine them as long term commitments but I’m much more open now to different conceptions of relationships and I view them as a connection that is serving you in some way right now, rather than a commitment to a certain kind of future.',
+  'Waste of time',
+  'Not essential to a good life.',
+  "Yeah, think I got a much better idea of what it takes to make a long-term relationship work. And maintaining a relationship long-distance during COVID-19 was also a learning experience, but overall I'm thankful for the learnings it gave me.",
+  'be friends first',
+  'People show that they care in different ways',
+  'Hasn’t',
+  'Not really changed',
+  '?',
+  'It takes much more work to stay in a relationship (and the work is ongoing too) than',
+  'I realized that compatibility matters so much more than momentary infatuation.',
+  "It's a lot more work and compromise than I expected",
+  "It's a lot of luck, it's a lot of time, and it's a risky investment",
+  'They are a lot of work.',
+  'Yes',
+  'Things are not always the way they seem',
+  'yes',
+  'Sometimes there is no right or wrong in relationship but it’s more about compatibility. It’s the compatibility of values, personalities, hobbies, financial situations, locations, etc. No matter how ideal the relationship seems when it begins, problems like these will still arise.',
+  "Didn't change",
+  'It feels great to have someone I can trust and open up to. Being in a relationship helped me understand myself and others better and become more confident.',
+  "I've learned what the purpose of relationships are for me, how to communicate with my partners, how to compromise, how to keep mutual emotional and sexual interest.",
+]
+
+export const I12 = [
+  'i think for some of us it just isnt meant to be, keep your head up and enjoy life',
+  'Just b urself',
+  'At the end of the day it\'s about happiness. Focus on that.',
+  'dont settle',
+  'find friends first',
+  'Be respectful, be yourself',
+  'Try and get to know as many new people as possible, and show a genuine interest in them as a person. The best way to find someone you are compatible with is just forming friendships with people. If you start having feelings for someone, ask them if they would like to go out to dinner/movies/whatever you both enjoy making it clear you want this to be a date.',
+  'Just be yourself and don\'t be afraid of asking people out',
+  'Be yourself, start doing things you are passionate about and enjoy doing, and it will come',
+  'Join RIZZ 100 on Piazza',
+  'Masturbate before a date so you don\'t get too horny',
+  'Partners are meant to help you grow. If you\'re looking for someone to ""accept you as you are"", you\'re looking for the wrong thing -- you have to admit there\'s parts of yourself that could stand to be improved.',
+  'Trust your gut',
+  'dont date m*n',
+  'Keep working on yourself, but remember that romantic love is weird and rare and irrational so it\'s important to remember to just keep pushing forward and shooting shots.',
+  'Just start holding hands with your friends and hope it works out with one of them',
+  'If you\'re like maniacally dedicated to finding one, you\'ll scare people away, but if you don\'t care at all, you won\'t take opportunities that arise. Be chill about it, but keep your eyes open.',
+  'Focus on bettering yourself before getting into one',
+  'Mutuals is the best way to meet people',
+  'Go for it!',
+  'Good luck',
+  'Have a life outside your s/o, keep good friends around.',
+  'Start by being comfortable with yourself and being alone first.',
+  'If you reach out and lower your standards, you\'ll find one 100%',
+  'be friends first',
+  'Just get to know more people and eventually you’ll find someone who clicks well with you',
+  'No',
+  'Get a boy sooner than later',
+  '?',
+  'Don\'t worry so much about ""checking all the boxes"" from the get go it\'s more about ""would I rather hang out with this person or be alone"" and passing the vibe check at the beginning. People always lie and only show the more beautiful sides of themselves at the beginning so be flexible and open-minded, but also keep yourself safe and be skeptical.',
+  'Know yourself before looking for someone else.',
+  'Don\'t talk to someone for the sake of trying to get in a relationship. Talk to them for the sake of getting to know them and seeing if they are someone you can get along with.',
+  'Play the numbers if you want a relationship, or just don\'t care about it too much. There are better things to do.',
+  'Don\'t be desperate',
+  'You\'ll never get into one unless you are ACTIVELY trying to and spending time on it.',
+  'Know what you are getting yourself into, be yourself',
+  'Look cute',
+  '1. seek introspection\n2. seek self-improvement\n3. ???\n4. acquire soul mate\n5. ggez',
+  'Don\'t try too hard. It wouldn\'t work if there\'s no chemistry.',
+  'Go meet new people! Talk to people in your class, attend clubs, meet friends of your friends, keep in touch with your co-op friends!',
+  '1. Don\'t rush. Aim to become close friends first. 2. Be authentic. 3. Emotional maturity is underrated.',
+  'Ask yourself ""Why would someone want to date me? What can I offer?""',
+]
+
+export const I13 = [
+  'wake up & break up',
+  'Idk I\'m still figuring this out lol',
+  'are u settling.',
+  '50% of all marriages end in divorce',
+  'Be true to yourself',
+  'Don\'t take your partner for granted! Even when you\'re busy, make sure to check in with your partner and ensure that they do not feel neglected. Also, if your partner does something that bothers you, take some time to calm down and then talk to them about it! The only way you can have less disagreements in the future is if you discuss why you dislike certain things.',
+  'Make time to connect and strengthen your relationship',
+  'Communication is the most important thing. Relationships take work from both people, but the sum of the effort greatly exceeds what is put in',
+  'Communication is really important, don\'t be afraid to have the serious talks.',
+  'Breakup when its time',
+  'Partners are meant to help you grow. If you\'re looking for someone to ""accept you as you are"", you\'re looking for the wrong thing -- you have to admit there\'s parts of yourself that could stand to be improved.',
+  'Run if you don\'t feel good about him/her',
+  'You have to really appreciate your partner because it\'s really easy to take them for granted.',
+  'Be willing to admit when you’re wrong or have made a mistake',
+  'Communication and openness is everything.',
+  'Keep it up!',
+  'Don\'t lose yourself.',
+  'Good luck',
+  'What I\'ve learned is that a partnership is necessarily 50/50. Compromising really is a thing you have to do to make a relationship work, but I think what\'s more important is having a partner who recognizes when you make compromises, is willing to make them for you, and is honest with you about their needs and feelings. What I\'ve learned is that while there are a million things that could break a relationship, as long as you and your partner wake up everyday feeling like there is no challenge you aren\'t willing to overcome together because that\'s how much your relationship means to you, then there\'s nothing to fear.',
+  'keep trying',
+  'Communication is important, even about the little things',
+  'No',
+  'Nope',
+  '?',
+  'It\'s ok to be a ""bad partner"" and be with a ""bad partner"" as long as discontentment is communicated in a healthy manner and both people are committed to growing. No one is born and angel (including ourselves) and it\'s completely normal to have disagreements and have things that anger you or your partner. It\'s not about how often you fight, it\'s about how you fight and what happens after the fight.',
+  'Never stay in a relationship that is hurting you or holding you back. A relationship should always add to your life.',
+  'Be open and understanding. Your partner doesn\'t have to think like you.',
+  'spend as much time as you can together, physically',
+  'PDA isn\'t always cute',
+  'Communicate.',
+  'Know what you are getting yourself into and clarify what each party wants',
+  'Communicate about small problems so they don\'t turn into big problems',
+  'Communicate more.',
+  'Idk? Don\'t give up easily.',
+  'Even when you fight, you\'re on the same side.',
+]
