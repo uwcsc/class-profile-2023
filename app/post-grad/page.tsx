@@ -99,7 +99,7 @@ export default function PostGrad() {
         />
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.friends} />
+      <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.miscellaneous} />
     </div>
   );
 }

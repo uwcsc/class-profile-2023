@@ -101,7 +101,7 @@ export default function Miscellaneous() {
         />
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.friends} rightPage={pageRoutes.mentalHealth} />
+      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.mentalHealth} />
     </div>
   );
 }
