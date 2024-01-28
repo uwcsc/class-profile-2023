@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { P1, P2, P3, P4, P5, P6, P7, P8 } from "@/data/post-grad";
+import { P1, P2, P3, P4} from "@/data/post-grad";
 import { pageRoutes } from "@/data/routes";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -24,16 +24,16 @@ export default function PostGrad() {
       <SectionHeader title="Post-grad" subtitle="Furthering your Computer Science Academic Journey" />
 
       <ComponentWrapper
-        heading="Do you plan on pursuing postgraduate education?"
-        bodyText="There are a total of 103 respondents to this section. There is a large number of students not pursuing postgraduate studies. Postgraduate education is not necessarily for everyone!">
+        heading="Do you plan on pursuing post-graduate education?"
+        bodyText="Out of the 133 respondents in this section, about 50% of them are not planning on pursuing a post-graduate education, while 13% are planning to do so and 29% are currently unsure. Post-graduate education is an option, but does not have to be everyone’s pathway!">
         <div className={styles.graphContainer}>
-          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} minWidth={500} />
+          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth)} labelTextXOffset={20}/>
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Have you secured a full-time position post-grad? "
-        bodyText="Most students have secured a full-time position, but how many of those received return offers from the companies that they’ve interned at? Regardless, it seems that the 2 years worth of work experience in the co-op program has paid off!"
+        heading="What proportion of friends will you keep in contact with post-graduation?"
+        bodyText="At university, people often make many long-lasting friendships and connections! All of the respondents will be keeping at least some friends, with the vast majority being some, half, or most of their current friends, and a small percentage keeping all of their friends."
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -42,61 +42,19 @@ export default function PostGrad() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Are you returning to a prior co-op?"
-        bodyText="It looks like most people that have a full-time position have gotten it from a return offer! This goes to show how the co-op program improves the students' employability and allows them to find jobs that they enjoy.">
+        heading="If you searched for a job, how many onsites/interviews did you get?"
+        bodyText="56 participants reported having at least one interview, with most having up to five, but a few had as many as 80. Some did not interview at all, which may be a result of taking a return offer from a previous co-op placement.">
         <div className={styles.graphContainer}>
-          <PieChart data={P6} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={P3} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Where will you be working from post grad? (City, State/Province, Country)"
-        bodyText="New York and California are huge hot spots here, and it’s great to see that these programs can propel students to go to so many different places. Interestingly, a large majority of respondents will be working in the USA post-grad. This brain drain shows the wealth of opportunities available in computer science in the USA compared to Canada."
+        heading="Have you secured a full-time position post-grad?"
+        bodyText="Most students have secured a full-time position post-grad, at 71% of respondents. Some of these positions could be return offers, while some students may have found new positions. Either way, the two years of co-op experience seem to have paid off in securing these students a job position post-grad!"
         align="right"
         noBackground>
-        <WordCloud
-          data={P3}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={7}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
-        />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="How many offers did you decide between?"
-        bodyText="Over half of the respondents only had to decide between 1 or 2 offers and 35% of them chose between 3+ offers!">
-        <BarGraphVertical data={P4} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="How many onsites/interviews did you get?"
-        bodyText="49 out of 69 respondents had at least one onsite/interview. Out of these students, more people had at least 4 of them! Note that some respondents may not have had any interviews because they could be taking a return offer. "
-        align="right"
-        noBackground>
-        <BarGraphHorizontal data={P5} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What will be your first-year total compensation in CAD?"
-        bodyText="The tech field has interesting levels of annual compensation - these numbers speak for themselves… Compensation can include a combination of salary, signing, first-year stock, and bonus. Many numbers are converted from USD to CAD. The conversion rate was approximately 1 USD = 1.26 CAD during the time frame of the survey.">
-        <BarGraphVertical data={P7} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin }} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What field/career path will you be in post-grad?"
-        bodyText="Computer science degrees can lead to so many different things these days! Web development is a popular field with the presence of web apps. Artificial intelligence and data science are also becoming increasingly popular fields as they continue to innovate our approaches to solving business problems. Cloud computing is also growing in demand by virtualizing IT infrastructure, reducing its costs, and improving its scalability."
-        align="right"
-        noBackground>
-        <WordCloud
-          data={P8}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={10}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
-        />
+        <PieChart data={P4} {...pieChartProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.mentalHealth} />
