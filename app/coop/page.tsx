@@ -11,7 +11,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { StackedBarGraphHorizontal, StackedBarGraphVertical } from "@/components/StackedBarGraph";
 import { WordCloud } from "@/components/WordCloud";
 import { BarGraphVertical } from "@/components/BarGraph";
-import { C1, C2, C3, C4, C5, C6i, C7ii, C7iii, C7iv, C7v, C7vKey, C7vi, C7viKey, C7vii, C7viii, C7viiiKey } from "@/data/coop";
+import { C1, C2, C3, C4, C5, C6i, C6ii, C6iv, C6ix, C6ixKey, C6v, C6vi, C6viKey, C6vii, C6viiKey, C6viii, C6x, C6xKey } from "@/data/coop";
 import { pageRoutes } from "@/data/routes";
 import { Color } from "@/utils/Color";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
@@ -23,21 +23,29 @@ export default function Coop() {
   const pageWidth = useWindowDimensions().width;
   const isMobile = useIsMobile();
 
-  const colorRange = [Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLight, Color.secondaryAccent];
+  const colorRange = [Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLight];
+
+  const colorRange2 = [Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLight, Color.secondaryAccent, Color.primaryAccentLighter];
 
   return (
     <div className={styles.page}>
       <Header />
       <SectionHeader title="Co-op" subtitle="Explore careers, gain experience and earn money through UWaterloo's co-op program!" />
       {/* C1 */}
-      <ComponentWrapper heading="Are you in a co-op program?" bodyText=" ">
+      <ComponentWrapper
+        heading="Are you in a co-op program?"
+        bodyText="Out of the 135 individuals that participated in this class profile, 128 were in a co-op program and 7 were not. Most students choose to be in the co-op program because of the great experiences it provides!">
         <div className={styles.graphContainer}>
           <PieChart data={C1} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       {/* C2 */}
-      <ComponentWrapper heading=" What was your favourite co-op location?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper
+        heading=" What was your favourite co-op location?"
+        bodyText="There is a variety of favoured co-op locations, with some of the most popular being New York, Toronto, San Francisco, and various other cities in California."
+        align="right"
+        noBackground>
         <WordCloud
           data={C2}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -48,17 +56,36 @@ export default function Coop() {
         />
       </ComponentWrapper>
 
+      {/* c3 */}
+      <ComponentWrapper
+        heading="Have you ever had a co-op term without a placement?"
+        bodyText="About 18% of respondents have had at least one co-op term without a placement. If you’re also in thie situation and cannot find one, don’t worry; you’re not alone! Finding a co-op placement, especially your first one, can be pretty difficult. As the recent pandemic also affected students in this year, it could have also caused finding a placement to be even more difficult.
+        ">
+        <div className={styles.graphContainer}>
+          <PieChart data={C3} {...pieChartProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper>
+
+      {/* c4 */}
+      <ComponentWrapper
+        heading="Were you ever banned from WaterlooWorks for renegotiating an offer/match?"
+        bodyText="Reneging an offer/match comes with its risks, but if you believe that your other offer is better, you can decide it to be worth it. Out of those who participated in this class profile, about 6% of students were banned from WaterlooWorks for this activity."
+        align="right"
+        noBackground>
+        <div className={styles.graphContainer}>
+          <PieChart data={C4} {...pieChartProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper>
+
       {/* C5 */}
-      <ComponentWrapper heading="How many co-op offers did you have rescinded?" bodyText=" ">
+      <ComponentWrapper
+        heading="How many co-op offers did you have rescinded?"
+        bodyText="Majority of the participants, standing at 64%, did not rescind any co-op offers. If a participant did rescind any offers, they, for the most part, only rescinded one, at 13% of the respondents, with very few rescinding more than one offer.">
         <BarGraphVertical data={C5} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       {/* c6i */}
-      <ComponentWrapper
-        heading="What company did you work for?"
-        bodyText="There are lots of companies that people have worked at! This just goes to show that the software world is HUGE."
-        align="center"
-        noBackground>
+      <ComponentWrapper heading="What company did you work for?" bodyText=" " align="right" noBackground>
         <ComponentSwitcher
           graphList={C6i.map((coopTerm, i) => (
             <WordCloud
@@ -75,50 +102,28 @@ export default function Coop() {
         />
       </ComponentWrapper>
 
-      {/* c4 */}
-      <ComponentWrapper
-        heading="In your opinion, what is the best company to work at?"
-        bodyText="There’s a fair share of companies around here, with Google being the most popular vote. Jane Street ranks 2nd highest, followed by Meta/Facebook.">
-        <WordCloud
-          data={C4}
-          width={wordCloudWidth(isMobile, pageWidth)}
+      {/* C6ii */}
+      <ComponentWrapper heading="Where were you located during work" bodyText=" ">
+        <LineGraph
+          data={C6ii}
+          colorRange={colorRange2}
+          width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
-          wordPadding={14}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
+          margin={{
+            top: 20,
+            bottom: 80,
+            left: 30,
+            right: 20,
+          }}
         />
       </ComponentWrapper>
 
-      {/* c3 */}
-      <ComponentWrapper
-        heading="Have you ever had a co-op term without a placement?"
-        bodyText="A sixth of respondents have gone through a term without a co-op placement. You’re not alone if you are here and can’t find one! Finding your first job can be especially difficult. Another possible reason for these results can be due to pandemic conditions."
-        align="right"
-        noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={C3} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      {/* c4 */}
-      <ComponentWrapper
-        heading="Were you ever banned from WaterlooWorks for renegotiating an offer/match?"
-        bodyText="Reneging an offer can be a risky move, but it can still be beneficial when you believe that your other contract or salary can be better."
-        align="right">
-        <div className={styles.graphContainer}>
-          <PieChart data={C4} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      {/* C7iii */}
-      <ComponentWrapper
-        heading="What was your salary per hour in CAD (excluding other forms of compensation)?"
-        bodyText="Compensation generally increased throughout the terms! For reference, in 2021, the average co-op salaries in the Faculty of Mathematics in Canada were $20.15, $22.05, $24.98, $27.60, $28.96, and $30.95 CAD, respectively. The same amounts in the USA were $28.08, $30.82, $33.65, $34.50, $37.15, and $37.60 USD, respectively. So, CS students tend to get paid more than the faculty average."
-        align="right">
+      {/* C6iv */}
+      <ComponentWrapper heading="What was your salary per hour in CAD (excluding other forms of compensation)?" bodyText=" ">
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 500}
           height={DefaultProp.graphHeight}
-          data={C7iii}
+          data={C6iv}
           margin={{
             top: 20,
             left: 20,
@@ -126,15 +131,16 @@ export default function Coop() {
         />
       </ComponentWrapper>
 
-      {/* C7iv */}
+      {/* C6v */}
       <ComponentWrapper
         heading="How much did you receive in other forms of compensation in CAD? (i.e. bonuses, stock options, relocation, housing, etc.)"
-        bodyText="Additional compensation had increased as terms progressed and students got better jobs. It’s great to see students having accommodations to make their lives easier. We can also note that most participants didn't get any other form of compensation which explains why the first quartile and the minimum is at 0 for all terms."
+        bodyText=" "
+        align="right"
         noBackground>
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
-          data={C7iv}
+          data={C6v}
           valueAxisLeftMargin={75}
           margin={{
             top: 20,
@@ -143,17 +149,15 @@ export default function Coop() {
         />
       </ComponentWrapper>
 
-      {/* C7v */}
-      <ComponentWrapper
-        heading="What was your co-op evaluation rating?"
-        bodyText="Ratings were pretty positive overall, with “Outstanding” and “Excellent” making up the vast majority of evaluations! Respondents did not receive any ratings below “Very Good” in their 3rd, 4th, and 5th co-op terms.">
+      {/* C6vi */}
+      <ComponentWrapper heading="What was your co-op evaluation rating?" bodyText=" ">
         <div>
           <StackedBarGraphHorizontal
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
-            keys={C7vKey}
+            keys={C6viKey}
             colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter, Color.secondaryAccent]}
-            data={C7v}
+            data={C6vi}
             margin={barGraphMargin}
             displayPercentage
             tooltipBottomLabel="Co-op Term: "
@@ -162,18 +166,14 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C7vi */}
-      <ComponentWrapper
-        heading="How happy were you with your co-op during the work term specified?"
-        bodyText="The ratio of people rating 4+ in happiness stayed roughly the same throughout the terms. There seems to be more 5s towards the last work term, likely due to students being more satisfied with better jobs that suit their interests."
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="How happy were you with your co-op during the work term specified?" bodyText=" " align="right" noBackground>
         <div>
           <StackedBarGraphVertical
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
-            keys={C7viKey}
+            keys={C6viiKey}
             colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter, Color.secondaryAccent, Color.primaryHeading]}
-            data={C7vi}
+            data={C6vii}
             margin={barGraphMargin}
             tooltipBottomLabel="Co-op Term: "
             displayPercentage
@@ -181,14 +181,11 @@ export default function Coop() {
         </div>
       </ComponentWrapper>
 
-      {/* C7vii */}
-      <ComponentWrapper
-        heading="How did you find your co-op?"
-        bodyText="People found more co-ops externally and through return offers as the terms progressed, which makes sense as people gain more experience as they learn and grow. WaterlooWorks was still really good in helping people find jobs in the main and continuous rounds."
-        align="right">
+      {/* C6viii */}
+      <ComponentWrapper heading="How did you find your job?" bodyText=" ">
         <div style={{ padding: "10px" }}>
           <LineGraph
-            data={C7vii}
+            data={C6viii}
             colorRange={colorRange}
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
@@ -202,18 +199,31 @@ export default function Coop() {
         </div>
       </ComponentWrapper>
 
-      {/* C7viii */}
-      <ComponentWrapper
-        heading="Were you referred for the co-op?"
-        bodyText="Interestingly, the referral to non-referral ratio stayed roughly the same as the co-op terms progressed, apart from the first one which had the most referrals. This goes to show that, without a doubt, networking can really give you some great opportunities!"
-        noBackground>
+      {/* C6ix */}
+      <ComponentWrapper heading="Were you referred for the co-op?" bodyText=" " align="right" noBackground>
         <div>
           <StackedBarGraphVertical
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
-            keys={C7viiiKey}
+            keys={C6ixKey}
             colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
-            data={C7viii}
+            data={C6ix}
+            margin={barGraphMargin}
+            displayPercentage={true}
+            tooltipBottomLabel="Co-op term: "
+          />
+        </div>
+      </ComponentWrapper>
+
+      {/* C6x */}
+      <ComponentWrapper heading="Did you complete another co-op term after this?" bodyText=" ">
+        <div>
+          <StackedBarGraphVertical
+            width={isMobile ? pageWidth / 1.5 : 600}
+            height={DefaultProp.graphHeight}
+            keys={C6xKey}
+            colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
+            data={C6x}
             margin={barGraphMargin}
             displayPercentage={true}
             tooltipBottomLabel="Co-op term: "

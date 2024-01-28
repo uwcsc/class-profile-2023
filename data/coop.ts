@@ -1728,7 +1728,7 @@ export const C6ii = {
       yValues: [8, 34.6, 65.5, 71.9, 41.2, 26.3],
     },
     {
-      label: "USA (California, Washington, New York)",
+      label: "USA",
       yValues: [3.6, 11.2, 7.8, 8.8, 37.7, 53.8],
     },
     {
@@ -2092,7 +2092,7 @@ export const C6vii = [
   },
 ];
 
-export const C7vii = {
+export const C6viii = {
   xValues: ["1", "2", "3", "4", "5", "6"],
   lines: [
     {
@@ -2105,7 +2105,7 @@ export const C7vii = {
     },
     {
       label: "Externally",
-      yValues: [17.8, 18.8, 29, 3, 30.6, 41.8, 52.3],
+      yValues: [17.8, 18.8, 29.3, 30.6, 41.8, 52.3],
     },
   ],
 };

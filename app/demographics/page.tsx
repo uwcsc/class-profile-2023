@@ -26,7 +26,7 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="What program are you in?"
-        bodyText="There are a total of 106 respondents of the CS Class Profile. The majority of students are just in CS, due to CS being the largest program in size compared to CFM and CS/BBA. Breaking it down, 89 respondents were in CS, 12 were CS/BBA, and 5 were in CFM.">
+        bodyText="The 2023 class profile has a total of 135 respondents, with the majority of our class, 121 students, pursuing Computer Science. 7 of our talented students are enrolled in the CS/BBA program, bringing their unique blend of technical and business knowledge to the class. Additionally, seven students have chosen the CFM program, combining computer science with financial expertise, to explore the potentials that lie in the world of FinTech. No matter your program, the UW CS Class of 2023 is a community of future tech leaders and problem solvers.">
         <div className={styles.graphContainer}>
           <PieChart data={D1} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -36,13 +36,10 @@ export default function Demographics() {
         heading="What is your gender identity?"
         bodyText={
           <p>
-            Unsurprisingly, most respondents were men at around 69%. About 31% of students identified as women or gender non-conforming. This statistic has been
-            steadily increasing throughout the years, as seen <BodyLink href="https://uwaterloo.ca/women-in-computer-science/statistics">here.</BodyLink>{" "}
-            According to the same source, in 2017/2018 (when many 2022 graduates were admitted), around 24% of CS admits, 34% of CFM admits, and 41% of CS/BBA
-            admits were women or queer. Underrepresented gender identities is a popular topic in the tech community, and so it is promising that a more diverse
-            range of people are becoming interested in CS! Take a look at clubs such as <BodyLink href="https://wics.uwaterloo.ca/"> WiCS </BodyLink> and
-            <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink> that address these issues and work to provide an inclusive environment in UW&apos;s
-            tech scene.
+            The UW CS Class of 2023 proudly represents a spectrum of gender identities. However, unsurprisingly most of the representation is from men with 91
+            individuals and 42 women. This also includes a handful of individuals identifying as gender non-conforming, non-binary, or questioning.
+            Underrepresented gender identities are a popular topic in the tech community, so it is promising that more diverse people are becoming interested in
+            CS! Take a look at clubs such as WiCS and Tech+ that address these issues and work to provide an inclusive environment in UW's tech scene.
           </p>
         }
         align="right"
@@ -52,7 +49,7 @@ export default function Demographics() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What are your pronouns?">
+      <ComponentWrapper heading="What are your pronouns?" bodyText=" ">
         <div className={styles.graphContainer}>
           <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
@@ -62,9 +59,9 @@ export default function Demographics() {
         heading="What is your birth year?"
         bodyText={
           <p>
-            The largest racial group was East Asian at about 64%, followed by White at 17%, and South Asian at 12%. Note that certain respondents have chosen
-            two or more of the listed categories. We have counted each of them as a separate entry rather than a category itself. Check out clubs such as
-            <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink>, which supports ethnic minorities in tech!
+            The birth years of the UW CS Class of 2023 exhibit a range of generational diversity. The majority, 109 students, were born in the year 2000,
+            representing the bridge between the 20th and 21st centuries. 18 students were born between 1998, 1999, and 2001, highlighting the diversity in age
+            of a multi-generational graduating community within the field of computer science.
           </p>
         }
         align="right"
@@ -76,9 +73,10 @@ export default function Demographics() {
         heading="What is the racial category or categories with which you primarily identify?"
         bodyText={
           <p>
-            The largest racial group was East Asian at about 64%, followed by White at 17%, and South Asian at 12%. Note that certain respondents have chosen
-            two or more of the listed categories. We have counted each of them as a separate entry rather than a category itself. Check out clubs such as
-            <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink>, which supports ethnic minorities in tech!
+            The UW CS Class of 2023 is a dynamic blend of racial backgrounds, reflecting rich cultures and ethnicities. Our class comprises students from East
+            Asian, White, South Asian, Southeast Asian, Latin, Middle Eastern, and other racial backgrounds. However, the majority, 92 students, identify as
+            East Asian, including Chinese, Korean, Japanese, or other East Asian descent. This diverse mix enriches our collective experiences and fosters a
+            global perspective, strengthening our ability to tackle complex challenges in the field of computer science with a more holistic worldview.
           </p>
         }>
         <BarGraphVertical data={D5} {...barGraphProps(isMobile, pageWidth)} />
@@ -86,7 +84,7 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="What is your religion and/or spiritual affiliation?"
-        bodyText="80 respondents identified themselves as non-religious, which is a surprising 72% of the total responses to this question. According to Statistics Canada, in 2019, 68% of Canadians reported being religious. However, this number has decreased over the years, and this is heavily reflected in the younger generations such as the students in this class profile."
+        bodyText="The class represents a wide array of religious and spiritual backgrounds. The majority of our class identifies as Agnostic or Atheist, reflecting our strong emphasis on secular values. We also have a diverse mix of students practising Christianity, Hinduism, Buddhism, Islam, and other faiths. Some students consider themselves to be spiritual in a general sense. Additionally, there are 18 students choosing not to specify their affiliation."
         align="right"
         noBackground>
         <BarGraphHorizontal
@@ -101,7 +99,8 @@ export default function Demographics() {
         heading="What is the sexual identity or identities with which you identify?"
         bodyText={
           <p>
-            Over 27% of respondents identified as LGBTQ+. UW has plenty of groups that support the LGBTQ+ community that can be found
+            The UW CS Class of 2023 is a diverse group, with a significant 22% of our students identifying within the LGBTQ+ community. A majority, 117
+            students, identify as Heterosexual or straight. UW has plenty of groups that support the LGBTQ+ community that can be found
             <BodyLink href="https://uwaterloo.ca/human-rights-equity-inclusion/equity-office/pride-uwaterloo"> here</BodyLink>. Clubs such as{" "}
             <BodyLink href="https://www.techplusuw.com/"> Tech+ </BodyLink>
             and <BodyLink href="https://ostem.clubs.wusa.ca/"> oSTEM </BodyLink>
@@ -111,11 +110,18 @@ export default function Demographics() {
         <BarGraphVertical data={D7} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How many languages are you fluent in?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper
+        heading="How many languages are you fluent in?"
+        bodyText="The linguistic diversity within the UW CS Class of 2023 is impressive. A significant portion, 88 students, are fluent in two languages. Additionally, 28 students are fluent in one language, while 13 students are fluent in three languages, highlighting their exceptional linguistic skills. One student has a unique fluency in one and a half languages. There's also one student with fluency in four languages, a remarkable accomplishment. This multilingualism enhances our class's global perspective and strengthens our ability to collaborate on a global scale, reflecting the interconnected nature of the tech industry."
+        align="right"
+        noBackground>
         <BarGraphVertical data={D8} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Besides English, what languages are you fluent in?" bodyText=" ">
+      <ComponentWrapper
+        heading="Besides English, what languages are you fluent in?"
+        bodyText="The multilingualism within the UW CS Class of 2023 is both diverse and impressive. Mandarin is the most widely spoken language, with 48 students demonstrating fluency. Additionally, we have proficiency in French, with 19 students showing their skills. Other languages include Cantonese, Russian, and Hindi, each spoken by several students. This diversity enriches our communication and understanding, making us a truly international community.
+">
         <WordCloud
           data={D8i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -126,13 +132,17 @@ export default function Demographics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your political alignment?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper
+        heading="What is your political alignment?"
+        bodyText=" The data on political alignment within the UW CS Class of 2023 reveals a balanced distribution of political beliefs, with a slightly higher representation of 'Moderate Left' and 'Moderate' alignments. This diversity of political views reflects the class's ability to engage in open and nuanced discussions about various societal issues. It suggests an intellectually curious and tolerant class that values a range of perspectives, encouraging constructive dialogues and problem-solving in an inclusive academic environment. The presence of students across different points on the political spectrum also signifies the readiness to embrace a well-rounded understanding of complex issues, an important attribute for future leaders in the tech industry, where ethical and societal considerations often intersect with technology development."
+        align="right"
+        noBackground>
         <PieChart data={D9} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Where did you live before coming to UW?"
-        bodyText="The UW computing programs receive the most students from the GTA/Toronto, as most people may expect. But it’s always great to meet people from all over the world.">
+        bodyText="A large population of students arrived in Waterloo from the GTA area prior to coming to Waterloo, with 77% of respondents residing in all of Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more.">
         <WordCloud
           data={D10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -145,7 +155,8 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="What is the highest education level of your parents?"
-        bodyText="The most common education level of parents indicated by respondents was a Bachelor's Degree. That means that students will meet or surpass this level of education! The trend seems to be that children will follow in their parents' footsteps to graduate from a university. Find out later in the class profile how students want to continue past this stage of education..."
+        bodyText="Almost 90% of respondents' families have a bachelor's Degree or higher. Most parents of the graduating class have a master's Degree. We will see if many of the graduating class plan to follow in the footsteps of their parents. 
+        "
         align="right"
         noBackground>
         <BarGraphVertical data={D11} {...barGraphProps(isMobile, pageWidth)} />
@@ -170,37 +181,46 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="How many close relatives have attended UW?"
-        bodyText="Wow! The vast majority of students are the first in the family to be a UW graduate. This could be explained by older relatives receiving education in other countries, or simply the vast number of other universities in Canada."
+        bodyText="Most of the graduating class are the first family member in their extended family to have had the opportunity to attend and graduate from Waterloo. Are you planning to recommend Waterloo to future students in your family?"
         align="right"
         noBackground>
         <BarGraphHorizontal data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What immigrant generation do you belong to?">
+      <ComponentWrapper heading="What immigrant generation do you belong to?" bodyText=" ">
         <div className={styles.graphContainer}>
           <PieChart data={D14} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What was your high school admissions average?"
-        bodyText="With a mean average of roughly 95.5%, getting into any of these programs is no easy feat. That makes everyone special from the day they were admitted into the school!"
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="What was your high school admissions average?" bodyText=" " align="right" noBackground>
         <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Was your current program your first choice out of all of the programs you applied to in high school?">
+      <ComponentWrapper
+        heading="Was your current program your first choice out of all of the programs you applied to in high school?"
+        bodyText="The majority of respondents agreed that the UW CS programs were their first choice on OUAC during applications. Let's see if their hopes and dreams panned out in the other sections...">
         <div className={styles.graphContainer}>
           <PieChart data={D16} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which of the following specialized high school programs did you do?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper
+        heading="If not, what university did your first-choice program belong to?"
+        bodyText="Seems like most students were hoping to be in other programs at the University of Waterloo (SE cough cough) but ended up settling on coming into CS when they made their final decision. Another handful of students were aiming for a variety of American universities as well."
+        align="right"
+        noBackground>
+        <BarGraphVertical data={D16i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Which of the following specialized high school programs did you do?"
+        bodyText="The majority of respondents seemed to have been in some specialized program at their high schools prior to university. With AP and IB programs being the most popular choice for students prior to coming into Waterloo’s CS program.
+">
         <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" bodyText=" ">
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" bodyText=" " align="right" noBackground>
         <WordCloud
           data={D18}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -211,7 +231,7 @@ export default function Demographics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your MBTI type?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="What is your MBTI type?" bodyText=" ">
         <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
