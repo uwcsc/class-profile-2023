@@ -36,7 +36,11 @@ export function Header() {
             setIsShowingMenu(true);
           }}
           className={styles.menuIcon}>
-          <Image src="/images/menuIcon.svg" alt="Menu Icon" width="50" height="50" draggable="false" />
+          <svg className={styles.menuIconSvg} width="50" height="100" viewBox="0 0 144 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="139" y1="5" x2="5.00003" y2="4.99999" />
+            <line x1="139" y1="50" x2="5.00003" y2="50" />
+            <line x1="139" y1="95" x2="5.00003" y2="95" />
+          </svg>
         </button>
       </div>
 

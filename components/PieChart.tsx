@@ -67,6 +67,8 @@ export const PieChart = withTooltip<PieChartProps>(
     const cornerRadius = 0;
     const padAngle = 0;
 
+    const responsiveLabelTextSize = Math.min(labelTextSize, width / 10);
+
     return (
       <div>
         <svg className={className} width={width} height={width}>
@@ -106,7 +108,7 @@ export const PieChart = withTooltip<PieChartProps>(
               {(pie) => (
                 <PieSliceLabel
                   {...pie}
-                  labelTextSize={labelTextSize}
+                  labelTextSize={responsiveLabelTextSize}
                   labelTextXOffset={labelTextXOffset}
                   labelTextYOffset={labelTextYOffset}
                   labelTextRadialOffset={labelTextRadialOffset}

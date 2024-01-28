@@ -31,10 +31,10 @@ export default function IntimacyAndDrugs() {
         <GroupedBarGraphHorizontal
           className={styles.barGraphDemo}
           data={I2}
-          barColors={[Color.primaryAccentLight, Color.primaryAccentDark]}
+          barColors={[Color.chartBlueLight, Color.chartPinkLight]}
           barHoverColorsMap={{
-            [Color.primaryAccentLight]: Color.primaryAccentLighter,
-            [Color.primaryAccentDark]: Color.primaryAccentDarker,
+            [Color.chartBlueLight]: Color.chartBlueHeavy,
+            [Color.chartPinkLight]: Color.chartPinkHeavy,
           }}
           width={barGraphWidth(isMobile, pageWidth)}
           minWidth={700}
@@ -47,15 +47,15 @@ export default function IntimacyAndDrugs() {
         heading="What level of intimacy have you experienced?"
         bodyText="Undergrad is a time when we are surrounded by many people of our age and are given more freedom to seek out relationships. This is reflected in our data by how many respondents first experienced different levels of intimacy during university. However, it is also worth noting that a large portion of people did not respond for all of the intimacy levels, showing how they have not had these experiences or are uncomfortable sharing.
   "
-        align="center"
+        align="right"
         noBackground>
         <GroupedBarGraphVertical
           className={styles.barGraphDemo}
           data={I1}
-          barColors={[Color.primaryAccentLight, Color.primaryAccentDark]}
+          barColors={[Color.chartBlueLight, Color.chartPinkLight]}
           barHoverColorsMap={{
-            [Color.primaryAccentLight]: Color.primaryAccentLighter,
-            [Color.primaryAccentDark]: Color.primaryAccentDarker,
+            [Color.chartBlueLight]: Color.chartBlueHeavy,
+            [Color.chartPinkLight]: Color.chartPinkHeavy,
           }}
           width={barGraphWidth(isMobile, pageWidth)}
           height={700}
@@ -76,7 +76,6 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="How many sexual partners have you had during university?"
         bodyText="Similar to the relationships question, most people responded with having 0 or 1 sexual partners during university. However, one individual wrote 20, another wrote 50, and most surprisingly another wrote 120."
-        align="left"
         noBackground>
         <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
@@ -101,8 +100,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="If you answered no to the previous question, did you want to?"
-        bodyText="Out of everyone who answered no to the last question, 29 people did want to date someone in their program. Dating someone in the same program can be great in giving students something similar to bond over. On the other hand, finding someone with different interests than yourself can also be very fulfilling. "
-        align="right">
+        bodyText="Out of everyone who answered no to the last question, 29 people did want to date someone in their program. Dating someone in the same program can be great in giving students something similar to bond over. On the other hand, finding someone with different interests than yourself can also be very fulfilling. ">
         <div className={styles.graphContainer}>
           <PieChart data={I6i} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -136,13 +134,13 @@ export default function IntimacyAndDrugs() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How has your understanding of relationships changed in the past 5 years?">
+      <ComponentWrapper heading="How has your understanding of relationships changed in the past 5 years?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I9} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={isMobile ? 600 : 500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Any advice for people looking for a relationship?" noBackground>
+      <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I10} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>

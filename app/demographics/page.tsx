@@ -55,6 +55,12 @@ export default function Demographics() {
         </div>
       </ComponentWrapper>
 
+      {/* <ComponentWrapper heading="Please indicate the pronouns that you use.">
+        <div className={styles.graphContainer}>
+          <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+        </div>
+      </ComponentWrapper> */}
+
       <ComponentWrapper
         heading="What is your birth year?"
         bodyText={

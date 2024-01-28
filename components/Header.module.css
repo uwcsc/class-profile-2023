@@ -80,12 +80,21 @@
 .menuIcon {
   background: none;
   border: none;
-  transition: opacity 0.5s ease-out;
 }
 
 .menuIcon:hover {
-  opacity: 0.8;
   cursor: pointer;
+}
+
+.menuIconSvg {
+  stroke: var(--menu-icon);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke 120ms linear;
+}
+
+.menuIconSvg:hover {
+  stroke: var(--menu-icon-hover);
 }
 
 @media screen and (max-width: 768px) {
@@ -120,7 +129,7 @@
 }
 
 .closeMenuButton:hover {
-  background-color: var(--secondary-accent-light);
+  background-color: var(--secondary-accent-lighter);
   cursor: pointer;
 }
 

@@ -180,7 +180,7 @@ export default function Coop() {
           />
         </div>
       </ComponentWrapper>
-
+        
       {/* C6viii */}
       <ComponentWrapper heading="How did you find your job?" bodyText=" ">
         <div style={{ padding: "10px" }}>
