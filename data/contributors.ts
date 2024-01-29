@@ -1,35 +1,31 @@
 export const communityReps = [
   {
-    name: "Sat Arora",
+    name: "Kim Guo",
+    link: "https://www.linkedin.com/in/sat-arora/",
+  },
+  {
+    name: "Imane Yacoubi",
+    link: "https://www.linkedin.com/in/sat-arora/",
+  },
+  {
+    name: "Ashnoor Randhawa",
     link: "https://www.linkedin.com/in/sat-arora/",
   },
   {
     name: "Mayank Mehra",
-    link: "https://www.linkedin.com/in/mayank808",
+    link: "https://www.linkedin.com/in/sat-arora/",
   },
   {
-    name: "Olivia Liu",
-    link: "",
-  },
-  {
-    name: "Amy Luo",
-    link: "https://www.linkedin.com/in/amytluo/",
-  },
-  {
-    name: "Juthika Hoque",
-    link: "https://www.linkedin.com/in/juthikahoque/",
+    name: "Katherine Liu",
+    link: "https://www.linkedin.com/in/sat-arora/",
   },
   {
     name: "Ivy Lei",
-    link: "https://www.linkedin.com/in/ivy-lei/",
+    link: "https://www.linkedin.com/in/sat-arora/",
   },
   {
     name: "Kevin Cui",
-    link: "https://www.linkedin.com/in/kevincui1/",
-  },
-  {
-    name: "Nikki Guo",
-    link: "https://www.linkedin.com/in/nikkiguo",
+    link: "https://www.linkedin.com/in/sat-arora/",
   },
 ];
 
@@ -52,26 +48,34 @@ export const designers = [
   },
 ];
 
-export const webDevs = [
+export const classProfile = [
   {
-    name: "Amy Wang",
+    name: "Alexander Liao",
     link: "",
   },
   {
-    name: "Mark Chiu",
-    link: "https://linkedin.com/in/markchiu02",
+    name: "Muhammad Hamza",
+    link: "",
   },
   {
-    name: "Shahan Nedadahandeh",
-    link: "https://shahan.ca/",
+    name: "Kushal Goel",
+    link: "",
   },
   {
-    name: "Beihao Zhou",
-    link: "https://www.linkedin.com/in/beihaozhou/",
+    name: "Cathie Yan",
+    link: "",
   },
   {
-    name: "Jared He",
-    link: "https://www.linkedin.com/in/jaredhe/",
+    name: "Ryan Zhou",
+    link: "",
+  },
+  {
+    name: "Emily Huang",
+    link: "",
+  },
+  {
+    name: "Franklin Ramirez",
+    link: "",
   },
 ];
 
