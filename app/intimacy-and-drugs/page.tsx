@@ -3,13 +3,13 @@
 import { BarGraphHorizontal, BarGraphVertical } from "@/components/BarGraph";
 import { BottomNav } from "@/components/BottomNav";
 import { ComponentWrapper } from "@/components/ComponentWrapper";
-import { GroupedBarGraphHorizontal, GroupedBarGraphVertical } from "@/components/GroupedBarGraph";
+import { GroupedBarGraphHorizontal } from "@/components/GroupedBarGraph";
 import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { QuotationCarousel } from "@/components/QuotationCarousel";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { I1, I2i, I2ii, I3, I4, I5, I6, I7, I8, I9i, I9ii, I9iii, I10, I11, I12, I13 } from "@/data/intimacy-and-drugs";
+import { I1, I10, I11, I12, I13, I2i, I2ii, I3, I4, I5, I6, I7, I8, I9i, I9ii, I9iii } from "@/data/intimacy-and-drugs";
 import { pageRoutes } from "@/data/routes";
 import { Color } from "@/utils/Color";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
@@ -75,14 +75,13 @@ export default function IntimacyAndDrugs() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={I2i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0"/>
+          <BarGraphVertical data={I2i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="If so, in which term did you first have sexual intercourse?">
+      <ComponentWrapper heading="If so, in which term did you first have sexual intercourse?">
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={I2ii} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0"/>
+          <BarGraphVertical data={I2ii} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
         </div>
       </ComponentWrapper>
 
@@ -96,11 +95,10 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="How many sexual partners have you had during university?"
-        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57…."
-      >
+        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57….">
         <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
-      
+
       <ComponentWrapper
         heading="How much time did you spend in a relationship during university?"
         bodyText="Maintaining relationships during university can sometimes be difficult with heavy course loads, however, if there is a will there's a way! Most relationships tend to last 2-4 years, with 21 of them making it past the 4 year mark. Congratulations!"
@@ -118,7 +116,7 @@ export default function IntimacyAndDrugs() {
         heading="Have you ever cheated on someone, been cheated on, or helped someone cheat?"
         bodyText="Almost all respondents have never been in any cheating situations.">
         <div className={styles.graphContainer}>
-        <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+          <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
         </div>
       </ComponentWrapper>
 
@@ -184,8 +182,9 @@ export default function IntimacyAndDrugs() {
         />
       </ComponentWrapper>
 
-
-      <ComponentWrapper heading="How has your understanding of relationships changed during university?" bodyText="Relationships are often a major turning point in many people’s lives. It is a commitment to each other—some struggle, while others do not. Let’s see what other people have to say.">
+      <ComponentWrapper
+        heading="How has your understanding of relationships changed during university?"
+        bodyText="Relationships are often a major turning point in many people’s lives. It is a commitment to each other—some struggle, while others do not. Let’s see what other people have to say.">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={isMobile ? 600 : 500} />
         </div>
