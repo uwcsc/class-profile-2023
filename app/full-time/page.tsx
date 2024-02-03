@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { P1, P2, P3, P4, P5, P6, P7, P8 } from "@/data/full-time";
+import { F1, F2, F3, F4, F5, F6, F7 } from "@/data/full-time";
 import { pageRoutes } from "@/data/routes";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -21,13 +21,13 @@ export default function PostGrad() {
   return (
     <div className={styles.page}>
       <Header />
-      <SectionHeader title="Full-time"/>
+      <SectionHeader title="Full-time" />
 
       <ComponentWrapper
         heading="What company will you be working for post-grad?"
         bodyText="Most students have secured full-time positions and will be working full time post-grad. This is more than 50% of respondents. ">
         <WordCloud
-          data={P1}
+          data={F1}
           width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           wordPadding={7}
@@ -42,7 +42,7 @@ export default function PostGrad() {
         align="right"
         noBackground>
         <WordCloud
-          data={P1}
+          data={F2}
           width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           wordPadding={7}
@@ -55,7 +55,7 @@ export default function PostGrad() {
         heading="How many offers did you decide between? Please enter a number."
         bodyText="More than half of the respondents chose between 1 or 2 offers!">
         <div className={styles.graphContainer}>
-          <PieChart data={P3} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={F3} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
@@ -64,20 +64,15 @@ export default function PostGrad() {
         bodyText="59 out of 81 respondents are returning to a prior co-op on a permanent return offer! This statistic shows that a co-op program lets you test jobs and find what team/company culture fits your liking much earlier in your career.  Additionally, in these co-op positions, students can obtain new connections and leverage them for future full-time employment."
         align="right"
         noBackground>
-        <WordCloud
-          data={P4}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={7}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
-        />
+        <div className={styles.graphContainer}>
+          <PieChart data={F4} {...pieChartProps(isMobile, pageWidth)} />
+        </div>
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="If working in Canada, what will be your first-year total compensation (salary + signing + first-year stock + bonus) in CAD?"
         bodyText="The world of tech offers intriguing annual compensation and salary options.  These compensation packages encompass a mix of components, including salary, signing bonuses, first-year stock options, and more. Many of these salaries start high and will just continue rising as the years go by!">
-        <BarGraphVertical data={P5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={F5} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -85,7 +80,7 @@ export default function PostGrad() {
         bodyText="For those working outside of Canada, with a majority of them working in the USA, their first-year total compensation is significantly higher than working in Canada. This disparity highlights the competitive nature of the international tech job market and the opportunities available for individuals willing to explore opportunities abroad."
         align="right"
         noBackground>
-        <BarGraphHorizontal data={P6} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
+        <BarGraphHorizontal data={F6} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -93,7 +88,7 @@ export default function PostGrad() {
         bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. "
         noBackground>
         <WordCloud
-          data={P8}
+          data={F7}
           width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           wordPadding={10}
