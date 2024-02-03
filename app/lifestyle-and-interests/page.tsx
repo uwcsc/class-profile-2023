@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { L1, L10, L11, L12, L13, L14, L16, L17, L18, L19, L2, L3, L4, L5, L6, L7, L8, L9 } from "@/data/lifestyle-and-interests";
+import { L1, L10, L11, L12, L13, L14, L15, L16, L17, L18, L19, L2, L20, L21, L3, L4, L5, L6, L7, L8, L9 } from "@/data/lifestyle-and-interests";
 import { pageRoutes } from "@/data/routes";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -21,19 +21,36 @@ export default function LifestyleAndInterests() {
   return (
     <div className={styles.page}>
       <Header />
-      <SectionHeader title="Lifestyle and Interests" subtitle="What did the class of 2022 do in their free time?" />
+      <SectionHeader title="Lifestyle and Interests" subtitle="What did the class of 2023 do in their free time?" />
 
-      <ComponentWrapper
+      {/* <ComponentWrapper
         heading="Did you move back home during the beginning of the COVID-19 pandemic?"
         bodyText="The vast majority of respondents moved back home during the beginning of the COVID-19 pandemic, which makes sense given the situation.">
         <div className={styles.graphContainer}>
           <PieChart data={L1} {...pieChartProps(isMobile, pageWidth)} />
         </div>
+      </ComponentWrapper> */}
+
+      {/* <ComponentWrapper
+        heading="How many doses of the COVID-19 vaccination have you received?"
+        bodyText="Proof of vaccination used to be a requirement for entering campus, barring special circumstances. Here, we can see that everyone except for 2 people had 2 or more doses. The large majority had 3+ doses."
+        align="right"
+        noBackground>
+        <div className={styles.graphContainer}>
+          <PieChart data={L2} {...pieChartProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper> */}
+
+      <ComponentWrapper
+        heading="How did your outlook on religion change during university?"
+        bodyText="Similar to previous years, most students were never religious. Of those that remained the same, however, there was a portion of students who were previously religious but are no longer.">
+        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How many doses of the COVID-19 vaccination have you received?"
-        bodyText="Proof of vaccination used to be a requirement for entering campus, barring special circumstances. Here, we can see that everyone except for 2 people had 2 or more doses. The large majority had 3+ doses."
+        heading="Did you learn how to cook during university?"
+        bodyText="Cooking is often a challenge for many new university students. Having lived in the comfort of home for so long, learning to cook is a new struggle that many face. However, UW CS students have adapted to overcome this struggle, with 83 of the 135 learning how to cook during university! Only 10 have never learned how to cook, with the rest already having prior knowledge.
+  "
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -42,75 +59,85 @@ export default function LifestyleAndInterests() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How did your outlook on religion change during university?"
-        bodyText="Although most of our respondents were never religious, most religious students continued to stay religious throughout their undergraduate years.">
+        heading="How frequently did you cook for yourself?"
+        bodyText="Practice makes perfect, especially with cooking. Most students cook for themselves every week with a handful never doing so. Other students fall into the categories of every few weeks, monthly, or once every few months.">
         <BarGraphVertical data={L3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Did you learn how to cook during university?"
-        bodyText="Only 12 people indicated that they have not learned to cook. As for the rest, more of them stated that they learned to cook during university as opposed to before. This may be because going to university is the first time that many students move out from their parents’/guardians’ home and live on their own.
-  "
+        heading="How many days in a week were you physically active in a week?"
+        bodyText="Just like in 2022, Waterloo students achieve excellence again by beating the stereotypes and being active several days per week. CS students know when to code hard but also when it's time to go to the gym."
         align="right"
         noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={L4} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
+        <BarGraphVertical data={L4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How many days are you physically active in a week now?"
-        bodyText="Contrary to stereotypes, most UW students are active at least a few days a week! CS is an especially sedentary major so it’s important to stay active and take care of your body.">
-        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="How often did you pull all-nighters throughout university?"
-        bodyText="84 people have either never pulled an all-nighter or do so only once every few months. With decent time management skills, work is definitely doable and sleep does not have to be sacrificed."
-        noBackground>
-        <BarGraphVertical data={L6} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading='Rate how strongly you agree with the following statement: "Throughout my university experience, I felt like I had enough time to pursue my own hobbies."'
-        bodyText="52 respondents agree or strongly agree with this statement, contrasted to the 33 who disagree or strongly disagree. Based on our data, It seems like many people did not find enough time for their hobbies. Workload can often pile up.">
-        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
+        heading="Did you feel like you had time to pursue your hobbies?"
+        bodyText="Contrary to last year, there was a significant difference between those who did and those who do not. This year, 76 said they either agreed or strongly agreed, while 35 said they disagreed or strongly disagreed. Pursuing hobbies outside of school is a great way to de-stress and put your time and energy into something you love!  
+        ">
+        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How often did you attend parties/gatherings?"
-        bodyText="A lot of students attend social events to relieve some stress and build relationships. Many UW students are no exception. Although we are not known for our parties, they can still frequently be found in residential areas around campus."
+        bodyText="Parties are a fun event to relieve stress, meet some new people, and dance the night away. Waterloo students are no exception and many students like to attend a party every now and then. Whether it is to celebrate or find some new people, remember always to be safe and plan getting home!
+        "
         align="right"
         noBackground>
         <BarGraphHorizontal
-          data={L8}
+          data={L6}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 200 } }}
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What time do you usually sleep?" bodyText="Looks like we have a lot of night owls!">
-        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth)} />
+      <ComponentWrapper
+        heading="What time do you usually sleep?"
+        bodyText="Sleep schedule? What’s that? Waterloo students see the perfect sleeping time between 1 AM to 3 AM.  Who wants to be an early bird when you can be a night owl? ">
+        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How many hours of sleep do you get on average per night?"
-        bodyText="Although many of our respondents sleep late, most people are getting 7+ hours every night. Our class schedules are typically somewhat flexible and morning classes are usually not super popular among students."
+        bodyText="Sleep is very important! A healthy body is a healthy mind. Most students get 7+ hours every night! With the average time Waterloo students are sleeping, and the amount of sleep they get, it is safe to say that not many people like morning classes."
         align="right"
         noBackground>
-        <BarGraphVertical data={L10} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L8} {...barGraphProps(isMobile, pageWidth)} />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="How often did you pull all-nighters throughout university?"
+        bodyText="To the lucky ones that haven’t, those who have don’t wish it upon you. Whether it be splashing cold water on your face, chugging down energy drinks, or drinking cold coffee, one must do what they gotta do to stay awake. While 56 students have never pulled an all-nighter, about 70 students go through the struggle every few weeks or months.
+        ">
+        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="While on campus, how many days of the week do you eat out at a restaurant?"
-        bodyText="Waterloo students have a wide variety of options when it comes to food. We have a plaza filled with restaurants that serve all sorts of food such as Mexican, East Asian, Persian, Indian, etc. Although most students have learned to cook, we still enjoy eating out every so often.">
-        <BarGraphVertical data={L11} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        bodyText="Whether it be at the Waterloo Plaza, King Street, or Uptown, Waterloo has a wide variety of restaurants for anything you are craving. We have Waterloo icons like Lazeez still standing after so many years and new ones being opened every term. Make sure to check them out!        "
+        align="right"
+        noBackground>
+        <BarGraphVertical data={L10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="What is your favourite restaurant to go to on/around campus?"
-        bodyText="With all the diverse restaurants around campus, it seems like the most popular food choices are sushi, noodles, and shawarma."
+        bodyText="Gol's Noodles seems to be many people’s go-to restaurant in Waterloo. With its affordable prices and diverse menu, no wonder it’s a Waterloo favourite!">
+        <WordCloud
+          data={L11}
+          width={isMobile ? pageWidth / 1.5 : 800}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Which extracurricular activities did you participate in?"
+        bodyText="Waterloo has over 200+ clubs! Make sure to definitely check out clubs by finding their Instagram pages, and posters, or finding them during club day! There is a club for almost everything, and if you can’t find a club, start one!"
         align="right"
         noBackground>
         <WordCloud
@@ -124,39 +151,24 @@ export default function LifestyleAndInterests() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="What is your LeetCode proficiency level?"
-        bodyText="Most respondents can consistently solve medium LeetCode questions, which are often asked by large tech companies during interviews. Some people also responded with being able to solve hard level questions on LeetCode, going above and beyond.">
+        heading="Where is your favourite place to study on campus?"
+        bodyText="MC and DC seem to be student’s favourite places to study on campus. This makes sense as most Math faculty students have most of their classes in these two iconic buildings. Make sure to still explore different parts of campus every now and then to potentially find your new favourite place!
+        ">
         <BarGraphHorizontal
           data={L13}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 270 } }}
+          margin={{ ...barGraphMargin, ...{ left: 50 } }}
         />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How many side projects have you completed during university, if any?"
-        bodyText="Students invest time into side projects to show companies their software experiences and skills. Building side projects is a great way to compensate for a lack of relevant work experience. Many of our respondents have completed a few side projects. However, a large number of them have indicated that they have not done any at all during university. This could be explained by the time-consuming academic obligations that take away time to do projects. Furthermore, this also demonstrates that recent side projects are not the only factor to landing a job."
-        align="right"
-        noBackground>
-        <BarGraphVertical data={L14} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="How often do you attend hackathons now?"
-        bodyText="Similar to side projects, hackathons allow students to show companies their software skills and passion in technology. Despite this, hackathons are definitely not a necessity for graduating students. In fact, we see that the vast majority of our respondents never or very rarely attend hackathons currently.">
-        <div className={styles.graphContainer}>
-          <PieChart data={L16} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} minWidth={600} />
-        </div>
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="Which extracurricular activities did you participate in?"
-        bodyText="Many of our respondents are involved with one or more extracurricular activities during university. These include sports, programming, council positions, and many more!"
+        heading="What are your hobbies?"
+        bodyText="Waterloo students have a variety of hobbies, but video games and reading top them all! After a long day of leetcoding and math, coming home to hop on a game with your friends or read a nice book makes the endless suffering just a little bit more worth it."
         align="right"
         noBackground>
         <WordCloud
-          data={L17}
+          data={L14}
           width={isMobile ? pageWidth / 1.5 : 800}
           height={DefaultProp.graphHeight}
           wordPadding={7}
@@ -166,10 +178,29 @@ export default function LifestyleAndInterests() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Where is your favourite place to study on campus?"
-        bodyText="The most popular study locations according to our respondents are the Mathematics & Computer Building (MC) and the William G. Davis Computer Research Centre (DC), having 23 and 22 votes respectively. Other popular places include on residence, QNC, and E7.">
+        heading="How many different countries did you visit outside of Canada during university?"
+        bodyText="Waterloo students love to travel! During the breaks in between terms, getting an opportunity to visit a new country and potentially experience a new culture is an unforgettable experience. Most Waterloo students have visited at least visited 1 country outside of Canada during their time here.">
+        <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What is your favourite bubble tea restaurant in or around UW?"
+        bodyText="The Alley and CoCo are most people’s favourite bubble tea restaurants in or around Waterloo. What’s your favourite drink?"
+        align="right"
+        noBackground>
         <BarGraphHorizontal
-          data={L18}
+          data={L16}
+          width={barGraphWidth(isMobile, pageWidth + 5)}
+          height={DefaultProp.graphHeight}
+          margin={{ ...barGraphMargin, ...{ left: 50 } }}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What is your favourite shawarma restaurant in or around UW?"
+        bodyText="Coming in first place is Shawarma Plus, with Lazeez in a close second, and iPotato in third. Shawarma is a popular Middle Eastern dish that often consists of a choice of marinated meat, some form of carbs, and vegetables.">
+        <BarGraphHorizontal
+          data={L17}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 50 } }}
@@ -177,11 +208,38 @@ export default function LifestyleAndInterests() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Have you done an Undergraduate Research Assistantship (URA)?"
-        bodyText="URAs are great for students interested in gaining research experience. Students work under a professor of their choice and also get paid! Almost a quarter of the respondents had completed a URA."
+        heading="How much time do you spend on the r/uwaterloo subreddit?"
+        bodyText="If you have ever had a question or want to meet some amazing other people, the r/uwaterloo subreddit is a great way to do so! Many students check out the subreddit a few times a week or daily. Whether you have co-op questions, wondering what a good bird course is, or looking for a roommate, look no further than the UW subreddit!"
         align="right"
         noBackground>
-        <PieChart data={L19} {...pieChartProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L18} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="How many friends throughout university were also in CS / CS/BBA / CFM?"
+        bodyText="Struggling to pass a course together with your friends is just a fun yet painful experience that you can’t beat. Most Waterloo students have friends in CS, CS/BBA, or CFM as many share the same classes together.">
+        <BarGraphVertical data={L19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="How often do you keep in touch with high school friends?"
+        bodyText="For students who travel far to come to Waterloo, keeping in touch with old high school friends can be tough. However, most Waterloo students do a great job at this by regularly checking in and chatting with old friends."
+        align="right"
+        noBackground>
+        <BarGraphVertical data={L20} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Where did you meet most of your friends?"
+        bodyText="Although orientation can be a great time to meet people, most students find their friends from extracurriculars, mutual friends, and old friends from high school. Although there is time to study, there’s a time to touch some grass and meet some new people! Once university is over, the knowledge learned may disappear, but the friendships built can last forever.">
+        <WordCloud
+          data={L21}
+          width={isMobile ? pageWidth / 1.5 : 800}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
+        />
       </ComponentWrapper>
 
       <BottomNav leftPage={pageRoutes.coop} rightPage={pageRoutes.intimacyAndDrugs} />
