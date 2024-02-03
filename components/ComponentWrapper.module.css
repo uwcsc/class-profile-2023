@@ -1,5 +1,5 @@
 .sideWrapperCommon {
-  background-color: var(--secondary-background);
+  background-color: var(--side-panel);
   display: flex;
   padding: calc(40rem / 16) calc(50rem / 16);
   margin: calc(65rem / 16) 0;

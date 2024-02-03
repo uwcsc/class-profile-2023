@@ -15,21 +15,27 @@ export default function Home() {
     <>
       <Header />
       <div className={styles.main}>
-        <div className={styles.title}>
-          <div className={styles.titleImage}>
-            <Image src="/images/frontPageTitle.png" alt="A picture of the University of Waterloo campus" width="800" height="800" />
+        <div className={styles.top}>
+          <h1 className={styles.title}>UW Computer Science 2023 Class Profile</h1>
+          <div className={styles.space}>
+            <div className={styles.planet}>
+              <Image className={styles.planetRing} src="/images/planet-ring.svg" alt="Planet Ring" width={300} height={300} />
+              <Image className={styles.planetBody} src="/images/planet-body.svg" alt="Planet Body" width={200} height={200} />
+            </div>
+            <div className={styles.moon}>
+              <Image src="/images/moon.svg" alt="Moon" width={64} height={64} />
+            </div>
           </div>
-          <div className={styles.blurb}>
-            <h1 className={styles.classYear}>UW Computer Science 2022</h1>
-            <h1 className={styles.classProfile}>Class Profile</h1>
-            <h3>Welcome to UW Computer Science 2022 Class Profile.</h3>
-            <a href="#about">
-              <button className={styles.viewButton}>View</button>
-            </a>
-          </div>
-          <div className={styles.decoratorSolid} />
-          <div className={styles.decoratorDots} />
         </div>
+        <div className={styles.curves}>
+          <Image className={styles.topCurve} src="/images/main-page-wide-curve.svg" alt="Wide Curve" width={1440} height={200} layout="responsive" />
+          <Image className={styles.bottomCurve} src="/images/main-page-narrow-curve.svg" alt="Narrow Curve" width={1440} height={200} layout="responsive" />
+        </div>
+        <a href="#about" className={styles.downButton}>
+          <svg viewBox="0 0 20 11">
+            <path d="M 0 0 L 10 10 L 20 0" style={{ stroke: "white", strokeWidth: 1, fill: "none" }}></path>
+          </svg>
+        </a>
         <About />
         <CenterWrapper>
           <h1>Preface</h1>
