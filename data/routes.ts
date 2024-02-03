@@ -7,6 +7,7 @@ type PageID =
   | "home"
   | "demographics"
   | "academics"
+  | "computerScienceExperience"
   | "coop"
   | "lifestyleAndInterests"
   | "intimacyAndDrugs"
@@ -29,6 +30,10 @@ export const pageRoutes: PageRoutes = {
   academics: {
     name: "Academics",
     url: "/academics",
+  },
+  computerScienceExperience: {
+    name: "Computer Science Experience",
+    url: "/computer-science-experience",
   },
   coop: {
     name: "Co-op",
