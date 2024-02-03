@@ -14,7 +14,7 @@ import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
 
-export default function PostGrad() {
+export default function FullTime() {
   const pageWidth = useWindowDimensions().width;
   const isMobile = useIsMobile();
 
@@ -55,7 +55,7 @@ export default function PostGrad() {
         heading="How many offers did you decide between? Please enter a number."
         bodyText="More than half of the respondents chose between 1 or 2 offers!">
         <div className={styles.graphContainer}>
-          <PieChart data={F3} {...pieChartProps(isMobile, pageWidth)} />
+          <BarGraphVertical data={F3} {...barGraphProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
@@ -80,7 +80,7 @@ export default function PostGrad() {
         bodyText="For those working outside of Canada, with a majority of them working in the USA, their first-year total compensation is significantly higher than working in Canada. This disparity highlights the competitive nature of the international tech job market and the opportunities available for individuals willing to explore opportunities abroad."
         align="right"
         noBackground>
-        <BarGraphHorizontal data={F6} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
+        <BarGraphVertical data={F6} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper

@@ -1,5 +1,4 @@
 export const F1 = [
-  // TODO: MAKE A WORD CLOUD
   // G5. What company will you be working for post-grad?
   { text: "Adeptmind", value: 1 },
   { text: "Akuna Capital", value: 1 },
@@ -112,7 +111,6 @@ export const F2 = [
 
 export const F3 = [
   {
-    // TODO : Create a Bargraph
     // G7. How many offers did you decide between? Please enter a number. 135
     category: "0",
     value: 58, // 58
