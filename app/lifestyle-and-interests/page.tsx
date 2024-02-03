@@ -21,7 +21,7 @@ export default function LifestyleAndInterests() {
   return (
     <div className={styles.page}>
       <Header />
-      <SectionHeader title="Lifestyle and Interests" subtitle="What did the class of 2022 do in their free time?" />
+      <SectionHeader title="Lifestyle and Interests" subtitle="What did the class of 2023 do in their free time?" />
 
       <ComponentWrapper
         heading="Did you move back home during the beginning of the COVID-19 pandemic?"
