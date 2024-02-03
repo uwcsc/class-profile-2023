@@ -1,53 +1,97 @@
 export const C1 = [
   {
-    category: "Coop",
-    value: 100,
+    category: "Yes",
+    value: 94.8,
   },
   {
-    category: "Regular",
-    value: 0,
+    category: "No",
+    value: 5.2,
   },
 ];
 
 export const C2 = [
   {
-    text: "Pacific NW USA",
-    value: 3,
-  },
-  {
-    text: "West Coast CAN",
-    value: 12,
-  },
-  {
-    text: "Remote",
-    value: 2,
-  },
-  {
-    text: "East Coast Canada",
+    text: "Palo Alto",
     value: 1,
   },
   {
-    text: "Toronto",
-    value: 34,
+    text: "Calgary",
+    value: 2,
   },
   {
-    text: "California",
-    value: 25,
+    text: "Boston",
+    value: 1,
   },
   {
-    text: "East USA",
-    value: 11,
+    text: "Tokyo",
+    value: 1,
   },
   {
-    text: "Waterloo",
-    value: 10,
+    text: "Atlanta",
+    value: 1,
   },
   {
     text: "Chicago",
     value: 1,
   },
   {
-    text: "Tokyo",
+    text: "Kitchener-Waterloo",
+    value: 10,
+  },
+  {
+    text: "Lausanne",
+    value: 1,
+  },
+  {
+    text: "San Francisco",
+    value: 14,
+  },
+  {
+    text: "New York City",
+    value: 30,
+  },
+  {
+    text: "Los Angeles",
+    value: 1,
+  },
+  {
+    text: "Seattle",
+    value: 7,
+  },
+  {
+    text: "Toronto",
+    value: 22,
+  },
+  {
+    text: "Menlo Park",
+    value: 2,
+  },
+  {
+    text: "Vancouver",
+    value: 11,
+  },
+  {
+    text: "San Mateo",
+    value: 3,
+  },
+  {
+    text: "Montreal",
+    value: 3,
+  },
+  {
+    text: "Richmond",
+    value: 1,
+  },
+  {
+    text: "Remote",
+    value: 1,
+  },
+  {
+    text: "Sunnyvale",
+    value: 1,
+  },
+  {
+    text: "Bay Area",
     value: 1,
   },
 ];
@@ -55,691 +99,60 @@ export const C2 = [
 export const C3 = [
   {
     category: "Yes",
-    value: 17,
+    value: 18.7,
   },
   {
     category: "No",
-    value: 83,
+    value: 81.3,
   },
 ];
 
 export const C4 = [
   {
-    text: "Google",
-    value: 14,
+    category: "Yes",
+    value: 6.5,
   },
   {
-    text: "Jane Street",
-    value: 8,
-  },
-  {
-    text: "Meta/Facebook",
-    value: 4,
-  },
-  {
-    text: "Databricks",
-    value: 3,
-  },
-  {
-    text: "HRT",
-    value: 2,
-  },
-  {
-    text: "Cisco Meraki",
-    value: 2,
-  },
-  {
-    text: "Apple",
-    value: 2,
-  },
-  {
-    text: "Datadog",
-    value: 2,
-  },
-  {
-    text: "Shopify",
-    value: 2,
-  },
-  {
-    text: "Stripe",
-    value: 1,
-  },
-  {
-    text: "Citadel",
-    value: 1,
-  },
-  {
-    text: "Faire",
-    value: 1,
-  },
-  {
-    text: "Square",
-    value: 1,
-  },
-  {
-    text: "Salesforce",
-    value: 1,
-  },
-  {
-    text: "Capital One",
-    value: 1,
+    category: "No",
+    value: 93.5,
   },
 ];
 
 export const C5 = [
   {
-    category: "Yes",
-    value: 6,
-  },
-  {
-    category: "No",
-    value: 94,
-  },
-];
-
-export const C6 = [
-  {
     category: "0",
-    value: 92,
+    value: 86,
   },
   {
     category: "1",
-    value: 8,
+    value: 17,
+  },
+  {
+    category: "2",
+    value: 3,
+  },
+  {
+    category: "3",
+    value: 1,
+  },
+  {
+    category: "4",
+    value: 0,
+  },
+  {
+    category: "5+",
+    value: 3,
   },
 ];
 
-export const C7i = [
+export const C6i = [
   [
     {
-      text: "ConsenSys",
-      value: 2,
-    },
-    {
-      text: "Google",
-      value: 4,
-    },
-    {
-      text: "Imagine Communications",
-      value: 2,
-    },
-    {
-      text: "Tricolops Technology Inc",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 1,
-    },
-    {
-      text: "Konrad Group",
-      value: 1,
-    },
-    {
-      text: "DragonAgile",
-      value: 1,
-    },
-    {
-      text: "York Region",
-      value: 1,
-    },
-    {
-      text: "fb",
-      value: 1,
-    },
-    {
-      text: "TD",
-      value: 1,
-    },
-    {
-      text: "Hubdoc",
-      value: 1,
-    },
-    {
-      text: "Dell EMC",
-      value: 1,
-    },
-    {
-      text: "Nokia",
-      value: 1,
-    },
-    {
-      text: "RBC",
-      value: 4,
-    },
-    {
-      text: "Mawer Investment Management",
-      value: 1,
-    },
-    {
-      text: "Jasper",
-      value: 1,
-    },
-    {
-      text: "Clearpath Robotics",
-      value: 1,
-    },
-    {
-      text: "Procom",
-      value: 1,
-    },
-    {
-      text: "CIBC",
-      value: 2,
-    },
-    {
-      text: "Yuan Control Technology",
-      value: 1,
-    },
-    {
-      text: "RiverPay Inc.",
-      value: 1,
-    },
-    {
-      text: "Exiger",
-      value: 1,
-    },
-    {
-      text: "Infrastructure Ontario",
-      value: 1,
-    },
-    {
-      text: "Seismic Software, Inc.",
-      value: 1,
-    },
-    {
-      text: "Encircle Inc.",
-      value: 1,
-    },
-    {
-      text: "IBM",
-      value: 1,
-    },
-    {
-      text: "P&P Optica",
-      value: 1,
-    },
-    {
-      text: "University of Waterloo",
-      value: 2,
-    },
-    {
-      text: "Martello",
-      value: 1,
-    },
-    {
-      text: "Polar",
-      value: 1,
-    },
-    {
-      text: "MCAP",
-      value: 1,
-    },
-    {
-      text: "EQ Bank",
-      value: 1,
-    },
-    {
-      text: "Kinaxis",
-      value: 1,
-    },
-    {
-      text: "CAE",
-      value: 1,
-    },
-    {
-      text: "Computer Talk Technology",
-      value: 1,
-    },
-    {
-      text: "ADP",
-      value: 1,
-    },
-    {
-      text: "Finastra",
-      value: 2,
-    },
-    {
-      text: "reachwebexperts",
-      value: 1,
-    },
-    {
-      text: "Marlena Books",
-      value: 1,
-    },
-    {
-      text: "TeamX Technologies Inc.",
-      value: 1,
-    },
-    {
-      text: "Carego Tek",
-      value: 1,
-    },
-    {
-      text: "Ford",
-      value: 1,
-    },
-    {
-      text: "John Hancock Financial",
-      value: 1,
-    },
-    {
-      text: "Infinera",
-      value: 1,
-    },
-    {
-      text: "SnapCommerce",
-      value: 1,
-    },
-    {
-      text: "Scotiabank",
-      value: 1,
-    },
-    {
-      text: "TD Bank",
-      value: 1,
-    },
-    {
-      text: "Hilti",
-      value: 1,
-    },
-    {
-      text: "NCR",
-      value: 1,
-    },
-    {
-      text: "Microsoft",
-      value: 2,
-    },
-    {
-      text: "Uber ATG",
-      value: 1,
-    },
-    {
-      text: "Connected",
-      value: 1,
-    },
-    {
-      text: "Government of Ontario",
-      value: 1,
-    },
-    {
-      text: "Opentext",
-      value: 1,
-    },
-    {
-      text: "Synqrinus",
-      value: 1,
-    },
-    {
-      text: "PointClickCare",
-      value: 1,
-    },
-    {
-      text: "Flipp",
-      value: 1,
-    },
-    {
-      text: "Bold Commerce",
-      value: 1,
-    },
-    {
-      text: "Honeywell",
-      value: 1,
-    },
-    {
-      text: "Ultimate software",
-      value: 1,
-    },
-    {
-      text: "Symantec",
-      value: 1,
-    },
-    {
-      text: "Innunco Academy",
-      value: 1,
-    },
-    {
-      text: "BlackBerry",
-      value: 1,
-    },
-    {
-      text: "OLG",
-      value: 1,
-    },
-    {
-      text: "Encircle",
-      value: 1,
-    },
-    {
-      text: "YuJa",
-      value: 1,
-    },
-    {
-      text: "WSIB",
-      value: 1,
-    },
-    {
-      text: "NeuroBlot",
-      value: 1,
-    },
-    {
-      text: "Achievers",
-      value: 1,
-    },
-    {
-      text: "Rich media",
-      value: 1,
-    },
-    {
-      text: "Gay Lea",
-      value: 1,
-    },
-    {
-      text: "TD Lab",
-      value: 1,
-    },
-  ],
-  [
-    {
-      text: "League",
-      value: 1,
-    },
-    {
-      text: "Snap Inc.",
-      value: 2,
-    },
-    {
-      text: "Amazon",
-      value: 1,
-    },
-    {
-      text: "Avenza System",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 1,
-    },
-    {
-      text: "Konrad Group",
-      value: 1,
-    },
-    {
-      text: "Arrowstreet Capital",
-      value: 1,
-    },
-    {
-      text: "D2L",
-      value: 1,
-    },
-    {
-      text: "Splunk",
-      value: 1,
-    },
-    {
-      text: "Connected",
-      value: 2,
-    },
-    {
-      text: "ConsenSys",
-      value: 2,
-    },
-    {
-      text: "SideFX",
-      value: 2,
-    },
-    {
-      text: "Tribalscale",
-      value: 1,
-    },
-    {
-      text: "Redfin",
-      value: 1,
-    },
-    {
-      text: "CPP Investment Board",
-      value: 1,
-    },
-    {
-      text: "Jasper",
-      value: 1,
-    },
-    {
-      text: "The Co-operators",
-      value: 1,
-    },
-    {
-      text: "Bdo ",
-      value: 1,
-    },
-    {
-      text: "Novus Health",
-      value: 1,
-    },
-    {
-      text: "KeepTruckin Inc.",
-      value: 1,
-    },
-    {
-      text: "Scotiabank",
-      value: 2,
-    },
-    {
-      text: "Wish",
-      value: 1,
-    },
-    {
-      text: "BMO Capital Markets",
-      value: 1,
-    },
-    {
-      text: "SAP Labs",
-      value: 1,
-    },
-    {
-      text: "Level Home Inc.",
-      value: 1,
-    },
-    {
-      text: "Clearbanc",
-      value: 1,
-    },
-    {
-      text: "Escrypt",
-      value: 1,
-    },
-    {
-      text: "Uber ATG",
-      value: 1,
-    },
-    {
-      text: "TD",
-      value: 1,
-    },
-    {
-      text: "The Cooperators",
-      value: 1,
-    },
-    {
-      text: "NCR",
-      value: 1,
-    },
-    {
-      text: "University of Waterloo",
-      value: 1,
-    },
-    {
-      text: "Loopio",
-      value: 1,
-    },
-    {
-      text: "Blackberry",
-      value: 1,
-    },
-    {
-      text: "Hubdoc",
-      value: 1,
-    },
-    {
-      text: "Ruby",
-      value: 1,
-    },
-    {
-      text: "Clearbridge Mobile",
-      value: 1,
-    },
-    {
-      text: "Kaleidescape",
-      value: 1,
-    },
-    {
-      text: "Yahoo",
-      value: 1,
-    },
-    {
-      text: "CIBC",
-      value: 1,
-    },
-    {
-      text: "Secret Mission Software",
-      value: 1,
-    },
-    {
-      text: "Arup",
-      value: 1,
-    },
-    {
-      text: "Canadian Security Intelligence Service",
-      value: 1,
-    },
-    {
-      text: "Ford",
-      value: 2,
-    },
-    {
-      text: "Google",
-      value: 2,
-    },
-    {
-      text: "Asana",
-      value: 1,
-    },
-    {
-      text: "Shopify",
-      value: 2,
-    },
-    {
-      text: "Shareworks By Morgan Stanley",
-      value: 1,
-    },
-    {
-      text: "Ritual ",
-      value: 1,
-    },
-    {
-      text: "Fleet Complete",
-      value: 1,
-    },
-    {
-      text: "Microsoft",
-      value: 1,
-    },
-    {
-      text: "Rippling",
-      value: 1,
-    },
-    {
-      text: "Nuance Communications",
-      value: 1,
-    },
-    {
-      text: "North",
-      value: 1,
-    },
-    {
-      text: "Intelex",
-      value: 1,
-    },
-    {
-      text: "StackAdapt",
-      value: 1,
-    },
-    {
-      text: "Honeywell",
-      value: 1,
-    },
-    {
-      text: "Ultimate software",
-      value: 1,
-    },
-    {
-      text: "Auvik",
-      value: 1,
-    },
-    {
-      text: "Accedo",
-      value: 1,
-    },
-    {
-      text: "Genesys",
-      value: 1,
-    },
-    {
-      text: "YuJa",
-      value: 1,
-    },
-    {
-      text: "VirtaMove",
-      value: 1,
-    },
-    {
-      text: "LevelJump",
-      value: 1,
-    },
-    {
-      text: "Intel ",
-      value: 1,
-    },
-    {
-      text: "Kenna",
-      value: 1,
-    },
-    {
-      text: "Wattpad",
-      value: 1,
-    },
-  ],
-  [
-    {
-      text: "",
-      value: 35,
-    },
-    {
-      text: "Wish",
-      value: 7,
-    },
-    {
-      text: "Google",
-      value: 5,
-    },
-    {
-      text: "LinkedIn",
-      value: 1,
-    },
-    {
-      text: "Condos.ca",
-      value: 1,
-    },
-    {
-      text: "Hudson River Trading",
-      value: 2,
-    },
-    {
-      text: "IBM",
+      text: "Intelerad Medical Systems",
       value: 1,
     },
     {
-      text: "Jane Street",
+      text: "Formlabs",
       value: 1,
     },
     {
@@ -747,47 +160,187 @@ export const C7i = [
       value: 1,
     },
     {
-      text: "Tableau",
+      text: "Prizm Media",
       value: 1,
     },
     {
-      text: "Postmates",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 1,
-    },
-    {
-      text: "Textnow",
+      text: "TD Bank",
       value: 2,
     },
     {
-      text: "Khazanah Americas Investments",
+      text: "Stealth Monitoring",
       value: 1,
     },
     {
-      text: "Brisk Synerges",
+      text: "Solace",
       value: 1,
     },
     {
-      text: "DarwinAI",
+      text: "EPASS",
       value: 1,
     },
     {
-      text: "HyperPad",
+      text: "Kooltra",
       value: 1,
     },
     {
-      text: "CI Technologies",
+      text: "Rich Media",
       value: 1,
     },
     {
-      text: "Yahoo",
+      text: "ADP",
+      value: 2,
+    },
+    {
+      text: "Super",
       value: 1,
     },
     {
-      text: "Carrot Inc.",
+      text: "Opslevel",
+      value: 1,
+    },
+    {
+      text: "Ritual",
+      value: 1,
+    },
+    {
+      text: "Veeva Systems",
+      value: 1,
+    },
+    {
+      text: "IBM",
+      value: 1,
+    },
+    {
+      text: "Uber ATG",
+      value: 2,
+    },
+    {
+      text: "Deloitte",
+      value: 1,
+    },
+    {
+      text: "Raven Telemetry",
+      value: 1,
+    },
+    {
+      text: "MappelIn Inc",
+      value: 1,
+    },
+    {
+      text: "Toronto Transit Commission",
+      value: 1,
+    },
+    {
+      text: "Ericsson",
+      value: 1,
+    },
+    {
+      text: "Touchdown Education",
+      value: 1,
+    },
+    {
+      text: "Titanium Agency",
+      value: 1,
+    },
+    {
+      text: "Imagine Communications",
+      value: 1,
+    },
+    {
+      text: "Shaw Communications",
+      value: 1,
+    },
+    {
+      text: "CPP Investments",
+      value: 1,
+    },
+    {
+      text: "Purolator",
+      value: 1,
+    },
+    {
+      text: "Osellus Mobile",
+      value: 3,
+    },
+    {
+      text: "The Co-operators General Insurance Company",
+      value: 1,
+    },
+    {
+      text: "Maple Leaf Foods",
+      value: 1,
+    },
+    {
+      text: "Pheedloop",
+      value: 1,
+    },
+    {
+      text: "Deep Trekker",
+      value: 1,
+    },
+    {
+      text: "VL Omni",
+      value: 1,
+    },
+    {
+      text: "AWS",
+      value: 1,
+    },
+    {
+      text: "CIBC",
+      value: 2,
+    },
+    {
+      text: "Ai startup",
+      value: 1,
+    },
+    {
+      text: "Manulife Financial",
+      value: 3,
+    },
+    {
+      text: "ATS",
+      value: 1,
+    },
+    {
+      text: "WorkMarket",
+      value: 1,
+    },
+    {
+      text: "Government of New Brunswick",
+      value: 1,
+    },
+    {
+      text: "Ontario MGCS",
+      value: 1,
+    },
+    {
+      text: "Wish",
+      value: 4,
+    },
+    {
+      text: "Qualcomm",
+      value: 1,
+    },
+    {
+      text: "Hubdoc",
+      value: 2,
+    },
+    {
+      text: "Gore Mutual Insurance",
+      value: 2,
+    },
+    {
+      text: "Watonomous",
+      value: 1,
+    },
+    {
+      text: "Celestica",
+      value: 1,
+    },
+    {
+      text: "Transport Canada",
       value: 1,
     },
     {
@@ -795,35 +348,623 @@ export const C7i = [
       value: 1,
     },
     {
-      text: "Scribd",
+      text: "Finlogik",
       value: 1,
     },
     {
-      text: "TD Asset Management",
+      text: "Bunz",
       value: 1,
     },
     {
-      text: "Facebook",
+      text: "Agriculture and Agri-Food Canada",
       value: 1,
     },
     {
-      text: "Darkvision",
+      text: "Canadian Solar Inc.",
       value: 1,
     },
     {
-      text: "Flipp",
+      text: "Terradatum",
       value: 1,
     },
     {
-      text: "Nvidia",
+      text: "Honeywell",
       value: 1,
     },
     {
-      text: "KitchenMate",
+      text: "RBC",
       value: 1,
     },
     {
-      text: "Local Line",
+      text: "Conrad School of Entrepreneurship",
+      value: 1,
+    },
+    {
+      text: "University of Waterloo",
+      value: 2,
+    },
+    {
+      text: "Instacart",
+      value: 1,
+    },
+    {
+      text: "Infor",
+      value: 1,
+    },
+    {
+      text: "Aterica Digital Health",
+      value: 1,
+    },
+    {
+      text: "Genesys",
+      value: 1,
+    },
+    {
+      text: "Opentext",
+      value: 1,
+    },
+    {
+      text: "Plooto",
+      value: 1,
+    },
+    {
+      text: "NVIDIA",
+      value: 1,
+    },
+    {
+      text: "Statistics Canada",
+      value: 1,
+    },
+    {
+      text: "Flashfood Inc.",
+      value: 1,
+    },
+    {
+      text: "Shopedge Software",
+      value: 1,
+    },
+    {
+      text: "Macdonald Dettwiler and Associates",
+      value: 1,
+    },
+    {
+      text: "The Home Depot",
+      value: 1,
+    },
+    {
+      text: "BlackBerry",
+      value: 1,
+    },
+    {
+      text: "Connected",
+      value: 1,
+    },
+    {
+      text: "eSentire",
+      value: 1,
+    },
+    {
+      text: "Shopper Army",
+      value: 1,
+    },
+    {
+      text: "Amazon",
+      value: 1,
+    },
+    {
+      text: "Emailgistics",
+      value: 1,
+    },
+    {
+      text: "Shaw Communications Inc.",
+      value: 1,
+    },
+    {
+      text: "KGS Research",
+      value: 1,
+    },
+    {
+      text: "Google",
+      value: 1,
+    },
+  ],
+  [
+    {
+      text: "Untether AI",
+      value: 1,
+    },
+    {
+      text: "University of Waterloo",
+      value: 2,
+    },
+    {
+      text: "Shopify",
+      value: 3,
+    },
+    {
+      text: "Wish",
+      value: 7,
+    },
+    {
+      text: "RBC",
+      value: 4,
+    },
+    {
+      text: "AMD",
+      value: 1,
+    },
+    {
+      text: "Thomson Reuters",
+      value: 2,
+    },
+    {
+      text: "Huawei",
+      value: 3,
+    },
+    {
+      text: "Blackberry",
+      value: 2,
+    },
+    {
+      text: "Allstate Canada",
+      value: 1,
+    },
+    {
+      text: "Hubdoc",
+      value: 1,
+    },
+    {
+      text: "Lazer Technologies",
+      value: 1,
+    },
+    {
+      text: "Bronte College",
+      value: 1,
+    },
+    {
+      text: "Intelex Technologies",
+      value: 1,
+    },
+    {
+      text: "Microsoft",
+      value: 1,
+    },
+    {
+      text: "Uber",
+      value: 2,
+    },
+    {
+      text: "Snaptravel",
+      value: 1,
+    },
+    {
+      text: "Hockeystick",
+      value: 1,
+    },
+    {
+      text: "DigitalEd",
+      value: 1,
+    },
+    {
+      text: "Canada Revenue Agency",
+      value: 1,
+    },
+    {
+      text: "Kaleidescape",
+      value: 1,
+    },
+    {
+      text: "Tesla",
+      value: 1,
+    },
+    {
+      text: "Titanium Agency",
+      value: 2,
+    },
+    {
+      text: "Enlighted Inc",
+      value: 1,
+    },
+    {
+      text: "Squarepoint Capital",
+      value: 1,
+    },
+    {
+      text: "Curvegrid",
+      value: 1,
+    },
+    {
+      text: "PointClickCare",
+      value: 1,
+    },
+    {
+      text: "ContextLogic",
+      value: 2,
+    },
+    {
+      text: "Statistics Canada",
+      value: 1,
+    },
+    {
+      text: "RewardOps",
+      value: 1,
+    },
+    {
+      text: "Deloitte",
+      value: 1,
+    },
+    {
+      text: "Secret Mission Software",
+      value: 1,
+    },
+    {
+      text: "IBM",
+      value: 1,
+    },
+    {
+      text: "Evidence Partners",
+      value: 1,
+    },
+    {
+      text: "Remitbee",
+      value: 1,
+    },
+    {
+      text: "Wealthsimple",
+      value: 1,
+    },
+    {
+      text: "Onsemi",
+      value: 1,
+    },
+    {
+      text: "Cognitive Systems",
+      value: 1,
+    },
+    {
+      text: "TD Securities",
+      value: 1,
+    },
+    {
+      text: "Doppl Inc",
+      value: 1,
+    },
+    {
+      text: "Traderev",
+      value: 1,
+    },
+    {
+      text: "NPX",
+      value: 1,
+    },
+    {
+      text: "ROSS intelligence",
+      value: 1,
+    },
+    {
+      text: "Co-operators",
+      value: 3,
+    },
+    {
+      text: "Plangrid",
+      value: 1,
+    },
+    {
+      text: "Via Rail",
+      value: 1,
+    },
+    {
+      text: "Bluescape",
+      value: 1,
+    },
+    {
+      text: "Bloomberg",
+      value: 1,
+    },
+    {
+      text: "Kinaxis ",
+      value: 1,
+    },
+    {
+      text: "RadComm Systems",
+      value: 1,
+    },
+    {
+      text: "Terradatum",
+      value: 1,
+    },
+    {
+      text: "Honeywell",
+      value: 1,
+    },
+    {
+      text: "Tealbook",
+      value: 1,
+    },
+    {
+      text: "Loblaws",
+      value: 1,
+    },
+    {
+      text: "SAP",
+      value: 1,
+    },
+    {
+      text: "TradeRev",
+      value: 1,
+    },
+    {
+      text: "Wayfair",
+      value: 1,
+    },
+    {
+      text: "HyAlto",
+      value: 1,
+    },
+    {
+      text: "Ontario Institute of Cancer Research",
+      value: 1,
+    },
+    {
+      text: "Government of Canada",
+      value: 1,
+    },
+    {
+      text: "hyperPad",
+      value: 1,
+    },
+    {
+      text: "Manulife",
+      value: 1,
+    },
+    {
+      text: "Beeshop Solutions",
+      value: 1,
+    },
+    {
+      text: "ODAIA",
+      value: 1,
+    },
+    {
+      text: "Designware ",
+      value: 1,
+    },
+    {
+      text: "Kooltra",
+      value: 1,
+    },
+    {
+      text: "Zenreach",
+      value: 1,
+    },
+    {
+      text: "hitplay",
+      value: 1,
+    },
+    {
+      text: "Zenreach",
+      value: 1,
+    },
+    {
+      text: "TunnelBear",
+      value: 1,
+    },
+    {
+      text: "ThoughtWire",
+      value: 1,
+    },
+    {
+      text: "KGS Research",
+      value: 1,
+    },
+    {
+      text: "Social Capital",
+      value: 1,
+    },
+  ],
+  [
+    {
+      text: "",
+      value: 43,
+    },
+    {
+      text: "Google",
+      value: 3,
+    },
+    {
+      text: "FreeBSD Foundation",
+      value: 1,
+    },
+    {
+      text: "Shopify",
+      value: 3,
+    },
+    {
+      text: "FISPAN",
+      value: 1,
+    },
+    {
+      text: "Ecobee",
+      value: 2,
+    },
+    {
+      text: "AMD",
+      value: 1,
+    },
+    {
+      text: "University of Alberta",
+      value: 1,
+    },
+    {
+      text: "Paphus Solutions",
+      value: 1,
+    },
+    {
+      text: "Achievers",
+      value: 3,
+    },
+    {
+      text: "Allstate Canada",
+      value: 1,
+    },
+    {
+      text: "Wish",
+      value: 7,
+    },
+    {
+      text: "Hubhead",
+      value: 1,
+    },
+    {
+      text: "Teleport",
+      value: 1,
+    },
+    {
+      text: "Fundserv",
+      value: 1,
+    },
+    {
+      text: "Intelex Technologies",
+      value: 1,
+    },
+    {
+      text: "Side Effects",
+      value: 1,
+    },
+    {
+      text: "Adeptmind",
+      value: 1,
+    },
+    {
+      text: "Lumafield",
+      value: 1,
+    },
+    {
+      text: "Hockeystick",
+      value: 2,
+    },
+    {
+      text: "Roscience",
+      value: 1,
+    },
+    {
+      text: "Miovision Technologies",
+      value: 1,
+    },
+    {
+      text: "Ford",
+      value: 3,
+    },
+    {
+      text: "OMERS",
+      value: 1,
+    },
+    {
+      text: "TQ Tezos",
+      value: 1,
+    },
+    {
+      text: "Titanium Agency",
+      value: 2,
+    },
+    {
+      text: "Yext",
+      value: 1,
+    },
+    {
+      text: "AWS",
+      value: 1,
+    },
+    {
+      text: "Coinbase",
+      value: 1,
+    },
+    {
+      text: "Geotab",
+      value: 1,
+    },
+    {
+      text: "FairVentures Lab",
+      value: 1,
+    },
+    {
+      text: "Setter/Thumbtack",
+      value: 1,
+    },
+    {
+      text: "DarwinAI",
+      value: 1,
+    },
+    {
+      text: "Citadel Securities",
+      value: 1,
+    },
+    {
+      text: "University of Waterloo",
+      value: 1,
+    },
+    {
+      text: "Tryosoft",
+      value: 1,
+    },
+    {
+      text: "Huawei",
+      value: 2,
+    },
+    {
+      text: "Big Blue Bubble",
+      value: 1,
+    },
+    {
+      text: "National Bank of Canada",
+      value: 1,
+    },
+    {
+      text: "Pronti AI",
+      value: 2,
+    },
+    {
+      text: "Nuvalence",
+      value: 1,
+    },
+    {
+      text: "Paravision",
+      value: 1,
+    },
+    {
+      text: "hyperPad",
+      value: 1,
+    },
+    {
+      text: "Intact",
+      value: 1,
+    },
+    {
+      text: "Heymarket",
+      value: 1,
+    },
+    {
+      text: "Kinaxis",
+      value: 1,
+    },
+    {
+      text: "ContextLogic",
+      value: 2,
+    },
+    {
+      text: "RadComm Systems",
+      value: 1,
+    },
+    {
+      text: "MDA (MacDonald Dettwiler and Associates)",
+      value: 1,
+    },
+    {
+      text: "Textnow",
+      value: 1,
+    },
+    {
+      text: "Faire",
       value: 1,
     },
     {
@@ -835,665 +976,23 @@ export const C7i = [
       value: 1,
     },
     {
-      text: "Behaviour Interactive",
-      value: 1,
-    },
-    {
-      text: "DNAstack",
-      value: 1,
-    },
-    {
-      text: "Uken Games",
-      value: 2,
-    },
-    {
-      text: "Deloitte",
-      value: 1,
-    },
-    {
-      text: "Huawei",
-      value: 2,
-    },
-    {
-      text: "Inscopix",
-      value: 1,
-    },
-    {
-      text: "Ultimate software",
-      value: 1,
-    },
-    {
-      text: "Pixlee",
-      value: 1,
-    },
-    {
-      text: "Uber ATG",
-      value: 2,
-    },
-    {
-      text: "Splunk",
-      value: 1,
-    },
-    {
-      text: "Kofax",
-      value: 1,
-    },
-    {
-      text: "Circle Internet Financial",
-      value: 1,
-    },
-    {
-      text: "Birch Hill Equity",
-      value: 1,
-    },
-    {
-      text: "Thomson Reuters",
-      value: 1,
-    },
-    {
-      text: "Faire",
-      value: 2,
-    },
-    {
-      text: "Ops Level",
-      value: 1,
-    },
-    {
-      text: "Asana",
-      value: 1,
-    },
-    {
-      text: "Cooperators",
-      value: 1,
-    },
-    {
-      text: "Salesforce",
-      value: 1,
-    },
-    {
-      text: "Arctic Wolf",
-      value: 1,
-    },
-    {
-      text: "Loblaw Digital",
-      value: 1,
-    },
-    {
-      text: "Shopify",
-      value: 1,
-    },
-    {
-      text: "Bluescape",
-      value: 1,
-    },
-    {
-      text: "BlackBerry",
-      value: 1,
-    },
-    {
-      text: "Manulife",
-      value: 1,
-    },
-    {
-      text: "Curvegrid",
-      value: 1,
-    },
-    {
-      text: "Kenna",
-      value: 1,
-    },
-    {
-      text: "Wish ",
-      value: 1,
-    },
-  ],
-  [
-    {
-      text: "Shopify",
-      value: 3,
-    },
-    {
-      text: "Riot Games",
-      value: 2,
-    },
-    {
-      text: "Wish",
-      value: 5,
-    },
-    {
-      text: "Bloomberg",
-      value: 2,
-    },
-    {
-      text: "Jane Street",
-      value: 2,
-    },
-    {
-      text: "ServiceNow",
-      value: 1,
-    },
-    {
-      text: "Hudson River Trading",
-      value: 1,
-    },
-    {
-      text: "Electronic Arts",
-      value: 1,
-    },
-    {
-      text: "data.world",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 1,
-    },
-    {
-      text: "Google",
-      value: 4,
-    },
-    {
-      text: "Boosted.ai",
-      value: 1,
-    },
-    {
       text: "Amazon",
       value: 1,
     },
     {
-      text: "Akasha Imaging",
+      text: "Seatgeek",
       value: 1,
     },
     {
-      text: "Together software ",
+      text: "Geminare",
       value: 1,
     },
     {
-      text: "Rocket Innovation Studio",
+      text: "Bespoke Metrics",
       value: 1,
     },
     {
-      text: "Wise Systems",
-      value: 1,
-    },
-    {
-      text: "Veeva systems",
-      value: 1,
-    },
-    {
-      text: "University of Waterloo",
-      value: 3,
-    },
-    {
-      text: "Manulife Financial",
-      value: 1,
-    },
-    {
-      text: "Virtek Vision",
-      value: 1,
-    },
-    {
-      text: "1Password",
-      value: 1,
-    },
-    {
-      text: "Side Effects Software",
-      value: 1,
-    },
-    {
-      text: "KitchenMate",
-      value: 1,
-    },
-    {
-      text: "NerdWallet",
-      value: 1,
-    },
-    {
-      text: "Later",
-      value: 1,
-    },
-    {
-      text: "SAP",
-      value: 2,
-    },
-    {
-      text: "Uken Games ",
-      value: 1,
-    },
-    {
-      text: "Process Fusion ",
-      value: 1,
-    },
-    {
-      text: "ZeMind Game Studio",
-      value: 1,
-    },
-    {
-      text: "Capital one",
-      value: 1,
-    },
-    {
-      text: "Apple",
-      value: 2,
-    },
-    {
-      text: "Ultimate software",
-      value: 1,
-    },
-    {
-      text: "Pencil Learning Technologies",
-      value: 1,
-    },
-    {
-      text: "Uber ATG",
-      value: 1,
-    },
-    {
-      text: "Virtu Financial",
-      value: 1,
-    },
-    {
-      text: "GTS",
-      value: 1,
-    },
-    {
-      text: "Nvidia",
-      value: 1,
-    },
-    {
-      text: "Coherent Logix",
-      value: 1,
-    },
-    {
-      text: "Property.ca",
-      value: 1,
-    },
-    {
-      text: "Thomson Reuters",
-      value: 1,
-    },
-    {
-      text: "Faire",
-      value: 1,
-    },
-    {
-      text: "Omers",
-      value: 1,
-    },
-    {
-      text: "Coinbase",
-      value: 1,
-    },
-    {
-      text: "Loblaw Digital",
-      value: 1,
-    },
-    {
-      text: "BitGo",
-      value: 1,
-    },
-    {
-      text: "Twitch",
-      value: 1,
-    },
-    {
-      text: "Appficiency",
-      value: 1,
-    },
-    {
-      text: "Auvik",
-      value: 1,
-    },
-    {
-      text: "RBC",
-      value: 1,
-    },
-    {
-      text: "Huawei",
-      value: 1,
-    },
-    {
-      text: "Curvegrid",
-      value: 1,
-    },
-    {
-      text: "Sheertex",
-      value: 1,
-    },
-    {
-      text: "Tucows",
-      value: 1,
-    },
-    {
-      text: "Shopify ",
-      value: 1,
-    },
-  ],
-  [
-    {
-      text: "Riot Games",
-      value: 1,
-    },
-    {
-      text: "Google",
-      value: 4,
-    },
-    {
-      text: "LinkedIn",
-      value: 2,
-    },
-    {
-      text: "Bloomberg",
-      value: 4,
-    },
-    {
-      text: "Jane Street",
-      value: 4,
-    },
-    {
-      text: "Lyft",
-      value: 1,
-    },
-    {
-      text: "Amazon",
-      value: 6,
-    },
-    {
-      text: "NVIDIA",
-      value: 2,
-    },
-    {
-      text: "Facebook",
-      value: 5,
-    },
-    {
-      text: "Twitch",
-      value: 1,
-    },
-    {
-      text: "Akasha Imaging",
-      value: 1,
-    },
-    {
-      text: "Honey",
-      value: 1,
-    },
-    {
-      text: "A thinking ape",
-      value: 1,
-    },
-    {
-      text: "Opal",
-      value: 1,
-    },
-    {
-      text: "Salesforce Inc.",
-      value: 1,
-    },
-    {
-      text: "Lifion",
-      value: 1,
-    },
-    {
-      text: "The Co-operators",
-      value: 1,
-    },
-    {
-      text: "Microsoft Research",
-      value: 1,
-    },
-    {
-      text: "HomeX Labs",
-      value: 1,
-    },
-    {
-      text: "Wish",
-      value: 1,
-    },
-    {
-      text: "1Password",
-      value: 2,
-    },
-    {
-      text: "Hudson River Trading",
-      value: 1,
-    },
-    {
-      text: "StackAdapt",
-      value: 1,
-    },
-    {
-      text: "NerdWallet",
-      value: 1,
-    },
-    {
-      text: "Autodesk",
-      value: 1,
-    },
-    {
-      text: "Cerebras",
-      value: 1,
-    },
-    {
-      text: "IBM",
-      value: 1,
-    },
-    {
-      text: "Carrot",
-      value: 1,
-    },
-    {
-      text: "Capital One",
-      value: 1,
-    },
-    {
-      text: "Snowflake",
-      value: 1,
-    },
-    {
-      text: "Coffee Meets Bagel",
-      value: 1,
-    },
-    {
-      text: "Tophatter",
-      value: 2,
-    },
-    {
-      text: "Cisco Meraki",
-      value: 1,
-    },
-    {
-      text: "GTS",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 1,
-    },
-    {
-      text: "Arctic Wolf ",
-      value: 1,
-    },
-    {
-      text: "Meta",
-      value: 2,
-    },
-    {
-      text: "D2L",
-      value: 1,
-    },
-    {
-      text: "Yugabyte",
-      value: 1,
-    },
-    {
-      text: "Vidyard",
-      value: 1,
-    },
-    {
-      text: "Datadog",
-      value: 2,
-    },
-    {
-      text: "Wave",
-      value: 1,
-    },
-    {
-      text: "RBC",
-      value: 1,
-    },
-    {
-      text: "Research group at uWaterloo",
-      value: 1,
-    },
-    {
-      text: "Lyft Inc",
-      value: 1,
-    },
-    {
-      text: "Thomson Reuters",
-      value: 1,
-    },
-  ],
-  [
-    {
-      text: "Lyft",
-      value: 1,
-    },
-    {
-      text: "Noom Inc.",
-      value: 2,
-    },
-    {
-      text: "Facebook",
-      value: 3,
-    },
-    {
-      text: "Whist",
-      value: 1,
-    },
-    {
-      text: "Jane Street",
-      value: 4,
-    },
-    {
-      text: "Databricks",
-      value: 2,
-    },
-    {
-      text: "Meta",
-      value: 4,
-    },
-    {
-      text: "Tableau",
-      value: 1,
-    },
-    {
-      text: "Bloomberg",
-      value: 2,
-    },
-    {
-      text: "YouTube",
-      value: 1,
-    },
-    {
-      text: "Boosted.ai",
-      value: 1,
-    },
-    {
-      text: "Citadel",
-      value: 3,
-    },
-    {
-      text: "Akasha Imaging",
-      value: 1,
-    },
-    {
-      text: "PayPal",
-      value: 1,
-    },
-    {
-      text: "Nvidia",
-      value: 1,
-    },
-    {
-      text: "Yugabyte",
-      value: 2,
-    },
-    {
-      text: "Carrot Inc.",
-      value: 1,
-    },
-    {
-      text: "Twitter",
-      value: 1,
-    },
-    {
-      text: "Hudson River Trading",
-      value: 1,
-    },
-    {
-      text: "GTS",
-      value: 1,
-    },
-    {
-      text: "Tesla",
-      value: 1,
-    },
-    {
-      text: "BitGo",
-      value: 1,
-    },
-    {
-      text: "CSE",
-      value: 1,
-    },
-    {
-      text: "Voiceflow",
-      value: 1,
-    },
-    {
-      text: "Adentro",
-      value: 1,
-    },
-    {
-      text: "Verkada",
-      value: 1,
-    },
-    {
-      text: "stackadapt",
-      value: 1,
-    },
-    {
-      text: "Datadog",
-      value: 2,
-    },
-    {
-      text: "EA",
-      value: 1,
-    },
-    {
-      text: "Soundhound",
-      value: 1,
-    },
-    {
-      text: "Wish",
-      value: 2,
-    },
-    {
-      text: "BetterUp",
-      value: 1,
-    },
-    {
-      text: "Instagram",
-      value: 1,
-    },
-    {
-      text: "Faire",
-      value: 1,
-    },
-    {
-      text: "Shopify",
+      text: "Christie Digital Systems",
       value: 1,
     },
     {
@@ -1501,100 +1000,950 @@ export const C7i = [
       value: 1,
     },
     {
+      text: "BDO",
+      value: 1,
+    },
+    {
+      text: "PointClickCare",
+      value: 1,
+    },
+    {
+      text: "Xero",
+      value: 1,
+    },
+    {
+      text: "Untether.Ai",
+      value: 1,
+    },
+    {
+      text: "Betstamp",
+      value: 1,
+    },
+    {
+      text: "TD Asset Management",
+      value: 1,
+    },
+    {
+      text: "KPMG LLP",
+      value: 1,
+    },
+    {
+      text: "Clearco",
+      value: 1,
+    },
+    {
+      text: "Hudson River Trading",
+      value: 1,
+    },
+    {
+      text: "BinSentry",
+      value: 1,
+    },
+    {
+      text: "Kooltra",
+      value: 1,
+    },
+    {
+      text: "WorkMarket",
+      value: 1,
+    },
+    {
+      text: "Farm Business Consultants",
+      value: 1,
+    },
+    {
+      text: "Manulife",
+      value: 1,
+    },
+  ],
+  [
+    {
+      text: "",
+      value: 44,
+    },
+    {
+      text: "Facebook",
+      value: 4,
+    },
+    {
+      text: "NVIDIA",
+      value: 4,
+    },
+    {
+      text: "Bloomberg",
+      value: 1,
+    },
+    {
+      text: "PagerDuty",
+      value: 2,
+    },
+    {
+      text: "Vector Institute",
+      value: 1,
+    },
+    {
+      text: "SSENSE",
+      value: 1,
+    },
+    {
       text: "Salesforce",
+      value: 2,
+    },
+    {
+      text: "Lifion by ADP",
+      value: 1,
+    },
+    {
+      text: "Google",
+      value: 4,
+    },
+    {
+      text: "Meta",
+      value: 2,
+    },
+    {
+      text: "IBM Extreme Blue",
+      value: 1,
+    },
+    {
+      text: "Coursera",
+      value: 1,
+    },
+    {
+      text: "Wish",
+      value: 5,
+    },
+    {
+      text: "Adeptmind",
+      value: 1,
+    },
+    {
+      text: "Roblox",
+      value: 1,
+    },
+    {
+      text: "Tangam Systems",
+      value: 1,
+    },
+    {
+      text: "Arctic Wolf Networks",
+      value: 1,
+    },
+    {
+      text: "University of Waterloo",
+      value: 3,
+    },
+    {
+      text: "GTS",
+      value: 1,
+    },
+    {
+      text: "Thomson Reuters",
+      value: 2,
+    },
+    {
+      text: "Tesla",
+      value: 1,
+    },
+    {
+      text: "KPMG",
+      value: 1,
+    },
+    {
+      text: "Autodesk Research",
+      value: 1,
+    },
+    {
+      text: "Splunk",
+      value: 3,
+    },
+    {
+      text: "Dropbox",
+      value: 1,
+    },
+    {
+      text: "Polychain",
+      value: 1,
+    },
+    {
+      text: "Alloy",
+      value: 1,
+    },
+    {
+      text: "Snowflake",
+      value: 1,
+    },
+    {
+      text: "Amazon",
+      value: 3,
+    },
+    {
+      text: "Snaptravel",
+      value: 1,
+    },
+    {
+      text: "Shopify",
+      value: 1,
+    },
+    {
+      text: "Hudson River Trading",
+      value: 1,
+    },
+    {
+      text: "SAP",
+      value: 2,
+    },
+    {
+      text: "LCBO",
+      value: 1,
+    },
+    {
+      text: "Huawei",
+      value: 1,
+    },
+    {
+      text: "Equitable Life",
+      value: 1,
+    },
+    {
+      text: "Uber",
+      value: 1,
+    },
+    {
+      text: "Scale AI",
+      value: 1,
+    },
+    {
+      text: "Department of National Defense",
+      value: 1,
+    },
+    {
+      text: "Certik",
+      value: 1,
+    },
+    {
+      text: "Faire",
+      value: 2,
+    },
+    {
+      text: "Replicant",
+      value: 1,
+    },
+    {
+      text: "Playstation",
+      value: 1,
+    },
+    {
+      text: "Squarepoint Capital",
+      value: 1,
+    },
+    {
+      text: "Yugabyte",
+      value: 1,
+    },
+    {
+      text: "Twitch",
+      value: 1,
+    },
+    {
+      text: "Citadel",
+      value: 1,
+    },
+    {
+      text: "Cisco Meraki",
+      value: 1,
+    },
+    {
+      text: "Vertica",
+      value: 1,
+    },
+    {
+      text: "Nuvalence",
+      value: 1,
+    },
+    {
+      text: "Snap",
+      value: 1,
+    },
+    {
+      text: "Boosted.AI",
+      value: 1,
+    },
+    {
+      text: "Achievers",
+      value: 3,
+    },
+    {
+      text: "DarwinAi ",
+      value: 1,
+    },
+    {
+      text: "Morgan Stanley",
+      value: 1,
+    },
+    {
+      text: "Siemens",
+      value: 1,
+    },
+    {
+      text: "Boston Consulting Group",
+      value: 1,
+    },
+    {
+      text: "Wonolo",
+      value: 1,
+    },
+    {
+      text: "Ramp",
+      value: 1,
+    },
+    {
+      text: "Wattpad",
+      value: 1,
+    },
+    {
+      text: "Baseline",
+      value: 1,
+    },
+    {
+      text: "Clearbanc",
+      value: 1,
+    },
+    {
+      text: "Atolio Inc.",
+      value: 1,
+    },
+    {
+      text: "Riot Games",
+      value: 1,
+    },
+  ],
+  [
+    {
+      text: "SBX Robotics",
+      value: 1,
+    },
+    {
+      text: "",
+      value: 47,
+    },
+    {
+      text: "Mattermost",
+      value: 1,
+    },
+    {
+      text: "Databricks",
+      value: 2,
+    },
+    {
+      text: "Twitter",
+      value: 1,
+    },
+    {
+      text: "Snowflake",
+      value: 4,
+    },
+    {
+      text: "University of Waterloo",
+      value: 2,
+    },
+    {
+      text: "Datadog",
+      value: 1,
+    },
+    {
+      text: "Meta",
+      value: 13,
+    },
+    {
+      text: "Lyft",
+      value: 1,
+    },
+    {
+      text: "Citadel Securities",
+      value: 1,
+    },
+    {
+      text: "Robinhood",
+      value: 2,
+    },
+    {
+      text: "Wish",
+      value: 1,
+    },
+    {
+      text: "Waabi",
+      value: 1,
+    },
+    {
+      text: "Adeptmind",
+      value: 1,
+    },
+    {
+      text: "Amazon",
+      value: 5,
+    },
+    {
+      text: "American Express",
+      value: 1,
+    },
+    {
+      text: "Microsoft",
+      value: 1,
+    },
+    {
+      text: "Vercada",
+      value: 1,
+    },
+    {
+      text: "GTS",
+      value: 2,
+    },
+    {
+      text: "Rippling",
+      value: 2,
+    },
+    {
+      text: "Citadel",
+      value: 2,
+    },
+    {
+      text: "Jane Street",
+      value: 1,
+    },
+    {
+      text: "Arctic Wolf",
+      value: 1,
+    },
+    {
+      text: "Whatnot",
+      value: 1,
+    },
+    {
+      text: "Gem Software",
+      value: 1,
+    },
+    {
+      text: "NVIDIA",
+      value: 3,
+    },
+    {
+      text: "Shopify",
+      value: 1,
+    },
+    {
+      text: "Jane Street Capital",
+      value: 1,
+    },
+    {
+      text: "Uber",
+      value: 1,
+    },
+    {
+      text: "Squarepoint Capital",
+      value: 1,
+    },
+    {
+      text: "Akuna Capital",
+      value: 1,
+    },
+    {
+      text: "RideCo",
+      value: 1,
+    },
+    {
+      text: "Zynga",
+      value: 1,
+    },
+    {
+      text: "Replicant",
+      value: 1,
+    },
+    {
+      text: "ZeMind Studios",
+      value: 1,
+    },
+    {
+      text: "Stripe",
+      value: 1,
+    },
+    {
+      text: "Doordash",
+      value: 1,
+    },
+    {
+      text: "Yugabyte",
+      value: 1,
+    },
+    {
+      text: "Lifion by ADP",
+      value: 2,
+    },
+    {
+      text: "Scale AI",
+      value: 1,
+    },
+    {
+      text: "Snap",
+      value: 1,
+    },
+    {
+      text: "Huawei",
+      value: 1,
+    },
+    {
+      text: "Emmetros Inc",
+      value: 1,
+    },
+    {
+      text: "HRT",
+      value: 1,
+    },
+    {
+      text: "Noom",
+      value: 1,
+    },
+    {
+      text: "Bitgo",
+      value: 1,
+    },
+    {
+      text: "Apple",
+      value: 1,
+    },
+    {
+      text: "1Password",
+      value: 1,
+    },
+    {
+      text: "Opal",
+      value: 1,
+    },
+    {
+      text: "Faire",
+      value: 1,
+    },
+    {
+      text: "Enzuzo Inc.",
+      value: 1,
+    },
+    {
+      text: "OANDA",
+      value: 1,
+    },
+    {
+      text: "Shaw Communications",
+      value: 1,
+    },
+    {
+      text: "LinkedIn",
+      value: 1,
+    },
+    {
+      text: "Instabase",
+      value: 1,
+    },
+  ],
+  [
+    {
+      text: "",
+      value: 75,
+    },
+    {
+      text: "Rippling",
+      value: 2,
+    },
+    {
+      text: "Meta",
+      value: 5,
+    },
+    {
+      text: "IMC Trading",
+      value: 1,
+    },
+    {
+      text: "Jane Street",
+      value: 2,
+    },
+    {
+      text: "Snap",
+      value: 2,
+    },
+    {
+      text: "Ecole Polytechnique Federale de Lausanne",
+      value: 1,
+    },
+    {
+      text: "ASAPP",
+      value: 1,
+    },
+    {
+      text: "Datadog",
+      value: 3,
+    },
+    {
+      text: "Stripe",
+      value: 2,
+    },
+    {
+      text: "Gem",
+      value: 1,
+    },
+    {
+      text: "Bloomberg",
+      value: 4,
+    },
+    {
+      text: "IMC",
+      value: 1,
+    },
+    {
+      text: "Amazon",
+      value: 6,
+    },
+    {
+      text: "Uber",
+      value: 1,
+    },
+    {
+      text: "Waabi",
+      value: 2,
+    },
+    {
+      text: "Contrary",
+      value: 1,
+    },
+    {
+      text: "Verkada",
+      value: 1,
+    },
+    {
+      text: "Eden Industries",
+      value: 1,
+    },
+    {
+      text: "Shopify",
+      value: 1,
+    },
+    {
+      text: "University of Waterloo",
+      value: 2,
+    },
+    {
+      text: "Capital One",
+      value: 1,
+    },
+    {
+      text: "Ecobee",
+      value: 1,
+    },
+    {
+      text: "Octant Blo",
+      value: 1,
+    },
+    {
+      text: "RideCo",
+      value: 1,
+    },
+    {
+      text: "Noom",
+      value: 1,
+    },
+    {
+      text: "Tactic Studios",
+      value: 1,
+    },
+    {
+      text: "Akuna Capital",
+      value: 2,
+    },
+    {
+      text: "Citadel",
+      value: 1,
+    },
+    {
+      text: "Robinhood",
+      value: 1,
+    },
+    {
+      text: "Google",
+      value: 1,
+    },
+    {
+      text: "Faire",
+      value: 1,
+    },
+    {
+      text: "Databricks",
+      value: 1,
+    },
+    {
+      text: "Peritus.ai",
+      value: 1,
+    },
+    {
+      text: "Cruise",
+      value: 1,
+    },
+    {
+      text: "LinkedIn",
+      value: 1,
+    },
+    {
+      text: "CIBC",
+      value: 1,
+    },
+    {
+      text: "Splunk",
+      value: 1,
+    },
+    {
+      text: "Riot Games",
+      value: 1,
+    },
+    {
+      text: "Intuit",
+      value: 1,
+    },
+    {
+      text: "Level",
       value: 1,
     },
   ],
 ];
 
-export const C7ii = {
+export const C6ii = {
   xValues: ["1", "2", "3", "4", "5", "6"],
   lines: [
     {
-      label: "Waterloo",
-      yValues: [22.1, 18.1, 16.9, 2.6, 1.3, 3.6],
+      label: "Kitchener/Waterloo",
+      yValues: [21.4, 11.2, 6, 5.3, 6.1, 6.3],
     },
     {
-      label: "Toronto",
-      yValues: [50.2, 48.2, 30.4, 7, 4, 3.6],
+      label: "GTA/Toronto",
+      yValues: [49.1, 29.9, 12.1, 9.6, 7.9, 8.8],
     },
     {
       label: "Remote",
-      yValues: [7.4, 4.8, 4.8, 82.1, 80.5, 73.2],
+      yValues: [8, 34.6, 65.5, 71.9, 41.2, 26.3],
     },
     {
-      label: "USA (California, Washington, New York)",
-      yValues: [8.4, 18.1, 35, 0, 5.2, 17.9],
+      label: "USA",
+      yValues: [3.6, 11.2, 7.8, 8.8, 37.7, 53.8],
+    },
+    {
+      label: "Other",
+      yValues: [17.9, 13.1, 8.6, 4.4, 7.1, 4.8],
     },
   ],
 };
 
-export const C7iii = [
+export const C6iii = [
+  [
+    { text: "Backend", value: 21 },
+    { text: "QA", value: 5 },
+    { text: "IT", value: 1 },
+    { text: "ISA", value: 1 },
+    { text: "QA", value: 5 },
+    { text: "Testing", value: 2 },
+    { text: "Full-Stack", value: 36 },
+    { text: "DevOps", value: 4 },
+    { text: "Social Media Specialist", value: 1 },
+    { text: "Frontend", value: 13 },
+    { text: "Quant", value: 1 },
+    { text: "Mobile", value: 4 },
+    { text: "RPA Development", value: 1 },
+    { text: "SEO", value: 1 },
+    { text: "Toolset Developer", value: 1 },
+    { text: "Quality Engineering", value: 1 },
+    { text: "Firmware", value: 1 },
+    { text: "Research", value: 1 },
+    { text: "BETS Program", value: 1 },
+    { text: "QA Engineering", value: 2 },
+    { text: "Survey Programmer", value: 1 },
+    { text: "Research Assistant", value: 1 },
+  ],
+  [
+    { text: "Backend", value: 28 },
+    { text: "Mobile", value: 3 },
+    { text: "Kernel Development", value: 2 },
+    { text: "ISA", value: 1 },
+    { text: "Firmware Tooling", value: 1 },
+    { text: "Data Engineering", value: 4 },
+    { text: "Full-Stack", value: 35 },
+    { text: "QA Automation", value: 1 },
+    { text: "Frontend", value: 11 },
+    { text: "Research Assistant", value: 2 },
+    { text: "Venture Capital", value: 1 },
+    { text: "Data Science", value: 9 },
+    { text: "Machine Learning Researcher", value: 1 },
+    { text: "Unrelated", value: 1 },
+    { text: "Automated Testing Engineer", value: 1 },
+    { text: "Survey Programmer", value: 1 },
+  ],
+  [
+    { text: "Backend", value: 37 },
+    { text: "Mobile", value: 6 },
+    { text: "Software Developer", value: 1 },
+    { text: "Systems Development", value: 1 },
+    { text: "DevOps", value: 3 },
+    { text: "Data Engineering", value: 1 },
+    { text: "Full-Stack", value: 30 },
+    { text: "Production Engineer", value: 1 },
+    { text: "Blockchain", value: 1 },
+    { text: "Frontend", value: 5 },
+    { text: "Research", value: 2 },
+    { text: "Firmware", value: 1 },
+    { text: "BI Programmer", value: 1 },
+    { text: "Research Assistant", value: 1 },
+    { text: "Designer", value: 1 },
+    { text: "Data Science", value: 4 },
+    { text: "Framework Development", value: 1 },
+    { text: "Data Engineer", value: 1 },
+    { text: "AI", value: 1 },
+    { text: "C++ Developer", value: 1 },
+  ],
+  [
+    { text: "Backend", value: 31 },
+    { text: "Mobile", value: 6 },
+    { text: "Databases", value: 1 },
+    { text: "Systems Development", value: 1 },
+    { text: "Product Management", value: 1 },
+    { text: "Research", value: 1 },
+    { text: "Full-Stack", value: 28 },
+    { text: "Cyber Security", value: 2 },
+    { text: "Firmware Tooling", value: 1 },
+    { text: "Frontend", value: 7 },
+    { text: "Software Consulting", value: 1 },
+    { text: "Quantitative Development", value: 1 },
+    { text: "Game Development", value: 1 },
+    { text: "Research Assistant", value: 2 },
+    { text: "Venture Capital", value: 1 },
+    { text: "Data Science", value: 6 },
+    { text: "Infrastructure", value: 1 },
+    { text: "Compiler Development", value: 1 },
+    { text: "Machine Learning Engineer", value: 1 },
+    { text: "UX/UI Designer", value: 1 },
+    { text: "Data Engineer", value: 1 },
+    { text: "Firmware", value: 1 },
+    { text: "C++ Developer", value: 1 },
+  ],
+  [
+    { text: "Backend", value: 34 },
+    { text: "Mobile", value: 4 },
+    { text: "Databases", value: 2 },
+    { text: "Technical Program Management", value: 1 },
+    { text: "Product Management", value: 3 },
+    { text: "Research", value: 3 },
+    { text: "Full-Stack", value: 21 },
+    { text: "Systems", value: 1 },
+    { text: "Tools and Compilers", value: 1 },
+    { text: "Frontend", value: 2 },
+    { text: "Low-level C++", value: 1 },
+    { text: "Quantitative Development", value: 2 },
+    { text: "Machine Learning", value: 1 },
+    { text: "Game Development", value: 1 },
+    { text: "Research Assistant", value: 1 },
+    { text: "ISA", value: 1 },
+    { text: "Data Science", value: 9 },
+    { text: "Infrastructure", value: 1 },
+    { text: "Graphics", value: 1 },
+    { text: "Machine Learning Researcher", value: 1 },
+    { text: "UX/UI Designer", value: 1 },
+    { text: "Data Engineer", value: 1 },
+    { text: "C++ Developer", value: 1 },
+  ],
+  [
+    { text: "Backend", value: 24 },
+    { text: "Mobile", value: 1 },
+    { text: "Research Assistant", value: 2 },
+    { text: "Data Engineer", value: 2 },
+    { text: "Product Management", value: 1 },
+    { text: "DevX", value: 1 },
+    { text: "Full-Stack", value: 12 },
+    { text: "Systems", value: 1 },
+    { text: "Quant Dev", value: 2 },
+    { text: "Frontend", value: 4 },
+    { text: "Venture Capital", value: 1 },
+    { text: "Machine Learning Research", value: 1 },
+    { text: "DevOps", value: 2 },
+    { text: "Game Development", value: 2 },
+    { text: "Research", value: 1 },
+    { text: "ISA", value: 1 },
+    { text: "Data Science", value: 3 },
+    { text: "Trading Engine", value: 1 },
+    { text: "Software Developer", value: 1 },
+    { text: "Machine Learning Engineer", value: 1 },
+    { text: "UX/UI Designer", value: 1 },
+  ],
+];
+
+export const C6iv = [
   {
     category: "1",
-    min: 14,
+    min: 15,
     firstQuartile: 18,
-    median: 22,
-    thirdQuartile: 40,
-    max: 50,
-    outliers: [105, 147],
+    median: 20,
+    thirdQuartile: 23.3,
+    max: 30,
+    outliers: [0, 2.5, 5, 40, 41, 56.6],
   },
   {
     category: "2",
-    min: 17.5,
+    min: 12,
     firstQuartile: 22,
-    median: 25,
-    thirdQuartile: 36,
-    max: 76,
-    outliers: [105],
+    median: 26,
+    thirdQuartile: 34,
+    max: 53,
+    outliers: [55.6, 60, 60, 60, 64, 66.6, 70],
   },
   {
     category: "3",
-    min: 16,
+    min: 15,
     firstQuartile: 26,
-    median: 33,
-    thirdQuartile: 55,
-    max: 95,
-    outliers: [130],
+    median: 30,
+    thirdQuartile: 42,
+    max: 66,
+    outliers: [0, 66.5, 70, 75, 127.4, 130],
   },
   {
     category: "4",
-    min: 16,
-    firstQuartile: 30,
+    min: 17,
+    firstQuartile: 28,
     median: 35,
-    thirdQuartile: 60,
-    max: 140,
-    outliers: [],
+    thirdQuartile: 50,
+    max: 80,
+    outliers: [100, 140],
   },
   {
     category: "5",
-    min: 26,
-    firstQuartile: 39,
-    median: 44,
-    thirdQuartile: 60,
-    max: 145,
-    outliers: [],
+    min: 20,
+    firstQuartile: 37,
+    median: 49,
+    thirdQuartile: 67,
+    max: 112,
+    outliers: [126, 139, 160],
   },
   {
     category: "6",
-    min: 24,
-    firstQuartile: 40,
-    median: 48,
-    thirdQuartile: 72,
-    max: 132,
+    min: 17,
+    firstQuartile: 32.5,
+    median: 50,
+    thirdQuartile: 77.3,
+    max: 134,
     outliers: [],
   },
 ];
 
-export const C7iv = [
+export const C6v = [
   {
     category: "1",
     min: 0,
     firstQuartile: 0,
     median: 0,
-    thirdQuartile: 300,
-    max: 4000,
-    outliers: [10000],
+    thirdQuartile: 200,
+    max: 6000,
+    outliers: [15894, 25000],
   },
   {
     category: "2",
@@ -1602,200 +1951,226 @@ export const C7iv = [
     firstQuartile: 0,
     median: 0,
     thirdQuartile: 2000,
-    max: 14000,
-    outliers: [],
+    max: 15894,
+    outliers: [25000, 93000],
   },
   {
     category: "3",
     min: 0,
     firstQuartile: 0,
-    median: 250,
-    thirdQuartile: 10000,
-    max: 20500,
-    outliers: [],
+    median: 0,
+    thirdQuartile: 2000,
+    max: 7000,
+    outliers: [10000, 13000, 35000],
   },
   {
     category: "4",
     min: 0,
     firstQuartile: 0,
     median: 0,
-    thirdQuartile: 4000,
-    max: 12000,
-    outliers: [],
+    thirdQuartile: 2450,
+    max: 6160,
+    outliers: [10000, 10000, 10000, 10000, 10000, 13000, 20000],
   },
   {
     category: "5",
     min: 0,
     firstQuartile: 0,
-    median: 1250,
-    thirdQuartile: 8000,
-    max: 20000,
-    outliers: [],
+    median: 5000,
+    thirdQuartile: 10205.2,
+    max: 26000,
+    outliers: [30000, 47000, 52000],
   },
   {
     category: "6",
     min: 0,
     firstQuartile: 0,
-    median: 1000,
-    thirdQuartile: 15000,
-    max: 30493,
-    outliers: [],
+    median: 6000,
+    thirdQuartile: 10000,
+    max: 23587,
+    outliers: [35000, 35000],
   },
 ];
 
-export const C7vKey = ["Outstanding", "Excellent", "Very Good", "Good"];
+export const C6viKey = ["Outstanding", "Excellent", "Very Good", "Good"];
 
-export const C7v = [
+export const C6vi = [
   {
     category: "1",
-    Outstanding: 48.9,
-    Excellent: 33.7,
-    "Very Good": 10.9,
-    Good: 4.3,
+    Outstanding: 37.1,
+    Excellent: 54.3,
+    "Very Good": 8.6,
+    Good: 0,
   },
   {
     category: "2",
-    Outstanding: 44.6,
-    Excellent: 48.2,
-    "Very Good": 4.8,
+    Outstanding: 52.6,
+    Excellent: 43.3,
+    "Very Good": 3.1,
+    Good: 1.0,
+  },
+  {
+    category: "3",
+    Outstanding: 57.0,
+    Excellent: 37.6,
+    "Very Good": 5.4,
+    Good: 0,
+  },
+  {
+    category: "4",
+    Outstanding: 43.4,
+    Excellent: 53.3,
+    "Very Good": 2.2,
+    Good: 1.1,
+  },
+  {
+    category: "5",
+    Outstanding: 52.4,
+    Excellent: 36.6,
+    "Very Good": 9.8,
     Good: 1.2,
   },
   {
-    category: "3",
-    Outstanding: 54.9,
-    Excellent: 35.4,
-    "Very Good": 8.5,
-    Good: 0,
-  },
-  {
-    category: "4",
-    Outstanding: 49.4,
-    Excellent: 39.2,
-    "Very Good": 3.8,
-    Good: 0,
-  },
-  {
-    category: "5",
-    Outstanding: 54.9,
-    Excellent: 35.4,
-    "Very Good": 8.5,
-    Good: 0,
-  },
-  {
     category: "6",
-    Outstanding: 30.4,
-    Excellent: 30.4,
-    "Very Good": 10.7,
-    Good: 3.6,
+    Outstanding: 50,
+    Excellent: 46.3,
+    "Very Good": 3.7,
+    Good: 0,
   },
 ];
 
-export const C7viKey = ["1", "2", "3", "4", "5"];
+export const C6viiKey = ["1", "2", "3", "4", "5"];
 
-export const C7vi = [
+export const C6vii = [
   {
     category: "1",
-    5: 41.3,
-    4: 26.1,
-    3: 20.7,
-    2: 8.7,
-    1: 3.3,
+    5: 31.1,
+    4: 34,
+    3: 23.6,
+    2: 6.6,
+    1: 4.7,
   },
   {
     category: "2",
-    5: 37.8,
-    4: 36.6,
-    3: 14.6,
-    2: 9.8,
-    1: 1.2,
+    5: 33,
+    4: 27,
+    3: 26,
+    2: 8,
+    1: 6,
   },
   {
     category: "3",
-    5: 39.5,
-    4: 40.7,
-    3: 11.1,
-    2: 4.9,
-    1: 3.7,
+    5: 21.2,
+    4: 43.4,
+    3: 16.2,
+    2: 14.1,
+    1: 5.1,
   },
   {
     category: "4",
-    5: 33.8,
-    4: 37.7,
-    3: 18.2,
-    2: 9.1,
-    1: 1.3,
+    5: 41.2,
+    4: 33,
+    3: 18.6,
+    2: 4.1,
+    1: 3.1,
   },
   {
     category: "5",
-    5: 51.9,
-    4: 32.5,
-    3: 14.3,
-    2: 1.3,
-    1: 0,
+    5: 54.3,
+    4: 32.6,
+    3: 7.6,
+    2: 3.3,
+    1: 2.2,
   },
   {
     category: "6",
-    5: 53.7,
-    4: 20.4,
-    3: 18.5,
-    2: 5.6,
-    1: 1.9,
+    5: 70.3,
+    4: 18.8,
+    3: 6.2,
+    2: 3.1,
+    1: 1.6,
   },
 ];
 
-export const C7vii = {
+export const C6viii = {
   xValues: ["1", "2", "3", "4", "5", "6"],
   lines: [
     {
       label: "Main rounds",
-      yValues: [66.7, 61.4, 62.2, 49.4, 52.6, 46.4],
+      yValues: [60.7, 74.3, 64.6, 64.3, 54.9, 46.4],
     },
     {
       label: "Continuous Rounds",
-      yValues: [20.4, 16.9, 13.4, 7.6, 1.3, 1.8],
+      yValues: [21.5, 6.9, 6.1, 5.1, 3.3, 0],
     },
     {
       label: "Externally",
-      yValues: [12.9, 16.9, 20.7, 35.4, 32.9, 39.3],
-    },
-    {
-      label: "Return",
-      yValues: [0, 4.8, 3.7, 7.8, 11.8, 12.5],
+      yValues: [17.8, 18.8, 29.3, 30.6, 41.8, 52.3],
     },
   ],
 };
 
-export const C7viiiKey = ["Yes", "No"];
+export const C6ixKey = ["Yes", "No"];
 
-export const C7viii = [
+export const C6ix = [
   {
     category: "1",
-    Yes: 16.3,
-    No: 83.7,
+    Yes: 10.5,
+    No: 89.5,
   },
   {
     category: "2",
-    Yes: 6.1,
-    No: 93.9,
+    Yes: 9.9,
+    No: 90.1,
   },
   {
     category: "3",
-    Yes: 8.5,
-    No: 91.5,
+    Yes: 6,
+    No: 94,
   },
   {
     category: "4",
-    Yes: 7.7,
-    No: 92.3,
+    Yes: 10.2,
+    No: 89.8,
   },
   {
     category: "5",
-    Yes: 9.1,
-    No: 90.9,
+    Yes: 6.4,
+    No: 93.6,
   },
   {
     category: "6",
-    Yes: 5.5,
-    No: 94.5,
+    Yes: 7.7,
+    No: 92.3,
+  },
+];
+
+export const C6xKey = ["Yes", "No"];
+
+export const C6x = [
+  {
+    category: "1",
+    Yes: 92.7,
+    No: 7.3,
+  },
+  {
+    category: "2",
+    Yes: 98,
+    No: 2,
+  },
+  {
+    category: "3",
+    Yes: 98,
+    No: 2,
+  },
+  {
+    category: "4",
+    Yes: 95.9,
+    No: 4.1,
+  },
+  {
+    category: "5",
+    Yes: 69.1,
+    No: 30.9,
   },
 ];
