@@ -97,7 +97,7 @@ export default function FullTime() {
         />
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.miscellaneous} />
+      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.miscellaneous} />
     </div>
   );
 }
