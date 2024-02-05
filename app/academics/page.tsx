@@ -25,20 +25,26 @@ import {
   A14,
   A15,
   A16,
-  A16Keys,
+  A17,
+  A17Keys,
   A18,
-  A18i,
-  A18ii,
   A19,
-  A19i,
   A2,
   A20,
+  A20i,
+  A20ii,
+  A20iii,
+  A20iv,
   A21,
-  A21i,
-  A21ii,
-  A21iii,
-  A21iv,
-  A21v,
+  A22,
+  A23,
+  A24,
+  A24i,
+  A24ii,
+  A24iii,
+  A24iv,
+  A25,
+  A26,
   A3,
   A4,
   A5,
@@ -63,82 +69,144 @@ export default function Academics() {
       <Header />
       <SectionHeader title="Academics" />
 
-      <SectionWrapper title="Programming" />
+      <SectionWrapper title="Courses" />
 
       <ComponentWrapper
-        heading="How many years of coding experience did you have prior to 1A?"
-        bodyText="Almost 70% of the students that participated had minimal to no coding experience (0 - 2 years), prior to coming into UW. It goes to show that years of programming knowledge is not required to be admitted into CS / CFM / CS/BBA at UW.">
+        heading="Is your expected graduation date the same as when you enrolled in your current program?"
+        bodyText="Even though the vast majority of respondents stayed on track with their initial plans, it is also perfectly normal to deviate from the planned route for a degree. Some students may have either shortened their degree by, for example, removing co-op from their degree or taking more classes than a full course load per term. Meanwhile, others may have delayed their graduation by retaking failed classes, taking gap years, adding minors to their degree, etc. "
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={A1} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Is your expected graduation date the same as when you enrolled in the program?"
-        bodyText="Most people stayed on track with their original plans, but it’s not unheard of for students to delay their graduation date due to retaking failed classes, gap terms, completing minors, etc. Students are also able to shorten their undergraduate career through various ways such as removing co-op from their degree. It's normal to diverge from the planned route for your degree!"
-        align="right"
-        noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={A2} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What is your favourite text editor or IDE?"
-        bodyText="The class favours VS Code, a versatile and customizable code editor. This is no surprise as VS Code is known to be a sweet spot between Vim and more complex IDEs like IntelliJ. It's fast, lightweight, easy to use, powerful with its extensions, and offers a plethora of themes. Shout out to the one Microsoft Word user out there!"
-        align="left">
-        <BarGraphHorizontal
-          data={A3}
-          width={barGraphWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 180 } }}
-        />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What is your favourite programming language?"
-        bodyText="The favourite programming language award for the class of 2022 goes to… PYTHON! No surprise here - it reads the most like English. C++ is a very notable language as a part of the CS program; thus, it’s no surprise it comes in second. It looks like we’ve come a long way from the days of Racket in first year!"
-        align="right"
-        noBackground>
-        <BarGraphHorizontal data={A4} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="How many programming languages do you know?"
-        bodyText="85%+ of individuals that participated in the survey know 4 or more languages. It's evident that, as students take more internships and classes, they learn more programming languages, especially in a field that is continuously evolving!">
-        <BarGraphVertical data={A5} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What operating system(s) do you mainly use?"
-        bodyText="MacOS and Windows are the predominant operating systems used by our respondents. Each OS provides its own benefits, capabilities, and downsides. As such, choosing the right operating system largely boils down to personal preference and comfort for daily use or programming. We can establish that UNIX based OS (MacOS and Linux) are favoured by our respondents, due to the various tools and features that cater to programmers."
-        align="right"
-        noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={A6} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      <SectionWrapper title="Courses and Grade Averages" />
-
-      <ComponentWrapper
         heading="What category of electives for your degree did you enjoy most?"
-        bodyText="It seems like the class really enjoyed their humanities courses! Perhaps this is due to the stark contrast between the content of courses that belong in this category compared to their mandatory math and computer science courses. The refreshing subject matter, combined with the overall ease of the courses, makes for some of students' favourite electives. For context, these electives are a part of the computer science degrees at UW due to breadth and depth requirements for graduation.">
-        <BarGraphHorizontal
-          data={A7}
-          width={barGraphWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 180 } }}
-        />
+        bodyText="Because of the breadth and depth requirements for UW’s computer science degrees, students are required to take electives in varying subject areas. Out of the different elective categories, communications and humanities courses were the most preferred, followed by courses in the social sciences. The popularity of these subject areas is likely due to the content taught in these courses being vastly different from the content in the required math and computer science courses, as well as their lower difficulty, allowing for a more refreshing studying experience."
+        align="right"
+        noBackground>
+        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 160 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Which non-math elective was your favourite?"
+        heading="Which CS course was your favourite?"
         bodyText={
           <p>
-            There are lots of amazing non-math electives mentioned in the list, with <BodyLink href="https://uwflow.com/course/music140">MUSIC 140</BodyLink>,{" "}
-            <BodyLink href="https://uwflow.com/course/music246">MUSIC 246</BodyLink>, and <BodyLink href="https://uwflow.com/course/clas104">CLAS 104</BodyLink>{" "}
-            being crowd favourites!
+            There is a large variety of favoured CS courses by this class, but the most popular is{" "}
+            <BodyLink href="https://uwflow.com/course/cs486">CS 486</BodyLink>, which provides an introduction to artificial intelligence, exploring an
+            extremely popular niche of computer science in today’s society. Tied for second place are{" "}
+            <BodyLink href="https://uwflow.com/course/cs241">CS 241</BodyLink>, which teaches the relationship between high-level programming languages and
+            computer architecture, and <BodyLink href="https://uwflow.com/course/cs246">CS 246</BodyLink>, which introduces object-oriented programming, which
+            is a fundamental concept used in many areas of computer science.
+          </p>
+        }
+        align="left">
+        <WordCloud
+          data={A3}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Which CS course was your least favourite?"
+        bodyText={
+          <p>
+            <BodyLink href="https://uwflow.com/course/cs245">CS 245</BodyLink> was, by far, the least favourite CS class taken by the class of 2023. This is
+            likely due to its difficulty and the course focusing more on theory than application, as well as its lack of application outside of class despite
+            being a core CS course. As of October 2023 on UWFlow, the course has a 28% liked rating, demonstrating its lack of popularity.{" "}
+            <BodyLink href="https://uwflow.com/course/cs251">CS 251</BodyLink> comes in second, its content being about computer organization and design,
+            including the teaching of low-level languages and hardware. Although it is not very liked by this class, it actually has a 65% liked rating on
+            UWFlow, making it a bit more well-liked overall compared to this year.
+          </p>
+        }
+        align="right"
+        noBackground>
+        <WordCloud
+          data={A4}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Which non-CS course was your favourite?"
+        bodyText={
+          <p>
+            There is a wide variety of favoured non-math electives by this year’s class, with{" "}
+            <BodyLink href="https://uwflow.com/course/music246">MUSIC 246</BodyLink>, which explores music in film,{" "}
+            <BodyLink href="https://uwflow.com/course/music140">MUSIC 140</BodyLink>, which teaches various aspects of 20th century popular culture, and{" "}
+            <BodyLink href="https://uwflow.com/course/econ212">ECON 212</BodyLink>, exploring game theory, being, in order, the top 3 favourites!
+          </p>
+        }
+        align="left">
+        <WordCloud
+          data={A5}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Which non-CS course was your least favourite?"
+        bodyText={
+          <p>
+            <BodyLink href="https://uwflow.com/course/stat231">STAT 231</BodyLink> was the least favourite non-CS course by a large margin. This course teaches
+            the fundamentals of statistics, however, it is not very popular due to the heavy load of content taught. As of October 2023, it has a 37% liked rate
+            on UWFlow. <BodyLink href="https://uwflow.com/course/spcom225">SPCOM 225</BodyLink> (rebranded to COMMST 225), which teaches interviewing, is also
+            not very popular amongst this class, coming in second in least favoured.
+          </p>
+        }
+        align="right"
+        noBackground>
+        <WordCloud
+          data={A6}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What is the hardest course you have taken?"
+        bodyText={
+          <p>
+            Coming in first place, the hardest course for many students was <BodyLink href="https://uwflow.com/course/math239">MATH 239</BodyLink>, which is a
+            mandatory course that provides an introduction to combinatorics, teaching graph theory and combinatorial analysis. Tied for second place in
+            difficulty amongst this class are <BodyLink href="https://uwflow.com/course/cs343">CS 343</BodyLink>, which explores concurrent and parallel
+            programming, and <BodyLink href="https://uwflow.com/course/cs350">CS 350</BodyLink>, which explores various aspects of operating systems.
+          </p>
+        }
+        align="left">
+        <WordCloud
+          data={A7}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What is the easiest course you have taken?"
+        bodyText={
+          <p>
+            The easiest course that many computer science students have taken, by a large margin, is{" "}
+            <BodyLink href="https://uwflow.com/course/clas104">CLAS 104</BodyLink>, which explores Greco-Roman mythology. Coming in second, this year’s class
+            also found <BodyLink href="https://uwflow.com/course/cs449">CS 449</BodyLink> to be an easy course, which is a course that provides an introduction
+            to human-computer interaction.
           </p>
         }
         align="right"
@@ -154,14 +222,14 @@ export default function Academics() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Which CS course was your favourite?"
+        heading="Which course do you regret taking most?"
         bodyText={
           <p>
-            <BodyLink href="https://uwflow.com/course/cs343">CS 343</BodyLink> and <BodyLink href="https://uwflow.com/course/cs486">CS 486</BodyLink> both tied
-            up in first place. CS 343 teaches concurrent parallel programming while CS 486 delves into the realm of artificial intelligence. Both are very
-            interesting courses, exploring niche aspects of computer science! <BodyLink href="https://uwflow.com/course/cs246">CS 246</BodyLink> is the third
-            most popular CS course for the class of 2022. This course introduces object-oriented programming, a fundamental programming paradigm that is used in
-            many places. No wonder this course is so well-liked!
+            The course that most students regret taking the most is <BodyLink href="https://uwflow.com/course/cs448">CS 448</BodyLink>, which teaches the
+            fundamentals of the inner workings of database systems. Tied for second place are{" "}
+            <BodyLink href="https://uwflow.com/course/econ101">ECON 101</BodyLink>, which teaches the basics of economics and microeconomics, and{" "}
+            <BodyLink href="https://uwflow.com/course/cs348">CS 348</BodyLink>, which, like CS 448, explores database management. It seems as though database
+            management is not the favourite subject topic of this year’s computer science students!
           </p>
         }
         align="left">
@@ -177,14 +245,13 @@ export default function Academics() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Which CS course was your least favourite?"
+        heading="Which course did you find the most useful?"
         bodyText={
           <p>
-            <BodyLink href="https://uwflow.com/course/cs245">CS 245</BodyLink>, Logic and Computation, was the least favourite CS course students took by large
-            margin. It can probably be explained by its difficulty, the theoretical focus of the course, the content being less applicable outside of class,
-            plus it being a core CS course. As of December 2022, the course has a 28% liked rating on UWFlow. Coming in second place is{" "}
-            <BodyLink href="https://uwflow.com/course/cs348">CS 348</BodyLink>, Introduction to Database Management, which has a 36% liked rating on UWFlow.
-            Some common complaints of these courses include organization of the course and how interesting the course content is.
+            By far, this graduating year’s students found the <BodyLink href="https://uwflow.com/course/cs246">CS 246</BodyLink> and{" "}
+            <BodyLink href="https://uwflow.com/course/cs341">CS 341</BodyLink> courses to be the most useful. CS 246 explores object-oriented programming, which
+            is applicable in many computer science-related topics, and is also one of the most favoured courses by this year’s class. CS 341 also teaches a
+            topic that can be applied to all areas of computer science, which is algorithms and algorithm design.
           </p>
         }
         align="right"
@@ -200,15 +267,16 @@ export default function Academics() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Which course did you find the most useful for job preparation?"
+        heading="Which course did you find the most useless?"
         bodyText={
           <p>
-            <BodyLink href="https://uwflow.com/course/cs341">CS 341</BodyLink>, Algorithms, was deemed the most useful CS core course for job preparation
-            according to respondents. This could be linked to how common software engineering positions are among computing students, and how LeetCode practice
-            is crucial for passing technical interviews! Meanwhile, CS 246, Object-Oriented Software Development, is ranked second. This can be correlated with
-            students ranking it as one of their favourite CS classes!
+            <BodyLink href="https://uwflow.com/course/cs245">CS 245</BodyLink>, which explores logic and how it is used in computation, was considered the most
+            useless course by most of this year’s computer science class. This is followed by <BodyLink href="https://uwflow.com/course/pd11">PD 11</BodyLink>,
+            which teaches skills for report-writing. These two courses have a 28% and a 5% liked rating, respectively, on UWFlow as of October 2023, further
+            showing that they are not very popular courses amongst the students.
           </p>
-        }>
+        }
+        align="left">
         <WordCloud
           data={A11}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -221,8 +289,7 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="Did you take any advanced/enriched courses?"
-        bodyText="45% of the class has taken at least 1 advanced/enriched course before their graduation. Advanced and enriched courses have a reputation to be time-consuming and contain much more difficult course material, which can already be hard in the first place! However, for those seeking an academic challenge or are curious about math and computer science topics, this deeper dive into the content can be worth the additional struggle. Additionally, many students claim that some courses are simply taught better. Ultimately, it is up to every individual student to decide what they are capable of and desire. Looks like most of the participants were not afraid to take on this challenge!
-          "
+        bodyText="37% of this year’s class has taken at least one advanced or enriched course, while 63% has not. Advanced and enriched courses are regarded to be much more difficult and require a larger time commitment than regular honours courses, which can already be difficult for many students! However, for those who are looking for a challenge or are curious about math or computer science topics beyond those taught in the regular courses, taking the advanced/enriched courses can be worth it for them. Moreover, for some students, their enjoyment of a course may depend on the structure, and may choose between the regular courses and the advanced/enriched ones based on that factor."
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -231,34 +298,79 @@ export default function Academics() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="If you took any advanced or enriched courses, how much did you enjoy each course?"
-        bodyText="Advanced/enriched CS courses are rated pretty high overall, and it looks like most respondents decide to take them in earlier terms. Trying out advanced courses early and seeing if they’re right for you can be a good strategy to figure out what you’re comfortable with before the workload starts ramping up.">
+        heading="If you took any advanced or enriched courses, for each course please indicate how much you enjoyed it?"
+        bodyText="The advanced/enriched courses are overall relatively popular amongst those who took them, with mostly all high ratings. There seems to be a relatively constant number of people who took these courses over the years, meaning that it is likely that those who took advanced/enriched courses enjoyed them and continued to take these courses after first year. In general, it is recommended to try these courses out early if you’re interested in them to see if they’re suited for you before the workload for your study term starts becoming more difficult to keep up with."
+        align="left">
         <StackedBarGraphHorizontal
           width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
           keys={A12iKeys}
           colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter]}
           data={A12i}
-          margin={{ ...barGraphMargin, ...{ left: 90 } }}
+          margin={{ ...barGraphMargin, ...{ left: 100 } }}
         />
       </ComponentWrapper>
 
+      <SectionWrapper title="Transfer" />
+
       <ComponentWrapper
-        heading="Who is your favourite professor in all of UW?"
+        heading="Did you transfer into your current program?"
+        bodyText="29% of students in this year’s class transferred into the program that they are currently in, which is a relatively high percentage. It can be assumed that most of the students that transferred into their program transferred into CS, as it can be extremely difficult to transfer into CS/BBA or CFM after their initial admissions for incoming first-year students from high school."
+        align="left">
+        <div className={styles.graphContainer}>
+          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What program did you transfer from?"
+        bodyText="Most of the students who transferred into computer science from a different program transferred from either Honours Mathematics or Software Engineering. Math and CS share many courses in the first year of the program, thus many Math students may have realized that they have a passion for computer science and transferred into the program. Software engineering and CS are programs in which the students eventually end up in similar jobs and post-grad roles, thus, some of them may have chosen to transfer to CS for a slightly less rigorous workload compared to that required by the Engineering faculty."
+        align="right"
+        noBackground>
+        <div className={styles.graphContainer}>
+          <BarGraphVertical data={A13i} {...barGraphProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What term did you transfer into your program?"
+        bodyText="Majority of the students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
+        align="left">
+        <div className={styles.graphContainer}>
+          <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="What were your reason(s) behind transferring?"
+        bodyText="A major reason behind why many of the students transferred into computer science was because they were not as interested in their previous major compared to their current one. Two other popular reasons for students transferring into computer science were to improve future job prospects and to have a more flexible schedule and course requirements."
+        align="right"
+        noBackground>
+        <div className={styles.graphContainer}>
+          <BarGraphVertical
+            data={A13iii}
+            widthAlternatingLabel={1000}
+            alternatingLabelSpace={200}
+            lowerLabelDy="60px"
+            {...barGraphProps(isMobile, pageWidth)}
+          />
+        </div>
+      </ComponentWrapper>
+
+      <SectionWrapper title="Terms and Averages" />
+
+      <ComponentWrapper
+        heading="Who is your favourite professor at UW?"
         bodyText={
           <p>
-            The class of 2022 would like to give a shout out to &nbsp;
-            <BodyLink href="https://uwflow.com/professor/alice_gao">Alice Gao</BodyLink>
-            ,&nbsp;
-            <BodyLink href="https://uwflow.com/professor/carmen_bruni">Carmen Bruni</BodyLink>
-            ,&nbsp;
-            <BodyLink href="https://uwflow.com/professor/lesley_istead">Lesley Istead</BodyLink>, and&nbsp;
-            <BodyLink href="https://uwflow.com/professor/brad_lushman">Brad Lushman</BodyLink>
-            &nbsp; as some of the best professors at UW! Go read their ratings UWFlow! We would also like to give an honourable mention to every professor who
-            has poured their passion into teaching. This has helped the CS Class of 2022 grow and succeed! You guys are all amazing! ❤️
+            Three of the most popular professors amongst this year’s class are <BodyLink href="https://uwflow.com/professor/alice_gao">Alice Gao</BodyLink>,{" "}
+            <BodyLink href="https://uwflow.com/professor/lesley_istead">Lesley Istead</BodyLink>, and{" "}
+            <BodyLink href="https://uwflow.com/professor/jeff_avery">Jeff Avery</BodyLink>. However, there is a wide variety of favoured professors amongst this
+            class, and we would like to express our thanks and give an honourable mention to every single one who has dedicated their time and energy towards
+            teaching us and enabling us to grow and thrive!
           </p>
         }
-        noBackground>
+        align="left">
         <WordCloud
           data={A14}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -271,19 +383,24 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="Which study term did you think was the hardest?"
-        bodyText="Second year seems to be the hardest year for most respondents with a whooping 52% of respondents agreeing on this. 2B has the second highest vote which  comparatively makes the later terms look almost relaxing…🤔">
+        bodyText="Second year seemed to be the most difficult for the most students, with 2A, followed by 2B, being considered the most difficult study terms. This could be due to that many of the least favoured courses and courses considered to be the most difficult, such as CS 245 and MATH 239, would have been taken during the students’ 2A or 2B study term."
+        align="right"
+        noBackground>
         <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="What were your termly and cumulative averages?"
-        bodyText="The majority of people did their best in 1A and their worst in 1B, 2A, or 2B, likely because of the mandatory challenging computer science and math courses that lie around that period of time. Students started getting better grades in 3A, correlating with the term difficulty question. As a clarification, CAV stands for Cumulative Average."
-        align="right"
-        noBackground>
+        heading="Which study term did you think was the easiest?"
+        bodyText="The 4A and 4B study terms were considered to be the easiest study terms by a large margin. This is likely due to most of the more difficult core courses being finished already and students being able to take electives that they are more interested in once all the mandatory courses had been completed. This statistic highlights that even though classes may get harder (in 2A and 2B), it will get better after it gets worse, and that we should persevere through the challenges that may arise during our undergraduate careers!"
+        align="left">
+        <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth)} />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What was your average each term?" align="right" noBackground>
         <StackedBarGraphVertical
           width={600}
           height={400}
-          keys={A16Keys}
+          keys={A17Keys}
           colorRange={[
             Color.primaryAccentLighter,
             Color.secondaryAccentLighter,
@@ -293,141 +410,156 @@ export default function Academics() {
             Color.primaryAccentDark,
             Color.primaryAccentDarker,
           ]}
-          data={A16}
+          data={A17}
           margin={barGraphMargin}
           displayPercentage={true}
         />
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="How many classes have you failed?"
-        bodyText="Most people tend to complete their degree without failing a course, but clearly it's not over if you have failed some."
-        align="left">
-        <BarGraphVertical data={A20} {...barGraphProps(isMobile, pageWidth)} />
+      <ComponentWrapper heading="What is your cumulative average?" align="left">
+        <BarGraphHorizontal data={A18} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is your faculty average?" align="right" noBackground>
+        <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Did you complete an option, specialization or minor?"
-        bodyText="50% of the students have completed some form of option, specialization, or minor during their undergrad. These are ways you can add qualifications to your degree using the electives that you have. That's what they mean when they say you can customize your CS degree!"
-        align="right"
-        noBackground>
+        heading="Did you complete an option, specialization and/or minor?"
+        bodyText="43% of respondents did complete an option, specialization, and/or minor during their undergraduate career. These are different ways in which you can customize and add to your degree, depending on what electives you decide to take!"
+        align="left">
         <div className={styles.graphContainer}>
-          <PieChart data={A18} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A20} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which option(s), specialization(s), or minor(s) did you complete?" bodyText=" ">
+      <ComponentWrapper heading="Which option(s) did you complete?" align="right" noBackground>
         <WordCloud
-          data={A18i}
+          data={A20i}
           width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           wordPadding={7}
-          desktopMaxFontSize={60}
-          desktopMinFontSize={15}
+          desktopMaxFontSize={75}
           mobileMaxFontSize={30}
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What made you want to complete the option, specialization or minor?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="Which minors(s) did you complete?" align="left">
+        <WordCloud
+          data={A20ii}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="Which specialization(s) did you complete?" align="right" noBackground>
+        <WordCloud
+          data={A20iii}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A18ii} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A20iv} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Have you overloaded any of your semesters?" bodyText=" " align="left">
+      <ComponentWrapper
+        heading="How many overloaded terms did you take (6 or more courses in one term)?"
+        bodyText="59% of respondents did not take any overloaded terms. Overloading your term can be very challenging, as it increases your workload greatly. However, it is still possible, as 27% of all of the respondents overloaded one or two terms, while 13% overloaded 3 or more terms, with some of them overloading 6 terms!"
+        align="right"
+        noBackground>
+        <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth)} />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="How many courses have you failed?"
+        bodyText="Most of the class completed their degree without failing any courses, at 83% of the respondents, but given that some of them did fail at least one course but still obtained their degree, it’s not the end if you fail one or a few of your courses!"
+        align="left">
         <div className={styles.graphContainer}>
-          <PieChart data={A19} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A22} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How many overloaded semesters did you take?"
-        bodyText="UW academic terms can already be challenging; however, over 45% of participants were able to overload at least 1 term. 20% of students overloaded 3 or more terms. 🤯"
+        heading="How many midterms/finals have you failed?"
+        bodyText="Like previously, most of the class did not fail any midterms or finals, at 65% of the respondents, but this number is a lot lower than the number of people who did not fail any courses, meaning that even if you do fail a large exam, it doesn’t mean that you will fail your course - as long as you put in the effort for the rest of the course. Regardless, no matter if you fail one or a few exams, it’s still not over!"
         align="right"
         noBackground>
-        <BarGraphVertical data={A19i} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <SectionWrapper title="Transfer" />
-      <ComponentWrapper
-        heading="Did you transfer into your current program?"
-        bodyText="23% of respondents transferred into their current program, which is a surprisingly high number. We can assume that the majority, if not all, of the people that transferred programs transferred into CS as getting into CS/BBA and CFM after initial applications can be exceedingly difficult.">
-        <div className={styles.graphContainer}>
-          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What program did you transfer from?"
-        bodyText="Most transfers came from Math and CFM. Math and CS share a lot of courses through the first year of the degree, which might have resulted in many of those students pursuing their passion for CS directly by transferring. CFM transfers may be due to students disliking the finance side of their degree."
-        align="right"
-        noBackground>
-        <BarGraphVertical data={A13i} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What term did you transfer into your program?"
-        bodyText="Most of the transfers occurred during 2A and 2B terms, which makes sense since students have time to re-evaluate their academic/career path after spending a year in their original program.">
-        <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
-      </ComponentWrapper>
-
-      <ComponentWrapper
-        heading="What was your reasoning behind transferring?"
-        bodyText="Program interest, flexible course requirements, and a flexible schedule were the most common reasons people transferred into their current program. Many respondents also justified their transfer due to future job prospects and to avoid mandatory courses in their original program. With so many industries relying on technology, it's no wonder computing degrees are so in demand!"
-        align="right"
-        noBackground>
-        <BarGraphVertical data={A13iii} widthAlternatingLabel={1000} alternatingLabelSpace={200} lowerLabelDy="60px" {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={A23} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <SectionWrapper title="Exchange" />
 
       <ComponentWrapper
         heading="Did you take any exchange terms?"
-        bodyText="Students can apply to the exchange program starting in their second year to experience studying abroad for a term! Note that exchange does not necessarily imply switching schools with another student. It seems that not many students took exchange terms from this sample.">
+        bodyText="Most of the class did not take any exchange terms, but a small minority, at 9% of respondents, did. Taking an exchange term is an opportunity for students to study for a term in a completely different environment, in a foreign country, that they can start applying to in their second year."
+        align="left">
         <div className={styles.graphContainer}>
-          <PieChart data={A21} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A24} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="What term did you take an exchange in?"
-        bodyText="Only 7% of students decided to take an exchange term during their undergrad with most students going during their 3A and 4B terms. Unfortunately, 21% of students were interested in going on an exchange term but were interrupted and unable to go due to the COVID-19 pandemic."
+        bodyText="It seems as though taking an exchange term is popular later on in this year’s students’ undergraduate careers, as 91% of those who took an exchange term took it in either term 4A or 4B."
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A21i} {...pieChartProps(isMobile, pageWidth)} />
-        </div>
-      </ComponentWrapper>
-
-      <ComponentWrapper heading="Where did you take your exchange term?" bodyText="Only three people declared exactly where their exchange term was.">
-        <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A21ii} circleDiameter={0} />
+          <PieChart data={A24i} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="Were you unable to complete an exchange term due to the COVID-19 pandemic?"
-        bodyText="With the severity of the pandemic restrictions in Canada extending from the beginning of 2020 until 2022, it is understandable that most 2022 graduates’ exchange terms were interrupted. Unfortunately, our results show that a lot more people would have gone on exchange if it wasn’t for the pandemic."
-        align="right"
-        noBackground>
-        <div className={styles.graphContainer}>
-          <PieChart data={A21iii} {...pieChartProps(isMobile, pageWidth)} />
+        heading="Where did you take your exchange term?"
+        bodyText="The most popular country in which students took an exchange term was Singapore, followed by Switzerland and the Netherlands. Even though various students took an exchange term in the same country, they generally attended different schools, with the two most popular universities being the National University of Singapore and the Technical University of Delft (in the Netherlands)."
+        align="left">
+        <div className={styles.quotationCarouselContainer}>
+          <QuotationCarousel data={A24ii} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was the hardest thing about going on exchange?" bodyText=" ">
+      <ComponentWrapper heading="What was the hardest thing about going on exchange?" align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A21iv} circleDiameter={0} />
+          <QuotationCarousel data={A24iii} circleDiameter={0} height={300} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="left">
+        <div className={styles.quotationCarouselContainer}>
+          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="What is your favourite memory from your time during the exchange?"
-        bodyText="Hopefully more students in future classes will have the chance to experience cool opportunities like these as well."
+        heading="What residence did you live in your first year?"
+        bodyText="Most of the respondents lived at Village 1 during their first year, at 31% of the class. This is followed by UW Place in second place, at 16%, and Ron Eydt Village in third, at 9% of the class. This makes sense, as these are three of the largest capacity residences on campus, with V1 holding 1300+ residents, UW Place holding 1600+ residents, and REV holding almost 1000 residents."
         align="right"
         noBackground>
-        <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A21v} circleDiameter={0} />
+        <WordCloud
+          data={A25}
+          width={wordCloudWidth(isMobile, pageWidth)}
+          height={DefaultProp.graphHeight}
+          wordPadding={7}
+          desktopMaxFontSize={60}
+          mobileMaxFontSize={30}
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper
+        heading="Have you done a URA (Undergraduate Research Assistantship)?"
+        bodyText="While the majority of the class has not done a URA, 20% of them have undertaken an URA, which is a program that allows students to undertake a 10-week part-time research opportunity during a study term."
+        align="left">
+        <div className={styles.graphContainer}>
+          <PieChart data={A26} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
