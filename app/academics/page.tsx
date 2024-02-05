@@ -563,7 +563,7 @@ export default function Academics() {
         </div>
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.demographics} rightPage={pageRoutes.coop} />
+      <BottomNav leftPage={pageRoutes.demographics} rightPage={pageRoutes.computerScienceExperience} />
     </div>
   );
 }

@@ -7,12 +7,11 @@ type PageID =
   | "home"
   | "demographics"
   | "academics"
+  | "computerScienceExperience"
   | "coop"
   | "lifestyleAndInterests"
   | "intimacyAndDrugs"
   | "postGrad"
-  | "friends"
-  | "miscellaneous"
   | "mentalHealth"
   | "personal"
   | "contributors";
@@ -31,6 +30,10 @@ export const pageRoutes: PageRoutes = {
     name: "Academics",
     url: "/academics",
   },
+  computerScienceExperience: {
+    name: "Computer Science Experience",
+    url: "/computer-science-experience",
+  },
   coop: {
     name: "Co-op",
     url: "/coop",
@@ -46,14 +49,6 @@ export const pageRoutes: PageRoutes = {
   postGrad: {
     name: "Post-grad",
     url: "/post-grad",
-  },
-  friends: {
-    name: "Friends",
-    url: "/friends",
-  },
-  miscellaneous: {
-    name: "Miscellaneous",
-    url: "/miscellaneous",
   },
   mentalHealth: {
     name: "Mental Health",

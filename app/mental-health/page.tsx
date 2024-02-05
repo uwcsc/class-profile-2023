@@ -224,7 +224,7 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.miscellaneous} rightPage={pageRoutes.personal} />
+      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.personal} />
     </div>
   );
 }
