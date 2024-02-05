@@ -86,7 +86,7 @@ export default function FullTime() {
       <ComponentWrapper
         heading="What field/career path will you be in post-grad?"
         bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. "
-        noBackground>
+        >
         <WordCloud
           data={F7}
           width={wordCloudWidth(isMobile, pageWidth)}

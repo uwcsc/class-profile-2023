@@ -54,28 +54,26 @@ export const F1 = [
 export const F2 = [
   // G6. Where will you be working from post grad? 
 
-  // TODO MAKE A WORD CLOUD
-  // Contacting Kim as to whether we want to list each city separately
-  { text: "New York", value: 34 },
-  { text: "Bellevue", value: 1 },
-  { text: "Seattle", value: 2 },
-  { text: "London", value: 1 },
-  { text: "Calgary", value: 1 },
-  { text: "Vancouver", value: 2 },
-  { text: "Montreal", value: 1 },
-  { text: "Kitchener", value: 1 },
-  { text: "Markham", value: 1 },
-  { text: "Ottawa", value: 1 },
-  { text: "Waterloo", value: 3 },
-  { text: "Toronto", value: 14 },
-  { text: "Chicago", value: 1 },
-  { text: "Cupertino", value: 1 },
-  { text: "Bay Area", value: 1 },
-  { text: "San Jose", value: 1 },
-  { text: "Los Angeles", value: 1 },
-  { text: "San Francisco", value: 10 },
-  { text: "Sunnyvale", value: 1 },
-  { text: "San Mateo", value: 4 }
+  { text: "New York (NY)", value: 34 },
+  { text: "Bellevue (WA)", value: 1 },
+  { text: "Seattle (WA)", value: 2 },
+  { text: "London (UK)", value: 1 },
+  { text: "Calgary (AB)", value: 1 },
+  { text: "Vancouver (BC)", value: 2 },
+  { text: "Montreal (QC)", value: 1 },
+  { text: "Kitchener (ON)", value: 1 },
+  { text: "Markham (ON)", value: 1 },
+  { text: "Ottawa (ON)", value: 1 },
+  { text: "Waterloo (ON)", value: 3 },
+  { text: "Toronto (ON)", value: 14 },
+  { text: "Chicago (IL)", value: 1 },
+  { text: "Cupertino (CA)", value: 1 },
+  { text: "Bay Area (CA)", value: 1 },
+  { text: "San Jose (CA)", value: 1 },
+  { text: "Los Angeles (CA)", value: 1 },
+  { text: "San Francisco (CA)", value: 10 },
+  { text: "Sunnyvale (CA)", value: 1 },
+  { text: "San Mateo (CA)", value: 4 }
 
   // { text: "New York, New York", value: 34 },
 
