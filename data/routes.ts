@@ -12,6 +12,7 @@ type PageID =
   | "lifestyleAndInterests"
   | "intimacyAndDrugs"
   | "postGrad"
+  | "fullTime"
   | "mentalHealth"
   | "personal"
   | "contributors";
@@ -49,6 +50,10 @@ export const pageRoutes: PageRoutes = {
   postGrad: {
     name: "Post-grad",
     url: "/post-grad",
+  },
+  fullTime: {
+    name: "Full-time",
+    url: "/full-time",
   },
   mentalHealth: {
     name: "Mental Health",
