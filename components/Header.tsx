@@ -29,7 +29,7 @@ export function Header() {
           paddingBottom: verticalPadding,
         }}>
         <h1 className={styles.titleHeader} style={{ fontSize: `${3 - Math.min(0.5, (state.y ?? 0) / 400)}rem` }}>
-          <Link href="/">CS 2022</Link>
+          <Link href="/">CS 2023</Link>
         </h1>
         <button
           onClick={() => {

@@ -51,7 +51,7 @@ export default function Contributors() {
       />
       <CenterWrapper>
         <p>
-          The 2022 CS Class Profile was completed by members of the UW Computer Science Club. Specifically, several current and past members (as of this
+          The 2023 CS Class Profile was completed by members of the UW Computer Science Club. Specifically, several current and past members (as of this
           writing) of the Community Representatives, Designers, Web Committee, and Systems Committee put lots of time into making it what it is. Please contact{" "}
           <a href="mailto: exec@csclub.uwaterloo.ca">exec@csclub.uwaterloo.ca</a> for specific concerns for the CS Class Profile, but the specific contributors
           include the following:

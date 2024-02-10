@@ -40,7 +40,7 @@ export default function Home() {
         <CenterWrapper>
           <h1>Preface</h1>
           <p>
-            The 2022 CS Class Profile consists of data relevant to CS, CFM, and CS/BBA students completing their undergrad in 2022. These were combined with the
+            The 2023 CS Class Profile consists of data relevant to CS, CFM, and CS/BBA students completing their undergrad in 2023. These were combined with the
             knowledge that students in these programs tend to have similar experiences, as they share many core courses. In the standard co-op offering, CS and
             CFM take 4 years and 2 terms to complete, while CS/BBA can take up to a full 5 years.
           </p>
