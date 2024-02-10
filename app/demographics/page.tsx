@@ -141,7 +141,7 @@ export default function Demographics() {
 "
         align="right"
         noBackground>
-        <PieChart data={D9} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+        <PieChart data={D9} {...pieChartProps(isMobile, pageWidth)} labelTextSize={15} labelTextRadialOffset={-30} />
       </ComponentWrapper>
 
       <ComponentWrapper
