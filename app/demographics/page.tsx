@@ -8,13 +8,12 @@ import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
-import { D1, D10, D11, D2, D3, D4, D5, D6, D7, D8, D8i, D9, D12, D13, D14, D15, D16, D16i, D17, D18, D19 } from "@/data/demographics";
+import { D1, D10, D11, D12, D13, D14, D15, D16, D16i, D17, D18, D19, D2, D3, D4, D5, D6, D7, D8, D8i, D9 } from "@/data/demographics";
 import { pageRoutes } from "@/data/routes";
 import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
-import { BarStack } from "@visx/shape";
 
 export default function Demographics() {
   const pageWidth = useWindowDimensions().width;
