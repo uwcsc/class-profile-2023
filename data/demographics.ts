@@ -551,25 +551,14 @@ export const D16i = [
 
 export const D17 = [
   { category: "None", value: 31 },
-  { category: "Advanced Placement (AP)", value: 28 },
-  { category: "International Baccalaureate (IB)", value: 32 },
-  { category: "Gifted", value: 10 },
-  { category: "Language Immersion", value: 3 },
-  { category: "Advanced Placement (AP), Gifted", value: 6 },
-  { category: "Advanced Placement (AP), Language Immersion", value: 4 },
-  { category: "Talented Offerings in the Programmes of Sciences (TOPS)", value: 3 },
-  { category: "International Baccalaureate (IB), Gifted", value: 2 },
-  { category: "International Baccalaureate (IB), Advanced Placement (AP)", value: 2 },
-  { category: "Gifted, Enriched", value: 1 },
-  { category: "International Baccalaureate (IB), Advanced Placement (AP), Gifted", value: 1 },
-  { category: "CEGEP", value: 1 },
-  { category: "Advanced Placement (AP), Enriched", value: 1 },
-  { category: "Advanced Placement (AP), Gifted, Talented Offerings in the Programmes of Sciences (TOPS), Enriched", value: 1 },
-  { category: "Advanced Placement (AP), Gifted, Enriched", value: 1 },
-  { category: "Gifted, Language Immersion", value: 1 },
-  { category: "Enriched", value: 1 },
-  { category: "Advanced Placement (AP), Talented Offerings in the Programmes of Sciences (TOPS)", value: 1 },
+  { category: "AP", value: 45 },
+  { category: "IB", value: 37 },
+  { category: "Gifted", value: 23 },
+  { category: "Language Immersion", value: 8 },
+  { category: "TOPS", value: 5 },
+  { category: "Enriched", value: 5 },
   { category: "Other", value: 5 },
+  { category: "CEGEP", value: 1 },
 ];
 
 export const D18 = [
