@@ -1,6 +1,6 @@
 "use client";
 
-import { BarGraphHorizontal, BarGraphVertical } from "@/components/BarGraph";
+import { BarGraphVertical } from "@/components/BarGraph";
 import { BottomNav } from "@/components/BottomNav";
 import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
@@ -9,7 +9,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
 import { F1, F2, F3, F4, F5, F6, F7 } from "@/data/full-time";
 import { pageRoutes } from "@/data/routes";
-import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
+import { DefaultProp, barGraphProps, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -85,8 +85,7 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="What field/career path will you be in post-grad?"
-        bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. "
-        >
+        bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. ">
         <WordCloud
           data={F7}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -97,7 +96,7 @@ export default function FullTime() {
         />
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.miscellaneous} />
+      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.mentalHealth} />
     </div>
   );
 }

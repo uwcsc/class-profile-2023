@@ -130,7 +130,7 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.postGrad} rightPage={pageRoutes.personal} />
+      <BottomNav leftPage={pageRoutes.fullTime} rightPage={pageRoutes.personal} />
     </div>
   );
 }
