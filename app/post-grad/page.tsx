@@ -5,7 +5,7 @@ import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
-import { P1, P2, P3, P4} from "@/data/post-grad";
+import { P1, P2, P3, P4 } from "@/data/post-grad";
 import { pageRoutes } from "@/data/routes";
 import { pieChartProps } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -25,7 +25,7 @@ export default function PostGrad() {
         heading="Do you plan on pursuing post-graduate education?"
         bodyText="Out of the 133 respondents in this section, about 50% of them are not planning on pursuing a post-graduate education, while 13% are planning to do so and 29% are currently unsure. Post-graduate education is an option, but does not have to be everyone’s pathway!">
         <div className={styles.graphContainer}>
-          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth)} labelTextXOffset={20}/>
+          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth)} labelTextXOffset={20} />
         </div>
       </ComponentWrapper>
 
