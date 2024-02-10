@@ -1,15 +1,15 @@
 export const A1 = [
   {
     category: "On time",
-    value: 84,
+    value: 111,
   },
   {
     category: "Earlier",
-    value: 8,
+    value: 10,
   },
   {
     category: "Later",
-    value: 8,
+    value: 10,
   },
 ];
 
@@ -18,7 +18,7 @@ export const A2 = [
   { category: "Humanities", value: 62 },
   { category: "Pure Science", value: 27 },
   { category: "Applied Science", value: 9 },
-  { category: "Social Science", value: 39 },
+  { category: "Social Science", value: 46 },
 ];
 
 export const A3 = [
@@ -526,11 +526,11 @@ export const A11 = [
 export const A12 = [
   {
     category: "Yes",
-    value: 37,
+    value: 48,
   },
   {
     category: "No",
-    value: 63,
+    value: 83,
   },
 ];
 
@@ -662,21 +662,21 @@ export const A12iKeys = ["1", "2", "3", "4", "5"];
 export const A13 = [
   {
     category: "No",
-    value: 71,
+    value: 94,
   },
   {
     category: "Yes",
-    value: 29,
+    value: 39,
   },
 ];
 
 export const A13i = [
   { category: "SE", value: 10 },
-  { category: "CS/ BBA", value: 3 },
+  { category: "CS/BBA", value: 3 },
   { category: "MATH", value: 15 },
   { category: "CFM", value: 4 },
-  { category: "MATH/ BBA", value: 1 },
-  { category: "MATH/ CPA", value: 1 },
+  { category: "MATH/BBA", value: 1 },
+  { category: "MATH/CPA", value: 1 },
   { category: "KI", value: 1 },
   { category: "CA COOP", value: 1 },
   { category: "MECH ENG", value: 1 },
@@ -919,8 +919,8 @@ export const A19 = [
 ];
 
 export const A20 = [
-  { category: "No", value: 57 },
-  { category: "Yes", value: 43 },
+  { category: "No", value: 72 },
+  { category: "Yes", value: 55 },
 ];
 
 export const A20i = [
@@ -1022,10 +1022,10 @@ export const A21 = [
 ];
 
 export const A22 = [
-  { category: "0", value: 83.05 },
-  { category: "1", value: 9.32 },
-  { category: "2", value: 4.24 },
-  { category: "3", value: 3.39 },
+  { category: "0", value: 98 },
+  { category: "1", value: 11 },
+  { category: "2", value: 5 },
+  { category: "3", value: 4 },
 ];
 
 export const A23 = [
@@ -1039,14 +1039,14 @@ export const A23 = [
 ];
 
 export const A24 = [
-  { category: "No", value: 91.27 },
-  { category: "Yes", value: 8.73 },
+  { category: "No", value: 115 },
+  { category: "Yes", value: 11 },
 ];
 
 export const A24i = [
-  { category: "4B", value: 18.18 },
-  { category: "4A", value: 72.73 },
-  { category: "2A", value: 9.09 },
+  { category: "4B", value: 2 },
+  { category: "4A", value: 8 },
+  { category: "2A", value: 1 },
 ];
 
 export const A24ii = [
@@ -1099,6 +1099,6 @@ export const A25 = [
 ];
 
 export const A26 = [
-  { category: "No", value: 79.84 },
-  { category: "Yes", value: 29.16 },
+  { category: "No", value: 103 },
+  { category: "Yes", value: 26 },
 ];
