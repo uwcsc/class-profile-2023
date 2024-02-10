@@ -263,10 +263,6 @@ export const D8i = [
     text: "Ukrainian",
     value: 1,
   },
-  {
-    text: "0",
-    value: 2,
-  },
 ];
 
 export const D9 = [
