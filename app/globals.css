@@ -27,11 +27,11 @@ body {
   --orange: #f5917b;
   --light-orange: #ffc4a9;
   --lighter-orange: #ffddcd;
-  --navy: #0b2041; 
+  --navy: #0b2041;
   /* Above is New Background Colour */
   --light-navy: #354265;
   --dark-navy: #141d34;
-  --side-panel: #a1ccf220;
+  --side-panel: #141d34;
   --menu-icon: #e18e89;
   --menu-icon-hover: #eaa9a6;
   --menu-close-icon: #603e2f;
@@ -83,10 +83,10 @@ body {
   --dark--primary-heading: #a1ccf2;
   /* Above is New H2 */
   /* --dark--secondary-heading: var(--pink); */
-  --dark--secondary-heading: #FFF0BB;
+  --dark--secondary-heading: #ef839d;
   /* Above is New H3 */
   --dark--link: var(--pink);
-  --dark--4-heading: #91F1AC;
+  --dark--4-heading: #91f1ac;
   /* Above is New H4 */
   --dark--link-hover: var(--light-pink);
   --dark--primary-text: #fdf9ec;
