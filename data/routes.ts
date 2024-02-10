@@ -52,7 +52,7 @@ export const pageRoutes: PageRoutes = {
     url: "/post-grad",
   },
   fullTime: {
-    name: "Full Time",
+    name: "Full-time",
     url: "/full-time",
   },
   mentalHealth: {
