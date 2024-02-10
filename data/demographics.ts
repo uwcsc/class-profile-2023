@@ -24,15 +24,7 @@ export const D2 = [
   },
   {
     category: "Gender non-conforming",
-    value: 0.7,
-  },
-  {
-    category: "Questioning",
-    value: 0.7,
-  },
-  {
-    category: "Non-binary",
-    value: 0.7,
+    value: 2.2,
   },
 ];
 
