@@ -103,7 +103,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6ii */}
-      <ComponentWrapper heading="Where were you located during work" bodyText=" ">
+      <ComponentWrapper heading="Where were you located during work?" bodyText=" ">
         <LineGraph
           data={C6ii}
           colorRange={colorRange2}
