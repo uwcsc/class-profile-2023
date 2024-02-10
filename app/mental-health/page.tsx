@@ -1,14 +1,13 @@
 "use client";
 
 import { BarGraphVertical } from "@/components/BarGraph";
-import { BodyLink } from "@/components/BlankLink";
 import { BottomNav } from "@/components/BottomNav";
 import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { QuotationCarousel } from "@/components/QuotationCarousel";
 import { SectionHeader } from "@/components/SectionHeader";
-import { H1, H2, H3, H4, H5, H5i, H6, H7, H8, H9, H10, H11 } from "@/data/mental-health";
+import { H1, H10, H11, H2, H3, H4, H5, H5i, H6, H7, H8, H9 } from "@/data/mental-health";
 import { pageRoutes } from "@/data/routes";
 import { barGraphProps, barGraphWidth, pieChartProps } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
@@ -69,7 +68,7 @@ export default function MentalHealth() {
         bodyText="Our respondents have expressed diverse opinions and provided feedback on their encounters with UW Health Services. The majority of respondents have given ratings falling within the 1-3 range"
         align="right"
         noBackground>
-      <BarGraphVertical data={H5i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={H5i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -105,21 +104,13 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What do you do to help cope with your mental health issues?"
-        bodyText=""
-        align="center"
-        noBackground>
+      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="center" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H8} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What do you think UW can do better to accommodate your mental health?"
-        bodyText=""
-        align="center"
-        noBackground>
+      <ComponentWrapper heading="What do you think UW can do better to accommodate your mental health?" bodyText="" align="center" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H9} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
@@ -133,11 +124,7 @@ export default function MentalHealth() {
         <BarGraphVertical data={H10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What has been your experience with imposter syndrome?"
-        bodyText=""
-        align="center"
-        noBackground>
+      <ComponentWrapper heading="What has been your experience with imposter syndrome?" bodyText="" align="center" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
