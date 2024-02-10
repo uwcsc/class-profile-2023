@@ -7,7 +7,10 @@
 }
 
 .title {
-  color: var(--primary-accent-light);
+  background: linear-gradient(281deg, #91f1ac 57.31%, #5caff9 94.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: calc(70rem / 16);
   margin: calc(40rem / 16) auto;
   word-break: break-word;
