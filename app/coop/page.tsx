@@ -1,5 +1,6 @@
 "use client";
 
+import { BarGraphVertical } from "@/components/BarGraph";
 import { BottomNav } from "@/components/BottomNav";
 import { BoxPlot } from "@/components/Boxplot";
 import { ComponentSwitcher } from "@/components/ComponentSwitcher";
@@ -10,11 +11,10 @@ import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { StackedBarGraphHorizontal, StackedBarGraphVertical } from "@/components/StackedBarGraph";
 import { WordCloud } from "@/components/WordCloud";
-import { BarGraphVertical } from "@/components/BarGraph";
 import { C1, C2, C3, C4, C5, C6i, C6ii, C6iv, C6ix, C6ixKey, C6v, C6vi, C6viKey, C6vii, C6viiKey, C6viii, C6x, C6xKey } from "@/data/coop";
 import { pageRoutes } from "@/data/routes";
 import { Color } from "@/utils/Color";
-import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
+import { DefaultProp, barGraphMargin, barGraphProps, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
