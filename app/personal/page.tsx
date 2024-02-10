@@ -5,7 +5,7 @@ import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
 import { QuotationCarousel } from "@/components/QuotationCarousel";
 import { SectionHeader } from "@/components/SectionHeader";
-import { P2, P3, P4, P5, P6, P7, P8, P9 } from "@/data/personal";
+import { P1, P2, P3, P4, P5, P6, P7, P8, P9, P10 } from "@/data/personal";
 import { pageRoutes } from "@/data/routes";
 import styles from "../basePage.module.css";
 
@@ -15,73 +15,63 @@ export default function Personal() {
       <Header />
       <SectionHeader title="Personal" subtitle="Life lessons from students" />
 
-      <ComponentWrapper
-        heading="What is your favourite memory from your time at UW?"
-        bodyText="Most students' favourite memories relate to their time spent with friends and significant others! This goes to show how important the people around us are!">
+      <ComponentWrapper heading="What was your favourite extracurricular activity that you participated in during your time at UW?" bodyText=" ">
+        <div className={styles.quotationCarouselContainer}>
+          <QuotationCarousel data={P1} circleDiameter={0} height={300} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is one extracurricular you regret not joining?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P2} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What is one thing that you wish you could tell your first year self?"
-        bodyText="In summary, don't spend too much time worrying about your grades or co-op during university. Develop new hobbies, be more open-minded, and talk to more people. There's a lot to experience in university that you don't want to miss or regret not being a part of. And as always, remember to drink responsibly!"
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="What is the best life hack/tip?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P3} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your favourite inspirational quote/words to live by?" bodyText=" ">
+      <ComponentWrapper heading="What is your favourite inspirational quote/words to live by?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P4} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P4} circleDiameter={0} height={400} width={700} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What is the nicest thing a classmate did for you?"
-        bodyText="Any small act of kindness can make someone else's day and possibly remain etched in their memory for a lifetime. We see that a lot of respondents' classmates helped them with their assignments and exams. Some respondents fondly remember when their classmate asked them if they were okay and struck up a conversation with them."
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="What is your most embarrassing story from your time at UW?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P5} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What is the best life hack/tip?"
-        bodyText="We have a wide range of life hacks about submitting assignments, coding shortcuts, and living healthily. Take notes and use them to your advantage!">
+      <ComponentWrapper heading="What is the nicest thing a classmate did for you?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P6} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What is the best lesson you learned from your time at UW?"
-        bodyText="In short, challenge yourself to get out of your comfort zone; new opportunities and experiences can help you grow and you might even find something new that you really enjoy! A lot of the small, insignificant things you worry about won't matter in the end. Most importantly, be sure to take care of yourself, enjoy your life and savour each moment!"
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="What is one regret you have after finishing university?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P7} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What is one aspect of your life that makes you the happiest?"
-        bodyText="Both romantic and platonic relationships, as well as hobbies, are the areas of respondents’ lives that make them the happiest!">
+      <ComponentWrapper heading="What is one thing that you wish you could tell your first-year self?" bodyText=" " align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P8} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="What advice would you give current/future CS students at UW?"
-        bodyText="The main takeaways here are to be social, take care of yourself and your mental health, and do things beyond just school and co-op. UW is a truly unique experience and you should try to make the most of all aspects of it!"
-        align="right"
-        noBackground>
+      <ComponentWrapper heading="What is the best lesson you learned from your time at UW?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P9} circleDiameter={0} height={500} width={800} />
+          <QuotationCarousel data={P9} circleDiameter={0} height={300} />
+        </div>
+      </ComponentWrapper>
+
+      <ComponentWrapper heading="What is your favourite memory from your time at UW?" bodyText=" " align="right" noBackground>
+        <div className={styles.quotationCarouselContainer}>
+          <QuotationCarousel data={P10} circleDiameter={0} height={400} width={400} />
         </div>
       </ComponentWrapper>
 
