@@ -1,81 +1,109 @@
 export const communityReps = [
   {
     name: "Kim Guo",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/kbrqin/",
   },
   {
     name: "Imane Yacoubi",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/iyacoubi",
   },
   {
     name: "Ashnoor Randhawa",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/ashnoor-kaur/",
   },
   {
     name: "Mayank Mehra",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/mayank808/",
   },
   {
     name: "Katherine Liu",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/katherine-liu-59b30324a/",
   },
   {
     name: "Ivy Lei",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/ivy-lei/",
   },
   {
     name: "Kevin Cui",
-    link: "https://www.linkedin.com/in/sat-arora/",
+    link: "https://www.linkedin.com/in/kevincui1",
   },
 ];
 
 export const designers = [
   {
-    name: "Jenny Zhang",
-    link: "https://www.instagram.com/j3nny_zhang",
+    name: "Kim Guo",
+    link: "https://www.linkedin.com/in/kbrqin/",
   },
   {
-    name: "Vivian Guo",
-    link: "https://www.linkedin.com/in/vivianvg",
+    name: "Cadey Chen",
+    link: "https://www.linkedin.com/in/cadey-chen/",
   },
   {
-    name: "Aaryan Shroff",
-    link: "https://www.linkedin.com/in/aaryan-shroff",
+    name: "Ashlyn Wu",
+    link: "https://www.linkedin.com/in/ashlynwu/",
   },
   {
-    name: "Rachel Ma",
-    link: "",
+    name: "Roni Wu",
+    link: "https://www.linkedin.com/in/roni-wu-908900140/",
+  },
+  {
+    name: "Jessica Chan",
+    link: "https://www.linkedin.com/in/jessica-r-chan/",
+  },
+  {
+    name: "Linda Wang",
+    link: "https://www.linkedin.com/in/linda-y-wang/",
+  },
+  {
+    name: "Kim Guo",
+    link: "https://www.linkedin.com/in/kellyqu/",
+  },
+  {
+    name: "Kelly Qu",
+    link: "https://www.linkedin.com/in/kbrqin/",
+  },
+  {
+    name: "Anny Wei",
+    link: "https://www.linkedin.com/in/annyzwei/",
+  },
+  {
+    name: "Lucy Qi",
+    link: "https://www.linkedin.com/in/lucyqqi/",
+  },
+  {
+    name: "Lila Hoang ",
+    link: "https://www.linkedin.com/in/lila-hoang-a13851263/",
+  },
+  {
+    name: "Hailey Chan",
+    link: "https://www.linkedin.com/in/chan-hailey/",
   },
 ];
 
-export const classProfile = [
+export const CPWebDevs = [
   {
     name: "Alexander Liao",
-    link: "",
+    link: "https://www.linkedin.com/in/alexander-liao/?originalSubdomain=ca",
   },
-  {
-    name: "Muhammad Hamza",
-    link: "",
-  },
-  {
-    name: "Kushal Goel",
-    link: "",
-  },
+  // {
+  //   name: "Kushal Goel",
+  //   link: "https://www.linkedin.com/in/kushal-goel/?originalSubdomain=ca",
+  // },
   {
     name: "Cathie Yan",
-    link: "",
+    link: "https://www.linkedin.com/in/cathleen-yan/?originalSubdomain=ca",
   },
   {
     name: "Ryan Zhou",
-    link: "",
+    link: "https://www.linkedin.com/in/ryan-zhou-498b94285/?originalSubdomain=ca",
   },
   {
     name: "Emily Huang",
-    link: "",
+    link: "https://www.linkedin.com/in/emilyhuxng/?originalSubdomain=ca",
   },
   {
     name: "Franklin Ramirez",
-    link: "",
+    link: "https://www.linkedin.com/in/franklin-ramirez611/",
   },
 ];
 

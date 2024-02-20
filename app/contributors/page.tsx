@@ -4,7 +4,7 @@ import { BottomNav } from "@/components/BottomNav";
 import { CenterWrapper } from "@/components/CenterWrapper";
 import { Header } from "@/components/Header";
 import { SectionHeader } from "@/components/SectionHeader";
-import { communityReps, designers, sysCom, webDevs } from "@/data/contributors";
+import { CPWebDevs, communityReps, designers, sysCom } from "@/data/contributors";
 import { pageRoutes } from "@/data/routes";
 import styles from "../basePage.module.css";
 
@@ -51,10 +51,10 @@ export default function Contributors() {
       />
       <CenterWrapper>
         <p>
-          The 2023 CS Class Profile was completed by members of the UW Computer Science Club. Specifically, several current and past members (as of this
-          writing) of the Community Representatives, Designers, Web Committee, and Systems Committee put lots of time into making it what it is. Please contact{" "}
-          <a href="mailto: exec@csclub.uwaterloo.ca">exec@csclub.uwaterloo.ca</a> for specific concerns for the CS Class Profile, but the specific contributors
-          include the following:
+          The 2024 CS Class Profile was completed by members of the UW Computer Science Club. Specifically, several current and past members (as of this
+          writing) of the Community Representatives, Designers, Class Profile Web Developers, and Systems Committee put lots of time into making it what it is.
+          Please contact <a href="mailto: exec@csclub.uwaterloo.ca">exec@csclub.uwaterloo.ca</a> for specific concerns for the CS Class Profile, but the
+          specific contributors include the following:
         </p>
         <ul>
           <li>
@@ -66,8 +66,8 @@ export default function Contributors() {
             <ContributorGroup group={designers} />
           </li>
           <li>
-            Website Committee
-            <ContributorGroup group={webDevs} />
+            Class Profile Web Developers
+            <ContributorGroup group={CPWebDevs} />
           </li>
           <li>
             Systems Committee
