@@ -85,10 +85,10 @@ export const CPWebDevs = [
     name: "Alexander Liao",
     link: "https://www.linkedin.com/in/alexander-liao/?originalSubdomain=ca",
   },
-  // {
-  //   name: "Kushal Goel",
-  //   link: "https://www.linkedin.com/in/kushal-goel/?originalSubdomain=ca",
-  // },
+  {
+    name: "Kushal Goel",
+    link: "https://www.linkedin.com/in/kushal-goel/?originalSubdomain=ca",
+  },
   {
     name: "Cathie Yan",
     link: "https://www.linkedin.com/in/cathleen-yan/?originalSubdomain=ca",
@@ -107,13 +107,13 @@ export const CPWebDevs = [
   },
 ];
 
-export const sysCom = [
-  {
-    name: "Raymond Li",
-    link: "https://raymond.li/",
-  },
-  {
-    name: "Max Erenberg",
-    link: "https://maxerenberg.github.io/",
-  },
-];
+// export const sysCom = [
+//   {
+//     name: "Raymond Li",
+//     link: "https://raymond.li/",
+//   },
+//   {
+//     name: "Max Erenberg",
+//     link: "https://maxerenberg.github.io/",
+//   },
+// ];

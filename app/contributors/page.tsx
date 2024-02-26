@@ -69,10 +69,10 @@ export default function Contributors() {
             Class Profile Web Developers
             <ContributorGroup group={CPWebDevs} />
           </li>
-          <li>
+          {/* <li>
             Systems Committee
             <ContributorGroup group={sysCom} />
-          </li>
+          </li> */}
         </ul>
         <p>
           Furthermore, special thanks to former CSC President and Vice President,{" "}
