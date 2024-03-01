@@ -55,7 +55,7 @@ export default function PostGrad() {
         <PieChart data={P4} {...pieChartProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.mentalHealth} />
+      <BottomNav leftPage={pageRoutes.intimacyAndDrugs} rightPage={pageRoutes.fullTime} />
     </div>
   );
 }

@@ -229,7 +229,7 @@ export default function Coop() {
         </div>
       </ComponentWrapper>
 
-      <BottomNav leftPage={pageRoutes.academics} rightPage={pageRoutes.lifestyleAndInterests} />
+      <BottomNav leftPage={pageRoutes.computerScienceExperience} rightPage={pageRoutes.lifestyleAndInterests} />
     </div>
   );
 }
