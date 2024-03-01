@@ -4,7 +4,7 @@ import { BottomNav } from "@/components/BottomNav";
 import { CenterWrapper } from "@/components/CenterWrapper";
 import { Header } from "@/components/Header";
 import { SectionHeader } from "@/components/SectionHeader";
-import { CPWebDevs, communityReps, designers, sysCom } from "@/data/contributors";
+import { CPWebDevs, communityReps, designers } from "@/data/contributors";
 import { pageRoutes } from "@/data/routes";
 import styles from "../basePage.module.css";
 

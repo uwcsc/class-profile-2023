@@ -71,7 +71,7 @@ export const designers = [
     link: "https://www.linkedin.com/in/lucyqqi/",
   },
   {
-    name: "Lila Hoang ",
+    name: "Lila Hoang",
     link: "https://www.linkedin.com/in/lila-hoang-a13851263/",
   },
   {
@@ -83,23 +83,23 @@ export const designers = [
 export const CPWebDevs = [
   {
     name: "Alexander Liao",
-    link: "https://www.linkedin.com/in/alexander-liao/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/in/alexander-liao/",
   },
   {
     name: "Kushal Goel",
-    link: "https://www.linkedin.com/in/kushal-goel/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/in/kushal-goel/",
   },
   {
     name: "Cathie Yan",
-    link: "https://www.linkedin.com/in/cathleen-yan/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/in/cathleen-yan/",
   },
   {
     name: "Ryan Zhou",
-    link: "https://www.linkedin.com/in/ryan-zhou-498b94285/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/in/ryan-zhou-498b94285/",
   },
   {
     name: "Emily Huang",
-    link: "https://www.linkedin.com/in/emilyhuxng/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/in/emilyhuxng/",
   },
   {
     name: "Franklin Ramirez",
