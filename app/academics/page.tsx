@@ -80,7 +80,7 @@ export default function Academics() {
         bodyText="Even though the vast majority of respondents stayed on track with their initial plans, it is also perfectly normal to deviate from the planned route for a degree. Some students may have either shortened their degree by, for example, removing co-op from their degree or taking more classes than a full course load per term. Meanwhile, others may have delayed their graduation by retaking failed classes, taking gap years, adding minors to their degree, etc. "
         align="left">
         <div className={styles.graphContainer}>
-          <PieChart data={A1} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A1} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -113,6 +113,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -129,7 +130,8 @@ export default function Academics() {
           </p>
         }
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={A4}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -160,6 +162,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -205,6 +208,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -252,6 +256,7 @@ export default function Academics() {
           desktopMinFontSize={15}
           minFrequency={2}
           mobileMaxFontSize={60}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -297,6 +302,7 @@ export default function Academics() {
           desktopMaxFontSize={80}
           mobileMaxFontSize={80}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -306,7 +312,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A12} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A12} {...pieChartProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -333,7 +339,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -342,7 +348,7 @@ export default function Academics() {
         bodyText="Most of the students who transferred into computer science from a different program transferred from either Honours Mathematics or Software Engineering. Math and CS share many courses in the first year of the program, thus many Math students may have realized that they have a passion for computer science and transferred into the program. Software engineering and CS are programs in which the students eventually end up in similar jobs and post-grad roles, thus, some of them may have chosen to transfer to CS for a slightly less rigorous workload compared to that required by the Engineering faculty."
         align="left">
         <div className={styles.graphContainer}>
-          <BarGraphHorizontal data={A13i} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, ...{ left: 120 } }} />
+          <BarGraphHorizontal data={A13i} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, ...{ left: 120 } }} />
         </div>
       </ComponentWrapper>
 
@@ -351,7 +357,7 @@ export default function Academics() {
         bodyText="The majority of students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
         align="left">
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
+          <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -365,7 +371,7 @@ export default function Academics() {
             widthAlternatingLabel={1000}
             alternatingLabelSpace={200}
             lowerLabelDy="60px"
-            {...barGraphProps(isMobile, pageWidth)}
+            {...barGraphProps(isMobile, pageWidth, false)}
             margin={{ ...barGraphMargin, ...{ left: 180 } }}
           />
         </div>
@@ -394,6 +400,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -401,7 +408,7 @@ export default function Academics() {
         heading="Which study term did you think was the hardest?"
         bodyText="Second year seemed to be the most difficult for the most students, with 2A, followed by 2B, being considered the most difficult study terms. This could be due to that many of the least favoured courses and courses considered to be the most difficult, such as CS 245 and MATH 239, would have been taken during the students’ 2A or 2B study term."
         align="left">
-        <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth, false)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -409,7 +416,7 @@ export default function Academics() {
         bodyText="The 4A and 4B study terms were considered to be the easiest study terms by a large margin. This is likely due to most of the more difficult core courses being finished already and students being able to take electives that they are more interested in once all the mandatory courses had been completed. This statistic highlights that even though classes may get harder (in 2A and 2B), it will get better after it gets worse, and that we should persevere through the challenges that may arise during our undergraduate careers!"
         align="right"
         noBackground>
-        <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper heading="What was your average each term?" align="right">
@@ -446,7 +453,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A20} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A20} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -469,6 +476,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -493,7 +501,7 @@ export default function Academics() {
         heading="How many overloaded terms did you take (6 or more courses in one term)?"
         bodyText="59% of respondents did not take any overloaded terms. Overloading your term can be very challenging, as it increases your workload greatly. However, it is still possible, as 27% of all of the respondents overloaded one or two terms, while 13% overloaded 3 or more terms, with some of them overloading 6 terms!"
         align="right">
-        <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth, false)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -502,7 +510,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={A22} {...barGraphProps(isMobile, pageWidth)} />
+          <BarGraphVertical data={A22} {...barGraphProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -510,7 +518,7 @@ export default function Academics() {
         heading="How many midterms/finals have you failed?"
         bodyText="Like previously, most of the class did not fail any midterms or finals, at 65% of the respondents, but this number is a lot lower than the number of people who did not fail any courses, meaning that even if you do fail a large exam, it doesn’t mean that you will fail your course - as long as you put in the effort for the rest of the course. Regardless, no matter if you fail one or a few exams, it’s still not over!"
         align="right">
-        <BarGraphVertical data={A23} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={A23} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <SectionWrapper title="Exchange" />
@@ -521,7 +529,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A24} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A24} {...pieChartProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -530,7 +538,7 @@ export default function Academics() {
         bodyText="It seems as though taking an exchange term is popular later on in this year’s students’ undergraduate careers, as 91% of those who took an exchange term took it in either term 4A or 4B."
         align="right">
         <div className={styles.graphContainer}>
-          <PieChart data={A24i} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A24i} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -552,7 +560,7 @@ export default function Academics() {
 
       <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} background={true} />
         </div>
       </ComponentWrapper>
 
@@ -576,7 +584,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A26} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={A26} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 

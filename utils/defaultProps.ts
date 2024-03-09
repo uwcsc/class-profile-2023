@@ -28,19 +28,21 @@ export const DefaultProp: { [key in PropName]: number } = {
   labelWidth: 120,
 };
 
-export const barGraphProps = (isMobile: boolean, pageWidth: number) => {
+export const barGraphProps = (isMobile: boolean, pageWidth: number, background: boolean) => {
   return {
     width: barGraphWidth(isMobile, pageWidth),
     height: DefaultProp.graphHeight,
     margin: barGraphMargin,
+    background: background,
   };
 };
 
-export const pieChartProps = (isMobile: boolean, pageWidth: number) => {
+export const pieChartProps = (isMobile: boolean, pageWidth: number, background: boolean) => {
   return {
     width: pieChartWidth(isMobile, pageWidth),
     labelWidth: DefaultProp.labelWidth,
     labelTextSize: DefaultProp.labelSize,
+    background: background,
   };
 };
 

@@ -1,4 +1,12 @@
-.piePath {
+.piePathWithBackground{
+  fill: var(--chart-green-light);
+  stroke: var(--label);
+  stroke-width: 1px;
+  stroke-dasharray: 0;
+  stroke-linecap: round;
+  transition: fill 0.5s ease-out;
+}
+.piePathWithoutBackground{
   fill: var(--tertiary-background);
   stroke: var(--label);
   stroke-width: 1px;
@@ -15,7 +23,13 @@
   fill: white;
 }
 
-.group:hover > .piePath {
+.group:hover > .piePathWithBackground {
+  fill: var(--chart-green-heavy);
+  filter: drop-shadow(0px 0px calc(6rem / 16) var(--primary-accent));
+}
+
+.group:hover > .piePathWithoutBackground {
   fill: var(--primary-accent);
   filter: drop-shadow(0px 0px calc(6rem / 16) var(--primary-accent));
 }
+

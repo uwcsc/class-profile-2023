@@ -54,6 +54,49 @@
   text-align: center;
 }
 
+.withBackground h3 {
+  font-size: calc(32rem / 16);
+  font-weight: 700;
+  color: var(--chart-green-heavy);
+  margin-top: calc(24rem / 16);
+  margin-bottom: calc(16rem / 16);
+  letter-spacing: 0.075rem;
+}
+
+.withBackground a {
+  color: var(--chart-green-heavy);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+.withBackground a:hover {
+  color: var(--chart-green-light);
+}
+
+.noBackgroundCloud {
+  background: none;
+  align-self: center;
+}
+
+.noBackgroundCloud h3 {
+  font-size: calc(32rem / 16);
+  font-weight: 700;
+  color: var(--chart-yellow-heavy);
+  margin-top: calc(24rem / 16);
+  margin-bottom: calc(16rem / 16);
+  letter-spacing: 0.075rem;
+}
+
+.noBackgroundCloud a {
+  color: var(--chart-yellow-heavy);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+.noBackgroundCloud a:hover {
+  color: var(--chart-yellow-light);
+}
+
 @media screen and (max-width: 900px) {
   .sideWrapperCommon {
     margin: auto;

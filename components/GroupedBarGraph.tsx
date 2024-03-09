@@ -63,6 +63,8 @@ interface GroupedBarGraphProps {
   defaultLabelDy?: string;
   /** Position of lower labels in x-axis, in px. Only for Vertical graphs */
   lowerLabelDy?: string;
+  
+  background? : boolean;
 }
 
 // Best format for props
@@ -116,6 +118,7 @@ export const GroupedBarGraphVertical = withTooltip<GroupedBarGraphProps, Tooltip
     tooltipData,
     hideTooltip,
     showTooltip,
+    background = false,
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const alternatingLabel = width <= widthAlternatingLabel;
@@ -316,6 +319,7 @@ export const GroupedBarGraphHorizontal = withTooltip<GroupedBarGraphProps, Toolt
     tooltipData,
     hideTooltip,
     showTooltip,
+    background = false,
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
 

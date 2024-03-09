@@ -41,6 +41,8 @@ interface WordCloudProps {
   className?: string;
   /** Items that show up less frequently than this will be hidden */
   minFrequency?: number;
+  /** Has a Background block or not */
+  background?: boolean;
 }
 
 interface WordData {
@@ -48,7 +50,6 @@ interface WordData {
   value: number;
 }
 
-const wordColors = [Color.primaryAccent, Color.primaryAccentLight];
 const TOOLTIP_HORIZONTAL_SHIFT_SCALER = 12.0;
 
 export const WordCloud = withTooltip(
@@ -67,6 +68,7 @@ export const WordCloud = withTooltip(
     className,
     minWidth,
     minFrequency,
+    background = false,
   }: WordCloudProps) => {
     const { tooltipData, tooltipLeft, tooltipTop, tooltipOpen, showTooltip, hideTooltip } = useTooltip<WordData>();
 
@@ -96,6 +98,7 @@ export const WordCloud = withTooltip(
           spiral={spiral}
           isMobile={useIsMobile()}
           minWidth={minWidth}
+          background={background}
         />
 
         {tooltipOpen && tooltipData ? (
@@ -136,8 +139,13 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
   showTooltip,
   hideTooltip,
   isMobile,
+  background = false,
 }) => {
   width = width < minWidth ? minWidth : width;
+
+  // In Block : Green
+  // Outside Block : Yellow
+  const wordColors = background ? [Color.chartGreenHeavy, Color.chartGreenLight] : [Color.chartYellowHeavy, Color.chartYellowLight];
 
   const minFontSize = isMobile ? mobileMinFontSize : desktopMinFontSize;
   const maxFontSize = isMobile ? mobileMaxFontSize : desktopMaxFontSize;
@@ -152,6 +160,7 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
 
   const fontSizeSetter = (datum: WordData) => fontScale(datum.value);
   const fixedValueGenerator = () => randomSeed;
+
   return (
     <VisxWordcloud
       words={data}

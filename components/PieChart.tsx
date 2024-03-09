@@ -30,6 +30,8 @@ interface PieChartProps {
   /** Accessor function to get value to display as label text from datum. */
   getLabelDisplayValueFromDatum?: (datum: PieChartData) => string;
   className?: string;
+  /** Has a Background block or not */
+  background?: boolean;
 }
 
 interface PieChartData {
@@ -57,6 +59,7 @@ export const PieChart = withTooltip<PieChartProps>(
     tooltipData,
     hideTooltip,
     showTooltip,
+    background = false,
   }) => {
     if (minWidth) {
       width = width < minWidth ? minWidth : width;
@@ -69,6 +72,7 @@ export const PieChart = withTooltip<PieChartProps>(
     const responsiveLabelTextSize = Math.min(labelTextSize, width / 10);
 
     const sum = data.map((x) => x.value).reduce((x, y) => x + y);
+    const piePathClassName = background ? styles.piePathWithBackground : styles.piePathWithoutBackground;
 
     return (
       <div>
@@ -97,7 +101,7 @@ export const PieChart = withTooltip<PieChartProps>(
                           });
                         }}
                         onMouseOut={hideTooltip}
-                        className={styles.piePath}
+                        className={piePathClassName}
                         d={pathArc}
                       />
                     </Group>
