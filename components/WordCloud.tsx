@@ -1,11 +1,13 @@
+"use client";
+
+import { Color } from "@/utils/Color";
+import { inDevEnvironment } from "@/utils/inDevEnviroment";
+import { useIsMobile } from "@/utils/isMobile";
 import { scaleLog } from "@visx/scale";
 import { Text } from "@visx/text";
 import { useTooltip, withTooltip } from "@visx/tooltip";
 import { Wordcloud as VisxWordcloud } from "@visx/wordcloud";
 import React from "react";
-import { Color } from "@/utils/Color";
-import { inDevEnvironment } from "@/utils/inDevEnviroment";
-import { useIsMobile } from "@/utils/isMobile";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 
@@ -37,6 +39,8 @@ interface WordCloudProps {
   spiral?: "rectangular" | "archimedean";
   /** ClassName of the wrapper of the wordcloud */
   className?: string;
+  /** Items that show up less frequently than this will be hidden */
+  minFrequency?: number;
 }
 
 interface WordData {
@@ -62,6 +66,7 @@ export const WordCloud = withTooltip(
     spiral,
     className,
     minWidth,
+    minFrequency,
   }: WordCloudProps) => {
     const { tooltipData, tooltipLeft, tooltipTop, tooltipOpen, showTooltip, hideTooltip } = useTooltip<WordData>();
 
@@ -70,7 +75,7 @@ export const WordCloud = withTooltip(
         <WordCloudWordsMemoized
           width={width}
           height={height}
-          data={data}
+          data={minFrequency ? data.filter((x) => x.value >= minFrequency) : data}
           wordPadding={wordPadding}
           fontWeight={fontWeight}
           desktopMinFontSize={desktopMinFontSize}
