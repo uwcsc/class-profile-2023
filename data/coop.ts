@@ -1,11 +1,11 @@
 export const C1 = [
   {
     category: "Yes",
-    value: 94.8,
+    value: 128,
   },
   {
     category: "No",
-    value: 5.2,
+    value: 7,
   },
 ];
 
@@ -99,22 +99,22 @@ export const C2 = [
 export const C3 = [
   {
     category: "Yes",
-    value: 18.7,
+    value: 23,
   },
   {
     category: "No",
-    value: 81.3,
+    value: 100,
   },
 ];
 
 export const C4 = [
   {
     category: "Yes",
-    value: 6.5,
+    value: 8,
   },
   {
     category: "No",
-    value: 93.5,
+    value: 115,
   },
 ];
 

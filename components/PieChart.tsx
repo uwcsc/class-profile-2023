@@ -2,7 +2,6 @@ import { Group } from "@visx/group";
 import Pie, { ProvidedProps } from "@visx/shape/lib/shapes/Pie";
 import { Text } from "@visx/text";
 import { withTooltip } from "@visx/tooltip";
-import React from "react";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 
@@ -69,6 +68,8 @@ export const PieChart = withTooltip<PieChartProps>(
 
     const responsiveLabelTextSize = Math.min(labelTextSize, width / 10);
 
+    const sum = data.map((x) => x.value).reduce((x, y) => x + y);
+
     return (
       <div>
         <svg className={className} width={width} height={width}>
@@ -90,7 +91,7 @@ export const PieChart = withTooltip<PieChartProps>(
                         onMouseMove={(e) => {
                           const tooltipPos = getTooltipPosition(e);
                           showTooltip({
-                            tooltipData: `${arc.data.category}: ${arc.data.value}%`,
+                            tooltipData: `${arc.data.category}: ${arc.data.value} (${((arc.data.value / sum) * 100).toFixed(2)}%)`,
                             tooltipLeft: tooltipPos.x,
                             tooltipTop: tooltipPos.y,
                           });

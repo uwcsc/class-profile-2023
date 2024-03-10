@@ -47,12 +47,11 @@ export const F1 = [
   { text: "Waabi", value: 1 },
   { text: "Warp", value: 1 },
   { text: "Whatnot", value: 1 },
-  { text: "ZeMind Studios", value: 1 }
-]
-  ;
+  { text: "ZeMind Studios", value: 1 },
+];
 
 export const F2 = [
-  // G6. Where will you be working from post grad? 
+  // G6. Where will you be working from post grad?
 
   { text: "New York (NY)", value: 34 },
   { text: "Bellevue (WA)", value: 1 },
@@ -73,16 +72,14 @@ export const F2 = [
   { text: "Los Angeles (CA)", value: 1 },
   { text: "San Francisco (CA)", value: 10 },
   { text: "Sunnyvale (CA)", value: 1 },
-  { text: "San Mateo (CA)", value: 4 }
+  { text: "San Mateo (CA)", value: 4 },
 
   // { text: "New York, New York", value: 34 },
-
 
   // { text: "Bellevue, Washington", value: 1 },
   // { text: "Seattle, Washington", value: 2 },
 
   // { text: "London, United Kingdom", value: 1 },
-
 
   // { text: "Calgary, Alberta", value: 1 },
 
@@ -135,11 +132,11 @@ export const F4 = [
   {
     // G9. Are you returning to a prior co-op? 81
     category: "No",
-    value: 27, // 22
+    value: 22,
   },
   {
     category: "Yes",
-    value: 73, // 59
+    value: 59,
   },
 ];
 
@@ -150,7 +147,7 @@ export const F5 = [
   { category: "101k-150k", value: 10 },
   { category: "150k-200k", value: 4 },
   { category: "201k-250k", value: 1 },
-  { category: "251k+", value: 3 }
+  { category: "251k+", value: 3 },
 ];
 
 export const F6 = [
@@ -162,7 +159,7 @@ export const F6 = [
   { category: "301k-350k", value: 12 },
   { category: "351k-550k", value: 6 },
   { category: "551k-700k", value: 9 },
-  { category: "701k+", value: 2 }
+  { category: "701k+", value: 2 },
 ];
 
 export const F7 = [
@@ -188,5 +185,5 @@ export const F7 = [
   { text: "Web Design", value: 3 },
   { text: "Cybersecurity and Ethical Hacking", value: 1 },
   { text: "Security", value: 1 },
-  { text: "Product Design/UX Design", value: 1 }
+  { text: "Product Design/UX Design", value: 1 },
 ];

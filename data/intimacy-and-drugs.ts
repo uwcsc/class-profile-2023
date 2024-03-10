@@ -275,33 +275,33 @@ export const I6 = [
 export const I7 = [
   {
     category: "No",
-    value: 64,
+    value: 74,
   },
   {
     category: "Yes",
-    value: 36,
+    value: 42,
   },
 ];
 
 export const I8 = [
   {
     category: "No",
-    value: 61,
+    value: 40,
   },
   {
     category: "Yes",
-    value: 39,
+    value: 26,
   },
 ];
 
 export const I9i = [
   {
     category: "No",
-    value: 49.57,
+    value: 58,
   },
   {
     category: "Yes",
-    value: 50.43,
+    value: 59,
   },
 ];
 

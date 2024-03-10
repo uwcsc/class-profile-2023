@@ -321,6 +321,7 @@ export default function Academics() {
           colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter]}
           data={A12i}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
+          displayPercentage
         />
       </ComponentWrapper>
 
@@ -501,7 +502,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A22} {...pieChartProps(isMobile, pageWidth)} />
+          <BarGraphVertical data={A22} {...barGraphProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
