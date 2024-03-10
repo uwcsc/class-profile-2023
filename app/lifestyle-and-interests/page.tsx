@@ -132,6 +132,7 @@ export default function LifestyleAndInterests() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -147,6 +148,7 @@ export default function LifestyleAndInterests() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          minFrequency={2}
         />
       </ComponentWrapper>
 

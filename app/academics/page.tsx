@@ -71,6 +71,10 @@ export default function Academics() {
 
       <SectionWrapper title="Courses" />
 
+      <p style={{ paddingLeft: "4rem" }}>
+        <b>Note:</b> Only courses that showed up in more than one response were included, otherwise there would be too many courses to display properly.
+      </p>
+
       <ComponentWrapper
         heading="Is your expected graduation date the same as when you enrolled in your current program?"
         bodyText="Even though the vast majority of respondents stayed on track with their initial plans, it is also perfectly normal to deviate from the planned route for a degree. Some students may have either shortened their degree by, for example, removing co-op from their degree or taking more classes than a full course load per term. Meanwhile, others may have delayed their graduation by retaking failed classes, taking gap years, adding minors to their degree, etc. "
@@ -108,6 +112,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -132,6 +137,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -153,6 +159,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -175,6 +182,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -196,6 +204,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -218,6 +227,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -240,6 +250,7 @@ export default function Academics() {
           wordPadding={8}
           desktopMaxFontSize={60}
           desktopMinFontSize={15}
+          minFrequency={2}
           mobileMaxFontSize={60}
         />
       </ComponentWrapper>
@@ -263,6 +274,7 @@ export default function Academics() {
           wordPadding={11}
           desktopMaxFontSize={80}
           mobileMaxFontSize={70}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -284,6 +296,7 @@ export default function Academics() {
           wordPadding={20}
           desktopMaxFontSize={80}
           mobileMaxFontSize={80}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
@@ -379,6 +392,7 @@ export default function Academics() {
           wordPadding={3}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          minFrequency={2}
         />
       </ComponentWrapper>
 
