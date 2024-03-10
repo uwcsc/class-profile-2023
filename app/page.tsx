@@ -1,7 +1,7 @@
 import { About } from "@/components/About";
 import { BodyLink } from "@/components/BlankLink";
-import { CenterWrapper } from "@/components/CenterWrapper";
 import { Header } from "@/components/Header";
+import { Panel } from "@/components/Panel";
 import { Sections } from "@/components/Sections";
 import { pageRoutes } from "@/data/routes";
 import { title } from "@/utils/title";
@@ -37,7 +37,7 @@ export default function Home() {
           </svg>
         </a>
         <About />
-        <CenterWrapper>
+        <Panel>
           <h1>Preface</h1>
           <p>
             The 2023 CS Class Profile consists of data relevant to CS, CFM, and CS/BBA students completing their undergrad in 2023. These were combined with the
@@ -69,7 +69,7 @@ export default function Home() {
             </b>
             , so please check us out if you enjoy what you see!
           </p>
-        </CenterWrapper>
+        </Panel>
         <Sections data={pageRoutes} className={styles.homeSectionsStyles} />
       </div>
     </>

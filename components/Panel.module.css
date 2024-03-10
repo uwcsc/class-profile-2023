@@ -7,9 +7,3 @@
   border-radius: calc(20rem / 16);
   align-self: center;
 }
-
-@media screen and (max-width: 900px) {
-  .textbox {
-    align-items: center;
-  }
-}
