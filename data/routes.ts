@@ -32,7 +32,7 @@ export const pageRoutes: PageRoutes = {
     url: "/academics",
   },
   computerScienceExperience: {
-    name: "Computer Science Experience",
+    name: "CS Experience",
     url: "/computer-science-experience",
   },
   coop: {

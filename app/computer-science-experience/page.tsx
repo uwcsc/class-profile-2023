@@ -21,7 +21,7 @@ export default function Academics() {
     <div className={styles.page}>
       <Header />
 
-      <SectionHeader title="Computer Science Experience" subtitle="Learn about the Computer Science Experience of the graduating class" />
+      <SectionHeader title="CS Experience" subtitle="Learn about the Computer Science Experience of the graduating class" />
 
       <ComponentWrapper
         heading="Which of the following coding experiences did you have prior to university?"
