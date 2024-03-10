@@ -94,7 +94,7 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="right">
+      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="center" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H8} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>

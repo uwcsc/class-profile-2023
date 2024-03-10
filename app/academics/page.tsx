@@ -347,9 +347,8 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="What term did you transfer into your program?"
-        bodyText="Majority of the students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
-        align="right"
-        noBackground>
+        bodyText="The majority of students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
+        align="left">
         <div className={styles.graphContainer}>
           <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
         </div>

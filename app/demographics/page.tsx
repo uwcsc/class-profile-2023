@@ -37,9 +37,9 @@ export default function Demographics() {
         bodyText={
           <p>
             The UW CS Class of 2023 proudly represents a spectrum of gender identities. However, unsurprisingly most of the representation is from men with 91
-            individuals and 42 women. This also includes a handful of individuals identifying as gender non-conforming, non-binary, or questioning.
-            Underrepresented gender identities are a popular topic in the tech community, so it is promising that more diverse people are becoming interested in
-            CS! Take a look at clubs such as <BodyLink href="https://wics.uwaterloo.ca/"> WiCS </BodyLink> and
+            men and 42 women. This also includes a handful of individuals identifying as gender non-conforming, non-binary, or questioning. Underrepresented
+            gender identities are a popular topic in the tech community, so it is promising that more diverse people are becoming interested in CS! Take a look
+            at clubs such as <BodyLink href="https://wics.uwaterloo.ca/"> WiCS </BodyLink> and
             <BodyLink href="https://www.techplusuw.com/"> Tech+</BodyLink> that address these issues and work to provide an inclusive environment in UW&apos;s
             tech scene.
           </p>
