@@ -122,7 +122,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="Did you ever date another CS / CS/BBA / CFM student?"
-        bodyText="Most respondents have not dated another CS/CS/BBA /CFM student. 42 students reported having done so, while 74 said they did not."
+        bodyText="Most respondents have not dated another CS/ CS/BBA / CFM student. 42 students reported having done so, while 74 said they did not."
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -142,7 +142,7 @@ export default function IntimacyAndDrugs() {
         heading="Are you currently in a relationship?"
         bodyText="59 respondents reported being in a relationship and 58 said they were not. Let’s hope that the 18 who did not respond are not in “complicated” relationships. "
         align="left">
-        <BarGraphVertical data={I9i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <PieChart data={I9i} {...pieChartProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper

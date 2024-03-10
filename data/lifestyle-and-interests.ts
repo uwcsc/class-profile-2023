@@ -146,19 +146,19 @@ export const L6 = [
 
 export const L7 = [
   {
-    category: "9pm - 11pm",
+    category: "9PM-11PM",
     value: 6,
   },
   {
-    category: "11pm - 1am",
+    category: "11PM-1AM",
     value: 53,
   },
   {
-    category: "1am - 3am",
+    category: "1AM-3AM",
     value: 58,
   },
   {
-    category: "3am - 5am",
+    category: "3AM-5AM",
     value: 16,
   },
 ];
@@ -839,82 +839,18 @@ export const L12 = [
 ];
 
 export const L13 = [
-  {
-    category: "MC",
-    value: 22,
-  },
-  {
-    category: "DC",
-    value: 26,
-  },
-  {
-    category: "Res",
-    value: 6,
-  },
-  {
-    category: "E7",
-    value: 13,
-  },
-  {
-    category: "DP",
-    value: 10,
-  },
-  {
-    category: "SLC",
-    value: 9,
-  },
-  {
-    category: "E5",
-    value: 2,
-  },
-  {
-    category: "EV3",
-    value: 7,
-  },
-  {
-    category: "PHY",
-    value: 2,
-  },
-  {
-    category: "AHS",
-    value: 1,
-  },
-  {
-    category: "CGR",
-    value: 2,
-  },
-  {
-    category: "STC",
-    value: 2,
-  },
-  {
-    category: "QNC",
-    value: 6,
-  },
-  {
-    category: "EV1",
-    value: 1,
-  },
-  {
-    category: "ML",
-    value: 1,
-  },
-  {
-    category: "M3",
-    value: 1,
-  },
-  {
-    category: "E6",
-    value: 1,
-  },
-  {
-    category: "HH",
-    value: 1,
-  },
-  {
-    category: "NH",
-    value: 1,
-  },
+  { category: "DC", value: 26 },
+  { category: "MC", value: 22 },
+  { category: "E5/E7", value: 15 },
+  { category: "DP", value: 10 },
+  { category: "SLC", value: 9 },
+  { category: "EV", value: 8 },
+  { category: "Res", value: 6 },
+  { category: "QNC", value: 6 },
+  { category: "PHY", value: 2 },
+  { category: "CGR", value: 2 },
+  { category: "STC", value: 2 },
+  { category: "Other", value: 6 },
 ];
 
 export const L14 = [
@@ -1368,7 +1304,7 @@ export const L16 = [
     value: 8,
   },
   {
-    category: "Sweet Dreams Teashop",
+    category: "Sweet Dreams",
     value: 9,
   },
   {

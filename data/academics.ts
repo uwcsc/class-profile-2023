@@ -672,11 +672,11 @@ export const A13 = [
 
 export const A13i = [
   { category: "SE", value: 10 },
-  { category: "CS/ BBA", value: 3 },
+  { category: "CS/BBA", value: 3 },
   { category: "MATH", value: 15 },
   { category: "CFM", value: 4 },
-  { category: "MATH/ BBA", value: 1 },
-  { category: "MATH/ CPA", value: 1 },
+  { category: "MATH/BBA", value: 1 },
+  { category: "MATH/CPA", value: 1 },
   { category: "KI", value: 1 },
   { category: "CA COOP", value: 1 },
   { category: "MECH ENG", value: 1 },
@@ -709,10 +709,10 @@ export const A13ii = [
 
 export const A13iii = [
   { category: "Flexible schedule", value: 6 },
-  { category: "Didn’t have much interest in the previous major in comparison", value: 14 },
-  { category: "Future job prospects are better", value: 11 },
-  { category: "Avoid one or more courses", value: 2 },
-  { category: "Flexible course requirements", value: 4 },
+  { category: "More interest", value: 14 },
+  { category: "Better job prospects", value: 11 },
+  { category: "Avoid course(s)", value: 2 },
+  { category: "Flexible courses", value: 4 },
   { category: "Graduate early", value: 1 },
   { category: "No ECE courses", value: 1 },
 ];

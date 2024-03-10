@@ -89,12 +89,12 @@ export default function LifestyleAndInterests() {
           data={L6}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 200 } }}
+          margin={{ ...barGraphMargin, ...{ left: 210 } }}
         />
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="What time do you usually sleep?"
+        heading="What time do you usually go to sleep?"
         bodyText="Sleep schedule? What’s that? Waterloo students see the perfect sleeping time between 1 AM to 3 AM.  Who wants to be an early bird when you can be a night owl? ">
         <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
@@ -158,7 +158,7 @@ export default function LifestyleAndInterests() {
           data={L13}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 50 } }}
+          margin={{ ...barGraphMargin, ...{ left: 60 } }}
         />
       </ComponentWrapper>
 
@@ -192,7 +192,7 @@ export default function LifestyleAndInterests() {
           data={L16}
           width={barGraphWidth(isMobile, pageWidth + 5)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 50 } }}
+          margin={{ ...barGraphMargin, ...{ left: 150 } }}
         />
       </ComponentWrapper>
 
@@ -203,7 +203,7 @@ export default function LifestyleAndInterests() {
           data={L17}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 50 } }}
+          margin={{ ...barGraphMargin, ...{ left: 142 } }}
         />
       </ComponentWrapper>
 

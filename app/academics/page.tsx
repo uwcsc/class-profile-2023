@@ -328,7 +328,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={A13i} {...barGraphProps(isMobile, pageWidth)} />
+          <BarGraphHorizontal data={A13i} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, ...{ left: 120 } }} />
         </div>
       </ComponentWrapper>
 
@@ -347,12 +347,13 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical
+          <BarGraphHorizontal
             data={A13iii}
             widthAlternatingLabel={1000}
             alternatingLabelSpace={200}
             lowerLabelDy="60px"
             {...barGraphProps(isMobile, pageWidth)}
+            margin={{ ...barGraphMargin, ...{ left: 180 } }}
           />
         </div>
       </ComponentWrapper>

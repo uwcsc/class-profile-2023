@@ -384,10 +384,6 @@ export const D12 = [
     category: "301+",
     value: 11,
   },
-  {
-    category: "Prefer not to say",
-    value: 9,
-  },
 ];
 
 export const D13 = [
@@ -504,15 +500,15 @@ export const D16 = [
 
 export const D16i = [
   {
-    category: "University of Waterloo",
-    value: 70.8,
+    category: "Waterloo",
+    value: 34,
   },
   {
-    category: "University of Toronto",
+    category: "Toronto",
     value: 4,
   },
   {
-    category: "Western University",
+    category: "Western",
     value: 2,
   },
   {
@@ -520,27 +516,27 @@ export const D16i = [
     value: 2,
   },
   {
-    category: "University of Pennsylvania",
+    category: "Pennsylvania",
     value: 1,
   },
   {
-    category: "University of Michigan",
+    category: "Michigan",
     value: 1,
   },
   {
-    category: "University of Texas at Austin",
+    category: "Texas @ Austin",
     value: 1,
   },
   {
-    category: "Sheridan College",
+    category: "Sheridan",
     value: 1,
   },
   {
-    category: "McGill University",
+    category: "McGill",
     value: 1,
   },
   {
-    category: "Princeton University",
+    category: "Princeton",
     value: 1,
   },
 ];

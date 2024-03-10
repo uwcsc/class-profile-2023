@@ -110,7 +110,7 @@ export default function Demographics() {
             support queer and trans students in tech and STEM environments!
           </p>
         }>
-        <BarGraphVertical data={D7} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
+        <BarGraphHorizontal data={D7} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} margin={{ ...barGraphMargin, ...{ left: 125 } }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -216,7 +216,7 @@ export default function Demographics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={D16i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+          <BarGraphHorizontal data={D16i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" margin={{ ...barGraphMargin, ...{ left: 150 } }} />
         </div>
       </ComponentWrapper>
 

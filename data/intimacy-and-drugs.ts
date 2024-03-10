@@ -218,24 +218,24 @@ export const I4 = [
 
 export const I5 = [
   {
-    category: "4+ years",
-    value: 21,
-  },
-  {
-    category: "0 - 1 year",
+    category: "0-1 year",
     value: 40,
   },
   {
-    category: "1 - 2 years",
+    category: "1-2 years",
     value: 21,
   },
   {
-    category: "2 - 3 years",
+    category: "2-3 years",
     value: 10,
   },
   {
-    category: "3 - 4 years",
+    category: "3-4 years",
     value: 13,
+  },
+  {
+    category: "4+ years",
+    value: 21,
   },
 ];
 // export const I5 = [
@@ -297,11 +297,11 @@ export const I8 = [
 export const I9i = [
   {
     category: "No",
-    value: 58,
+    value: 49.57,
   },
   {
     category: "Yes",
-    value: 59,
+    value: 50.43,
   },
 ];
 
