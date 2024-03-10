@@ -91,7 +91,7 @@ export const CPWebDevs = [
   },
   {
     name: "Cathie Yan",
-    link: "https://www.linkedin.com/in/cathleen-yan/",
+    link: "https://www.linkedin.com/in/cathie-yan/",
   },
   {
     name: "Ryan Zhou",
