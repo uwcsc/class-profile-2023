@@ -94,23 +94,13 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper
-        heading="Please give any general comments about mental health in university."
-        bodyText="Given the significant impact of mental health concerns in the university setting, a substantial number of our respondents have shared their thoughts on this matter. Below, you will find some quotes from students that discuss how UW's environment influences students' mental health and offer suggestions for enhancing mental well-being."
-        align="left"
-        noBackground>
-        <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={H7} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
-        </div>
-      </ComponentWrapper>
-
-      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="center" noBackground>
+      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="right">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H8} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What do you think UW can do better to accommodate your mental health?" bodyText="" align="center" noBackground>
+      <ComponentWrapper heading="What do you think UW can do better to accommodate your mental health?" bodyText="" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H9} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
@@ -119,12 +109,11 @@ export default function MentalHealth() {
       <ComponentWrapper
         heading="How much of an effect has imposter syndrome played in your university life?"
         bodyText="The impact of imposter syndrome on university life is a concerning issue. When asked to rate its influence on a scale of 1 to 5, the majority of respondents selected 4 or 5, indicating that imposter syndrome has significantly affected their lives. This highlights the need for greater awareness and support to help students address this syndrome and foster a greater sense of confidence in themselves."
-        align="right"
-        noBackground>
+        align="right">
         <BarGraphVertical data={H10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What has been your experience with imposter syndrome?" bodyText="" align="center" noBackground>
+      <ComponentWrapper heading="What has been your experience with imposter syndrome?" bodyText="" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>

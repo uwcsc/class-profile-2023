@@ -329,7 +329,8 @@ export default function Academics() {
       <ComponentWrapper
         heading="Did you transfer into your current program?"
         bodyText="29% of students in this year’s class transferred into the program that they are currently in, which is a relatively high percentage. It can be assumed that most of the students that transferred into their program transferred into CS, as it can be extremely difficult to transfer into CS/BBA or CFM after their initial admissions for incoming first-year students from high school."
-        align="left">
+        align="right"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A13} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -338,8 +339,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What program did you transfer from?"
         bodyText="Most of the students who transferred into computer science from a different program transferred from either Honours Mathematics or Software Engineering. Math and CS share many courses in the first year of the program, thus many Math students may have realized that they have a passion for computer science and transferred into the program. Software engineering and CS are programs in which the students eventually end up in similar jobs and post-grad roles, thus, some of them may have chosen to transfer to CS for a slightly less rigorous workload compared to that required by the Engineering faculty."
-        align="right"
-        noBackground>
+        align="left">
         <div className={styles.graphContainer}>
           <BarGraphHorizontal data={A13i} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, ...{ left: 120 } }} />
         </div>
@@ -348,7 +348,8 @@ export default function Academics() {
       <ComponentWrapper
         heading="What term did you transfer into your program?"
         bodyText="Majority of the students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
-        align="left">
+        align="right"
+        noBackground>
         <div className={styles.graphContainer}>
           <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth)} />
         </div>
@@ -357,8 +358,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What were your reason(s) behind transferring?"
         bodyText="A major reason behind why many of the students transferred into computer science was because they were not as interested in their previous major compared to their current one. Two other popular reasons for students transferring into computer science were to improve future job prospects and to have a more flexible schedule and course requirements."
-        align="right"
-        noBackground>
+        align="left">
         <div className={styles.graphContainer}>
           <BarGraphHorizontal
             data={A13iii}
@@ -384,7 +384,8 @@ export default function Academics() {
             teaching us and enabling us to grow and thrive!
           </p>
         }
-        align="left">
+        align="right"
+        noBackground>
         <WordCloud
           data={A14}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -399,19 +400,19 @@ export default function Academics() {
       <ComponentWrapper
         heading="Which study term did you think was the hardest?"
         bodyText="Second year seemed to be the most difficult for the most students, with 2A, followed by 2B, being considered the most difficult study terms. This could be due to that many of the least favoured courses and courses considered to be the most difficult, such as CS 245 and MATH 239, would have been taken during the students’ 2A or 2B study term."
-        align="right"
-        noBackground>
+        align="left">
         <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Which study term did you think was the easiest?"
         bodyText="The 4A and 4B study terms were considered to be the easiest study terms by a large margin. This is likely due to most of the more difficult core courses being finished already and students being able to take electives that they are more interested in once all the mandatory courses had been completed. This statistic highlights that even though classes may get harder (in 2A and 2B), it will get better after it gets worse, and that we should persevere through the challenges that may arise during our undergraduate careers!"
-        align="left">
+        align="right"
+        noBackground>
         <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was your average each term?" align="right" noBackground>
+      <ComponentWrapper heading="What was your average each term?" align="right">
         <StackedBarGraphVertical
           width={600}
           height={400}
@@ -431,24 +432,25 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your cumulative average?" align="left">
+      <ComponentWrapper heading="What is your cumulative average?" align="left" noBackground>
         <BarGraphHorizontal data={A18} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your faculty average?" align="right" noBackground>
+      <ComponentWrapper heading="What is your faculty average?" align="right">
         <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Did you complete an option, specialization and/or minor?"
         bodyText="43% of respondents did complete an option, specialization, and/or minor during their undergraduate career. These are different ways in which you can customize and add to your degree, depending on what electives you decide to take!"
-        align="left">
+        align="left"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A20} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which option(s) did you complete?" align="right" noBackground>
+      <ComponentWrapper heading="Which option(s) did you complete?" align="right">
         <WordCloud
           data={A20i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -459,7 +461,7 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which minors(s) did you complete?" align="left">
+      <ComponentWrapper heading="Which minors(s) did you complete?" align="right" noBackground>
         <WordCloud
           data={A20ii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -470,7 +472,7 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which specialization(s) did you complete?" align="right" noBackground>
+      <ComponentWrapper heading="Which specialization(s) did you complete?" align="left">
         <WordCloud
           data={A20iii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -481,7 +483,7 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left">
+      <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A20iv} circleDiameter={0} height={300} />
         </div>
@@ -490,15 +492,15 @@ export default function Academics() {
       <ComponentWrapper
         heading="How many overloaded terms did you take (6 or more courses in one term)?"
         bodyText="59% of respondents did not take any overloaded terms. Overloading your term can be very challenging, as it increases your workload greatly. However, it is still possible, as 27% of all of the respondents overloaded one or two terms, while 13% overloaded 3 or more terms, with some of them overloading 6 terms!"
-        align="right"
-        noBackground>
+        align="right">
         <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How many courses have you failed?"
         bodyText="Most of the class completed their degree without failing any courses, at 83% of the respondents, but given that some of them did fail at least one course but still obtained their degree, it’s not the end if you fail one or a few of your courses!"
-        align="left">
+        align="left"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A22} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -507,8 +509,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="How many midterms/finals have you failed?"
         bodyText="Like previously, most of the class did not fail any midterms or finals, at 65% of the respondents, but this number is a lot lower than the number of people who did not fail any courses, meaning that even if you do fail a large exam, it doesn’t mean that you will fail your course - as long as you put in the effort for the rest of the course. Regardless, no matter if you fail one or a few exams, it’s still not over!"
-        align="right"
-        noBackground>
+        align="right">
         <BarGraphVertical data={A23} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
@@ -517,7 +518,8 @@ export default function Academics() {
       <ComponentWrapper
         heading="Did you take any exchange terms?"
         bodyText="Most of the class did not take any exchange terms, but a small minority, at 9% of respondents, did. Taking an exchange term is an opportunity for students to study for a term in a completely different environment, in a foreign country, that they can start applying to in their second year."
-        align="left">
+        align="left"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A24} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -526,8 +528,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What term did you take an exchange in?"
         bodyText="It seems as though taking an exchange term is popular later on in this year’s students’ undergraduate careers, as 91% of those who took an exchange term took it in either term 4A or 4B."
-        align="right"
-        noBackground>
+        align="right">
         <div className={styles.graphContainer}>
           <PieChart data={A24i} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -536,19 +537,20 @@ export default function Academics() {
       <ComponentWrapper
         heading="Where did you take your exchange term?"
         bodyText="The most popular country in which students took an exchange term was Singapore, followed by Switzerland and the Netherlands. Even though various students took an exchange term in the same country, they generally attended different schools, with the two most popular universities being the National University of Singapore and the Technical University of Delft (in the Netherlands)."
-        align="left">
+        align="left"
+        noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A24ii} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was the hardest thing about going on exchange?" align="right" noBackground>
+      <ComponentWrapper heading="What was the hardest thing about going on exchange?" align="left">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A24iii} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="left">
+      <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A24iv} circleDiameter={0} height={300} />
         </div>
@@ -557,8 +559,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="What residence did you live in your first year?"
         bodyText="Most of the respondents lived at Village 1 during their first year, at 31% of the class. This is followed by UW Place in second place, at 16%, and Ron Eydt Village in third, at 9% of the class. This makes sense, as these are three of the largest capacity residences on campus, with V1 holding 1300+ residents, UW Place holding 1600+ residents, and REV holding almost 1000 residents."
-        align="right"
-        noBackground>
+        align="left">
         <WordCloud
           data={A25}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -572,7 +573,8 @@ export default function Academics() {
       <ComponentWrapper
         heading="Have you done a URA (Undergraduate Research Assistantship)?"
         bodyText="While the majority of the class has not done a URA, 20% of them have undertaken an URA, which is a program that allows students to undertake a 10-week part-time research opportunity during a study term."
-        align="left">
+        align="right"
+        noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={A26} {...pieChartProps(isMobile, pageWidth)} />
         </div>
