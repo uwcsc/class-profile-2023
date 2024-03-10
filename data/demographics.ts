@@ -64,10 +64,6 @@ export const D4 = [
 
 export const D5 = [
   {
-    category: "Black",
-    value: 0,
-  },
-  {
     category: "Latin",
     value: 3,
   },
