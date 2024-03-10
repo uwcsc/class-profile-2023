@@ -209,7 +209,7 @@ a:hover {
     --primary-heading: var(--dark--primary-heading);
     --secondary-heading: var(--dark--secondary-heading);
     --link: var(--dark--link);
-    --link-hover: var(--darØk--link-hover);
+    --link-hover: var(--dark--link-hover);
     --primary-text: var(--dark--primary-text);
     --card-background: var(--dark--card-background);
     --label: var(--dark--label);
