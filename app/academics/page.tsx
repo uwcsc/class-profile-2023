@@ -520,7 +520,11 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
+<<<<<<< HEAD
           <BarGraphVertical data={A22} {...barGraphProps(isMobile, pageWidth, false)} />
+=======
+          <BarGraphVertical data={A22} {...barGraphProps(isMobile, pageWidth)} />
+>>>>>>> ce6d66b (update data to use exact values for pie charts / fix wrong data)
         </div>
       </ComponentWrapper>
 
