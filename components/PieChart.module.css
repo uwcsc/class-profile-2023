@@ -1,5 +1,6 @@
 .piePathWithBackground{
-  fill: var(--chart-green-light);
+  fill: var(--chart-green-light); /* Light Green Colour */
+  /* fill: var(--tertiary-background); Gray Colour*/ 
   stroke: var(--label);
   stroke-width: 1px;
   stroke-dasharray: 0;

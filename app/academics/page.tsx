@@ -315,7 +315,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A12} {...pieChartProps(isMobile, pageWidth, false)} />
+          <PieChart data={A12} {...pieChartProps(isMobile, pageWidth)} />
         </div>
       </ComponentWrapper>
 
