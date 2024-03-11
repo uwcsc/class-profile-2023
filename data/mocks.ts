@@ -96,7 +96,7 @@ export const mockStackedBarGraphData = [
   {
     category: "2A",
     "geese watchers": 40,
-  "geese breeders": 50,
+    "geese breeders": 50,
     "geese catchers": 70,
   },
   {
@@ -113,11 +113,7 @@ export const mockStackedBarGraphData = [
   },
 ];
 
-export const mockStackedBarKeys = [
-  "geese watchers",
-  "geese breeders",
-  "geese catchers",
-];
+export const mockStackedBarKeys = ["geese watchers", "geese breeders", "geese catchers"];
 
 export const mockLineData = {
   xValues: ["1A", "1B", "2A", "2B", "3A", "3B"],

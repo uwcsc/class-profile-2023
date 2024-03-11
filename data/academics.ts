@@ -982,7 +982,7 @@ export const A25 = [
   { text: "Village 1", value: 40 },
   { text: "UW Place", value: 20 },
   { text: "Columbia Lake Village", value: 16 },
-  { text: "St. Jerome’s University College", value: 4 },
+  { text: "St. Jerome's University College", value: 4 },
   { text: "Ron Eydt Village", value: 12 },
   { text: "Mackenzie King Village", value: 11 },
   { text: "Renison University College", value: 1 },
@@ -990,7 +990,7 @@ export const A25 = [
   { text: "Claudette Millar Hall", value: 4 },
   { text: "Lived off campus, at home", value: 6 },
   { text: "Conrad Grebel University College", value: 3 },
-  { text: "United College (formerly St. Paul’s University College)", value: 1 },
+  { text: "United College (formerly St. Paul's University College)", value: 1 },
 ];
 
 export const A26 = [

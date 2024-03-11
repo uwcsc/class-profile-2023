@@ -45,10 +45,10 @@ export default function Home() {
             CFM take 4 years and 2 terms to complete, while CS/BBA can take up to a full 5 years.
           </p>
           <p>
-            The University of Waterloo’s computer science programs are known to be prestigious and well-known in Canada as well as across the world. As of 2022,
-            it ties for first place in Maclean’s university rankings, and 25th internationally as a subject by the QS World University rankings. For prospective
-            students or anyone who is interested in learning more about what the students are like, this CS Class Profile will attempt to answer some of your
-            questions, and you may even learn a thing or two you didn’t expect!
+            The University of Waterloo&apos;s computer science programs are known to be prestigious and well-known in Canada as well as across the world. As of
+            2022, it ties for first place in Maclean&apos;s university rankings, and 25th internationally as a subject by the QS World University rankings. For
+            prospective students or anyone who is interested in learning more about what the students are like, this CS Class Profile will attempt to answer
+            some of your questions, and you may even learn a thing or two you didn&apos;t expect!
           </p>
           <p>
             According to the{" "}

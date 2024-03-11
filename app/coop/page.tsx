@@ -34,7 +34,13 @@ export default function Coop() {
       {/* C1 */}
       <ComponentWrapper
         heading="Are you in a co-op program?"
-        bodyText="Out of the 135 individuals that participated in this class profile, 128 were in a co-op program and 7 were not. Most students choose to be in the co-op program because of the great experiences it provides!">
+        bodyText={
+          <p>
+            Out of the 135 individuals that participated in this class profile, 128 were in a co-op program and 7 were not. Most students choose to be in the
+            co-op program because of the great experiences it provides!
+          </p>
+        }
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={C1} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
@@ -43,7 +49,12 @@ export default function Coop() {
       {/* C2 */}
       <ComponentWrapper
         heading=" What was your favourite co-op location?"
-        bodyText="There is a variety of favoured co-op locations, with some of the most popular being New York, Toronto, San Francisco, and various other cities in California."
+        bodyText={
+          <p>
+            There is a variety of favoured co-op locations, with some of the most popular being New York, Toronto, San Francisco, and various other cities in
+            California.
+          </p>
+        }
         align="right"
         noBackground
         wordCloud>
@@ -60,8 +71,19 @@ export default function Coop() {
       {/* c3 */}
       <ComponentWrapper
         heading="Have you ever had a co-op term without a placement?"
-        bodyText="About 18% of respondents have had at least one co-op term without a placement. If you’re also in thie situation and cannot find one, don’t worry; you’re not alone! Finding a co-op placement, especially your first one, can be pretty difficult. As the recent pandemic also affected students in this year, it could have also caused finding a placement to be even more difficult.
-        ">
+        bodyText={
+          <>
+            <p>
+              About 18% of respondents have had at least one co-op term without a placement. If you&apos;re also in thie situation and cannot find one,
+              don&apos;t worry; you&apos;re not alone!
+            </p>
+            <p>
+              Finding a co-op placement, especially your first one, can be pretty difficult. As the recent pandemic also affected students in this year, it
+              could have also caused finding a placement to be even more difficult
+            </p>
+          </>
+        }
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={C3} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
@@ -70,7 +92,12 @@ export default function Coop() {
       {/* c4 */}
       <ComponentWrapper
         heading="Were you ever banned from WaterlooWorks for renegotiating an offer/match?"
-        bodyText="Reneging an offer/match comes with its risks, but if you believe that your other offer is better, you can decide it to be worth it. Out of those who participated in this class profile, about 6% of students were banned from WaterlooWorks for this activity."
+        bodyText={
+          <p>
+            Reneging an offer/match comes with its risks, but if you believe that your other offer is better, you can decide it to be worth it. Out of those who
+            participated in this class profile, about 6% of students were banned from WaterlooWorks for this activity.
+          </p>
+        }
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -81,7 +108,13 @@ export default function Coop() {
       {/* C5 */}
       <ComponentWrapper
         heading="How many co-op offers did you have rescinded?"
-        bodyText="Majority of the participants, standing at 64%, did not rescind any co-op offers. If a participant did rescind any offers, they, for the most part, only rescinded one, at 13% of the respondents, with very few rescinding more than one offer.">
+        bodyText={
+          <p>
+            Majority of the participants, standing at 64%, did not rescind any co-op offers. If a participant did rescind any offers, they, for the most part,
+            only rescinded one, at 13% of the respondents, with very few rescinding more than one offer.
+          </p>
+        }
+        align="left">
         <BarGraphVertical data={C5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 

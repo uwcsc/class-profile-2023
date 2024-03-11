@@ -23,7 +23,13 @@ export default function PostGrad() {
 
       <ComponentWrapper
         heading="Do you plan on pursuing post-graduate education?"
-        bodyText="Out of the 133 respondents in this section, about 50% of them are not planning on pursuing a post-graduate education, while 13% are planning to do so and 29% are currently unsure. Post-graduate education is an option, but does not have to be everyone’s pathway!">
+        bodyText={
+          <p>
+            Out of the 133 respondents in this section, about 50% of them are not planning on pursuing a post-graduate education, while 13% are planning to do
+            so and 29% are currently unsure. Post-graduate education is an option, but does not have to be everyone&apos;s pathway!
+          </p>
+        }
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={P1} {...pieChartProps(isMobile, pageWidth, true)} labelTextXOffset={20} />
         </div>
@@ -31,7 +37,12 @@ export default function PostGrad() {
 
       <ComponentWrapper
         heading="What proportion of friends will you keep in contact with post-graduation?"
-        bodyText="At university, people often make many long-lasting friendships and connections! All of the respondents will be keeping at least some friends, with the vast majority being some, half, or most of their current friends, and a small percentage keeping all of their friends."
+        bodyText={
+          <p>
+            At university, people often make many long-lasting friendships and connections! All of the respondents will be keeping at least some friends, with
+            the vast majority being some, half, or most of their current friends, and a small percentage keeping all of their friends.
+          </p>
+        }
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -41,7 +52,13 @@ export default function PostGrad() {
 
       <ComponentWrapper
         heading="If you searched for a job, how many onsites/interviews did you get?"
-        bodyText="56 participants reported having at least one interview, with most having up to five, but a few had as many as 80. Some did not interview at all, which may be a result of taking a return offer from a previous co-op placement.">
+        bodyText={
+          <p>
+            56 participants reported having at least one interview, with most having up to five, but a few had as many as 80. Some did not interview at all,
+            which may be a result of taking a return offer from a previous co-op placement.
+          </p>
+        }
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={P3} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
@@ -49,7 +66,13 @@ export default function PostGrad() {
 
       <ComponentWrapper
         heading="Have you secured a full-time position post-grad?"
-        bodyText="Most students have secured a full-time position post-grad, at 71% of respondents. Some of these positions could be return offers, while some students may have found new positions. Either way, the two years of co-op experience seem to have paid off in securing these students a job position post-grad!"
+        bodyText={
+          <p>
+            Most students have secured a full-time position post-grad, at 71% of respondents. Some of these positions could be return offers, while some
+            students may have found new positions. Either way, the two years of co-op experience seem to have paid off in securing these students a job position
+            post-grad!
+          </p>
+        }
         align="right"
         noBackground>
         <PieChart data={P4} {...pieChartProps(isMobile, pageWidth)} />

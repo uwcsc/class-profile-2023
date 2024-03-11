@@ -139,7 +139,7 @@ export const D6 = [
     value: 1,
   },
   {
-    category: "Bahá’í faith",
+    category: "Bahá'í faith",
     value: 1,
   },
   {

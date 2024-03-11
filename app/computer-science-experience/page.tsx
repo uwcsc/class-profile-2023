@@ -25,7 +25,21 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="Which of the following coding experiences did you have prior to university?"
-        bodyText="Coding experience prior to university can be valuable however is not something anyone is required to have to be a part of the CS program at Waterloo. However, these opportunities are a great way to help decide whether CS or programming is worth for you to pursue when coming to university. Hence the majority of respondents have experience taking a CS course in high school. Many students have also participated in coding competitions or hackathons. Waterloo offers a variety of coding competitions/hackthons like CCC and Hack the North. Many early LC grinders were a part of the graduating class as well. ">
+        bodyText={
+          <>
+            <p>
+              Coding experience prior to university can be valuable however is not something anyone is required to have to be a part of the CS program at
+              Waterloo. However, these opportunities are a great way to help decide whether CS or programming is worth for you to pursue when coming to
+              university.
+            </p>
+            <p>
+              Hence, the majority of respondents have experience taking a CS course in high school. Many students have also participated in coding competitions
+              or hackathons. Waterloo offers a variety of coding competitions/hackthons like CCC and Hack the North. Many early LC grinders were a part of the
+              graduating class as well.s
+            </p>
+          </>
+        }
+        align="left">
         <BarGraphHorizontal
           data={E1}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -37,7 +51,13 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="How many programming languages do you know?"
-        bodyText="Most students claim they know 5+ languages (including Racket maybe). This is evidently due to students having the opportunity to learn a variety of skills through different classes, internships, and external opportunities like hackahtons over the course of their university career. Allowing students to gain both breadth and depth across a variety of fields, syntax, and paradigms."
+        bodyText={
+          <p>
+            Most students claim they know 5+ languages (including Racket maybe). This is evidently due to students having the opportunity to learn a variety of
+            skills through different classes, internships, and external opportunities like hackahtons over the course of their university career. Allowing
+            students to gain both breadth and depth across a variety of fields, syntax, and paradigms.
+          </p>
+        }
         align="right"
         noBackground>
         <BarGraphVertical data={E2} {...barGraphProps(isMobile, pageWidth)} />
@@ -45,7 +65,14 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="What is your favourite programming language?"
-        bodyText="The majority of students seem to favour Python and C++ as their favourite languages, with Python enjoyers being the majority. This doesn't come as a surprise as both are heavily supported and used in either course content or in the field. Shout out to the 1 Haskell enjoyer and the 2 Racket enjoyers.">
+        bodyText={
+          <p>
+            The majority of students seem to favour Python and C++ as their favourite languages, with Python enjoyers being the majority. This doesn&apos;t come
+            as a surprise as both are heavily supported and used in either course content or in the field. Shout out to the 1 Haskell enjoyer and the 2 Racket
+            enjoyers.
+          </p>
+        }
+        align="left">
         <BarGraphHorizontal
           data={E3}
           width={barGraphWidth(isMobile, pageWidth)}
@@ -57,7 +84,18 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="What is your favourite text editor or IDE?"
-        bodyText="VS Code once again, at no surprise, is the favourite code editor for the class of 2023. A versatile and customizable code editor that simplifies any task with a variety of open-source extensions available to take on any project. VS Code is fast, lightweight, easy to use, powerful with its extensions, and offers a plethora of themes. We are sad to say that the class of 2023 does not have any Microsoft Word enjoyers-a heavily customizable text editor."
+        bodyText={
+          <>
+            <p>
+              VS Code once again, at no surprise, is the favourite code editor for the class of 2023. A versatile and customizable code editor that simplifies
+              any task with a variety of open-source extensions available to take on any project.
+            </p>
+            <p>
+              VS Code is fast, lightweight, easy to use, powerful with its extensions, and offers a plethora of themes. We are sad to say that the class of 2023
+              does not have any Microsoft Word enjoyers-a heavily customizable text editor.
+            </p>
+          </>
+        }
         align="right"
         noBackground>
         <BarGraphHorizontal
@@ -70,7 +108,19 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="What operating system(s) do you mainly use?"
-        bodyText="Each of these 3 operating systems provides their own benefits and downsides, however making the right choice comes down to personal preference and comfort for daily. The majority of the respondents are split between Windows and macOS. With 81 students developing on MacOS. Additionally, it seems that UNIX-based OS (MacOS/Linux) are predominantly used by students, due to the various tools and features that they cater to programmers.">
+        bodyText={
+          <>
+            <p>
+              Each of these 3 operating systems provides their own benefits and downsides, however making the right choice comes down to personal preference and
+              comfort for daily. The majority of the respondents are split between Windows and macOS, with 81 students developing on MacOS.
+            </p>
+            <p>
+              Additionally, it seems that UNIX-based OS (MacOS/Linux) are predominantly used by students, due to the various tools and features that they cater
+              to programmers.
+            </p>
+          </>
+        }
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={E5} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
@@ -78,7 +128,13 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="What is your LeetCode proficiency level?"
-        bodyText="The majority of respondents have a proficiency level of medium problems when it comes to doing Leetcode problems. Many students also have little to no experience with leetcode. Leetcode is a platform that provides individuals with various coding problems that can be a great way to prep for various coding interviews."
+        bodyText={
+          <p>
+            The majority of respondents have a proficiency level of medium problems when it comes to doing Leetcode problems. Many students also have little to
+            no experience with leetcode. Leetcode is a platform that provides individuals with various coding problems that can be a great way to prep for
+            various coding interviews.
+          </p>
+        }
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -88,13 +144,33 @@ export default function Academics() {
 
       <ComponentWrapper
         heading="How many side projects have you completed during university, if any?"
-        bodyText="Side projects are a great way to pick up new skills, build your resume for internships, or explore fields you are interested in. Having a few side projects can greatly help with getting internship opportunities. Over 30% of students have completed 3 or more side projects during their time at Waterloo. With the majority of students having done 2 or fewer during their time at university.">
+        bodyText={
+          <>
+            <p>
+              Side projects are a great way to pick up new skills, build your resume for internships, or explore fields you are interested in. Having a few side
+              projects can greatly help with getting internship opportunities.
+            </p>
+            <p>
+              Over 30% of students have completed 3 or more side projects during their time at Waterloo. With the majority of students having done 2 or fewer
+              during their time at university.
+            </p>
+          </>
+        }
+        align="left">
         <BarGraphVertical data={E7} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How many hackathons in total have you attended as a hacker?"
-        bodyText="Hackathons are a great way to meet new people, learn new skills, or just bring ideas to life. There are various club or committee-hosted Hackathon opportunities for any skill level at Waterloo and even around the world for students to participate in. 69% (nice) of students have had the chance to attend a hackathon during prior to graduating CS at Waterloo."
+        bodyText={
+          <>
+            <p>
+              Hackathons are a great way to meet new people, learn new skills, or just bring ideas to life. There are various club or committee-hosted Hackathon
+              opportunities for any skill level at Waterloo and even around the world for students to participate in.
+            </p>
+            <p>69% (nice) of students have had the chance to attend a hackathon during prior to graduating CS at Waterloo.</p>
+          </>
+        }
         align="right"
         noBackground>
         <BarGraphVertical data={E8} {...barGraphProps(isMobile, pageWidth)} />

@@ -7,7 +7,7 @@ type AlignOption = "left" | "center" | "right";
 type ComponentWrapperProps = {
   children: React.ReactNode;
   heading: string;
-  bodyText?: string | React.ReactNode;
+  bodyText?: React.ReactNode;
   align?: AlignOption;
   noBackground?: boolean;
   wordCloud?: boolean;
