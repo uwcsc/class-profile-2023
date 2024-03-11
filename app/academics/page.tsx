@@ -496,7 +496,7 @@ export default function Academics() {
 
       <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A20iv} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A20iv} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -551,7 +551,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24ii} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A24ii} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
