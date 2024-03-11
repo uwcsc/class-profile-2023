@@ -200,7 +200,7 @@ export default function IntimacyAndDrugs() {
           <p>
             For those uninformed, the Rice Purity test is a 100-question survey that aims to gauge a person&apos;s level of “innocence” or their experience in
             regard to a variety of scenarios ranging from sexual situations to substances and various others. 5 respondents had the same score of 50! Out of all
-            respondents, 8 was our lowest (???) and 96 was our highest.
+            respondents, 8 was our lowest (???) and 100 (a perfectly pure score!) was our highest.
           </p>
         }
         align="right">
