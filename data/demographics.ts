@@ -30,15 +30,15 @@ export const D2 = [
 
 export const D3 = [
   {
-    category: "She/Her/Hers",
+    category: "She/Her",
     value: 42,
   },
   {
-    category: "He/Him/His",
+    category: "He/Him",
     value: 91,
   },
   {
-    category: "They/Them/Their",
+    category: "They/Them",
     value: 3,
   },
 ];
