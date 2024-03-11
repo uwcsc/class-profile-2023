@@ -85,7 +85,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* c6i */}
-      <ComponentWrapper heading="What company did you work for?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="What company did you work for?" align="left" noBackground>
         <ComponentSwitcher
           graphList={C6i.map((coopTerm, i) => (
             <WordCloud
@@ -103,7 +103,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6ii */}
-      <ComponentWrapper heading="Where were you located during work?" bodyText=" ">
+      <ComponentWrapper heading="Where were you located during work?" align="right">
         <LineGraph
           data={C6ii}
           colorRange={colorRange2}
@@ -119,7 +119,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6iv */}
-      <ComponentWrapper heading="What was your salary per hour in CAD (excluding other forms of compensation)?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="What was your salary per hour in CAD (excluding other forms of compensation)?" align="left" noBackground>
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 500}
           height={DefaultProp.graphHeight}
@@ -134,7 +134,7 @@ export default function Coop() {
       {/* C6v */}
       <ComponentWrapper
         heading="How much did you receive in other forms of compensation in CAD? (i.e. bonuses, stock options, relocation, housing, etc.)"
-        bodyText=" ">
+        align="right">
         <BoxPlot
           width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
@@ -148,7 +148,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6vi */}
-      <ComponentWrapper heading="What was your co-op evaluation rating?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="What was your co-op evaluation rating?" align="right" noBackground>
         <div>
           <StackedBarGraphHorizontal
             width={isMobile ? pageWidth / 1.5 : 600}
@@ -164,7 +164,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C7vi */}
-      <ComponentWrapper heading="How happy were you with your co-op during the work term specified?" bodyText=" ">
+      <ComponentWrapper heading="How happy were you with your co-op during the work term specified?" align="left">
         <div>
           <StackedBarGraphVertical
             width={isMobile ? pageWidth / 1.5 : 600}
@@ -180,7 +180,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6viii */}
-      <ComponentWrapper heading="How did you find your job?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="How did you find your job?" align="left" noBackground>
         <div style={{ padding: "10px" }}>
           <LineGraph
             data={C6viii}
@@ -198,7 +198,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6ix */}
-      <ComponentWrapper heading="Were you referred for the co-op?" bodyText=" ">
+      <ComponentWrapper heading="Were you referred for the co-op?" align="left">
         <div>
           <StackedBarGraphVertical
             width={isMobile ? pageWidth / 1.5 : 600}
@@ -214,7 +214,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6x */}
-      <ComponentWrapper heading="Did you complete another co-op term after this?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="Did you complete another co-op term after this?" align="right" noBackground>
         <div>
           <StackedBarGraphVertical
             width={isMobile ? pageWidth / 1.5 : 600}

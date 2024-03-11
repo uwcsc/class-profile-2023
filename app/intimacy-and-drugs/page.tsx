@@ -88,21 +88,22 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="How many committed relationships have you been in during university?"
         bodyText="The majority of our respondents have been in either 1 or 2 relationships during their undergraduate career."
-        align="right"
+        align="left"
         noBackground>
         <BarGraphVertical data={I3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How many sexual partners have you had during university?"
-        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57….">
+        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57…."
+        align="right">
         <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="How much time did you spend in a relationship during university?"
         bodyText="Maintaining relationships during university can sometimes be difficult with heavy course loads, however, if there is a will there's a way! Most relationships tend to last 2-4 years, with 21 of them making it past the 4 year mark. Congratulations!"
-        align="right"
+        align="left"
         noBackground>
         <BarGraphHorizontal
           data={I5}
@@ -114,7 +115,8 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="Have you ever cheated on someone, been cheated on, or helped someone cheat?"
-        bodyText="Almost all respondents have never been in any cheating situations.">
+        bodyText="Almost all respondents have never been in any cheating situations."
+        align="right">
         <div className={styles.graphContainer}>
           <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
         </div>
@@ -123,7 +125,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="Did you ever date another CS / CS/BBA / CFM student?"
         bodyText="Most respondents have not dated another CS/ CS/BBA / CFM student. 42 students reported having done so, while 74 said they did not."
-        align="right"
+        align="left"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={I7} {...pieChartProps(isMobile, pageWidth)} />
@@ -132,7 +134,8 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="If you answered no to the previous question, did you want to date another CS / CS/BBA / CFM student?"
-        bodyText="Regarding those who answered no, 40 out of the 66 respondents said that they would not. Is this surprising to you? Dating someone in your program means you now have someone to spend those all-nighters with. On the other hand, having a class with your ex after a bad breakup can definitely be awkward.">
+        bodyText="Regarding those who answered no, 40 out of the 66 respondents said that they would not. Is this surprising to you? Dating someone in your program means you now have someone to spend those all-nighters with. On the other hand, having a class with your ex after a bad breakup can definitely be awkward."
+        align="right">
         <div className={styles.graphContainer}>
           <PieChart data={I8} {...pieChartProps(isMobile, pageWidth)} />
         </div>
@@ -141,22 +144,23 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="Are you currently in a relationship?"
         bodyText="59 respondents reported being in a relationship and 58 said they were not. Let’s hope that the 18 who did not respond are not in “complicated” relationships. "
-        align="left">
+        align="left"
+        noBackground>
         <PieChart data={I9i} {...pieChartProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="In which term did you meet your current partner?"
         bodyText="Before university and during 1A seem to be the times most people fall in love and meet their current partners. But regardless, who knows, maybe this term is your time to shine!"
-        align="right"
-        noBackground>
+        align="right">
         <BarGraphVertical data={I9ii} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Where did you meet your current partner?"
         bodyText="For those who had a current partner, most of them met them through mutual friends, with high school being in second. Mutual friends are a great way to meet new people and it helps to create even larger friend groups!"
-        align="left">
+        align="left"
+        noBackground>
         <WordCloud
           data={I9iii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -170,8 +174,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="What is your rice purity score?"
         bodyText="For those uninformed, the Rice Purity test is a 100-question survey that aims to gauge a person’s level of “innocence” or their experience in regard to a variety of scenarios ranging from sexual situations to substances and various others. 5 respondents had the same score of 50! Out of all respondents, 8 was our lowest (???) and 96 was our highest."
-        align="right"
-        noBackground>
+        align="right">
         <WordCloud
           data={I10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -184,19 +187,21 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="How has your understanding of relationships changed during university?"
-        bodyText="Relationships are often a major turning point in many people’s lives. It is a commitment to each other—some struggle, while others do not. Let’s see what other people have to say.">
+        bodyText="Relationships are often a major turning point in many people’s lives. It is a commitment to each other—some struggle, while others do not. Let’s see what other people have to say."
+        align="left"
+        noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={isMobile ? 600 : 500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText="How does one get rizz?" align="right" noBackground>
+      <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText="How does one get rizz?" align="right">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I12} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Any advice for people already in a relationship?" bodyText="Long Answer">
+      <ComponentWrapper heading="Any advice for people already in a relationship?" bodyText="Long Answer" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I13} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>

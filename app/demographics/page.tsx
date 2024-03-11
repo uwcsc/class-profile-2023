@@ -51,7 +51,7 @@ export default function Demographics() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What are your pronouns?" bodyText=" ">
+      <ComponentWrapper heading="What are your pronouns?">
         <div className={styles.graphContainer}>
           <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={15} labelTextRadialOffset={-45} />
         </div>
@@ -169,13 +169,15 @@ export default function Demographics() {
       <ComponentWrapper
         heading="What was your family income before entering your current UW program?"
         bodyText={
-          <p>
-            {/* Most families made more than the average family income in Canada in 2020 (
-            <BodyLink href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001201">$104,350</BodyLink>) The range of 51k to 200k was the most common
-            among families. To sustain a first-year tuition fee that can hover between $8,000 to $55,000, it would make sense for many families to rely on other
-            sources of financial support. */}
-          </p>
-        }>
+          // <p>
+          //   Most families made more than the average family income in Canada in 2020 (
+          //   <BodyLink href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001201">$104,350</BodyLink>) The range of 51k to 200k was the most common
+          //   among families. To sustain a first-year tuition fee that can hover between $8,000 to $55,000, it would make sense for many families to rely on other
+          //   sources of financial support.
+          // </p>
+          ""
+        }
+        align="right">
         <BarGraphVertical
           // TODO: change when histogram component is ready
           data={D12}
@@ -187,18 +189,18 @@ export default function Demographics() {
         heading="How many close relatives have attended UW?"
         bodyText="Most of the graduating class are the first family member in their extended family to have had the opportunity to attend and graduate from Waterloo. Are you planning to recommend Waterloo to future students in your family?
         "
-        align="right"
+        align="left"
         noBackground>
         <BarGraphHorizontal data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What immigrant generation do you belong to?" bodyText=" ">
+      <ComponentWrapper heading="What immigrant generation do you belong to?" align="right">
         <div className={styles.graphContainer}>
           <PieChart data={D14} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was your high school admissions average?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="What was your high school admissions average?" align="right" noBackground>
         <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
@@ -227,7 +229,7 @@ export default function Demographics() {
         <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" bodyText=" " align="right" noBackground>
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground>
         <WordCloud
           data={D18}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -238,7 +240,7 @@ export default function Demographics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your MBTI type?" bodyText=" ">
+      <ComponentWrapper heading="What is your MBTI type?" align="right">
         <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
