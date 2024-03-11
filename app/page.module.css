@@ -116,6 +116,13 @@
   background-color: var(--primary-accent-light);
 }
 
+@media screen and (max-width: 1500px) {
+  .title {
+    margin-top: 8rem;
+    font-size: 400%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .decoratorDots {
     display: none;
@@ -154,7 +161,6 @@
 
   .title {
     margin-top: 5rem;
-    margin-right: 10%;
     font-size: 300%;
   }
 
@@ -192,6 +198,13 @@
   .bottomCurve {
     margin-top: 100px;
     margin-bottom: 175px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    margin-top: 2rem;
+    font-size: 200%;
   }
 }
 
