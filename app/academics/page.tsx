@@ -177,7 +177,8 @@ export default function Academics() {
           </p>
         }
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={A6}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -223,7 +224,8 @@ export default function Academics() {
           </p>
         }
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={A8}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -271,7 +273,8 @@ export default function Academics() {
           </p>
         }
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={A10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -457,7 +460,7 @@ export default function Academics() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which option(s) did you complete?" align="right">
+      <ComponentWrapper heading="Which option(s) did you complete?" align="right" wordCloud>
         <WordCloud
           data={A20i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -480,7 +483,7 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which specialization(s) did you complete?" align="left">
+      <ComponentWrapper heading="Which specialization(s) did you complete?" align="left" wordCloud>
         <WordCloud
           data={A20iii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -567,7 +570,8 @@ export default function Academics() {
       <ComponentWrapper
         heading="What residence did you live in your first year?"
         bodyText="Most of the respondents lived at Village 1 during their first year, at 31% of the class. This is followed by UW Place in second place, at 16%, and Ron Eydt Village in third, at 9% of the class. This makes sense, as these are three of the largest capacity residences on campus, with V1 holding 1300+ residents, UW Place holding 1600+ residents, and REV holding almost 1000 residents."
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A25}
           width={wordCloudWidth(isMobile, pageWidth)}

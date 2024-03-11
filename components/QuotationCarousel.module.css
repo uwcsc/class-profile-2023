@@ -74,7 +74,7 @@
   background-color: var(--chart-green-heavy);
   border: calc(2rem / 16) solid var(--primary-text);
   border-radius: calc(12rem / 16);
-  box-shadow: 0 calc(1rem / 16) calc(10rem / 16) var(--primary-accent);
+  box-shadow: 0 calc(1rem / 16) calc(10rem / 16) var(--chart-green-light);
 }
 
 

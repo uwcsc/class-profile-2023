@@ -27,7 +27,7 @@ export default function MentalHealth() {
         heading="Have you struggled with mental health during undergrad?"
         bodyText="Mental health is a serious concern for many students. A majority of those surveyed have mentioned struggling with mental health issues during their time in college. The university environment can often be a source of stress, anxiety, or other mental health problems. So, it's important to take care of yourself and support each other during challenging moments.">
         <div className={styles.graphContainer}>
-          <PieChart data={H1} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={H1} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -44,7 +44,7 @@ export default function MentalHealth() {
       <ComponentWrapper
         heading="Have you ever been to therapy?"
         bodyText="Many people mentioned they haven't tried therapy, but quite a few have either gone for it or thought about it. This shows that university life can be really tough, so it's crucial to reach out and use the resources available to take care of your mental and physical health!">
-        <BarGraphVertical data={H3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={H3} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -59,7 +59,7 @@ export default function MentalHealth() {
         heading="Have you ever used UW Health Services for your mental health?"
         bodyText="UW Health Services is a program that offers easily accessible medical services. It's wonderful to observe that a significant portion of our respondents have availed themselves of these services for their well-being. We encourage the continued utilization of these valuable resources in the future. University life can be demanding, and seeking assistance from UW Health Services is a common and supportive choice. To schedule an appointment, you can reach out to them at (519) 888-4096 or email hsforms@uwaterloo.ca if phone booking is not convenient for you. Taking care of your health is a priority, and these services are here to assist you.">
         <div className={styles.graphContainer}>
-          <PieChart data={H5} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={H5} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -81,6 +81,7 @@ export default function MentalHealth() {
           minWidth={700}
           lowerLabelDy="60px"
           valueAxisLabelOffset={0}
+          background={true}
         />
       </ComponentWrapper>
 

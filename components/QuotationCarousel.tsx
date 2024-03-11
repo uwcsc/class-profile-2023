@@ -58,7 +58,7 @@ export function QuotationCarousel(props: QuotationCarouselProps) {
         </ul>
         <QuotationMark className={`${styles.right} ${styles.quotationMark}`} />
       </div>
-      <CarouselButton onClick={showNextCard} />
+      <CarouselButton onClick={showNextCard} background={background} />
     </section>
   );
 }
@@ -77,6 +77,7 @@ function Circle({ className, diameter }: { className: string; diameter: number }
 }
 
 function CarouselButton({ isPrevious, onClick, background}: CarouselButtonProps) {
+
   return (
     <button className={styles.carouselButton} onClick={onClick}>
       <svg

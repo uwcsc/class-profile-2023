@@ -44,7 +44,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="How did your outlook on religion change during university?"
         bodyText="Similar to previous years, most students were never religious. Of those that remained the same, however, there was a portion of students who were previously religious but are no longer.">
-        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -61,7 +61,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="How frequently did you cook for yourself?"
         bodyText="Practice makes perfect, especially with cooking. Most students cook for themselves every week with a handful never doing so. Other students fall into the categories of every few weeks, monthly, or once every few months.">
-        <BarGraphVertical data={L3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L3} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -76,7 +76,7 @@ export default function LifestyleAndInterests() {
         heading="Did you feel like you had time to pursue your hobbies?"
         bodyText="Contrary to last year, there was a significant difference between those who did and those who do not. This year, 76 said they either agreed or strongly agreed, while 35 said they disagreed or strongly disagreed. Pursuing hobbies outside of school is a great way to de-stress and put your time and energy into something you love!  
         ">
-        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -96,7 +96,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="What time do you usually go to sleep?"
         bodyText="Sleep schedule? What’s that? Waterloo students see the perfect sleeping time between 1 AM to 3 AM.  Who wants to be an early bird when you can be a night owl? ">
-        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -111,7 +111,7 @@ export default function LifestyleAndInterests() {
         heading="How often did you pull all-nighters throughout university?"
         bodyText="To the lucky ones that haven’t, those who have don’t wish it upon you. Whether it be splashing cold water on your face, chugging down energy drinks, or drinking cold coffee, one must do what they gotta do to stay awake. While 56 students have never pulled an all-nighter, about 70 students go through the struggle every few weeks or months.
         ">
-        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -133,6 +133,7 @@ export default function LifestyleAndInterests() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
           minFrequency={2}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -140,7 +141,8 @@ export default function LifestyleAndInterests() {
         heading="Which extracurricular activities did you participate in?"
         bodyText="Waterloo has over 200+ clubs! Make sure to definitely check out clubs by finding their Instagram pages, and posters, or finding them during club day! There is a club for almost everything, and if you can’t find a club, start one!"
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={L12}
           width={isMobile ? pageWidth / 1.5 : 800}
@@ -161,6 +163,7 @@ export default function LifestyleAndInterests() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 60 } }}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -168,7 +171,8 @@ export default function LifestyleAndInterests() {
         heading="What are your hobbies?"
         bodyText="Waterloo students have a variety of hobbies, but video games and reading top them all! After a long day of leetcoding and math, coming home to hop on a game with your friends or read a nice book makes the endless suffering just a little bit more worth it."
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={L14}
           width={isMobile ? pageWidth / 1.5 : 800}
@@ -182,7 +186,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="How many different countries did you visit outside of Canada during university?"
         bodyText="Waterloo students love to travel! During the breaks in between terms, getting an opportunity to visit a new country and potentially experience a new culture is an unforgettable experience. Most Waterloo students have visited at least visited 1 country outside of Canada during their time here.">
-        <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -206,6 +210,7 @@ export default function LifestyleAndInterests() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 142 } }}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -220,7 +225,7 @@ export default function LifestyleAndInterests() {
       <ComponentWrapper
         heading="How many friends throughout university were also in CS / CS/BBA / CFM?"
         bodyText="Struggling to pass a course together with your friends is just a fun yet painful experience that you can’t beat. Most Waterloo students have friends in CS, CS/BBA, or CFM as many share the same classes together.">
-        <BarGraphVertical data={L19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L19} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -241,6 +246,7 @@ export default function LifestyleAndInterests() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          background={true}
         />
       </ComponentWrapper>
 

@@ -17,7 +17,7 @@ export default function Personal() {
 
       <ComponentWrapper heading="What was your favourite extracurricular activity that you participated in during your time at UW?" align="left">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P1} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P1} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -29,7 +29,7 @@ export default function Personal() {
 
       <ComponentWrapper heading="What is the best life hack/tip?" align="right">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P3} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P3} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -41,7 +41,7 @@ export default function Personal() {
 
       <ComponentWrapper heading="What is your most embarrassing story from your time at UW?" align="left">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P5} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P5} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -53,7 +53,7 @@ export default function Personal() {
 
       <ComponentWrapper heading="What is one regret you have after finishing university?" align="right">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P7} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P7} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -65,7 +65,7 @@ export default function Personal() {
 
       <ComponentWrapper heading="What is the best lesson you learned from your time at UW?" align="left">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={P9} circleDiameter={0} height={300} />
+          <QuotationCarousel data={P9} background={true} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 

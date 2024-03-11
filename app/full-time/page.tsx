@@ -33,6 +33,7 @@ export default function FullTime() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -40,7 +41,8 @@ export default function FullTime() {
         heading="Where will you be working from post-grad?"
         bodyText="Toronto, Ontario, and New York are the two main places most people seem to be moving to start their new life as full-time adults! A majority of students said they will be working in the USA, which is no surprise due to most opportunities in the tech field being in tech hubs like San Francisco, New York, and Seattle. Regardless, it just goes to show that if you work hard, and with just a bit of luck, you can work in your dream location!"
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={F2}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -55,7 +57,7 @@ export default function FullTime() {
         heading="How many offers did you decide between? Please enter a number."
         bodyText="More than half of the respondents chose between 1 or 2 offers!">
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={F3} {...barGraphProps(isMobile, pageWidth)} />
+          <BarGraphVertical data={F3} {...barGraphProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -72,7 +74,7 @@ export default function FullTime() {
       <ComponentWrapper
         heading="If working in Canada, what will be your first-year total compensation (salary + signing + first-year stock + bonus) in CAD?"
         bodyText="The world of tech offers intriguing annual compensation and salary options.  These compensation packages encompass a mix of components, including salary, signing bonuses, first-year stock options, and more. Many of these salaries start high and will just continue rising as the years go by!">
-        <BarGraphVertical data={F5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={F5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -93,6 +95,7 @@ export default function FullTime() {
           wordPadding={10}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          background={true}
         />
       </ComponentWrapper>
 

@@ -31,6 +31,7 @@ export default function Academics() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 200 } }}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -50,6 +51,7 @@ export default function Academics() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -70,7 +72,7 @@ export default function Academics() {
         heading="What operating system(s) do you mainly use?"
         bodyText="Each of these 3 operating systems provides their own benefits and downsides, however making the right choice comes down to personal preference and comfort for daily. The majority of the respondents are split between Windows and macOS. With 81 students developing on MacOS. Additionally, it seems that UNIX-based OS (MacOS/Linux) are predominantly used by students, due to the various tools and features that they cater to programmers.">
         <div className={styles.graphContainer}>
-          <PieChart data={E5} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={E5} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -87,7 +89,7 @@ export default function Academics() {
       <ComponentWrapper
         heading="How many side projects have you completed during university, if any?"
         bodyText="Side projects are a great way to pick up new skills, build your resume for internships, or explore fields you are interested in. Having a few side projects can greatly help with getting internship opportunities. Over 30% of students have completed 3 or more side projects during their time at Waterloo. With the majority of students having done 2 or fewer during their time at university.">
-        <BarGraphVertical data={E7} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={E7} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper

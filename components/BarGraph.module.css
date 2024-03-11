@@ -6,19 +6,19 @@
 .blue {
   --fill: var(--chart-blue-light);
   --hover-fill: var(--chart-blue-heavy);
-  --hover-shadow: var(--chart-blue-shadow);
+  --hover-shadow: var(--chart-blue-light);
 }
 
 .yellow {
   --fill: var(--chart-yellow-light);
   --hover-fill: var(--chart-yellow-heavy);
-  --hover-shadow: var(--chart-yellow-shadow);
+  --hover-shadow: var(--chart-yellow-light);
 }
 
 .green {
   --fill: var(--chart-green-light);
   --hover-fill: var(--chart-green-heavy);
-  --hover-shadow: var(--chart-green-shadow);
+  --hover-shadow: var(--chart-green-light);
 }
 
 .pink {

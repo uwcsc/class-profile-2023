@@ -25,7 +25,7 @@ export default function PostGrad() {
         heading="Do you plan on pursuing post-graduate education?"
         bodyText="Out of the 133 respondents in this section, about 50% of them are not planning on pursuing a post-graduate education, while 13% are planning to do so and 29% are currently unsure. Post-graduate education is an option, but does not have to be everyone’s pathway!">
         <div className={styles.graphContainer}>
-          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth)} labelTextXOffset={20} />
+          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth, true)} labelTextXOffset={20} />
         </div>
       </ComponentWrapper>
 
@@ -43,7 +43,7 @@ export default function PostGrad() {
         heading="If you searched for a job, how many onsites/interviews did you get?"
         bodyText="56 participants reported having at least one interview, with most having up to five, but a few had as many as 80. Some did not interview at all, which may be a result of taking a return offer from a previous co-op placement.">
         <div className={styles.graphContainer}>
-          <PieChart data={P3} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={P3} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 

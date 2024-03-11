@@ -36,7 +36,7 @@ export default function Coop() {
         heading="Are you in a co-op program?"
         bodyText="Out of the 135 individuals that participated in this class profile, 128 were in a co-op program and 7 were not. Most students choose to be in the co-op program because of the great experiences it provides!">
         <div className={styles.graphContainer}>
-          <PieChart data={C1} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={C1} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -45,7 +45,8 @@ export default function Coop() {
         heading=" What was your favourite co-op location?"
         bodyText="There is a variety of favoured co-op locations, with some of the most popular being New York, Toronto, San Francisco, and various other cities in California."
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={C2}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -62,7 +63,7 @@ export default function Coop() {
         bodyText="About 18% of respondents have had at least one co-op term without a placement. If you’re also in thie situation and cannot find one, don’t worry; you’re not alone! Finding a co-op placement, especially your first one, can be pretty difficult. As the recent pandemic also affected students in this year, it could have also caused finding a placement to be even more difficult.
         ">
         <div className={styles.graphContainer}>
-          <PieChart data={C3} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={C3} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -81,11 +82,11 @@ export default function Coop() {
       <ComponentWrapper
         heading="How many co-op offers did you have rescinded?"
         bodyText="Majority of the participants, standing at 64%, did not rescind any co-op offers. If a participant did rescind any offers, they, for the most part, only rescinded one, at 13% of the respondents, with very few rescinding more than one offer.">
-        <BarGraphVertical data={C5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={C5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       {/* c6i */}
-      <ComponentWrapper heading="What company did you work for?" align="left" noBackground>
+      <ComponentWrapper heading="What company did you work for?" align="left" noBackground wordCloud>
         <ComponentSwitcher
           graphList={C6i.map((coopTerm, i) => (
             <WordCloud
@@ -162,6 +163,7 @@ export default function Coop() {
             top: 20,
             left: 20,
           }}
+          background={true}
         />
       </ComponentWrapper>
 

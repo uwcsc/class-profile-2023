@@ -71,6 +71,8 @@ export type StatsPlotProps = {
   boxPlotPadding?: number;
   /** Minimum width of the graph. */
   minWidth?: number;
+  
+  background? : boolean;
 };
 
 export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
@@ -99,6 +101,7 @@ export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
     boxPlotLeftOffset = 0.3,
     boxPlotPadding = 0.3,
     minWidth = 500,
+    background = false,
   }: StatsPlotProps & WithTooltipProvidedProps<TooltipData>) => {
     if (width < minWidth) {
       width = minWidth;
@@ -246,7 +249,7 @@ export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
             {plotData.map((d: Stats, i) => (
               <Group key={i}>
                 <VisxBoxPlot
-                  className={styles.boxplot}
+                  className={background ? styles.greenboxplot : styles.pinkboxplot}
                   min={getMin(d)}
                   max={getMax(d)}
                   left={xScale(getX(d))! + boxPlotLeftOffset * constrainedWidth + valueAxisLeftMargin}

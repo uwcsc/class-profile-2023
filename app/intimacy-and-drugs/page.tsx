@@ -81,7 +81,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper heading="If so, in which term did you first have sexual intercourse?">
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={I2ii} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+          <BarGraphVertical data={I2ii} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
         </div>
       </ComponentWrapper>
 
@@ -96,7 +96,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="How many sexual partners have you had during university?"
         bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57...">
-        <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -117,7 +117,7 @@ export default function IntimacyAndDrugs() {
         bodyText="Almost all respondents have never been in any cheating situations."
         align="right">
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+          <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
         </div>
       </ComponentWrapper>
 
@@ -136,7 +136,7 @@ export default function IntimacyAndDrugs() {
         bodyText="Regarding those who answered no, 40 out of the 66 respondents said that they would not. Is this surprising to you? Dating someone in your program means you now have someone to spend those all-nighters with. On the other hand, having a class with your ex after a bad breakup can definitely be awkward."
         align="right">
         <div className={styles.graphContainer}>
-          <PieChart data={I8} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={I8} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -145,21 +145,22 @@ export default function IntimacyAndDrugs() {
         bodyText="59 respondents reported being in a relationship and 58 said they were not. Let’s hope that the 18 who did not respond are not in “complicated” relationships. "
         align="left"
         noBackground>
-        <PieChart data={I9i} {...pieChartProps(isMobile, pageWidth)} />
+        <PieChart data={I9i} {...pieChartProps(isMobile, pageWidth, false)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="In which term did you meet your current partner?"
         bodyText="Before university and during 1A seem to be the times most people fall in love and meet their current partners. But regardless, who knows, maybe this term is your time to shine!"
         align="right">
-        <BarGraphVertical data={I9ii} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={I9ii} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="Where did you meet your current partner?"
         bodyText="For those who had a current partner, most of them met them through mutual friends, with high school being in second. Mutual friends are a great way to meet new people and it helps to create even larger friend groups!"
         align="left"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={I9iii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -181,6 +182,7 @@ export default function IntimacyAndDrugs() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          background={true}
         />
       </ComponentWrapper>
 
@@ -196,7 +198,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText="How does one get rizz?" align="right">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={I12} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
+          <QuotationCarousel data={I12} background={true} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>
       </ComponentWrapper>
 

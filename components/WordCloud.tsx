@@ -122,6 +122,7 @@ type WordCloudWordsProps = Omit<WordCloudProps, "className"> & {
   tooltipLeft?: number;
   tooltipTop?: number;
   isMobile: boolean; // passing in isMobile as a prop so we can rerender if this changes
+  background? : boolean;
 };
 const WordCloudWords: React.FC<WordCloudWordsProps> = ({
   data,
@@ -193,7 +194,7 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
               fontSize={word.size}
               fontFamily={word.font}
               fontWeight={fontWeight}
-              className={styles.word}
+              className={background ? styles.greenWord : styles.yellowWord}
               textAnchor="middle"
               onMouseMove={
                 ((e: React.MouseEvent<SVGTextElement | SVGLineElement, MouseEvent>) => {
@@ -225,6 +226,7 @@ const shouldNotRerender = (prevProps: WordCloudWordsProps, nextProps: WordCloudW
     // if width changes, rerender, else don't rerender for a tooltip change
     prevProps.width === nextProps.width &&
     prevProps.isMobile === nextProps.isMobile &&
+    prevProps.background === nextProps.background && 
     (prevProps.tooltipLeft !== nextProps.tooltipLeft ||
       prevProps.tooltipTop !== nextProps.tooltipTop ||
       nextProps.tooltipLeft === undefined ||
