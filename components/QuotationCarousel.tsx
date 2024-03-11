@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { Color } from "@/utils/Color";
+import { useState } from "react";
 
 import styles from "./QuotationCarousel.module.css";
 
@@ -53,7 +53,12 @@ export function QuotationCarousel(props: QuotationCarouselProps) {
             </li>
           ))}
         </ul>
-        <QuotationMark className={`${styles.right} ${styles.quotationMark}`} />
+        <div className={styles.bottomRow}>
+          <span>
+            {activeIdx + 1}/{data.length}
+          </span>
+          <QuotationMark className={`${styles.right} ${styles.quotationMark}`} />
+        </div>
       </div>
       <CarouselButton onClick={showNextCard} />
     </section>
