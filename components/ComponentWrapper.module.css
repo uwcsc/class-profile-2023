@@ -57,19 +57,38 @@
 .withBackground h3 {
   font-size: calc(32rem / 16);
   font-weight: 700;
-  color: var(--chart-green-heavy);
+  color: var(--chart-blue-heavy);
   margin-top: calc(24rem / 16);
   margin-bottom: calc(16rem / 16);
   letter-spacing: 0.075rem;
 }
 
 .withBackground a {
-  color: var(--chart-green-heavy);
+  color: var(--chart-blue-heavy);
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
 
 .withBackground a:hover {
+  color: var(--chart-blue-light);
+}
+
+.withBackgroundCloud h3 {
+  font-size: calc(32rem / 16);
+  font-weight: 700;
+  color: var(--chart-green-heavy);
+  margin-top: calc(24rem / 16);
+  margin-bottom: calc(16rem / 16);
+  letter-spacing: 0.075rem;
+}
+
+.withBackgroundCloud a {
+  color: var(--chart-green-heavy);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+.withBackgroundCloud a:hover {
   color: var(--chart-green-light);
 }
 

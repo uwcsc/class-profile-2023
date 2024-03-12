@@ -1,5 +1,6 @@
-import { AxisLeft, AxisBottom } from "@visx/axis";
-import { GridRows, GridColumns } from "@visx/grid";
+import { Color } from "@/utils/Color";
+import { AxisBottom, AxisLeft } from "@visx/axis";
+import { GridColumns, GridRows } from "@visx/grid";
 import { Group } from "@visx/group";
 import { Stats } from "@visx/mock-data/lib/generators/genStats";
 import { Point } from "@visx/point";
@@ -9,7 +10,6 @@ import { BoxPlot as VisxBoxPlot } from "@visx/stats";
 import { withTooltip } from "@visx/tooltip";
 import { WithTooltipProvidedProps } from "@visx/tooltip/lib/enhancers/withTooltip";
 import React from "react";
-import { Color } from "@/utils/Color";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 
@@ -249,7 +249,7 @@ export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
             {plotData.map((d: Stats, i) => (
               <Group key={i}>
                 <VisxBoxPlot
-                  className={background ? styles.greenboxplot : styles.pinkboxplot}
+                  className={background ? styles.blueboxplot : styles.pinkboxplot}
                   min={getMin(d)}
                   max={getMax(d)}
                   left={xScale(getX(d))! + boxPlotLeftOffset * constrainedWidth + valueAxisLeftMargin}

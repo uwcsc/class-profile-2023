@@ -104,7 +104,8 @@ export default function Academics() {
             is a fundamental concept used in many areas of computer science.
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A3}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -153,7 +154,8 @@ export default function Academics() {
             <BodyLink href="https://uwflow.com/course/econ212">ECON 212</BodyLink>, exploring game theory, being, in order, the top 3 favourites!
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A5}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -200,7 +202,8 @@ export default function Academics() {
             programming, and <BodyLink href="https://uwflow.com/course/cs350">CS 350</BodyLink>, which explores various aspects of operating systems.
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A7}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -248,7 +251,8 @@ export default function Academics() {
             management is not the favourite subject topic of this year’s computer science students!
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A9}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -296,7 +300,8 @@ export default function Academics() {
             showing that they are not very popular courses amongst the students.
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={A11}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -342,7 +347,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth, true)} />
+          <PieChart data={A13} {...pieChartProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -358,9 +363,10 @@ export default function Academics() {
       <ComponentWrapper
         heading="What term did you transfer into your program?"
         bodyText="The majority of students who transferred did so during their 2A term, followed by the number of transfers in 2B and 3A tying for second place. This is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program."
-        align="left">
+        align="right"
+        noBackground>
         <div className={styles.graphContainer}>
-          <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth, true)} />
+          <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -374,7 +380,7 @@ export default function Academics() {
             widthAlternatingLabel={1000}
             alternatingLabelSpace={200}
             lowerLabelDy="60px"
-            {...barGraphProps(isMobile, pageWidth, false)}
+            {...barGraphProps(isMobile, pageWidth, true)}
             margin={{ ...barGraphMargin, ...{ left: 180 } }}
           />
         </div>
@@ -394,7 +400,8 @@ export default function Academics() {
           </p>
         }
         align="right"
-        noBackground>
+        noBackground
+        wordCloud>
         <WordCloud
           data={A14}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -403,7 +410,6 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
           minFrequency={2}
-          background
         />
       </ComponentWrapper>
 
@@ -411,7 +417,7 @@ export default function Academics() {
         heading="Which study term did you think was the hardest?"
         bodyText="Second year seemed to be the most difficult for the most students, with 2A, followed by 2B, being considered the most difficult study terms. This could be due to that many of the least favoured courses and courses considered to be the most difficult, such as CS 245 and MATH 239, would have been taken during the students’ 2A or 2B study term."
         align="left">
-        <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth, false)} />
+        <BarGraphVertical data={A15} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -419,10 +425,10 @@ export default function Academics() {
         bodyText="The 4A and 4B study terms were considered to be the easiest study terms by a large margin. This is likely due to most of the more difficult core courses being finished already and students being able to take electives that they are more interested in once all the mandatory courses had been completed. This statistic highlights that even though classes may get harder (in 2A and 2B), it will get better after it gets worse, and that we should persevere through the challenges that may arise during our undergraduate careers!"
         align="right"
         noBackground>
-        <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth, true)} />
+        <BarGraphVertical data={A16} {...barGraphProps(isMobile, pageWidth, false)} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was your average each term?" align="right">
+      <ComponentWrapper heading="What was your average each term?" align="left">
         <StackedBarGraphVertical
           width={600}
           height={400}
@@ -447,7 +453,7 @@ export default function Academics() {
       </ComponentWrapper>
 
       <ComponentWrapper heading="What is your faculty average?" align="right">
-        <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
+        <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} background />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -456,7 +462,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A20} {...pieChartProps(isMobile, pageWidth, true)} />
+          <PieChart data={A20} {...pieChartProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 
@@ -468,6 +474,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          background
         />
       </ComponentWrapper>
 
@@ -479,7 +486,6 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
-          background
         />
       </ComponentWrapper>
 
@@ -491,12 +497,13 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
+          background
         />
       </ComponentWrapper>
 
       <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A20iv} background circleDiameter={0} height={300} />
+          <QuotationCarousel data={A20iv} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -504,7 +511,7 @@ export default function Academics() {
         heading="How many overloaded terms did you take (6 or more courses in one term)?"
         bodyText="59% of respondents did not take any overloaded terms. Overloading your term can be very challenging, as it increases your workload greatly. However, it is still possible, as 27% of all of the respondents overloaded one or two terms, while 13% overloaded 3 or more terms, with some of them overloading 6 terms!"
         align="right">
-        <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth, false)} />
+        <BarGraphVertical data={A21} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -551,11 +558,11 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24ii} background circleDiameter={0} height={300} />
+          <QuotationCarousel data={A24ii} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was the hardest thing about going on exchange?" align="left">
+      <ComponentWrapper heading="What was the hardest thing about going on exchange?" align="right">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={A24iii} circleDiameter={0} height={300} />
         </div>
@@ -563,7 +570,7 @@ export default function Academics() {
 
       <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} background />
+          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -579,6 +586,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={60}
           mobileMaxFontSize={30}
+          background
         />
       </ComponentWrapper>
 
@@ -588,7 +596,7 @@ export default function Academics() {
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
-          <PieChart data={A26} {...pieChartProps(isMobile, pageWidth, true)} />
+          <PieChart data={A26} {...pieChartProps(isMobile, pageWidth, false)} />
         </div>
       </ComponentWrapper>
 

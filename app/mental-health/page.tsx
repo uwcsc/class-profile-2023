@@ -95,7 +95,7 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" bodyText="" align="center" noBackground>
+      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" align="left">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H8} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
@@ -111,10 +111,10 @@ export default function MentalHealth() {
         heading="How much of an effect has imposter syndrome played in your university life?"
         bodyText="The impact of imposter syndrome on university life is a concerning issue. When asked to rate its influence on a scale of 1 to 5, the majority of respondents selected 4 or 5, indicating that imposter syndrome has significantly affected their lives. This highlights the need for greater awareness and support to help students address this syndrome and foster a greater sense of confidence in themselves."
         align="right">
-        <BarGraphVertical data={H10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={H10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" background />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What has been your experience with imposter syndrome?" bodyText="" align="left" noBackground>
+      <ComponentWrapper heading="What has been your experience with imposter syndrome?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>

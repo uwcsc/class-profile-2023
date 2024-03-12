@@ -24,7 +24,6 @@
 .pink {
   --fill: var(--chart-pink-light);
   --hover-fill: var(--chart-pink-heavy);
-  --hover-shadow: var(--chart-pink-shadow);
 }
 
 .bar {

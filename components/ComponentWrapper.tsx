@@ -19,13 +19,12 @@ export function ComponentWrapper({ heading, bodyText, children, align = "left", 
     center: styles.wrapperCenter,
     right: styles.wrapperRight,
   };
-  const withBackgroundStyles = wordCloud ? styles.noBackgroundCloud : styles.noBackground;
 
   return (
     <div
       className={`
       ${alignClasses[align]} 
-      ${noBackground ? withBackgroundStyles : styles.withBackground}
+      ${noBackground ? (wordCloud ? styles.noBackgroundCloud : styles.noBackground) : wordCloud ? styles.withBackgroundCloud : styles.withBackground}
       ${bodyText ? "" : styles.wrapperNoBodyText}
       `}>
       <div className={`${styles.internalWrapper} ${styles.textWrapper}`}>

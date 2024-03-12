@@ -128,8 +128,8 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="Besides English, what languages are you fluent in?"
-        bodyText="The multilingualism within the UW CS Class of 2023 is both diverse and impressive. Mandarin is the most widely spoken language, with 47 students demonstrating fluency. Additionally, we have proficiency in French, with 19 students showing their skills. Other languages include Cantonese, Russian, and Hindi, each spoken by several students. This diversity enriches our communication and understanding, making us a truly international community.
-">
+        bodyText="The multilingualism within the UW CS Class of 2023 is both diverse and impressive. Mandarin is the most widely spoken language, with 47 students demonstrating fluency. Additionally, we have proficiency in French, with 19 students showing their skills. Other languages include Cantonese, Russian, and Hindi, each spoken by several students. This diversity enriches our communication and understanding, making us a truly international community."
+        wordCloud>
         <WordCloud
           data={D8i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -152,7 +152,8 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="Where did you live before coming to UW?"
-        bodyText="A large population of students arrived in Waterloo from the GTA area prior to coming to Waterloo, with 77% of respondents residing in all of Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more.">
+        bodyText="A large population of students arrived in Waterloo from the GTA area prior to coming to Waterloo, with 77% of respondents residing in all of Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more."
+        wordCloud>
         <WordCloud
           data={D10}
           width={wordCloudWidth(isMobile, pageWidth)}

@@ -37,18 +37,14 @@ body {
   --menu-close-icon: #603e2f;
 
   /* Chart colors */
-  --chart-blue-light: #a1ccf2;
-  --chart-blue-heavy: #3894e5;
-  --chart-blue-shadow: #cc5773;
+  --chart-blue-light: #3472a8;
+  --chart-blue-heavy: #559ad6;
   --chart-yellow-light: #fff0bb;
   --chart-yellow-heavy: #fbd961;
-  --chart-yellow-shadow: #cc5773;
-  --chart-green-light: #91f1ac;
-  --chart-green-heavy: #23e95a;
-  --chart-green-shadow: #cc5773;
-  --chart-pink-light: #faa3bd;
-  --chart-pink-heavy: #fe5f8f;
-  --chart-pink-shadow: #cc5773;
+  --chart-green-light: #0f9635;
+  --chart-green-heavy: #4bbc6b;
+  --chart-pink-light: #ba4366;
+  --chart-pink-heavy: #dd547d;
   --chart-label: white;
 
   /* Default is dark theme */

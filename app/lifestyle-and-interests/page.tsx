@@ -124,7 +124,8 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading="What is your favourite restaurant to go to on/around campus?"
-        bodyText="Gol's Noodles seems to be many people’s go-to restaurant in Waterloo. With its affordable prices and diverse menu, no wonder it’s a Waterloo favourite!">
+        bodyText="Gol's Noodles seems to be many people’s go-to restaurant in Waterloo. With its affordable prices and diverse menu, no wonder it’s a Waterloo favourite!"
+        wordCloud>
         <WordCloud
           data={L11}
           width={isMobile ? pageWidth / 1.5 : 800}
@@ -238,7 +239,8 @@ export default function LifestyleAndInterests() {
 
       <ComponentWrapper
         heading="Where did you meet most of your friends?"
-        bodyText="Although orientation can be a great time to meet people, most students find their friends from extracurriculars, mutual friends, and old friends from high school. Although there is time to study, there’s a time to touch some grass and meet some new people! Once university is over, the knowledge learned may disappear, but the friendships built can last forever.">
+        bodyText="Although orientation can be a great time to meet people, most students find their friends from extracurriculars, mutual friends, and old friends from high school. Although there is time to study, there’s a time to touch some grass and meet some new people! Once university is over, the knowledge learned may disappear, but the friendships built can last forever."
+        wordCloud>
         <WordCloud
           data={L21}
           width={isMobile ? pageWidth / 1.5 : 800}

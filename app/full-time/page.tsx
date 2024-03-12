@@ -25,7 +25,8 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="What company will you be working for post-grad?"
-        bodyText="Most students have secured full-time positions and will be working full time post-grad. This is more than 50% of respondents. ">
+        bodyText="Most students have secured full-time positions and will be working full time post-grad. This is more than 50% of respondents."
+        wordCloud>
         <WordCloud
           data={F1}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -87,7 +88,8 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="What field/career path will you be in post-grad?"
-        bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. ">
+        bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. "
+        wordCloud>
         <WordCloud
           data={F7}
           width={wordCloudWidth(isMobile, pageWidth)}

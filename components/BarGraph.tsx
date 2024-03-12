@@ -91,7 +91,7 @@ export const BarGraphHorizontal = withTooltip<BarGraphProps, TooltipData>(
     hideTooltip,
     showTooltip,
     background = false,
-    color = background ? "green" : "pink", // In Block : Green, Elsewise : Pink
+    color = background ? "blue" : "pink", // In Block : Blue, Elsewise : Pink
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;
@@ -242,7 +242,7 @@ export const BarGraphVertical = withTooltip<BarGraphProps, TooltipData>(
     hideTooltip,
     showTooltip,
     background = false,
-    color = background ? "green" : "pink",
+    color = background ? "blue" : "pink",
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;
