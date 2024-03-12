@@ -1,8 +1,8 @@
 "use client";
 
 import { BottomNav } from "@/components/BottomNav";
-import { CenterWrapper } from "@/components/CenterWrapper";
 import { Header } from "@/components/Header";
+import { Panel } from "@/components/Panel";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CPWebDevs, communityReps, designers } from "@/data/contributors";
 import { pageRoutes } from "@/data/routes";
@@ -49,7 +49,7 @@ export default function Contributors() {
         title="Contributors"
         subtitle="Huge thanks to all CSC members who have contributed to creating the first ever uWaterloo CS class profile!"
       />
-      <CenterWrapper>
+      <Panel>
         <p>
           The 2023 CS Class Profile was completed by members of the UW Computer Science Club. Specifically, several current and past members (as of this
           writing) of the Community Representatives, Designers, Class Profile Web Developers, and Systems Committee put lots of time into making it what it is.
@@ -86,7 +86,7 @@ export default function Contributors() {
           , for kickstarting the existence of the CS Class Profile and for providing feedback! Note there may be other anonymous contributors on any of the
           teams or committees, but their names are not listed here.
         </p>
-      </CenterWrapper>
+      </Panel>
       <BottomNav leftPage={pageRoutes.personal} rightPage={pageRoutes.home}></BottomNav>
     </div>
   );
