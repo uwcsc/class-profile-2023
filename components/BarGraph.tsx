@@ -54,6 +54,8 @@ interface BarGraphProps {
   lowerLabelDy?: string;
   /** The color of the bars */
   color?: "blue" | "yellow" | "green" | "pink";
+
+  background?: boolean;
 }
 
 interface BarGraphData {
@@ -88,7 +90,8 @@ export const BarGraphHorizontal = withTooltip<BarGraphProps, TooltipData>(
     tooltipData,
     hideTooltip,
     showTooltip,
-    color = "pink",
+    background = false,
+    color = background ? "blue" : "pink", // In Block : Blue, Elsewise : Pink
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;
@@ -238,7 +241,8 @@ export const BarGraphVertical = withTooltip<BarGraphProps, TooltipData>(
     tooltipData,
     hideTooltip,
     showTooltip,
-    color = "pink",
+    background = false,
+    color = background ? "blue" : "pink",
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const barPadding = 0.4;

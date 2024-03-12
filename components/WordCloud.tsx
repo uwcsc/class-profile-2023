@@ -41,6 +41,8 @@ interface WordCloudProps {
   className?: string;
   /** Items that show up less frequently than this will be hidden */
   minFrequency?: number;
+  /** Has a Background block or not */
+  background?: boolean;
 }
 
 interface WordData {
@@ -48,7 +50,6 @@ interface WordData {
   value: number;
 }
 
-const wordColors = [Color.primaryAccent, Color.primaryAccentLight];
 const TOOLTIP_HORIZONTAL_SHIFT_SCALER = 12.0;
 
 export const WordCloud = withTooltip(
@@ -67,6 +68,7 @@ export const WordCloud = withTooltip(
     className,
     minWidth,
     minFrequency,
+    background = false,
   }: WordCloudProps) => {
     const { tooltipData, tooltipLeft, tooltipTop, tooltipOpen, showTooltip, hideTooltip } = useTooltip<WordData>();
 
@@ -96,6 +98,7 @@ export const WordCloud = withTooltip(
           spiral={spiral}
           isMobile={useIsMobile()}
           minWidth={minWidth}
+          background={background}
         />
 
         {tooltipOpen && tooltipData ? (
@@ -119,6 +122,7 @@ type WordCloudWordsProps = Omit<WordCloudProps, "className"> & {
   tooltipLeft?: number;
   tooltipTop?: number;
   isMobile: boolean; // passing in isMobile as a prop so we can rerender if this changes
+  background?: boolean;
 };
 const WordCloudWords: React.FC<WordCloudWordsProps> = ({
   data,
@@ -136,8 +140,13 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
   showTooltip,
   hideTooltip,
   isMobile,
+  background = false,
 }) => {
   width = width < minWidth ? minWidth : width;
+
+  // In Block : Green
+  // Outside Block : Yellow
+  const wordColors = background ? [Color.chartGreenHeavy, Color.chartGreenLight] : [Color.chartYellowHeavy, Color.chartYellowLight];
 
   const minFontSize = isMobile ? mobileMinFontSize : desktopMinFontSize;
   const maxFontSize = isMobile ? mobileMaxFontSize : desktopMaxFontSize;
@@ -152,6 +161,7 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
 
   const fontSizeSetter = (datum: WordData) => fontScale(datum.value);
   const fixedValueGenerator = () => randomSeed;
+
   return (
     <VisxWordcloud
       words={data}
@@ -184,7 +194,7 @@ const WordCloudWords: React.FC<WordCloudWordsProps> = ({
               fontSize={word.size}
               fontFamily={word.font}
               fontWeight={fontWeight}
-              className={styles.word}
+              className={background ? styles.greenWord : styles.yellowWord}
               textAnchor="middle"
               onMouseMove={
                 ((e: React.MouseEvent<SVGTextElement | SVGLineElement, MouseEvent>) => {
@@ -216,6 +226,7 @@ const shouldNotRerender = (prevProps: WordCloudWordsProps, nextProps: WordCloudW
     // if width changes, rerender, else don't rerender for a tooltip change
     prevProps.width === nextProps.width &&
     prevProps.isMobile === nextProps.isMobile &&
+    prevProps.background === nextProps.background &&
     (prevProps.tooltipLeft !== nextProps.tooltipLeft ||
       prevProps.tooltipTop !== nextProps.tooltipTop ||
       nextProps.tooltipLeft === undefined ||

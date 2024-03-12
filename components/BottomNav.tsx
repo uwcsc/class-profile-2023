@@ -23,20 +23,20 @@ export function BottomNav(props: PagesInfo) {
         ${onlyLeftArrow ? styles.containerOnlyLeftArrow : ""}`}>
       {props.leftPage ? (
         <div className={styles.subBox + " " + styles.subBoxLeft}>
-          <Link href={props.leftPage.url} scroll={true}>
+          <Link href={props.leftPage.url} scroll>
             <Arrow />
           </Link>
-          <Link href={props.leftPage.url} scroll={true} className={styles.item + " " + styles.leftItem}>
+          <Link href={props.leftPage.url} scroll className={styles.item + " " + styles.leftItem}>
             {props.leftPage.name}
           </Link>
         </div>
       ) : null}
       {props.rightPage ? (
         <div className={styles.subBox}>
-          <Link href={props.rightPage.url} scroll={true} className={styles.item}>
+          <Link href={props.rightPage.url} scroll className={styles.item}>
             {props.rightPage.name}
           </Link>
-          <Link href={props.rightPage.url} scroll={true}>
+          <Link href={props.rightPage.url} scroll>
             <Arrow isPointingRight />
           </Link>
         </div>

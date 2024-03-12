@@ -1,3 +1,4 @@
+import { Color } from "@/utils/Color";
 import { AxisBottom, AxisLeft } from "@visx/axis";
 import { bottomTickLabelProps } from "@visx/axis/lib/axis/AxisBottom";
 import { leftTickLabelProps } from "@visx/axis/lib/axis/AxisLeft";
@@ -9,7 +10,6 @@ import { Bar, BarGroup, BarGroupHorizontal } from "@visx/shape";
 import { BarGroupBar as BarGroupBarType } from "@visx/shape/lib/types";
 import { withTooltip } from "@visx/tooltip";
 import React, { useState } from "react";
-import { Color } from "@/utils/Color";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 

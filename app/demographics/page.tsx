@@ -28,7 +28,7 @@ export default function Demographics() {
         heading="What program are you in?"
         bodyText="The 2023 class profile has a total of 135 respondents, with the majority of our class, 121 students, pursuing Computer Science. 7 of our talented students are enrolled in the CS/BBA program, bringing their unique blend of technical and business knowledge to the class. Additionally, seven students have chosen the CFM program, combining computer science with financial expertise, to explore the potentials that lie in the world of FinTech. No matter your program, the UW CS Class of 2023 is a community of future tech leaders and problem solvers.">
         <div className={styles.graphContainer}>
-          <PieChart data={D1} {...pieChartProps(isMobile, pageWidth)} />
+          <PieChart data={D1} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
       </ComponentWrapper>
 
@@ -53,7 +53,7 @@ export default function Demographics() {
 
       <ComponentWrapper heading="What are your pronouns?">
         <div className={styles.graphContainer}>
-          <PieChart data={D3} {...pieChartProps(isMobile, pageWidth)} labelTextSize={15} labelTextRadialOffset={-45} />
+          <PieChart data={D3} {...pieChartProps(isMobile, pageWidth, true)} labelTextSize={15} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
@@ -81,7 +81,7 @@ export default function Demographics() {
             global perspective, strengthening our ability to tackle complex challenges in the field of computer science with a more holistic worldview.
           </p>
         }>
-        <BarGraphVertical data={D5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={D5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -110,7 +110,12 @@ export default function Demographics() {
             support queer and trans students in tech and STEM environments!
           </p>
         }>
-        <BarGraphHorizontal data={D7} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} margin={{ ...barGraphMargin, ...{ left: 125 } }} />
+        <BarGraphHorizontal
+          data={D7}
+          {...barGraphProps(isMobile, pageWidth, true)}
+          widthAlternatingLabel={700}
+          margin={{ ...barGraphMargin, ...{ left: 125 } }}
+        />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -123,8 +128,8 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="Besides English, what languages are you fluent in?"
-        bodyText="The multilingualism within the UW CS Class of 2023 is both diverse and impressive. Mandarin is the most widely spoken language, with 47 students demonstrating fluency. Additionally, we have proficiency in French, with 19 students showing their skills. Other languages include Cantonese, Russian, and Hindi, each spoken by several students. This diversity enriches our communication and understanding, making us a truly international community.
-">
+        bodyText="The multilingualism within the UW CS Class of 2023 is both diverse and impressive. Mandarin is the most widely spoken language, with 47 students demonstrating fluency. Additionally, we have proficiency in French, with 19 students showing their skills. Other languages include Cantonese, Russian, and Hindi, each spoken by several students. This diversity enriches our communication and understanding, making us a truly international community."
+        wordCloud>
         <WordCloud
           data={D8i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -132,6 +137,7 @@ export default function Demographics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          background
         />
       </ComponentWrapper>
 
@@ -146,7 +152,8 @@ export default function Demographics() {
 
       <ComponentWrapper
         heading="Where did you live before coming to UW?"
-        bodyText="A large population of students arrived in Waterloo from the GTA area prior to coming to Waterloo, with 77% of respondents residing in all of Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more.">
+        bodyText="A large population of students arrived in Waterloo from the GTA area prior to coming to Waterloo, with 77% of respondents residing in all of Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more."
+        wordCloud>
         <WordCloud
           data={D10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -154,6 +161,7 @@ export default function Demographics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
+          background
         />
       </ComponentWrapper>
 
@@ -181,7 +189,7 @@ export default function Demographics() {
         <BarGraphVertical
           // TODO: change when histogram component is ready
           data={D12}
-          {...barGraphProps(isMobile, pageWidth)}
+          {...barGraphProps(isMobile, pageWidth, true)}
         />
       </ComponentWrapper>
 
@@ -196,7 +204,7 @@ export default function Demographics() {
 
       <ComponentWrapper heading="What immigrant generation do you belong to?" align="right">
         <div className={styles.graphContainer}>
-          <PieChart data={D14} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+          <PieChart data={D14} {...pieChartProps(isMobile, pageWidth, true)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
@@ -208,7 +216,7 @@ export default function Demographics() {
         heading="Was your current program your first choice out of all of the programs you applied to in high school?"
         bodyText="The majority of respondents agreed that the UW CS programs were their first choice on OUAC during applications. Let's see if their hopes and dreams panned out in the other sections… ">
         <div className={styles.graphContainer}>
-          <PieChart data={D16} {...pieChartProps(isMobile, pageWidth)} labelTextSize={20} labelTextRadialOffset={-45} />
+          <PieChart data={D16} {...pieChartProps(isMobile, pageWidth, true)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
@@ -226,10 +234,10 @@ export default function Demographics() {
         heading="Which of the following specialized high school programs did you do?"
         bodyText="The majority of respondents seemed to have been in some specialized program at their high schools prior to university. With AP and IB programs being the most popular choice for students prior to coming into Waterloo’s CS program.
 ">
-        <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground>
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground wordCloud>
         <WordCloud
           data={D18}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -241,7 +249,7 @@ export default function Demographics() {
       </ComponentWrapper>
 
       <ComponentWrapper heading="What is your MBTI type?" align="right">
-        <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <BottomNav leftPage={pageRoutes.home} rightPage={pageRoutes.academics} />
