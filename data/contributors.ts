@@ -55,12 +55,8 @@ export const designers = [
     link: "https://www.linkedin.com/in/linda-y-wang/",
   },
   {
-    name: "Kim Guo",
-    link: "https://www.linkedin.com/in/kellyqu/",
-  },
-  {
     name: "Kelly Qu",
-    link: "https://www.linkedin.com/in/kbrqin/",
+    link: "https://www.linkedin.com/in/kellyqu/",
   },
   {
     name: "Anny Wei",
