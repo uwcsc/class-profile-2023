@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(92rem / 16);
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 @-moz-document url-prefix() {
