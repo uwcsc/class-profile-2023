@@ -113,7 +113,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -162,7 +162,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -209,7 +209,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -258,7 +258,7 @@ export default function Academics() {
           desktopMinFontSize={15}
           minFrequency={2}
           mobileMaxFontSize={60}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -305,7 +305,7 @@ export default function Academics() {
           desktopMaxFontSize={80}
           mobileMaxFontSize={80}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -403,7 +403,7 @@ export default function Academics() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -438,7 +438,7 @@ export default function Academics() {
           ]}
           data={A17}
           margin={barGraphMargin}
-          displayPercentage={true}
+          displayPercentage
         />
       </ComponentWrapper>
 
@@ -479,7 +479,7 @@ export default function Academics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -496,7 +496,7 @@ export default function Academics() {
 
       <ComponentWrapper heading="What made you want to complete the option, specialization, and/or minor?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A20iv} background={true} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A20iv} background circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -551,7 +551,7 @@ export default function Academics() {
         align="left"
         noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24ii} background={true} circleDiameter={0} height={300} />
+          <QuotationCarousel data={A24ii} background circleDiameter={0} height={300} />
         </div>
       </ComponentWrapper>
 
@@ -563,7 +563,7 @@ export default function Academics() {
 
       <ComponentWrapper heading="What is your favourite memory from your time during the exchange?" align="right" noBackground>
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} background={true} />
+          <QuotationCarousel data={A24iv} circleDiameter={0} height={300} background />
         </div>
       </ComponentWrapper>
 

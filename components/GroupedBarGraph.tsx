@@ -1,3 +1,4 @@
+import { Color } from "@/utils/Color";
 import { AxisBottom, AxisLeft } from "@visx/axis";
 import { bottomTickLabelProps } from "@visx/axis/lib/axis/AxisBottom";
 import { leftTickLabelProps } from "@visx/axis/lib/axis/AxisLeft";
@@ -9,7 +10,6 @@ import { Bar, BarGroup, BarGroupHorizontal } from "@visx/shape";
 import { BarGroupBar as BarGroupBarType } from "@visx/shape/lib/types";
 import { withTooltip } from "@visx/tooltip";
 import React, { useState } from "react";
-import { Color } from "@/utils/Color";
 
 import { getTooltipPosition, TooltipWrapper } from "./TooltipWrapper";
 
@@ -63,8 +63,6 @@ interface GroupedBarGraphProps {
   defaultLabelDy?: string;
   /** Position of lower labels in x-axis, in px. Only for Vertical graphs */
   lowerLabelDy?: string;
-  
-  background? : boolean;
 }
 
 // Best format for props
@@ -118,7 +116,6 @@ export const GroupedBarGraphVertical = withTooltip<GroupedBarGraphProps, Tooltip
     tooltipData,
     hideTooltip,
     showTooltip,
-    background = false,
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
     const alternatingLabel = width <= widthAlternatingLabel;
@@ -319,7 +316,6 @@ export const GroupedBarGraphHorizontal = withTooltip<GroupedBarGraphProps, Toolt
     tooltipData,
     hideTooltip,
     showTooltip,
-    background = false,
   }) => {
     width = width < minWidth ? minWidth : width; // Ensuring graph's width >= minWidth
 

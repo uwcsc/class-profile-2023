@@ -8,7 +8,7 @@ import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { E1, E2, E3, E4, E5, E6, E7, E8 } from "@/data/computer-science-experience";
 import { pageRoutes } from "@/data/routes";
-import { barGraphProps, barGraphMargin, DefaultProp, pieChartProps, barGraphWidth } from "@/utils/defaultProps";
+import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -31,7 +31,7 @@ export default function Academics() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 200 } }}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -51,7 +51,7 @@ export default function Academics() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
-          background={true}
+          background
         />
       </ComponentWrapper>
 

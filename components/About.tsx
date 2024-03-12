@@ -32,7 +32,7 @@ export function About() {
           </p>
         </article>
       </section>
-      <AngleDecoration isBottom={true} />
+      <AngleDecoration isBottom />
     </div>
   );
 }

@@ -182,7 +182,7 @@ export default function IntimacyAndDrugs() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={30}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -198,7 +198,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText="How does one get rizz?" align="right">
         <div className={styles.quotationCarouselContainer}>
-          <QuotationCarousel data={I12} background={true} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
+          <QuotationCarousel data={I12} background circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>
       </ComponentWrapper>
 

@@ -33,7 +33,7 @@ export default function FullTime() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -95,7 +95,7 @@ export default function FullTime() {
           wordPadding={10}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
-          background={true}
+          background
         />
       </ComponentWrapper>
 

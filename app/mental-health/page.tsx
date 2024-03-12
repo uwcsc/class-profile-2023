@@ -81,7 +81,7 @@ export default function MentalHealth() {
           minWidth={700}
           lowerLabelDy="60px"
           valueAxisLabelOffset={0}
-          background={true}
+          background
         />
       </ComponentWrapper>
 

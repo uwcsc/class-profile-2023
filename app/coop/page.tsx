@@ -163,7 +163,7 @@ export default function Coop() {
             top: 20,
             left: 20,
           }}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -227,7 +227,7 @@ export default function Coop() {
             colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
             data={C6ix}
             margin={barGraphMargin}
-            displayPercentage={true}
+            displayPercentage
             tooltipBottomLabel="Co-op term: "
           />
         </div>
@@ -243,7 +243,7 @@ export default function Coop() {
             colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
             data={C6x}
             margin={barGraphMargin}
-            displayPercentage={true}
+            displayPercentage
             tooltipBottomLabel="Co-op term: "
           />
         </div>

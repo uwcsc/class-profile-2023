@@ -71,8 +71,8 @@ export type StatsPlotProps = {
   boxPlotPadding?: number;
   /** Minimum width of the graph. */
   minWidth?: number;
-  
-  background? : boolean;
+
+  background?: boolean;
 };
 
 export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(

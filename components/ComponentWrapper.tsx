@@ -10,11 +10,10 @@ type ComponentWrapperProps = {
   bodyText?: string | React.ReactNode;
   align?: AlignOption;
   noBackground?: boolean;
-  wordCloud? : boolean;
+  wordCloud?: boolean;
 };
 
-export function ComponentWrapper({ heading, bodyText, children, align = "left", noBackground = false, wordCloud = false}: ComponentWrapperProps) {
-
+export function ComponentWrapper({ heading, bodyText, children, align = "left", noBackground = false, wordCloud = false }: ComponentWrapperProps) {
   const alignClasses: { [key in AlignOption]: string } = {
     left: styles.wrapperLeft,
     center: styles.wrapperCenter,

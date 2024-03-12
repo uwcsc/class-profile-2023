@@ -137,7 +137,7 @@ export default function Demographics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -160,7 +160,7 @@ export default function Demographics() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
-          background={true}
+          background
         />
       </ComponentWrapper>
 

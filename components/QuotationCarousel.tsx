@@ -15,20 +15,20 @@ interface QuotationCarouselProps {
   /** Minimum width of the graph. */
   minWidth?: number;
   /** In a block or not. */
-  background? : boolean;
+  background?: boolean;
 }
 
 interface CarouselButtonProps {
   onClick: () => void;
   isPrevious?: boolean;
-  background? : boolean;
+  background?: boolean;
 }
 
 export function QuotationCarousel(props: QuotationCarouselProps) {
   const { data, width = 600, height = 100, circleDiameter = 120, minWidth = 600, className, background = false } = props;
   const actualWidth = width < minWidth ? minWidth : width;
   const [activeIdx, setActiveIdx] = useState(0);
-  
+
   function showNextCard() {
     setActiveIdx((activeIdx + 1) % data.length);
   }
@@ -36,7 +36,7 @@ export function QuotationCarousel(props: QuotationCarouselProps) {
   function showPreviousCard() {
     setActiveIdx((activeIdx - 1 + data.length) % data.length);
   }
-  
+
   return (
     <section
       className={className ? `${className} ${styles.carousel}` : styles.carousel}
@@ -46,7 +46,7 @@ export function QuotationCarousel(props: QuotationCarouselProps) {
       }}>
       <Circle className={styles.circle} diameter={circleDiameter} />
       <Circle className={`${styles.right} ${styles.circle}`} diameter={circleDiameter} />
-      <CarouselButton onClick={showPreviousCard} isPrevious  background={background}/>
+      <CarouselButton onClick={showPreviousCard} isPrevious background={background} />
       <div className={background ? styles.withBackgroundCard : styles.card}>
         <QuotationMark className={styles.quotationMark} />
         <ul>
@@ -76,8 +76,7 @@ function Circle({ className, diameter }: { className: string; diameter: number }
   );
 }
 
-function CarouselButton({ isPrevious, onClick, background}: CarouselButtonProps) {
-
+function CarouselButton({ isPrevious, onClick, background }: CarouselButtonProps) {
   return (
     <button className={styles.carouselButton} onClick={onClick}>
       <svg

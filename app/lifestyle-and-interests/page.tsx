@@ -133,7 +133,7 @@ export default function LifestyleAndInterests() {
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
           minFrequency={2}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -163,7 +163,7 @@ export default function LifestyleAndInterests() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 60 } }}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -210,7 +210,7 @@ export default function LifestyleAndInterests() {
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
           margin={{ ...barGraphMargin, ...{ left: 142 } }}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
@@ -246,7 +246,7 @@ export default function LifestyleAndInterests() {
           wordPadding={7}
           desktopMaxFontSize={75}
           mobileMaxFontSize={48}
-          background={true}
+          background
         />
       </ComponentWrapper>
 
