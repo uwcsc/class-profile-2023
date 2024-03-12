@@ -436,7 +436,7 @@ export default function Academics() {
             is likely due to students re-evaluating their academic and career pathway after experiencing around a year or more in their initial program.
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <BarGraphVertical data={A13ii} {...barGraphProps(isMobile, pageWidth, false)} />

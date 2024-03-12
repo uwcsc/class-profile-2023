@@ -174,7 +174,8 @@ export default function Demographics() {
             community
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={D8i}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -216,7 +217,8 @@ export default function Demographics() {
             Ontario. There are also a handful of students coming internationally from areas like Germany, Vietnam, Indonesia, and many more.
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={D10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -252,7 +254,7 @@ export default function Demographics() {
           // </p>
           ""
         }
-        align="right">
+        align="left">
         <BarGraphVertical
           // TODO: change when histogram component is ready
           data={D12}
@@ -268,18 +270,18 @@ export default function Demographics() {
             Are you planning to recommend Waterloo to future students in your family.
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <BarGraphHorizontal data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What immigrant generation do you belong to?" align="right">
+      <ComponentWrapper heading="What immigrant generation do you belong to?" align="left">
         <div className={styles.graphContainer}>
           <PieChart data={D14} {...pieChartProps(isMobile, pageWidth, true)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What was your high school admissions average?" align="right" noBackground>
+      <ComponentWrapper heading="What was your high school admissions average?" align="left" noBackground>
         <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
@@ -291,7 +293,7 @@ export default function Demographics() {
             dreams panned out in the other sections…{" "}
           </p>
         }
-        align="left">
+        align="right">
         <div className={styles.graphContainer}>
           <PieChart data={D16} {...pieChartProps(isMobile, pageWidth, true)} labelTextSize={20} labelTextRadialOffset={-45} />
         </div>
@@ -305,7 +307,7 @@ export default function Demographics() {
             when they made their final decision. Another handful of students were aiming for a variety of American universities as well.
           </p>
         }
-        align="right"
+        align="left"
         noBackground>
         <div className={styles.graphContainer}>
           <BarGraphHorizontal data={D16i} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" margin={{ ...barGraphMargin, ...{ left: 150 } }} />
@@ -320,8 +322,8 @@ export default function Demographics() {
             the most popular choice for students prior to coming into Waterloo&apos;s CS program
           </p>
         }
-        align="left">
-        <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        align="right">
+        <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground wordCloud>
@@ -335,8 +337,8 @@ export default function Demographics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your MBTI type?" align="right">
-        <BarGraphVertical data={D19} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
+      <ComponentWrapper heading="What is your MBTI type?" align="left">
+        <BarGraphHorizontal data={D19} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <BottomNav leftPage={pageRoutes.home} rightPage={pageRoutes.academics} />

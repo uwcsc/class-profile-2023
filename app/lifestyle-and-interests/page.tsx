@@ -32,7 +32,7 @@ export default function LifestyleAndInterests() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -65,7 +65,7 @@ export default function LifestyleAndInterests() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={L3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L3} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -93,7 +93,7 @@ export default function LifestyleAndInterests() {
           </>
         }
         align="left">
-        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -126,7 +126,7 @@ export default function LifestyleAndInterests() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L7} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -154,7 +154,7 @@ export default function LifestyleAndInterests() {
           </>
         }
         align="left">
-        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphVertical data={L9} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -178,7 +178,8 @@ export default function LifestyleAndInterests() {
             Waterloo favourite!
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={L11}
           width={isMobile ? pageWidth / 1.5 : 800}
@@ -267,7 +268,7 @@ export default function LifestyleAndInterests() {
           </>
         }
         align="left">
-        <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -326,7 +327,7 @@ export default function LifestyleAndInterests() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={L19} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={L19} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -351,7 +352,8 @@ export default function LifestyleAndInterests() {
             knowledge learned may disappear, but the friendships built can last forever.
           </p>
         }
-        align="left">
+        align="left"
+        wordCloud>
         <WordCloud
           data={L21}
           width={isMobile ? pageWidth / 1.5 : 800}

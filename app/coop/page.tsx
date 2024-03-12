@@ -234,7 +234,7 @@ export default function Coop() {
       </ComponentWrapper>
 
       {/* C6viii */}
-      <ComponentWrapper heading="How did you find your job?" align="right">
+      <ComponentWrapper heading="How did you find your job?" align="left">
         <div style={{ padding: "10px" }}>
           <LineGraph
             data={C6viii}

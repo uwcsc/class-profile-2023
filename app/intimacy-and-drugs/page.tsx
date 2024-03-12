@@ -80,7 +80,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="How many committed relationships have you been in during university?"
         bodyText={<p>The majority of our respondents have been in either 1 or 2 relationships during their undergraduate career.</p>}
-        align="left"
+        align="right"
         noBackground>
         <BarGraphVertical data={I3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
@@ -105,7 +105,7 @@ export default function IntimacyAndDrugs() {
             relationships tend to last 2-4 years, with 21 of them making it past the 4 year mark. Congratulations!
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <BarGraphHorizontal
           data={I5}
@@ -118,7 +118,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="Have you ever cheated on someone, been cheated on, or helped someone cheat?"
         bodyText={<p>Almost all respondents have never been in any cheating situations.</p>}
-        align="right">
+        align="left">
         <div className={styles.graphContainer}>
           <BarGraphVertical data={I6} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
         </div>
@@ -127,7 +127,7 @@ export default function IntimacyAndDrugs() {
       <ComponentWrapper
         heading="Did you ever date another CS / CS/BBA / CFM student?"
         bodyText={<p>Most respondents have not dated another CS/ CS/BBA / CFM student. 42 students reported having done so, while 74 said they did not.</p>}
-        align="left"
+        align="right"
         noBackground>
         <div className={styles.graphContainer}>
           <PieChart data={I7} {...pieChartProps(isMobile, pageWidth)} />
@@ -143,7 +143,7 @@ export default function IntimacyAndDrugs() {
             awkward.
           </p>
         }
-        align="right">
+        align="left">
         <div className={styles.graphContainer}>
           <PieChart data={I8} {...pieChartProps(isMobile, pageWidth, true)} />
         </div>
@@ -157,7 +157,7 @@ export default function IntimacyAndDrugs() {
             relationships.
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <PieChart data={I9i} {...pieChartProps(isMobile, pageWidth, false)} />
       </ComponentWrapper>
@@ -170,7 +170,7 @@ export default function IntimacyAndDrugs() {
             term is your time to shine!
           </p>
         }
-        align="right">
+        align="left">
         <BarGraphVertical data={I9ii} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
@@ -182,8 +182,9 @@ export default function IntimacyAndDrugs() {
             to meet new people and it helps to create even larger friend groups!
           </p>
         }
-        align="left"
-        noBackground>
+        align="right"
+        noBackground
+        wordCloud>
         <WordCloud
           data={I9iii}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -203,7 +204,8 @@ export default function IntimacyAndDrugs() {
             respondents, 8 was our lowest (???) and 100 (a perfectly pure score!) was our highest.
           </p>
         }
-        align="right">
+        align="left"
+        wordCloud>
         <WordCloud
           data={I10}
           width={wordCloudWidth(isMobile, pageWidth)}
@@ -223,14 +225,14 @@ export default function IntimacyAndDrugs() {
             Let&apos;s see what other people have to say.
           </p>
         }
-        align="left"
+        align="right"
         noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I11} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={isMobile ? 600 : 500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText={<p>How does one get rizz?</p>} align="right">
+      <ComponentWrapper heading="Any advice for people looking for a relationship?" bodyText={<p>How does one get rizz?</p>} align="left">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I12} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>

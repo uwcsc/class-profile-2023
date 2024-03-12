@@ -63,7 +63,7 @@ export default function MentalHealth() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={H3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={H3} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -161,13 +161,13 @@ export default function MentalHealth() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" align="center" noBackground>
+      <ComponentWrapper heading="What do you do to help cope with your mental health issues?" align="left">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H8} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What do you think UW can do better to accommodate your mental health?" align="left" noBackground>
+      <ComponentWrapper heading="What do you think UW can do better to accommodate your mental health?" align="center" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={H9} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={500} />
         </div>
