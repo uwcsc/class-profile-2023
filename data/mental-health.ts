@@ -2,11 +2,11 @@ export const H1 = [
   // H1. Have you struggled with mental health during undergrad? 125
   {
     category: "Yes",
-    value: 73, // 91
+    value: 91,
   },
   {
     category: "No",
-    value: 27, // 34
+    value: 34,
   },
 ];
 
@@ -14,11 +14,11 @@ export const H2 = [
   {
     // H2. Have you ever experienced burnout? 125
     category: "Yes",
-    value: 80, // 100
+    value: 100,
   },
   {
     category: "No",
-    value: 20, // 25
+    value: 25,
   },
 ];
 
@@ -26,15 +26,15 @@ export const H3 = [
   {
     // H3. Have you ever been to therapy? 125
     category: "Yes",
-    value: 24.8, // 31
+    value: 31,
   },
   {
     category: "No",
-    value: 42.4, // 53
+    value: 53,
   },
   {
     category: "No, but considered",
-    value: 32.8, // 41
+    value: 41,
   },
 ];
 
@@ -42,27 +42,27 @@ export const H4 = [
   {
     // H4. Have you ever been to counselling?  125
     category: "Yes",
-    value: 21.6, // 27
+    value: 27,
   },
   {
     category: "No",
-    value: 52.8, // 66
+    value: 66,
   },
   {
     category: "No, but considered",
-    value: 25.6, // 32
+    value: 32,
   },
 ];
 
 export const H5 = [
   {
-    // H4. Have you ever been to counselling?  125
+    // H5. Have you ever used UW Health Services for your mental health?  125
     category: "Yes",
-    value: 15.5, // 19
+    value: 19,
   },
   {
     category: "No",
-    value: 84.5, // 104
+    value: 104,
   },
 ];
 

@@ -24,15 +24,15 @@ export const L1 = [
 export const L2 = [
   {
     category: "Yes",
-    value: 62.4,
+    value: 83,
   },
   {
     category: "No",
-    value: 7.5,
+    value: 10,
   },
   {
     category: "Knew",
-    value: 30.1,
+    value: 40,
   },
 ];
 

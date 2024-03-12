@@ -11,7 +11,7 @@ import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { StackedBarGraphHorizontal, StackedBarGraphVertical } from "@/components/StackedBarGraph";
 import { WordCloud } from "@/components/WordCloud";
-import { C1, C2, C3, C4, C5, C6i, C6ii, C6iv, C6ix, C6ixKey, C6v, C6vi, C6viKey, C6vii, C6viiKey, C6viii, C6x, C6xKey } from "@/data/coop";
+import { C1, C2, C3, C4, C5, C6i, C6ii, C6iii, C6iv, C6ix, C6ixKey, C6v, C6vi, C6viKey, C6vii, C6viiKey, C6viii, C6x, C6xKey } from "@/data/coop";
 import { pageRoutes } from "@/data/routes";
 import { Color } from "@/utils/Color";
 import { DefaultProp, barGraphMargin, barGraphProps, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
@@ -115,6 +115,24 @@ export default function Coop() {
             left: 30,
             right: 20,
           }}
+        />
+      </ComponentWrapper>
+
+      {/* C6iii */}
+      <ComponentWrapper heading="What was your position?" bodyText=" " align="right" noBackground>
+        <ComponentSwitcher
+          graphList={C6iii.map((coopTerm, i) => (
+            <WordCloud
+              data={coopTerm}
+              width={wordCloudWidth(isMobile, pageWidth)}
+              height={DefaultProp.graphHeight}
+              wordPadding={7}
+              desktopMaxFontSize={75}
+              mobileMaxFontSize={38}
+              key={i}
+            />
+          ))}
+          buttonList={C6iii.map((_, i) => "Co-op #" + (i + 1).toString())}
         />
       </ComponentWrapper>
 

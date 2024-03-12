@@ -57,8 +57,8 @@ export default function Home() {
                 Institutional Analysis & Planning (IAP)
               </BodyLink>
             </b>
-            , there were a 613 graduates from CS, CFM, and CS/BBA, leading to a overall survey turnout of 17%. By program, this is a 17% turnout from CS
-            graduates, 22% turnout from CS/BBA graduates, and 14% turnout from CFM graduates.
+            , there were a 629 graduates from CS, CFM, and CS/BBA, leading to a overall survey turnout of 21%. By program, this is a 22% turnout from CS
+            graduates, 12% turnout from CS/BBA graduates, and 32% turnout from CFM graduates.
           </p>
           <p>
             The survey questions were approved by the IAP, where all University of Waterloo stakeholders that are interested in conducting a non-academic

@@ -95,8 +95,7 @@ export default function IntimacyAndDrugs() {
 
       <ComponentWrapper
         heading="How many sexual partners have you had during university?"
-        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57…."
-        align="right">
+        bodyText="Most respondents have had one sexual partner during their university with an almost equal number having zero. But nothing can top the one who reported having 57...">
         <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
@@ -201,7 +200,7 @@ export default function IntimacyAndDrugs() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Any advice for people already in a relationship?" bodyText="Long Answer" align="left" noBackground>
+      <ComponentWrapper heading="Any advice for people already in a relationship?" bodyText=" ">
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={I13} circleDiameter={0} width={barGraphWidth(isMobile, pageWidth)} height={600} />
         </div>

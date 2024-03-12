@@ -1,45 +1,45 @@
 export const D1 = [
   {
     category: "CS",
-    value: 89.6,
+    value: 121,
   },
   {
     category: "CS/BBA",
-    value: 5.2,
+    value: 7,
   },
   {
     category: "CFM",
-    value: 5.2,
+    value: 7,
   },
 ];
 
 export const D2 = [
   {
     category: "Man",
-    value: 66.9,
+    value: 91,
   },
   {
     category: "Woman",
-    value: 30.9,
+    value: 42,
   },
   {
     category: "Gender non-conforming",
-    value: 2.2,
+    value: 3,
   },
 ];
 
 export const D3 = [
   {
     category: "She/Her/Hers",
-    value: 30.9,
+    value: 42,
   },
   {
     category: "He/Him/His",
-    value: 66.9,
+    value: 91,
   },
   {
     category: "They/Them/Their",
-    value: 2.2,
+    value: 3,
   },
 ];
 
@@ -262,11 +262,11 @@ export const D8i = [
 ];
 
 export const D9 = [
-  { category: "Moderate Right", value: 12.3 },
-  { category: "Moderate", value: 27 },
-  { category: "Left", value: 24.6 },
-  { category: "Moderate Left", value: 33.6 },
-  { category: "Right", value: 0.2 },
+  { category: "Moderate Right", value: 15 },
+  { category: "Moderate", value: 33 },
+  { category: "Left", value: 30 },
+  { category: "Moderate Left", value: 41 },
+  { category: "Right", value: 3 },
 ];
 
 export const D10 = [
@@ -416,15 +416,15 @@ export const D13 = [
 export const D14 = [
   {
     category: "First",
-    value: 53,
+    value: 70,
   },
   {
     category: "Second",
-    value: 37.9,
+    value: 50,
   },
   {
     category: "Third and higher",
-    value: 9.1,
+    value: 12,
   },
 ];
 
@@ -490,11 +490,11 @@ export const D15 = [
 export const D16 = [
   {
     category: "No",
-    value: 32.3,
+    value: 43,
   },
   {
     category: "Yes",
-    value: 67.7,
+    value: 90,
   },
 ];
 

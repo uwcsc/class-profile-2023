@@ -1,15 +1,15 @@
 export const A1 = [
   {
     category: "On time",
-    value: 84,
+    value: 111,
   },
   {
     category: "Earlier",
-    value: 8,
+    value: 10,
   },
   {
     category: "Later",
-    value: 8,
+    value: 10,
   },
 ];
 
@@ -526,135 +526,30 @@ export const A11 = [
 export const A12 = [
   {
     category: "Yes",
-    value: 37,
+    value: 48,
   },
   {
     category: "No",
-    value: 63,
+    value: 83,
   },
 ];
 
 export const A12i = [
-  {
-    category: "CS145",
-    "1": 0,
-    "2": 0,
-    "3": 4,
-    "4": 6,
-    "5": 11,
-  },
-  {
-    category: "CS146",
-    "1": 0,
-    "2": 0,
-    "3": 3,
-    "4": 3,
-    "5": 16,
-  },
-  {
-    category: "MATH145",
-    "1": 2,
-    "2": 1,
-    "3": 4,
-    "4": 5,
-    "5": 13,
-  },
-  {
-    category: "MATH146",
-    "1": 1,
-    "2": 1,
-    "3": 1,
-    "4": 4,
-    "5": 13,
-  },
-  {
-    category: "MATH147",
-    "1": 1,
-    "2": 1,
-    "3": 4,
-    "4": 5,
-    "5": 13,
-  },
-  {
-    category: "MATH148",
-    "1": 0,
-    "2": 1,
-    "3": 2,
-    "4": 4,
-    "5": 3,
-  },
-  {
-    category: "MATH245",
-    "1": 0,
-    "2": 1,
-    "3": 6,
-    "4": 5,
-    "5": 1,
-  },
-  {
-    category: "MATH247",
-    "1": 0,
-    "2": 0,
-    "3": 2,
-    "4": 3,
-    "5": 4,
-  },
-  {
-    category: "MATH249",
-    "1": 0,
-    "2": 0,
-    "3": 3,
-    "4": 4,
-    "5": 8,
-  },
-  {
-    category: "CS240E",
-    "1": 0,
-    "2": 0,
-    "3": 1,
-    "4": 2,
-    "5": 1,
-  },
-  {
-    category: "CS241E",
-    "1": 2,
-    "2": 0,
-    "3": 1,
-    "4": 3,
-    "5": 9,
-  },
-  {
-    category: "CS245E",
-    "1": 4,
-    "2": 1,
-    "3": 2,
-    "4": 3,
-    "5": 3,
-  },
-  {
-    category: "CS246E",
-    "1": 1,
-    "2": 1,
-    "3": 1,
-    "4": 2,
-    "5": 11,
-  },
-  {
-    category: "STAT240",
-    "1": 2,
-    "2": 3,
-    "3": 1,
-    "4": 3,
-    "5": 2,
-  },
-  {
-    category: "STAT241",
-    "1": 0,
-    "2": 1,
-    "3": 5,
-    "4": 2,
-    "5": 0,
-  },
+  { category: "CS145", "1": 0, "2": 0, "3": 19.05, "4": 28.57, "5": 52.38 },
+  { category: "CS146", "1": 0, "2": 0, "3": 13.64, "4": 13.64, "5": 72.73 },
+  { category: "MATH145", "1": 8, "2": 4, "3": 16, "4": 20, "5": 52 },
+  { category: "MATH146", "1": 5, "2": 5, "3": 5, "4": 20, "5": 65 },
+  { category: "MATH147", "1": 4.17, "2": 4.17, "3": 16.67, "4": 20.83, "5": 54.17 },
+  { category: "MATH148", "1": 0, "2": 10, "3": 20, "4": 40, "5": 30 },
+  { category: "MATH245", "1": 0, "2": 7.69, "3": 46.15, "4": 38.46, "5": 7.69 },
+  { category: "MATH247", "1": 0, "2": 0, "3": 22.22, "4": 33.33, "5": 44.44 },
+  { category: "MATH249", "1": 0, "2": 0, "3": 20, "4": 26.67, "5": 53.33 },
+  { category: "CS240E", "1": 0, "2": 0, "3": 25, "4": 50, "5": 25 },
+  { category: "CS241E", "1": 13.33, "2": 0, "3": 6.67, "4": 20, "5": 60 },
+  { category: "CS245E", "1": 30.77, "2": 7.69, "3": 15.38, "4": 23.08, "5": 23.08 },
+  { category: "CS246E", "1": 6.25, "2": 6.25, "3": 6.25, "4": 12.5, "5": 68.75 },
+  { category: "STAT240", "1": 18.18, "2": 27.27, "3": 9.09, "4": 27.27, "5": 18.18 },
+  { category: "STAT241", "1": 0, "2": 12.5, "3": 62.5, "4": 25, "5": 0 },
 ];
 
 export const A12iKeys = ["1", "2", "3", "4", "5"];
@@ -662,11 +557,11 @@ export const A12iKeys = ["1", "2", "3", "4", "5"];
 export const A13 = [
   {
     category: "No",
-    value: 71,
+    value: 94,
   },
   {
     category: "Yes",
-    value: 29,
+    value: 39,
   },
 ];
 
@@ -919,8 +814,8 @@ export const A19 = [
 ];
 
 export const A20 = [
-  { category: "No", value: 57 },
-  { category: "Yes", value: 43 },
+  { category: "No", value: 72 },
+  { category: "Yes", value: 55 },
 ];
 
 export const A20i = [
@@ -1022,10 +917,10 @@ export const A21 = [
 ];
 
 export const A22 = [
-  { category: "0", value: 83.05 },
-  { category: "1", value: 9.32 },
-  { category: "2", value: 4.24 },
-  { category: "3", value: 3.39 },
+  { category: "0", value: 98 },
+  { category: "1", value: 11 },
+  { category: "2", value: 5 },
+  { category: "3", value: 4 },
 ];
 
 export const A23 = [
@@ -1039,14 +934,14 @@ export const A23 = [
 ];
 
 export const A24 = [
-  { category: "No", value: 91.27 },
-  { category: "Yes", value: 8.73 },
+  { category: "No", value: 115 },
+  { category: "Yes", value: 11 },
 ];
 
 export const A24i = [
-  { category: "4B", value: 18.18 },
-  { category: "4A", value: 72.73 },
-  { category: "2A", value: 9.09 },
+  { category: "4B", value: 2 },
+  { category: "4A", value: 8 },
+  { category: "2A", value: 1 },
 ];
 
 export const A24ii = [
@@ -1099,6 +994,6 @@ export const A25 = [
 ];
 
 export const A26 = [
-  { category: "No", value: 79.84 },
-  { category: "Yes", value: 29.16 },
+  { category: "No", value: 103 },
+  { category: "Yes", value: 26 },
 ];
