@@ -28,7 +28,7 @@ export function About() {
           <p>
             Joint with Wilfrid Laurier University, the Business Administration and Computer Science Double Degree (CS/BBA) is an exclusive offering that allows
             students to gain experience in CS as well as many subfields of business. There are 10 school terms and either 4 or 5 co-op terms in the usual
-            schedule, so it’s a longer degree with more academic terms than CS or CFM.
+            schedule, so it&apos;s a longer degree with more academic terms than CS or CFM.
           </p>
         </article>
       </section>

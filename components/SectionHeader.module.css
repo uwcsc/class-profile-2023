@@ -17,6 +17,7 @@
 }
 
 .subTitle {
+  max-width: min(90vw, 40rem);
   color: var(--primary-accent-lighter);
   font-size: calc(26rem / 16);
   margin: auto;

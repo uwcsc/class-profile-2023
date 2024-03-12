@@ -30,15 +30,15 @@ export const D2 = [
 
 export const D3 = [
   {
-    category: "She/Her/Hers",
+    category: "She/Her",
     value: 42,
   },
   {
-    category: "He/Him/His",
+    category: "He/Him",
     value: 91,
   },
   {
-    category: "They/Them/Their",
+    category: "They/Them",
     value: 3,
   },
 ];
@@ -139,7 +139,7 @@ export const D6 = [
     value: 1,
   },
   {
-    category: "Bahá’í faith",
+    category: "Bahá'í faith",
     value: 1,
   },
   {
@@ -661,18 +661,18 @@ export const D18 = [
 ];
 
 export const D19 = [
-  { category: "ISTJ", value: 10 },
-  { category: "ISFJ", value: 5 },
-  { category: "INFJ", value: 8 },
-  { category: "INTJ", value: 13 },
-  { category: "ISTP", value: 7 },
-  { category: "ISFP", value: 1 },
-  { category: "INFP", value: 10 },
   { category: "INTP", value: 18 },
-  { category: "ESTP", value: 4 },
-  { category: "ENFP", value: 7 },
+  { category: "INTJ", value: 13 },
   { category: "ENTP", value: 11 },
-  { category: "ESFJ", value: 3 },
+  { category: "ISTJ", value: 10 },
+  { category: "INFP", value: 10 },
   { category: "ENFJ", value: 9 },
+  { category: "INFJ", value: 8 },
+  { category: "ISTP", value: 7 },
+  { category: "ENFP", value: 7 },
   { category: "ENTJ", value: 6 },
+  { category: "ISFJ", value: 5 },
+  { category: "ESTP", value: 4 },
+  { category: "ESFJ", value: 3 },
+  { category: "ISFP", value: 1 },
 ];

@@ -157,6 +157,10 @@
   visibility: visible;
   opacity: 1;
   transition: 0.1s;
+
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
 }
 
 .card li.hidden {
@@ -165,9 +169,12 @@
 }
 
 .card p {
-  margin: 0 calc(16rem / 16);
+  margin: auto calc(16rem / 16);
   font-weight: bold;
   text-align: center;
+
+  height: max-content;
+  width: 100%;
 }
 
 .quotationMark {
@@ -178,4 +185,11 @@
 .right.quotationMark {
   transform: rotate(180deg);
   align-self: end;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }

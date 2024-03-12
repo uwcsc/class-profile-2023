@@ -45,7 +45,7 @@ export default function Personal() {
         </div>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is the nicest thing a classmate did for you?" align="left" noBackground>
+      <ComponentWrapper heading="What is the nicest thing someone at UW did for you?" align="left" noBackground>
         <div className={styles.quotationCarouselContainer}>
           <QuotationCarousel data={P6} circleDiameter={0} height={300} />
         </div>

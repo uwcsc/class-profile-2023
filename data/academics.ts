@@ -872,27 +872,14 @@ export const A20iii = [
 export const A20iv = [
   "Feel like expanding my field of knowledge",
   "Dropped out of CS/BBA with all the BU courses needed for specialization",
-  "Curiosity",
   "Other areas of mathematics was more interesting than computer science for me",
-  "Why not?",
-  "interesting",
-  "Interest",
-  "Got it for free",
   "I like UI and designing things",
   "Interesting courses, and barely any extra courses",
-  "Money",
-  "Out of interest",
   "General interest + depth requirement",
   "Interest + I had most of the courses anyway",
   "I was interested in Political Science.",
   "Minor to help me differentiate my skills from just programmer, Software Engineering Specialization to drill down those key topics.",
-  "Interested in the content",
-  "Interesting courses",
-  "Why not",
-  "Interest in the minor",
-  "Anime",
   "Statistics major is easy to complete.",
-  "Boredom",
   "I was interested in seeing if there was any further interest in these fields.",
   "Just wanted to do anything I could to stand out for PM applications and read that maybe this could help? Honestly looking back now, I don't think it helped that much, but what was smart was that the options/concentrations I chose naturally aligned with my strengths as a student. So it was almost like a lucky accident I chose to specialize because it helped me look at the right courses that I would perform better in and boost my GPA to something half decent.",
   "Interesting courses for CO, then CM had a very high overlap with the CS and CO courses I took.",
@@ -900,10 +887,6 @@ export const A20iv = [
   "Relevance to career goals",
   "I love math, and was already 2 terms away from both majors when I switched into CS",
   "personal interest + matching skillset + future for career",
-  "More career options",
-  "my career and interest in AI",
-  "interested in the content",
-  "intersting and maybe useful",
 ];
 
 export const A21 = [
@@ -982,7 +965,7 @@ export const A25 = [
   { text: "Village 1", value: 40 },
   { text: "UW Place", value: 20 },
   { text: "Columbia Lake Village", value: 16 },
-  { text: "St. Jerome’s University College", value: 4 },
+  { text: "St. Jerome's University College", value: 4 },
   { text: "Ron Eydt Village", value: 12 },
   { text: "Mackenzie King Village", value: 11 },
   { text: "Renison University College", value: 1 },
@@ -990,7 +973,7 @@ export const A25 = [
   { text: "Claudette Millar Hall", value: 4 },
   { text: "Lived off campus, at home", value: 6 },
   { text: "Conrad Grebel University College", value: 3 },
-  { text: "United College (formerly St. Paul’s University College)", value: 1 },
+  { text: "United College (formerly St. Paul's University College)", value: 1 },
 ];
 
 export const A26 = [

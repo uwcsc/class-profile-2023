@@ -25,7 +25,8 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="What company will you be working for post-grad?"
-        bodyText="Most students have secured full-time positions and will be working full time post-grad. This is more than 50% of respondents."
+        bodyText={<p>Most students have secured full-time positions and will be working full time post-grad. This is more than 50% of respondents. </p>}
+        align="left"
         wordCloud>
         <WordCloud
           data={F1}
@@ -40,7 +41,16 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="Where will you be working from post-grad?"
-        bodyText="Toronto, Ontario, and New York are the two main places most people seem to be moving to start their new life as full-time adults! A majority of students said they will be working in the USA, which is no surprise due to most opportunities in the tech field being in tech hubs like San Francisco, New York, and Seattle. Regardless, it just goes to show that if you work hard, and with just a bit of luck, you can work in your dream location!"
+        bodyText={
+          <>
+            <p>Toronto, Ontario, and New York are the two main places most people seem to be moving to start their new life as full-time adults!</p>
+            <p>
+              A majority of students said they will be working in the USA, which is no surprise due to most opportunities in the tech field being in tech hubs
+              like San Francisco, New York, and Seattle.
+            </p>
+            <p>Regardless, it just goes to show that if you work hard, and with just a bit of luck, you can work in your dream location!</p>
+          </>
+        }
         align="right"
         noBackground
         wordCloud>
@@ -56,7 +66,8 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="How many offers did you decide between? Please enter a number."
-        bodyText="More than half of the respondents chose between 1 or 2 offers!">
+        bodyText={<p>More than half of the respondents chose between 1 or 2 offers!</p>}
+        align="left">
         <div className={styles.graphContainer}>
           <BarGraphVertical data={F3} {...barGraphProps(isMobile, pageWidth, true)} />
         </div>
@@ -64,7 +75,15 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="Are you returning to a prior co-op?"
-        bodyText="59 out of 81 respondents are returning to a prior co-op on a permanent return offer! This statistic shows that a co-op program lets you test jobs and find what team/company culture fits your liking much earlier in your career.  Additionally, in these co-op positions, students can obtain new connections and leverage them for future full-time employment."
+        bodyText={
+          <>
+            <p>
+              59 out of 81 respondents are returning to a prior co-op on a permanent return offer! This statistic shows that a co-op program lets you test jobs
+              and find what team/company culture fits your liking much earlier in your career.
+            </p>
+            <p>Additionally, in these co-op positions, students can obtain new connections and leverage them for future full-time employment.</p>
+          </>
+        }
         align="right"
         noBackground>
         <div className={styles.graphContainer}>
@@ -74,13 +93,30 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="If working in Canada, what will be your first-year total compensation (salary + signing + first-year stock + bonus) in CAD?"
-        bodyText="The world of tech offers intriguing annual compensation and salary options.  These compensation packages encompass a mix of components, including salary, signing bonuses, first-year stock options, and more. Many of these salaries start high and will just continue rising as the years go by!">
+        bodyText={
+          <p>
+            The world of tech offers intriguing annual compensation and salary options. These compensation packages encompass a mix of components, including
+            salary, signing bonuses, first-year stock options, and more. Many of these salaries start high and will just continue rising as the years go by!
+          </p>
+        }
+        align="left">
         <BarGraphVertical data={F5} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
       <ComponentWrapper
         heading="If working outside of Canada, what will be your first-year total compensation (salary + signing + first-year stock + bonus) in CAD?"
-        bodyText="For those working outside of Canada, with a majority of them working in the USA, their first-year total compensation is significantly higher than working in Canada. This disparity highlights the competitive nature of the international tech job market and the opportunities available for individuals willing to explore opportunities abroad."
+        bodyText={
+          <>
+            <p>
+              For those working outside of Canada, with a majority of them working in the USA, their first-year total compensation is significantly higher than
+              working in Canada.
+            </p>
+            <p>
+              This disparity highlights the competitive nature of the international tech job market and the opportunities available for individuals willing to
+              explore opportunities abroad.
+            </p>
+          </>
+        }
         align="right"
         noBackground>
         <BarGraphVertical data={F6} {...barGraphProps(isMobile, pageWidth)} />
@@ -88,7 +124,16 @@ export default function FullTime() {
 
       <ComponentWrapper
         heading="What field/career path will you be in post-grad?"
-        bodyText="More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing into diverse fields such as cloud computing, game development, and various others. Undergraduate is a time for individuals to discover their passions and chart the course for their future careers. "
+        bodyText={
+          <>
+            <p>
+              More than 60% of respondents are set to embark on their careers in software development! However, it is fascinating to see many others venturing
+              into diverse fields such as cloud computing, game development, and various others.
+            </p>
+            <p>Undergraduate is a time for individuals to discover their passions and chart the course for their future careers.</p>
+          </>
+        }
+        align="left"
         wordCloud>
         <WordCloud
           data={F7}
