@@ -77,7 +77,6 @@
   box-shadow: 0 calc(1rem / 16) calc(10rem / 16) var(--chart-green-light);
 }
 
-
 .withBackgroundCard ul {
   display: flex;
   flex-direction: column;

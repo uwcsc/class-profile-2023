@@ -129,14 +129,7 @@ export default function MentalHealth() {
           </p>
         }
         align="left">
-        <BarGraphVertical
-          data={H6}
-          {...barGraphProps(isMobile, pageWidth)}
-          minWidth={700}
-          lowerLabelDy="60px"
-          valueAxisLabelOffset={0}
-          background
-        />
+        <BarGraphVertical data={H6} {...barGraphProps(isMobile, pageWidth)} minWidth={700} lowerLabelDy="60px" valueAxisLabelOffset={0} background />
       </ComponentWrapper>
 
       <ComponentWrapper
