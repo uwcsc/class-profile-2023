@@ -180,7 +180,7 @@ export const E5 = [
     value: 62,
   },
   {
-    category: "Macos",
+    category: "MacOS",
     value: 81,
   },
   {

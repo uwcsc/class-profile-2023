@@ -834,30 +834,19 @@ export const A20i = [
 ];
 
 export const A20ii = [
-  { text: "CO", value: 1 },
-  { text: "CM", value: 1 },
-  { text: "combinatorics and optimization", value: 5 },
-  { text: "statistics", value: 1 },
+  { text: "Combinatorics & Optimization", value: 16 },
+  { text: "Computational Mathematics", value: 5 },
+  { text: "Statistics", value: 5 },
+  { text: "Pure Mathematics", value: 2 },
   { text: "Legal Studies", value: 1 },
-  { text: "Computational Mathematics", value: 2 },
-  { text: "Combinatorics and Optimization", value: 8 },
   { text: "Economics", value: 4 },
-  { text: "Stats", value: 1 },
-  { text: "Statistics", value: 3 },
   { text: "Political Science", value: 1 },
   { text: "Business", value: 1 },
-  { text: "Entrepreneurship and Technology", value: 1 },
-  { text: "Economic theory", value: 1 },
-  { text: "English Language and Literature", value: 1 },
-  { text: "CO minor", value: 1 },
-  { text: "CM Minor", value: 1 },
-  { text: "Entrepreneurship", value: 2 },
-  { text: "Pure mathematics", value: 1 },
-  { text: "Combinatorics and optimization", value: 1 },
+  { text: "Entrepreneurship", value: 3 },
+  { text: "Economic Theory", value: 1 },
+  { text: "English Language & Literature", value: 1 },
   { text: "Fine Arts", value: 1 },
-  { text: "Pure Mathematics", value: 1 },
   { text: "French", value: 1 },
-  { text: "computational math", value: 1 },
 ];
 
 export const A20iii = [

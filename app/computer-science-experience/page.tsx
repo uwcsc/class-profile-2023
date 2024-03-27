@@ -112,7 +112,7 @@ export default function Academics() {
           <>
             <p>
               Each of these 3 operating systems provides their own benefits and downsides, however making the right choice comes down to personal preference and
-              comfort for daily. The majority of the respondents are split between Windows and macOS, with 81 students developing on MacOS.
+              comfort for daily. The majority of the respondents are split between Windows and MacOS, with 81 students developing on MacOS.
             </p>
             <p>
               Additionally, it seems that UNIX-based OS (MacOS/Linux) are predominantly used by students, due to the various tools and features that they cater

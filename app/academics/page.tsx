@@ -580,7 +580,7 @@ export default function Academics() {
         />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="Which minors(s) did you complete?" align="right" noBackground>
+      <ComponentWrapper heading="Which minor(s) did you complete?" align="right" noBackground>
         <WordCloud
           data={A20ii}
           width={wordCloudWidth(isMobile, pageWidth)}

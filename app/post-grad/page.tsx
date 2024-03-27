@@ -1,5 +1,6 @@
 "use client";
 
+import { BarGraphHorizontal } from "@/components/BarGraph";
 import { BottomNav } from "@/components/BottomNav";
 import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
@@ -7,7 +8,7 @@ import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
 import { P1, P2, P3, P4 } from "@/data/post-grad";
 import { pageRoutes } from "@/data/routes";
-import { pieChartProps } from "@/utils/defaultProps";
+import { barGraphMargin, barGraphProps, pieChartProps } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -31,7 +32,7 @@ export default function PostGrad() {
         }
         align="left">
         <div className={styles.graphContainer}>
-          <PieChart data={P1} {...pieChartProps(isMobile, pageWidth, true)} labelTextXOffset={20} />
+          <BarGraphHorizontal data={P1} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 150 }} />
         </div>
       </ComponentWrapper>
 

@@ -132,7 +132,6 @@ export default function MentalHealth() {
         <BarGraphVertical
           data={H6}
           {...barGraphProps(isMobile, pageWidth)}
-          widthAlternatingLabel={1000}
           minWidth={700}
           lowerLabelDy="60px"
           valueAxisLabelOffset={0}
