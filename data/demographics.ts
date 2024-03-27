@@ -201,12 +201,8 @@ export const D8 = [
     value: 13,
   },
   {
-    category: "4",
-    value: 1,
-  },
-  {
     category: "4+",
-    value: 4,
+    value: 5,
   },
 ];
 
