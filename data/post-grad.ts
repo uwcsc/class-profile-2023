@@ -1,24 +1,23 @@
 export const P1 = [
   {
-    // G1. Do you plan on pursuing post-graduate education?
-    category: "No",
-    value: 67,
-  },
-  {
     category: "PhD + Masters",
     value: 5,
   },
   {
-    category: "Not sure",
-    value: 39,
+    category: "PhD",
+    value: 6,
   },
   {
     category: "Masters",
     value: 16,
   },
   {
-    category: "PhD",
-    value: 6,
+    category: "Not sure",
+    value: 39,
+  },
+  {
+    category: "No",
+    value: 67,
   },
 ];
 
