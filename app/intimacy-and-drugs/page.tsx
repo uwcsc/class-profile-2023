@@ -41,8 +41,9 @@ export default function IntimacyAndDrugs() {
         <GroupedBarGraphHorizontal
           className={styles.barGraphDemo}
           data={I1}
-          barColors={[Color.chartBlueLight, Color.chartPinkLight]}
+          barColors={[Color.chartGreenLight, Color.chartBlueLight, Color.chartPinkLight]}
           barHoverColorsMap={{
+            [Color.chartGreenLight]: Color.chartGreenHeavy,
             [Color.chartBlueLight]: Color.chartBlueHeavy,
             [Color.chartPinkLight]: Color.chartPinkHeavy,
           }}
