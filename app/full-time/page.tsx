@@ -1,6 +1,6 @@
 "use client";
 
-import { BarGraphVertical } from "@/components/BarGraph";
+import { BarGraphHorizontal, BarGraphVertical } from "@/components/BarGraph";
 import { BottomNav } from "@/components/BottomNav";
 import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
@@ -9,7 +9,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { WordCloud } from "@/components/WordCloud";
 import { F1, F2, F3, F4, F5, F6, F7 } from "@/data/full-time";
 import { pageRoutes } from "@/data/routes";
-import { DefaultProp, barGraphProps, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
+import { DefaultProp, barGraphMargin, barGraphProps, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -100,7 +100,7 @@ export default function FullTime() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={F5} {...barGraphProps(isMobile, pageWidth, true)} />
+        <BarGraphHorizontal data={F5} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 112 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -119,7 +119,7 @@ export default function FullTime() {
         }
         align="right"
         noBackground>
-        <BarGraphVertical data={F6} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphHorizontal data={F6} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, left: 112 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
