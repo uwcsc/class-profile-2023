@@ -255,10 +255,11 @@ export default function Demographics() {
           ""
         }
         align="left">
-        <BarGraphVertical
+        <BarGraphHorizontal
           // TODO: change when histogram component is ready
           data={D12}
           {...barGraphProps(isMobile, pageWidth, true)}
+          margin={{ ...barGraphMargin, left: 125 }}
         />
       </ComponentWrapper>
 
@@ -326,18 +327,11 @@ export default function Demographics() {
         <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground wordCloud>
-        <WordCloud
-          data={D18}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={7}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
-        />
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground>
+        <BarGraphHorizontal data={D18} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 120 }} />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your MBTI type?" align="left">
+      <ComponentWrapper heading="What is your MBTI type?" bodyText={<p>ESFP and ESTJ received no answers.</p>} align="left">
         <BarGraphHorizontal data={D19} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 
