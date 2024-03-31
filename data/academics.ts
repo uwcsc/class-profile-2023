@@ -5,8 +5,7 @@ export const A1 = [
 ];
 
 export const A2 = [
-  { category: "Communications", value: 62 },
-  { category: "Humanities", value: 62 },
+  { category: "Comm / Humanities", value: 62 },
   { category: "Pure Science", value: 27 },
   { category: "Applied Science", value: 9 },
   { category: "Social Science", value: 39 },
@@ -520,21 +519,21 @@ export const A12 = [
 ];
 
 export const A12i = [
-  { category: "CS145", "1": 0, "2": 0, "3": 19.05, "4": 28.57, "5": 52.38 },
-  { category: "CS146", "1": 0, "2": 0, "3": 13.64, "4": 13.64, "5": 72.73 },
-  { category: "MATH145", "1": 8, "2": 4, "3": 16, "4": 20, "5": 52 },
-  { category: "MATH146", "1": 5, "2": 5, "3": 5, "4": 20, "5": 65 },
-  { category: "MATH147", "1": 4.17, "2": 4.17, "3": 16.67, "4": 20.83, "5": 54.17 },
-  { category: "MATH148", "1": 0, "2": 10, "3": 20, "4": 40, "5": 30 },
-  { category: "MATH245", "1": 0, "2": 7.69, "3": 46.15, "4": 38.46, "5": 7.69 },
-  { category: "MATH247", "1": 0, "2": 0, "3": 22.22, "4": 33.33, "5": 44.44 },
-  { category: "MATH249", "1": 0, "2": 0, "3": 20, "4": 26.67, "5": 53.33 },
-  { category: "CS240E", "1": 0, "2": 0, "3": 25, "4": 50, "5": 25 },
-  { category: "CS241E", "1": 13.33, "2": 0, "3": 6.67, "4": 20, "5": 60 },
-  { category: "CS245E", "1": 30.77, "2": 7.69, "3": 15.38, "4": 23.08, "5": 23.08 },
-  { category: "CS246E", "1": 6.25, "2": 6.25, "3": 6.25, "4": 12.5, "5": 68.75 },
-  { category: "STAT240", "1": 18.18, "2": 27.27, "3": 9.09, "4": 27.27, "5": 18.18 },
-  { category: "STAT241", "1": 0, "2": 12.5, "3": 62.5, "4": 25, "5": 0 },
+  { category: "CS145", values: [0, 0, 4, 6, 11] },
+  { category: "CS146", values: [0, 0, 3, 3, 16] },
+  { category: "MATH145", values: [2, 1, 4, 5, 13] },
+  { category: "MATH146", values: [1, 1, 1, 4, 13] },
+  { category: "MATH147", values: [1, 1, 4, 5, 13] },
+  { category: "MATH148", values: [0, 1, 2, 4, 3] },
+  { category: "MATH245", values: [0, 1, 6, 5, 1] },
+  { category: "MATH247", values: [0, 0, 2, 3, 4] },
+  { category: "MATH249", values: [0, 0, 3, 4, 8] },
+  { category: "CS240E", values: [0, 0, 1, 2, 1] },
+  { category: "CS241E", values: [2, 0, 1, 3, 9] },
+  { category: "CS245E", values: [4, 1, 2, 3, 3] },
+  { category: "CS246E", values: [1, 1, 1, 2, 11] },
+  { category: "STAT240", values: [2, 3, 1, 3, 2] },
+  { category: "STAT241", values: [0, 1, 5, 2, 0] },
 ];
 
 export const A12iKeys = ["1", "2", "3", "4", "5"];

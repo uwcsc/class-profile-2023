@@ -108,7 +108,7 @@ export default function Academics() {
         }
         align="right"
         noBackground>
-        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 160 }} />
+        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 180 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -380,7 +380,10 @@ export default function Academics() {
           height={DefaultProp.graphHeight}
           keys={A12iKeys}
           colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter]}
-          data={A12i}
+          data={A12i.map(({ category, values }) => {
+            const total = values.reduce((x, y) => x + y);
+            return { category, ...Object.fromEntries(A12iKeys.map((k, i) => [k, +((values[i] * 100) / total)])) };
+          })}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
           displayPercentage
         />
