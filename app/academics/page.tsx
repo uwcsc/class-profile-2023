@@ -550,12 +550,12 @@ export default function Academics() {
 
       <ComponentWrapper heading="What is your cumulative average?" align="left" noBackground>
         <BarGraphHorizontal data={A18} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
-        <span>mean: 86.137 / min: 70 / Q1: 80.99 / median: 88 / Q3: 91.14 / max: 96.53</span>
+        <span>mean: 86.137 | min: 70 | Q1: 80.99 | median: 88 | Q3: 91.14 | max: 96.53</span>
       </ComponentWrapper>
 
       <ComponentWrapper heading="What is your faculty average?" align="right">
         <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} background />
-        <span>mean: 86.402 / min: 65.26 / Q1: 82.355 / median: 88 / Q3: 92 / max: 97.4</span>
+        <span>mean: 86.402 | min: 65.26 | Q1: 82.355 | median: 88 | Q3: 92 | max: 97.4</span>
       </ComponentWrapper>
 
       <ComponentWrapper

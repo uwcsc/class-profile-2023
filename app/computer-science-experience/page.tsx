@@ -63,7 +63,7 @@ export default function Academics() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={E2} {...barGraphProps(isMobile, pageWidth)} />
-          <span>mean: 5.915 / min: 0 / Q1: 4 / median: 6 / Q3: 8 / max: 10</span>
+          <span>mean: 5.915 | min: 0 | Q1: 4 | median: 6 | Q3: 8 | max: 10</span>
         </div>
       </ComponentWrapper>
 
@@ -169,7 +169,7 @@ export default function Academics() {
         align="left">
         <div className="center-col">
           <BarGraphVertical data={E7} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
-          <span>mean: 2.467 / min: 0 / Q1: 1 / median: 2 / Q3: 3 / max: 10</span>
+          <span>mean: 2.467 | min: 0 | Q1: 1 | median: 2 | Q3: 3 | max: 10</span>
         </div>
       </ComponentWrapper>
 
@@ -188,7 +188,7 @@ export default function Academics() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={E8} {...barGraphProps(isMobile, pageWidth)} />
-          <span>mean: 2.837 / min: 0 / Q1: 1 / median: 2 / Q3: 3 / max: 23</span>
+          <span>mean: 2.837 | min: 0 | Q1: 1 | median: 2 | Q3: 3 | max: 23</span>
         </div>
       </ComponentWrapper>
       <BottomNav leftPage={pageRoutes.academics} rightPage={pageRoutes.coop} />

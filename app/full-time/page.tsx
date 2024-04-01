@@ -70,7 +70,7 @@ export default function FullTime() {
         align="left">
         <div className="center-col">
           <BarGraphVertical data={F3} {...barGraphProps(isMobile, pageWidth, true)} />
-          <span>mean: 2.338 / min: 1 / Q1: 1 / median: 2 / Q3: 3 / max: 10</span>
+          <span>mean: 2.338 | min: 1 | Q1: 1 | median: 2 | Q3: 3 | max: 10</span>
         </div>
       </ComponentWrapper>
 
@@ -103,7 +103,7 @@ export default function FullTime() {
         align="left">
         <div className="center-col">
           <BarGraphHorizontal data={F5} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 112 }} />
-          <span>mean: ~$128k / min: $29k / Q1: $97k / median: $105k / Q3: $160k / max: $280k</span>
+          <span>mean: ~$128k | min: $29k | Q1: $97k | median: $105k | Q3: $160k | max: $280k</span>
         </div>
       </ComponentWrapper>
 
@@ -125,7 +125,7 @@ export default function FullTime() {
         noBackground>
         <div className="center-col">
           <BarGraphHorizontal data={F6} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, left: 112 }} />
-          <span>mean: ~$372k / min: $170k / Q1: $270k / median: $300k / Q3: $485k / max: $850k</span>
+          <span>mean: ~$372k | min: $170k | Q1: $270k | median: $300k | Q3: $485k | max: $850k</span>
         </div>
       </ComponentWrapper>
 

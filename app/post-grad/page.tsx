@@ -62,7 +62,7 @@ export default function PostGrad() {
         align="left">
         <div className="center-col">
           <PieChart data={P3} {...pieChartProps(isMobile, pageWidth, true)} />
-          <span>mean: 7.911 / min: 1 / Q1: 2 / median: 5 / Q3: 9 / max: 80</span>
+          <span>mean: 7.911 | min: 1 | Q1: 2 | median: 5 | Q3: 9 | max: 80</span>
         </div>
       </ComponentWrapper>
 

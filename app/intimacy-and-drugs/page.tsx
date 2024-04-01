@@ -85,7 +85,7 @@ export default function IntimacyAndDrugs() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={I3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-          <span>mean: 1.2 / min: 0 / Q1: 0 / median: 1 / Q3: 2 / max: 7</span>
+          <span>mean: 1.2 | min: 0 | Q1: 0 | median: 1 | Q3: 2 | max: 7</span>
         </div>
       </ComponentWrapper>
 
@@ -100,7 +100,7 @@ export default function IntimacyAndDrugs() {
         align="left">
         <div className="center-col">
           <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
-          <span>mean: 2.623 / min: 0 / Q1: 0 / median: 1 / Q3: 2 / max: 57</span>
+          <span>mean: 2.623 | min: 0 | Q1: 0 | median: 1 | Q3: 2 | max: 57</span>
         </div>
       </ComponentWrapper>
 
@@ -223,7 +223,7 @@ export default function IntimacyAndDrugs() {
             mobileMaxFontSize={30}
             background
           />
-          <span>mean: 58.411 / min: 8 / Q1: 42 / median: 54 / Q3: 73 / max: 100</span>
+          <span>mean: 58.411 | min: 8 | Q1: 42 | median: 54 | Q3: 73 | max: 100</span>
         </div>
       </ComponentWrapper>
 

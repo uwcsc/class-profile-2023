@@ -80,7 +80,7 @@ export default function LifestyleAndInterests() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={L4} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-          <span>mean: 3.129 / min: 1 / Q1: 2 / median: 3 / Q3: 4 / max: 7</span>
+          <span>mean: 3.129 | min: 1 | Q1: 2 | median: 3 | Q3: 4 | max: 7</span>
         </div>
       </ComponentWrapper>
 
@@ -144,7 +144,7 @@ export default function LifestyleAndInterests() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={L8} {...barGraphProps(isMobile, pageWidth)} />
-          <span>mean: 7.229 / min: 0 / Q1: 7 / median: 7 / Q3: 8 / max: 12</span>
+          <span>mean: 7.229 | min: 0 | Q1: 7 | median: 7 | Q3: 8 | max: 12</span>
         </div>
       </ComponentWrapper>
 
@@ -175,7 +175,7 @@ export default function LifestyleAndInterests() {
         noBackground>
         <div className="center-col">
           <BarGraphVertical data={L10} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-          <span>mean: 2.992 / min: 0 / Q1: 2 / median: 3 / Q3: 4 / max: 7</span>
+          <span>mean: 2.992 | min: 0 | Q1: 2 | median: 3 | Q3: 4 | max: 7</span>
         </div>
       </ComponentWrapper>
 
@@ -279,7 +279,7 @@ export default function LifestyleAndInterests() {
         align="left">
         <div className="center-col">
           <BarGraphVertical data={L15} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
-          <span>mean: 2.556 / min: 0 / Q1: 1 / median: 1 / Q3: 3 / max: 22</span>
+          <span>mean: 2.556 | min: 0 | Q1: 1 | median: 1 | Q3: 3 | max: 22</span>
         </div>
       </ComponentWrapper>
 

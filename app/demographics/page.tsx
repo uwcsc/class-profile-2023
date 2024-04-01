@@ -284,7 +284,7 @@ export default function Demographics() {
 
       <ComponentWrapper heading="What was your high school admissions average?" align="left" noBackground>
         <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
-        <span>mean: 96.229 / min: 87 / Q1: 95 / median: 96.415 / Q3: 98 / max: 99.8</span>
+        <span>mean: 96.229 | min: 87 | Q1: 95 | median: 96.415 | Q3: 98 | max: 99.8</span>
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -330,7 +330,7 @@ export default function Demographics() {
 
       <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground>
         <BarGraphHorizontal data={D18} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 120 }} />
-        <span>mean: ~$7.85k / min: $0 / Q1: $2k / median: $4.5k / Q3: $10k / max: $93k</span>
+        <span>mean: ~$7.85k | min: $0 | Q1: $2k | median: $4.5k | Q3: $10k | max: $93k</span>
       </ComponentWrapper>
 
       <ComponentWrapper heading="What is your MBTI type?" bodyText={<p>ESFP and ESTJ received no answers.</p>} align="left">
