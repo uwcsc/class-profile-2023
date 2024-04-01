@@ -112,7 +112,7 @@ export const I9iii = [
   { text: "Residence", value: 3 },
   { text: "Extracurriculars", value: 6 },
   { text: "Lab", value: 1 },
-  { text: "Aprodite Project", value: 1 },
+  { text: "Aphrodite Project", value: 1 },
   { text: "Childhood Friends", value: 1 },
 ];
 
@@ -202,21 +202,21 @@ export const I12 = [
   "Just be yourself and don't be afraid of asking people out",
   "At the end of the day it's about happiness. Focus on that.",
   "Be yourself, start doing things you are passionate about and enjoy doing, and it will come",
-  'Partners are meant to help you grow. If you\'re looking for someone to ""accept you as you are"", you\'re looking for the wrong thing -- you have to admit there\'s parts of yourself that could stand to be improved.',
+  "Partners are meant to help you grow. If you're looking for someone to \"accept you as you are\", you're looking for the wrong thing -- you have to admit there's parts of yourself that could stand to be improved.",
   "Just start holding hands with your friends and hope it works out with one of them",
   "If you're like maniacally dedicated to finding one, you'll scare people away, but if you don't care at all, you won't take opportunities that arise. Be chill about it, but keep your eyes open.",
   "Focus on bettering yourself before getting into one",
   "Have a life outside your s/o, keep good friends around.",
   "Start by being comfortable with yourself and being alone first.",
   "Just get to know more people and eventually you'll find someone who clicks well with you",
-  'Don\'t worry so much about ""checking all the boxes"" from the get go it\'s more about ""would I rather hang out with this person or be alone"" and passing the vibe check at the beginning. People always lie and only show the more beautiful sides of themselves at the beginning so be flexible and open-minded, but also keep yourself safe and be skeptical.',
+  'Don\'t worry so much about "checking all the boxes" from the get go it\'s more about "would I rather hang out with this person or be alone" and passing the vibe check at the beginning. People always lie and only show the more beautiful sides of themselves at the beginning so be flexible and open-minded, but also keep yourself safe and be skeptical.',
   "Don't talk to someone for the sake of trying to get in a relationship. Talk to them for the sake of getting to know them and seeing if they are someone you can get along with.",
   "You'll never get into one unless you are ACTIVELY trying to and spending time on it.",
   "1. seek introspection\n2. seek self-improvement\n3. ???\n4. acquire soul mate\n5. ggez",
   "Don't try too hard. It wouldn't work if there's no chemistry.",
   "Go meet new people! Talk to people in your class, attend clubs, meet friends of your friends, keep in touch with your co-op friends!",
   "1. Don't rush. Aim to become close friends first. 2. Be authentic. 3. Emotional maturity is underrated.",
-  'Ask yourself ""Why would someone want to date me? What can I offer?""',
+  'Ask yourself "Why would someone want to date me? What can I offer?"',
 ];
 
 export const I13 = [
@@ -224,7 +224,7 @@ export const I13 = [
   "Make time to connect and strengthen your relationship",
   "Communication is the most important thing. Relationships take work from both people, but the sum of the effort greatly exceeds what is put in",
   "Communication is really important, don't be afraid to have the serious talks.",
-  'Partners are meant to help you grow. If you\'re looking for someone to ""accept you as you are"", you\'re looking for the wrong thing -- you have to admit there\'s parts of yourself that could stand to be improved.',
+  "Partners are meant to help you grow. If you're looking for someone to \"accept you as you are\", you're looking for the wrong thing -- you have to admit there's parts of yourself that could stand to be improved.",
   "Be true to yourself",
   "You have to really appreciate your partner because it's really easy to take them for granted.",
   "Be willing to admit when you're wrong or have made a mistake",
@@ -239,5 +239,5 @@ export const I13 = [
   "Even when you fight, you're on the same side.",
   "Communicate about small problems so they don't turn into big problems",
   "Never stay in a relationship that is hurting you or holding you back. A relationship should always add to your life.",
-  'It\'s ok to be a ""bad partner"" and be with a ""bad partner"" as long as discontentment is communicated in a healthy manner and both people are committed to growing. No one is born and angel (including ourselves) and it\'s completely normal to have disagreements and have things that anger you or your partner. It\'s not about how often you fight, it\'s about how you fight and what happens after the fight.',
+  "It's ok to be a \"bad partner\" and be with a \"bad partner\" as long as discontentment is communicated in a healthy manner and both people are committed to growing. No one is born and angel (including ourselves) and it's completely normal to have disagreements and have things that anger you or your partner. It's not about how often you fight, it's about how you fight and what happens after the fight.",
 ];

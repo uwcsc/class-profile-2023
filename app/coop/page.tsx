@@ -79,7 +79,7 @@ export default function Coop() {
             </p>
             <p>
               Finding a co-op placement, especially your first one, can be pretty difficult. As the recent pandemic also affected students in this year, it
-              could have also caused finding a placement to be even more difficult
+              could have also caused finding a placement to be even more difficult.
             </p>
           </>
         }
