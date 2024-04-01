@@ -230,3 +230,9 @@ a:hover {
 ::-webkit-scrollbar-thumb:horizontal {
   background-color: var(--tertiary-background);
 }
+
+.center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

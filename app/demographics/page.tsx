@@ -161,7 +161,7 @@ export default function Demographics() {
         }
         align="right"
         noBackground>
-        <BarGraphVertical data={D8} {...barGraphProps(isMobile, pageWidth)} widthAlternatingLabel={700} />
+        <BarGraphVertical data={D8} {...barGraphProps(isMobile, pageWidth)} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -255,10 +255,11 @@ export default function Demographics() {
           ""
         }
         align="left">
-        <BarGraphVertical
+        <BarGraphHorizontal
           // TODO: change when histogram component is ready
           data={D12}
           {...barGraphProps(isMobile, pageWidth, true)}
+          margin={{ ...barGraphMargin, left: 125 }}
         />
       </ComponentWrapper>
 
@@ -283,6 +284,7 @@ export default function Demographics() {
 
       <ComponentWrapper heading="What was your high school admissions average?" align="left" noBackground>
         <BarGraphVertical data={D15} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <span>mean: 96.229 / min: 87 / Q1: 95 / median: 96.415 / Q3: 98 / max: 99.8</span>
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -326,18 +328,12 @@ export default function Demographics() {
         <BarGraphVertical data={D17} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
       </ComponentWrapper>
 
-      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground wordCloud>
-        <WordCloud
-          data={D18}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={7}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={48}
-        />
+      <ComponentWrapper heading="How much money did you receive in UW in scholarships and grants?" align="right" noBackground>
+        <BarGraphHorizontal data={D18} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 120 }} />
+        <span>mean: ~$7.85k / min: $0 / Q1: $2k / median: $4.5k / Q3: $10k / max: $93k</span>
       </ComponentWrapper>
 
-      <ComponentWrapper heading="What is your MBTI type?" align="left">
+      <ComponentWrapper heading="What is your MBTI type?" bodyText={<p>ESFP and ESTJ received no answers.</p>} align="left">
         <BarGraphHorizontal data={D19} {...barGraphProps(isMobile, pageWidth, true)} />
       </ComponentWrapper>
 

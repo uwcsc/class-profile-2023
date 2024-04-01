@@ -108,7 +108,7 @@ export default function Academics() {
         }
         align="right"
         noBackground>
-        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 160 }} />
+        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 180 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -380,7 +380,10 @@ export default function Academics() {
           height={DefaultProp.graphHeight}
           keys={A12iKeys}
           colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter]}
-          data={A12i}
+          data={A12i.map(({ category, values }) => {
+            const total = values.reduce((x, y) => x + y);
+            return { category, ...Object.fromEntries(A12iKeys.map((k, i) => [k, +((values[i] * 100) / total)])) };
+          })}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
           displayPercentage
         />
@@ -547,10 +550,12 @@ export default function Academics() {
 
       <ComponentWrapper heading="What is your cumulative average?" align="left" noBackground>
         <BarGraphHorizontal data={A18} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} />
+        <span>mean: 86.137 / min: 70 / Q1: 80.99 / median: 88 / Q3: 91.14 / max: 96.53</span>
       </ComponentWrapper>
 
       <ComponentWrapper heading="What is your faculty average?" align="right">
         <BarGraphHorizontal data={A19} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={barGraphMargin} background />
+        <span>mean: 86.402 / min: 65.26 / Q1: 82.355 / median: 88 / Q3: 92 / max: 97.4</span>
       </ComponentWrapper>
 
       <ComponentWrapper
