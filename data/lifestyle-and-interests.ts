@@ -353,7 +353,9 @@ export const L14 = [
 ];
 
 export const L15 = [
-  { category: "0-2", value: 91 },
+  { category: "0", value: 16 },
+  { category: "1", value: 53 },
+  { category: "2", value: 22 },
   { category: "3-4", value: 15 },
   { category: "5-6", value: 10 },
   { category: "7-8", value: 2 },

@@ -79,11 +79,14 @@ export default function IntimacyAndDrugs() {
       </ComponentWrapper>
 
       <ComponentWrapper
-        heading="How many committed relationships have you been in during university?"
+        heading="How many relationships have you been in during university?"
         bodyText={<p>The majority of our respondents have been in either 1 or 2 relationships during their undergraduate career.</p>}
         align="right"
         noBackground>
-        <BarGraphVertical data={I3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <div className="center-col">
+          <BarGraphVertical data={I3} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+          <span>mean: 1.2 / min: 0 / Q1: 0 / median: 1 / Q3: 2 / max: 7</span>
+        </div>
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -95,7 +98,10 @@ export default function IntimacyAndDrugs() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
+        <div className="center-col">
+          <BarGraphVertical data={I4} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
+          <span>mean: 2.623 / min: 0 / Q1: 0 / median: 1 / Q3: 2 / max: 57</span>
+        </div>
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -207,15 +213,18 @@ export default function IntimacyAndDrugs() {
         }
         align="left"
         wordCloud>
-        <WordCloud
-          data={I10}
-          width={wordCloudWidth(isMobile, pageWidth)}
-          height={DefaultProp.graphHeight}
-          wordPadding={7}
-          desktopMaxFontSize={75}
-          mobileMaxFontSize={30}
-          background
-        />
+        <div className="center-col">
+          <WordCloud
+            data={I10}
+            width={wordCloudWidth(isMobile, pageWidth)}
+            height={DefaultProp.graphHeight}
+            wordPadding={7}
+            desktopMaxFontSize={75}
+            mobileMaxFontSize={30}
+            background
+          />
+          <span>mean: 58.411 / min: 8 / Q1: 42 / median: 54 / Q3: 73 / max: 100</span>
+        </div>
       </ComponentWrapper>
 
       <ComponentWrapper

@@ -93,8 +93,7 @@ export const F5 = [
 ];
 
 export const F6 = [
-  { category: "0-50k", value: 1 },
-  { category: "150k-200k", value: 2 },
+  { category: "150k-200k", value: 3 },
   { category: "201k-250k", value: 7 },
   { category: "251k-300k", value: 17 },
   { category: "301k-350k", value: 12 },
