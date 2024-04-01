@@ -1,121 +1,47 @@
 export const H1 = [
-  // H1. Have you struggled with mental health during undergrad? 125
-  {
-    category: "Yes",
-    value: 91,
-  },
-  {
-    category: "No",
-    value: 34,
-  },
+  { category: "Yes", value: 91 },
+  { category: "No", value: 34 },
 ];
 
 export const H2 = [
-  {
-    // H2. Have you ever experienced burnout? 125
-    category: "Yes",
-    value: 100,
-  },
-  {
-    category: "No",
-    value: 25,
-  },
+  { category: "Yes", value: 100 },
+  { category: "No", value: 25 },
 ];
 
 export const H3 = [
-  {
-    // H3. Have you ever been to therapy? 125
-    category: "Yes",
-    value: 31,
-  },
-  {
-    category: "No",
-    value: 53,
-  },
-  {
-    category: "No, but considered",
-    value: 41,
-  },
+  { category: "Yes", value: 31 },
+  { category: "No", value: 53 },
+  { category: "No, but considered", value: 41 },
 ];
 
 export const H4 = [
-  {
-    // H4. Have you ever been to counselling?  125
-    category: "Yes",
-    value: 27,
-  },
-  {
-    category: "No",
-    value: 66,
-  },
-  {
-    category: "No, but considered",
-    value: 32,
-  },
+  { category: "Yes", value: 27 },
+  { category: "No", value: 66 },
+  { category: "No, but considered", value: 32 },
 ];
 
 export const H5 = [
-  {
-    // H5. Have you ever used UW Health Services for your mental health?  125
-    category: "Yes",
-    value: 19,
-  },
-  {
-    category: "No",
-    value: 104,
-  },
+  { category: "Yes", value: 19 },
+  { category: "No", value: 104 },
 ];
 
 export const H5i = [
-  // H5i. If so, how was your experience with UW Health Services?
-  {
-    category: "1",
-    value: 4,
-  },
-  {
-    category: "2",
-    value: 7,
-  },
-  {
-    category: "3",
-    value: 8,
-  },
-  {
-    category: "4",
-    value: 1,
-  },
-  {
-    category: "5",
-    value: 2,
-  },
+  { category: "1", value: 4 },
+  { category: "2", value: 7 },
+  { category: "3", value: 8 },
+  { category: "4", value: 1 },
+  { category: "5", value: 2 },
 ];
 
 export const H6 = [
-  // H6. Overall, how would you rate your mental health over your entire undergraduate career?
-  {
-    category: "1",
-    value: 6,
-  },
-  {
-    category: "2",
-    value: 18,
-  },
-  {
-    category: "3",
-    value: 33,
-  },
-  {
-    category: "4",
-    value: 42,
-  },
-  {
-    category: "5",
-    value: 10,
-  },
+  { category: "1", value: 6 },
+  { category: "2", value: 18 },
+  { category: "3", value: 33 },
+  { category: "4", value: 42 },
+  { category: "5", value: 10 },
 ];
 
 export const H7 = [
-  // H7. Please give any general comments about mental health in university.
   "you have to be happy with what you have and excited for the future. ie you, the world, your future all need to work together to not be depressed. It hit me because i never had a relationship and i feel unlovable - which I assume is a common feeling. So to stay happy you have to be happy for the things you do have, which, if you're here you definitely do",
   "University can be a tough time, especially for such a tough program like UW CS. If you feel challenged, remember that it is normal and if you breezing through everything you aren't really learning anything. I know it's easier said than done, but comparison is the thief of joy.",
   "Look for hobbies that you truly enjoy that have absolutely nothing at all to do with your major, and make friends through your hobbies.",
@@ -139,7 +65,6 @@ export const H7 = [
 ];
 
 export const H8 = [
-  // H8. What do you do to help cope with your mental health issues?
   "Exercise, sleep, talk to friends + family, relax. When applicable, accept that losing X% on an assignment isn't going to impact my final mark or my life course in any meaningful way",
   "I enjoy reading books on philosophy and psychology, as well as spending time reflecting on my priorities and outlook on life. While this helps me, I still get stuck in extremes sometimes and I tend to look for perspectives that support how I am feeling at the time. Hence, one of the most important things for me was talking to my partner when I was struggling. A critical perspective on my individual situation was the most effective at changing my view of my problems.",
   "Indulged myself in my artistic endeavours, immersed myself in meaningful / challenging work, lift weights + sleep + eat well, and get support from friends / family.",
@@ -163,7 +88,6 @@ export const H8 = [
 ];
 
 export const H9 = [
-  // H9. What do you think UW can do better to accommodate your mental health?
   'I would enjoy more materials available on how to balance work and leisure, and general philosophy on how to find meaning in life. While UW does have some online materials on this, they tend to be very generic ("make sure to take breaks"). I would prefer some events during orientation where graduate students/professors discuss their personal journey to find meaning in life and balancing different aspects of life.',
   "I think the co-op system needs to be reworked so it's not just exploiting cheap labour. I also feel like a lot of the systems in place don't make you feel like a person, just a number. Administration ALWAYS gave me trouble with course selection but all of the problems would just be resolved in a day if I spoke with the professors directly. There are people who care, but the system is built so that YOU have to find them, and for people already struggling, this is a huge barrier to them getting help.",
   "Provide more support and accommodations for students. Another important aspect is making those accommodations more easily accessible. It's hard to worry about that ontop to mental health issues.",
@@ -187,31 +111,14 @@ export const H9 = [
 ];
 
 export const H10 = [
-  // H10. How much of an effect has imposter syndrome played in your university life?
-  {
-    category: "1",
-    value: 19,
-  },
-  {
-    category: "2",
-    value: 15,
-  },
-  {
-    category: "3",
-    value: 30,
-  },
-  {
-    category: "4",
-    value: 35,
-  },
-  {
-    category: "5",
-    value: 18,
-  },
+  { category: "1", value: 19 },
+  { category: "2", value: 15 },
+  { category: "3", value: 30 },
+  { category: "4", value: 35 },
+  { category: "5", value: 18 },
 ];
 
 export const H11 = [
-  // H11. What has been your experience with imposter syndrome?
   "Everything that I have achieved or been successful at has been the result of meticulous and many many years of sweat and blood. Why would I have imposter syndrome for things that I worked so hard to achieve? I earned it.",
   "Occured after last coop when I didn't get a return offer for Full-Time employment. I feel like I'm not cut out for software dev. Haven't gotten over it yet",
   "Occurred when I received high GPA, and I felt like I did not deserve it. However, the imposter syndrome usually went away in a couple days.",

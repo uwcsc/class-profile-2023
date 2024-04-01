@@ -1,626 +1,178 @@
 export const I1 = [
-  {
-    category: "Alcohol",
-    values: {
-      "Yes, before university": 58,
-      "Yes, during university": 48,
-      No: 12,
-    },
-  },
-  {
-    category: "Marijuana",
-    values: {
-      "Yes, before university": 15,
-      "Yes, during university": 49,
-      No: 53,
-    },
-  },
-  {
-    category: "Tobacco",
-    values: {
-      "Yes, before university": 6,
-      "Yes, during university": 13,
-      No: 90,
-    },
-  },
-  {
-    category: "Magic Mushrooms",
-    values: {
-      "Yes, before university": 2,
-      "Yes, during university": 11,
-      No: 95,
-    },
-  },
-  {
-    category: "LSD",
-    values: {
-      "Yes, before university": 0,
-      "Yes, during university": 3,
-      No: 106,
-    },
-  },
-  {
-    category: "Cocaine",
-    values: {
-      "Yes, before university": 1,
-      "Yes, during university": 1,
-      No: 107,
-    },
-  },
-  {
-    category: "Ecstasy",
-    values: {
-      "Yes, before university": 0,
-      "Yes, during university": 1,
-      No: 108,
-    },
-  },
-  {
-    category: "Methamphetamine",
-    values: {
-      "Yes, before university": 0,
-      "Yes, during university": 1,
-      No: 108,
-    },
-  },
-  {
-    category: "Other",
-    values: {
-      "Yes, before university": 0,
-      "Yes, during university": 2,
-      No: 91,
-    },
-  },
+  { category: "Alcohol", values: { "Yes, before university": 58, "Yes, during university": 48, No: 12 } },
+  { category: "Marijuana", values: { "Yes, before university": 15, "Yes, during university": 49, No: 53 } },
+  { category: "Tobacco", values: { "Yes, before university": 6, "Yes, during university": 13, No: 90 } },
+  { category: "Magic Mushrooms", values: { "Yes, before university": 2, "Yes, during university": 11, No: 95 } },
+  { category: "LSD", values: { "Yes, before university": 0, "Yes, during university": 3, No: 106 } },
+  { category: "Cocaine", values: { "Yes, before university": 1, "Yes, during university": 1, No: 107 } },
+  { category: "Ecstasy", values: { "Yes, before university": 0, "Yes, during university": 1, No: 108 } },
+  { category: "Methamphetamine", values: { "Yes, before university": 0, "Yes, during university": 1, No: 108 } },
+  { category: "Other", values: { "Yes, before university": 0, "Yes, during university": 2, No: 91 } },
 ];
 
 export const I2i = [
-  {
-    category: "Yes, before university",
-    value: 36,
-  },
-  {
-    category: "Yes, during university",
-    value: 42,
-  },
-  {
-    category: "No",
-    value: 41,
-  },
+  { category: "Yes, before university", value: 36 },
+  { category: "Yes, during university", value: 42 },
+  { category: "No", value: 41 },
 ];
 
 export const I2ii = [
-  {
-    category: "Before university",
-    value: 35,
-  },
-  {
-    category: "1A",
-    value: 6,
-  },
-  {
-    category: "1B",
-    value: 7,
-  },
-  {
-    category: "2A",
-    value: 7,
-  },
-  {
-    category: "2B",
-    value: 3,
-  },
-  {
-    category: "3A",
-    value: 2,
-  },
-  {
-    category: "3B",
-    value: 6,
-  },
-  {
-    category: "4A",
-    value: 9,
-  },
-  {
-    category: "4B",
-    value: 2,
-  },
+  { category: "Before university", value: 35 },
+  { category: "1A", value: 6 },
+  { category: "1B", value: 7 },
+  { category: "2A", value: 7 },
+  { category: "2B", value: 3 },
+  { category: "3A", value: 2 },
+  { category: "3B", value: 6 },
+  { category: "4A", value: 9 },
+  { category: "4B", value: 2 },
 ];
+
 export const I3 = [
-  {
-    category: "0",
-    value: 30,
-  },
-  {
-    category: "1",
-    value: 59,
-  },
-  {
-    category: "2",
-    value: 23,
-  },
-  {
-    category: "3",
-    value: 9,
-  },
-  {
-    category: "4",
-    value: 2,
-  },
-  {
-    category: "7",
-    value: 1,
-  },
-  {
-    category: "56",
-    value: 1,
-  },
+  { category: "0", value: 30 },
+  { category: "1", value: 50 },
+  { category: "2", value: 23 },
+  { category: "3", value: 9 },
+  { category: "4", value: 2 },
+  { category: "5", value: 0 },
+  { category: "6", value: 0 },
+  { category: "7", value: 1 },
 ];
 
 export const I4 = [
-  {
-    category: "0",
-    value: 38,
-  },
-  {
-    category: "1",
-    value: 40,
-  },
-  {
-    category: "2",
-    value: 10,
-  },
-  {
-    category: "3",
-    value: 8,
-  },
-  {
-    category: "4",
-    value: 8,
-  },
-  {
-    category: "5",
-    value: 2,
-  },
-  {
-    category: "6",
-    value: 1,
-  },
-  {
-    category: "8",
-    value: 1,
-  },
-  {
-    category: "10",
-    value: 1,
-  },
-  {
-    category: "18",
-    value: 1,
-  },
-  {
-    category: "22",
-    value: 1,
-  },
-  {
-    category: "23",
-    value: 1,
-  },
-  {
-    category: "29",
-    value: 1,
-  },
-  {
-    category: "57",
-    value: 1,
-  },
+  { category: "0", value: 38 },
+  { category: "1", value: 40 },
+  { category: "2", value: 10 },
+  { category: "3", value: 8 },
+  { category: "4", value: 8 },
+  { category: "5", value: 2 },
+  { category: "6", value: 1 },
+  { category: "8", value: 1 },
+  { category: "10", value: 1 },
+  { category: "18", value: 1 },
+  { category: "22", value: 1 },
+  { category: "23", value: 1 },
+  { category: "29", value: 1 },
+  { category: "57", value: 1 },
 ];
 
 export const I5 = [
-  {
-    category: "0-1 year",
-    value: 40,
-  },
-  {
-    category: "1-2 years",
-    value: 21,
-  },
-  {
-    category: "2-3 years",
-    value: 10,
-  },
-  {
-    category: "3-4 years",
-    value: 13,
-  },
-  {
-    category: "4+ years",
-    value: 21,
-  },
+  { category: "0-1 year", value: 40 },
+  { category: "1-2 years", value: 21 },
+  { category: "2-3 years", value: 10 },
+  { category: "3-4 years", value: 13 },
+  { category: "4+ years", value: 21 },
 ];
-// export const I5 = [
-//   {
-//     category: "No",
-//     value: 85,
-//   },
-//   {
-//     category: "Yes",
-//     value: 15,
-//   },
-// ];
 
 export const I6 = [
-  {
-    category: "No",
-    value: 96,
-  },
-  {
-    category: "Yes, I've been cheated on",
-    value: 7,
-  },
-  {
-    category: "Yes, I've cheated on someone",
-    value: 4,
-  },
-  {
-    category: "Yes, I've helped someone cheat",
-    value: 2,
-  },
-  {
-    category: "Yes, cheated on and helped",
-    value: 1,
-  },
+  { category: "No", value: 96 },
+  { category: "Yes, been cheated on", value: 7 },
+  { category: "Yes, cheated on someone", value: 4 },
+  { category: "Yes, helped someone cheat", value: 2 },
+  { category: "Yes, cheated on and helped", value: 1 },
 ];
 
 export const I7 = [
-  {
-    category: "No",
-    value: 74,
-  },
-  {
-    category: "Yes",
-    value: 42,
-  },
+  { category: "No", value: 74 },
+  { category: "Yes", value: 42 },
 ];
 
 export const I8 = [
-  {
-    category: "No",
-    value: 40,
-  },
-  {
-    category: "Yes",
-    value: 26,
-  },
+  { category: "No", value: 40 },
+  { category: "Yes", value: 26 },
 ];
 
 export const I9i = [
-  {
-    category: "No",
-    value: 58,
-  },
-  {
-    category: "Yes",
-    value: 59,
-  },
+  { category: "No", value: 58 },
+  { category: "Yes", value: 59 },
 ];
 
 export const I9ii = [
-  {
-    category: "Before university",
-    value: 13,
-  },
-  {
-    category: "1A",
-    value: 13,
-  },
-  {
-    category: "1B",
-    value: 3,
-  },
-  {
-    category: "2A",
-    value: 5,
-  },
-  {
-    category: "2B",
-    value: 2,
-  },
-  {
-    category: "3A",
-    value: 5,
-  },
-  {
-    category: "3B",
-    value: 6,
-  },
-  {
-    category: "4A",
-    value: 8,
-  },
-  {
-    category: "4B",
-    value: 4,
-  },
-  {
-    category: "5A",
-    value: 1,
-  },
-  {
-    category: "5B and afterwards",
-    value: 2,
-  },
+  { category: "Before university", value: 13 },
+  { category: "1A", value: 13 },
+  { category: "1B", value: 3 },
+  { category: "2A", value: 5 },
+  { category: "2B", value: 2 },
+  { category: "3A", value: 5 },
+  { category: "3B", value: 6 },
+  { category: "4A", value: 8 },
+  { category: "4B", value: 4 },
+  { category: "5A", value: 1 },
+  { category: "5B+", value: 2 },
 ];
 
 export const I9iii = [
-  {
-    text: "High School",
-    value: 12,
-  },
-  {
-    text: "Classes",
-    value: 11,
-  },
-  {
-    text: "Mutual Friends",
-    value: 16,
-  },
-  {
-    text: "Party",
-    value: 2,
-  },
-  {
-    text: "Dating app",
-    value: 4,
-  },
-  {
-    text: "Co-op",
-    value: 2,
-  },
-  {
-    text: "Orientation",
-    value: 2,
-  },
-  {
-    text: "Residence",
-    value: 3,
-  },
-  {
-    text: "Extracurriculars",
-    value: 6,
-  },
-  {
-    text: "Lab",
-    value: 1,
-  },
-  {
-    text: "Aprodite Project",
-    value: 1,
-  },
-  {
-    text: "Childhood Friends",
-    value: 1,
-  },
+  { text: "High School", value: 12 },
+  { text: "Classes", value: 11 },
+  { text: "Mutual Friends", value: 16 },
+  { text: "Party", value: 2 },
+  { text: "Dating app", value: 4 },
+  { text: "Co-op", value: 2 },
+  { text: "Orientation", value: 2 },
+  { text: "Residence", value: 3 },
+  { text: "Extracurriculars", value: 6 },
+  { text: "Lab", value: 1 },
+  { text: "Aprodite Project", value: 1 },
+  { text: "Childhood Friends", value: 1 },
 ];
 
 export const I10 = [
-  {
-    text: "73",
-    value: 3,
-  },
-  {
-    text: "68",
-    value: 2,
-  },
-  {
-    text: "64",
-    value: 2,
-  },
-  {
-    text: "53",
-    value: 2,
-  },
-  {
-    text: "62",
-    value: 2,
-  },
-  {
-    text: "54",
-    value: 3,
-  },
-  {
-    text: "34",
-    value: 1,
-  },
-  {
-    text: "22",
-    value: 3,
-  },
-  {
-    text: "46",
-    value: 2,
-  },
-  {
-    text: "49",
-    value: 1,
-  },
-  {
-    text: "50",
-    value: 5,
-  },
-  {
-    text: "58",
-    value: 1,
-  },
-  {
-    text: "41",
-    value: 3,
-  },
-  {
-    text: "72",
-    value: 1,
-  },
-  {
-    text: "56",
-    value: 1,
-  },
-  {
-    text: "36",
-    value: 2,
-  },
-  {
-    text: "80",
-    value: 2,
-  },
-  {
-    text: "66",
-    value: 2,
-  },
-  {
-    text: "52",
-    value: 4,
-  },
-  {
-    text: "45",
-    value: 1,
-  },
-  {
-    text: "60",
-    value: 2,
-  },
-  {
-    text: "38",
-    value: 1,
-  },
-  {
-    text: "47",
-    value: 3,
-  },
-  {
-    text: "81",
-    value: 1,
-  },
-  {
-    text: "37",
-    value: 1,
-  },
-  {
-    text: "57",
-    value: 2,
-  },
-  {
-    text: "69",
-    value: 1,
-  },
-  {
-    text: "35",
-    value: 2,
-  },
-  {
-    text: "40",
-    value: 3,
-  },
-  {
-    text: "70",
-    value: 1,
-  },
-  {
-    text: "87",
-    value: 1,
-  },
-  {
-    text: "97",
-    value: 1,
-  },
-  {
-    text: "75",
-    value: 1,
-  },
-  {
-    text: "33",
-    value: 1,
-  },
-  {
-    text: "8",
-    value: 1,
-  },
-  {
-    text: "95",
-    value: 1,
-  },
-  {
-    text: "55",
-    value: 2,
-  },
-  {
-    text: "82",
-    value: 1,
-  },
-  {
-    text: "32",
-    value: 1,
-  },
-  {
-    text: "90",
-    value: 1,
-  },
-  {
-    text: "98",
-    value: 2,
-  },
-  {
-    text: "88",
-    value: 1,
-  },
-  {
-    text: "89",
-    value: 2,
-  },
-  {
-    text: "91",
-    value: 2,
-  },
-  {
-    text: "30",
-    value: 1,
-  },
-  {
-    text: "48",
-    value: 1,
-  },
-  {
-    text: "31",
-    value: 1,
-  },
-  {
-    text: "25",
-    value: 1,
-  },
-  {
-    text: "94",
-    value: 2,
-  },
-  {
-    text: "63",
-    value: 1,
-  },
-  {
-    text: "93",
-    value: 2,
-  },
-  {
-    text: "100",
-    value: 1,
-  },
-  {
-    text: "43",
-    value: 1,
-  },
-  {
-    text: "42",
-    value: 1,
-  },
+  { text: "73", value: 3 },
+  { text: "68", value: 2 },
+  { text: "64", value: 2 },
+  { text: "53", value: 2 },
+  { text: "62", value: 2 },
+  { text: "54", value: 3 },
+  { text: "34", value: 1 },
+  { text: "22", value: 3 },
+  { text: "46", value: 2 },
+  { text: "49", value: 1 },
+  { text: "50", value: 5 },
+  { text: "58", value: 1 },
+  { text: "41", value: 3 },
+  { text: "72", value: 1 },
+  { text: "56", value: 1 },
+  { text: "36", value: 2 },
+  { text: "80", value: 2 },
+  { text: "66", value: 2 },
+  { text: "52", value: 4 },
+  { text: "45", value: 1 },
+  { text: "60", value: 2 },
+  { text: "38", value: 1 },
+  { text: "47", value: 3 },
+  { text: "81", value: 1 },
+  { text: "37", value: 1 },
+  { text: "57", value: 2 },
+  { text: "69", value: 1 },
+  { text: "35", value: 2 },
+  { text: "40", value: 3 },
+  { text: "70", value: 1 },
+  { text: "87", value: 1 },
+  { text: "97", value: 1 },
+  { text: "75", value: 1 },
+  { text: "33", value: 1 },
+  { text: "8", value: 1 },
+  { text: "95", value: 1 },
+  { text: "55", value: 2 },
+  { text: "82", value: 1 },
+  { text: "32", value: 1 },
+  { text: "90", value: 1 },
+  { text: "98", value: 2 },
+  { text: "88", value: 1 },
+  { text: "89", value: 2 },
+  { text: "91", value: 2 },
+  { text: "30", value: 1 },
+  { text: "48", value: 1 },
+  { text: "31", value: 1 },
+  { text: "25", value: 1 },
+  { text: "94", value: 2 },
+  { text: "63", value: 1 },
+  { text: "93", value: 2 },
+  { text: "100", value: 1 },
+  { text: "43", value: 1 },
+  { text: "42", value: 1 },
 ];
+
 export const I11 = [
   "It's much more important to find someone you can care about than a perfect match.",
   "Since I was never in a relationship before university, I didn't really have many expectations for a relationship coming into university. Now, I believe that one of the most important things in a relationship is that you have some activities you enjoy doing together with your partner. Once the initial novelty of the relationship wears off, you still want to be able to have fun together! Additionally, once you get more comfortable with each other it is important to discuss your values and goals for the future, to ensure that you are compatible in that regard.",

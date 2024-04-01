@@ -6,9 +6,10 @@ import { ComponentWrapper } from "@/components/ComponentWrapper";
 import { Header } from "@/components/Header";
 import { PieChart } from "@/components/PieChart";
 import { SectionHeader } from "@/components/SectionHeader";
+import { WordCloud } from "@/components/WordCloud";
 import { E1, E2, E3, E4, E5, E6, E7, E8 } from "@/data/computer-science-experience";
 import { pageRoutes } from "@/data/routes";
-import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps } from "@/utils/defaultProps";
+import { DefaultProp, barGraphMargin, barGraphProps, barGraphWidth, pieChartProps, wordCloudWidth } from "@/utils/defaultProps";
 import { useWindowDimensions } from "@/utils/getWindowDimensions";
 import { useIsMobile } from "@/utils/isMobile";
 import styles from "../basePage.module.css";
@@ -35,7 +36,7 @@ export default function Academics() {
             <p>
               Hence, the majority of respondents have experience taking a CS course in high school. Many students have also participated in coding competitions
               or hackathons. Waterloo offers a variety of coding competitions/hackthons like CCC and Hack the North. Many early LC grinders were a part of the
-              graduating class as well.s
+              graduating class as well.
             </p>
           </>
         }
@@ -72,12 +73,15 @@ export default function Academics() {
             enjoyers.
           </p>
         }
-        align="left">
-        <BarGraphHorizontal
+        align="left"
+        wordCloud>
+        <WordCloud
           data={E3}
-          width={barGraphWidth(isMobile, pageWidth)}
+          width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 100 } }}
+          wordPadding={8}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
           background
         />
       </ComponentWrapper>
@@ -97,12 +101,15 @@ export default function Academics() {
           </>
         }
         align="right"
-        noBackground>
-        <BarGraphHorizontal
+        noBackground
+        wordCloud>
+        <WordCloud
           data={E4}
-          width={barGraphWidth(isMobile, pageWidth)}
+          width={wordCloudWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 180 } }}
+          wordPadding={8}
+          desktopMaxFontSize={75}
+          mobileMaxFontSize={48}
         />
       </ComponentWrapper>
 

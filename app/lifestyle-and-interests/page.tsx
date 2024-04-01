@@ -32,7 +32,7 @@ export default function LifestyleAndInterests() {
           </p>
         }
         align="left">
-        <BarGraphVertical data={L1} {...barGraphProps(isMobile, pageWidth, true)} lowerLabelDy="0" />
+        <BarGraphHorizontal data={L1} {...barGraphProps(isMobile, pageWidth, true)} margin={{ ...barGraphMargin, left: 200 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
