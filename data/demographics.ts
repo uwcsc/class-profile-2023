@@ -120,13 +120,13 @@ export const D10 = [
 ];
 
 export const D11 = [
-  { category: "Master's Degree", value: 55 },
-  { category: "Doctoral Degree", value: 22 },
-  { category: "Bachelor's Degree", value: 44 },
-  { category: "High School Diploma", value: 5 },
-  { category: "College Diploma", value: 4 },
-  { category: "Medical Doctorate", value: 1 },
-  { category: "No Diploma", value: 1 },
+  { category: "Master's", value: 55 },
+  { category: "Doctoral", value: 22 },
+  { category: "Bachelor's", value: 44 },
+  { category: "High School", value: 5 },
+  { category: "College", value: 4 },
+  { category: "MD", value: 1 },
+  { category: "None", value: 1 },
 ];
 
 export const D12 = [

@@ -140,7 +140,7 @@ export default function Demographics() {
           data={D7}
           {...barGraphProps(isMobile, pageWidth, true)}
           widthAlternatingLabel={700}
-          margin={{ ...barGraphMargin, ...{ left: 125 } }}
+          margin={{ ...barGraphMargin, ...{ left: 132 } }}
         />
       </ComponentWrapper>
 
@@ -240,7 +240,7 @@ export default function Demographics() {
         }
         align="right"
         noBackground>
-        <BarGraphVertical data={D11} {...barGraphProps(isMobile, pageWidth)} />
+        <BarGraphHorizontal data={D11} {...barGraphProps(isMobile, pageWidth)} margin={{ ...barGraphMargin, left: 120 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -273,7 +273,7 @@ export default function Demographics() {
         }
         align="right"
         noBackground>
-        <BarGraphHorizontal data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
+        <BarGraphVertical data={D13} {...barGraphProps(isMobile, pageWidth)} lowerLabelDy="0" />
       </ComponentWrapper>
 
       <ComponentWrapper heading="What immigrant generation do you belong to?" align="left">
@@ -320,8 +320,8 @@ export default function Demographics() {
         heading="Which of the following specialized high school programs did you do?"
         bodyText={
           <p>
-            The majority of respondents seemed to have been in some specialized program at their high schools prior to university. With AP and IB programs being
-            the most popular choice for students prior to coming into Waterloo&apos;s CS program
+            The majority of respondents seemed to have been in some specialized program at their high schools prior to university, with AP and IB programs being
+            the most popular choice for students prior to coming into Waterloo&apos;s CS program.
           </p>
         }
         align="right">

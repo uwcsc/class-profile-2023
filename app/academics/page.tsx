@@ -108,7 +108,7 @@ export default function Academics() {
         }
         align="right"
         noBackground>
-        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 180 }} />
+        <BarGraphHorizontal data={A2} width={barGraphWidth(isMobile, pageWidth)} height={DefaultProp.graphHeight} margin={{ ...barGraphMargin, left: 200 }} />
       </ComponentWrapper>
 
       <ComponentWrapper
@@ -379,10 +379,19 @@ export default function Academics() {
           width={isMobile ? pageWidth / 1.5 : 600}
           height={DefaultProp.graphHeight}
           keys={A12iKeys}
-          colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter]}
+          colorRange={[Color.primaryAccentDarker, Color.primaryAccentDark, Color.primaryAccent, Color.primaryAccentLight, Color.secondaryAccentLight]}
           data={A12i.map(({ category, values }) => {
             const total = values.reduce((x, y) => x + y);
-            return { category, ...Object.fromEntries(A12iKeys.map((k, i) => [k, +((values[i] * 100) / total)])) };
+            const data: [string, number][] = A12iKeys.map((k, i) => [k, +((values[i] * 100) / total).toFixed(2)]);
+
+            data.at(-1)![1] =
+              100 -
+              data
+                .slice(0, -1)
+                .map(([, x]) => x)
+                .reduce((x, y) => x + y);
+
+            return { category, ...Object.fromEntries(data) };
           })}
           margin={{ ...barGraphMargin, ...{ left: 100 } }}
           displayPercentage
@@ -463,7 +472,7 @@ export default function Academics() {
             alternatingLabelSpace={200}
             lowerLabelDy="60px"
             {...barGraphProps(isMobile, pageWidth, true)}
-            margin={{ ...barGraphMargin, ...{ left: 180 } }}
+            margin={{ ...barGraphMargin, ...{ left: 200 } }}
           />
         </div>
       </ComponentWrapper>

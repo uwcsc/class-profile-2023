@@ -208,7 +208,7 @@ export default function Coop() {
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
             keys={C6viKey}
-            colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter, Color.secondaryAccent]}
+            colorRange={[Color.primaryAccentLight, Color.primaryAccent, Color.primaryAccentDark, Color.primaryAccentDarker]}
             data={C6vi}
             margin={barGraphMargin}
             displayPercentage
@@ -224,7 +224,7 @@ export default function Coop() {
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
             keys={C6viiKey}
-            colorRange={[Color.primaryAccent, Color.secondaryAccentLight, Color.primaryAccentLighter, Color.secondaryAccent, Color.primaryHeading]}
+            colorRange={[Color.secondaryAccentLight, Color.primaryAccentLight, Color.primaryAccent, Color.primaryAccentDark, Color.primaryAccentDarker]}
             data={C6vii}
             margin={barGraphMargin}
             tooltipBottomLabel="Co-op Term: "
@@ -258,7 +258,7 @@ export default function Coop() {
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
             keys={C6ixKey}
-            colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
+            colorRange={[Color.primaryAccentLight, Color.primaryAccentDark]}
             data={C6ix}
             margin={barGraphMargin}
             displayPercentage
@@ -274,7 +274,7 @@ export default function Coop() {
             width={isMobile ? pageWidth / 1.5 : 600}
             height={DefaultProp.graphHeight}
             keys={C6xKey}
-            colorRange={[Color.primaryAccent, Color.secondaryAccentLight]}
+            colorRange={[Color.primaryAccentLight, Color.primaryAccentDark]}
             data={C6x}
             margin={barGraphMargin}
             displayPercentage

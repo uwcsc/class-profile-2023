@@ -667,8 +667,6 @@ export const A17 = [
 export const A17Keys = ["0-30", "30-60", "60-70", "70-80", "80-90", "90-95", "95-100"];
 
 export const A18 = [
-  { category: "0-30", value: 0 },
-  { category: "30-60", value: 0 },
   { category: "60-70", value: 1 },
   { category: "70-80", value: 22 },
   { category: "80-90", value: 46 },
@@ -677,8 +675,6 @@ export const A18 = [
 ];
 
 export const A19 = [
-  { category: "0-30", value: 0 },
-  { category: "30-60", value: 0 },
   { category: "60-70", value: 2 },
   { category: "70-80", value: 18 },
   { category: "80-90", value: 45 },

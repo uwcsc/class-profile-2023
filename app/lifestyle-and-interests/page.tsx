@@ -116,7 +116,7 @@ export default function LifestyleAndInterests() {
           data={L6}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 210 } }}
+          margin={{ ...barGraphMargin, ...{ left: 240 } }}
         />
       </ComponentWrapper>
 
@@ -239,7 +239,7 @@ export default function LifestyleAndInterests() {
           data={L13}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 60 } }}
+          margin={{ ...barGraphMargin, ...{ left: 64 } }}
           background
         />
       </ComponentWrapper>
@@ -309,7 +309,7 @@ export default function LifestyleAndInterests() {
           data={L17}
           width={barGraphWidth(isMobile, pageWidth)}
           height={DefaultProp.graphHeight}
-          margin={{ ...barGraphMargin, ...{ left: 142 } }}
+          margin={{ ...barGraphMargin, ...{ left: 150 } }}
           background
         />
       </ComponentWrapper>
