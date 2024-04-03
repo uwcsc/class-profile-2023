@@ -14,7 +14,6 @@ cd class-profile-2023
 export NEXT_PUBLIC_BASE_PATH="/classprofile/2023"
 npm ci
 npm run build
-npm run export
 
 chgrp -R www out
 chmod -R g+w out
