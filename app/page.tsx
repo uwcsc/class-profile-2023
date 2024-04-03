@@ -7,6 +7,7 @@ import { pageRoutes } from "@/data/routes";
 import { title } from "@/utils/title";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { basePath } from "@/utils/getBasePath";
 
 export const metadata = title("Home");
 
@@ -19,17 +20,31 @@ export default function Home() {
           <h1 className={styles.title}>UW Computer Science 2023 Class Profile</h1>
           <div className={styles.space}>
             <div className={styles.planet}>
-              <Image className={styles.planetRing} src="/images/planet-ring.svg" alt="Planet Ring" width={300} height={300} />
-              <Image className={styles.planetBody} src="/images/planet-body.svg" alt="Planet Body" width={200} height={200} />
+              <Image className={styles.planetRing} src={basePath + "/images/planet-ring.svg"} alt="Planet Ring" width={300} height={300} />
+              <Image className={styles.planetBody} src={basePath + "/images/planet-body.svg"} alt="Planet Body" width={200} height={200} />
             </div>
             <div className={styles.moon}>
-              <Image src="/images/moon.svg" alt="Moon" width={64} height={64} />
+              <Image src={basePath + "/images/moon.svg"} alt="Moon" width={64} height={64} />
             </div>
           </div>
         </div>
         <div className={styles.curves}>
-          <Image className={styles.topCurve} src="/images/main-page-wide-curve.svg" alt="Wide Curve" width={1440} height={200} layout="responsive" />
-          <Image className={styles.bottomCurve} src="/images/main-page-narrow-curve.svg" alt="Narrow Curve" width={1440} height={200} layout="responsive" />
+          <Image
+            className={styles.topCurve}
+            src={basePath + "/images/main-page-wide-curve.svg"}
+            alt="Wide Curve"
+            width={1440}
+            height={200}
+            layout="responsive"
+          />
+          <Image
+            className={styles.bottomCurve}
+            src={basePath + "/images/main-page-narrow-curve.svg"}
+            alt="Narrow Curve"
+            width={1440}
+            height={200}
+            layout="responsive"
+          />
         </div>
         <a href="#about" className={styles.downButton}>
           <svg viewBox="0 0 20 11">

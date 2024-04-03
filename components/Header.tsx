@@ -1,6 +1,7 @@
 "use client";
 
 import { pageRoutes } from "@/data/routes";
+import { basePath } from "@/utils/getBasePath";
 import { useWindowScroll } from "@uidotdev/usehooks";
 import Image from "next/legacy/image";
 import Link from "next/link";
@@ -52,7 +53,7 @@ export function Header() {
             onClick={() => {
               setIsShowingMenu(false);
             }}>
-            <Image src="/images/rightArrow.svg" alt="Right Arrow" className={styles.arrowIcon} width="50" height="50" draggable="false" />
+            <Image src={basePath + "/images/rightArrow.svg"} alt="Right Arrow" className={styles.arrowIcon} width="50" height="50" draggable="false" />
           </button>
         </div>
         <div className={styles.sectionsWrapper}>
