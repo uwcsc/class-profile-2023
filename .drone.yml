@@ -1,0 +1,46 @@
+---
+kind: pipeline
+type: docker
+name: node16
+
+steps:
+  - name: install-deps
+    image: node:16
+    commands:
+      - npm install
+  - name: lint
+    image: node:16
+    depends_on:
+      - install-deps
+    commands:
+      - npm run lint
+  - name: build
+    image: node:16
+    depends_on:
+      - install-deps
+    commands:
+      - npm run build
+  - name: export
+    image: node:16
+    depends_on:
+      - build
+    commands:
+      - npm run export
+  - name: deploy-production
+    image: node:16
+    depends_on:
+      - export
+    environment:
+      SSH_KEY:
+        from_secret: DEPLOYMENT_SSH_KEY
+    commands:
+      - 'echo "$SSH_KEY" > /tmp/ssh_key'
+      - chmod 600 /tmp/ssh_key
+      - ssh -4 -i /tmp/ssh_key www@caffeine.csclub.uwaterloo.ca -o StrictHostKeyChecking=no '~/bin/classprofile/deploy-2023.sh'
+    when:
+      branch:
+        - main
+trigger:
+  event:
+    exclude:
+      - pull_request # avoid double build on PRs
