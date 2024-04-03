@@ -1,33 +1,33 @@
 ---
 kind: pipeline
 type: docker
-name: node16
+name: node20
 
 steps:
   - name: install-deps
-    image: node:16
+    image: node:20
     commands:
       - npm install
   - name: lint
-    image: node:16
+    image: node:20
     depends_on:
       - install-deps
     commands:
       - npm run lint
   - name: build
-    image: node:16
+    image: node:20
     depends_on:
       - install-deps
     commands:
       - npm run build
   - name: export
-    image: node:16
+    image: node:20
     depends_on:
       - build
     commands:
       - npm run export
   - name: deploy-production
-    image: node:16
+    image: node:20
     depends_on:
       - export
     environment:
