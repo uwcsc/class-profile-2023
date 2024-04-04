@@ -181,6 +181,7 @@ export default function Coop() {
             left: 20,
           }}
           background
+          means={{ 1: 23.43, 2: 30.14, 3: 36.43, 4: 43.6, 5: 57.91, 6: 63.42 }}
         />
       </ComponentWrapper>
 
@@ -198,6 +199,7 @@ export default function Coop() {
             top: 20,
             left: 20,
           }}
+          means={{ 1: 724.87, 2: 1874.68, 3: 1363.7, 4: 2706.27, 5: 7694.31, 6: 7623.83 }}
         />
       </ComponentWrapper>
 

@@ -71,6 +71,8 @@ export type StatsPlotProps = {
   boxPlotPadding?: number;
   /** Minimum width of the graph. */
   minWidth?: number;
+  /** Arithmetic means (if applicable) */
+  means?: Record<string, number>;
 
   background?: boolean;
 };
@@ -102,6 +104,7 @@ export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
     boxPlotPadding = 0.3,
     minWidth = 500,
     background = false,
+    means,
   }: StatsPlotProps & WithTooltipProvidedProps<TooltipData>) => {
     if (width < minWidth) {
       width = minWidth;
@@ -297,6 +300,7 @@ export const BoxPlot = withTooltip<StatsPlotProps, TooltipData>(
             <p>median: {tooltipData.median}</p>
             <p>first quartile: {tooltipData.firstQuartile}</p>
             <p>min: {tooltipData.min}</p>
+            {means?.[tooltipData.category] ? <p>mean: {means[tooltipData.category]}</p> : null}
           </TooltipWrapper>
         )}
       </div>
