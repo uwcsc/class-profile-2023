@@ -16,6 +16,7 @@ export function Header() {
 
   return (
     <>
+      <div className={styles.headerSpacer} />
       <div
         className={isShowingMenu ? styles.backgroundTintShow : styles.backgroundTintHidden}
         onClick={() => {
