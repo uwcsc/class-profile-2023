@@ -1,6 +1,8 @@
 @font-face {
   font-family: Lexend;
-  src: local(''), url('../public/fonts/Lexend-VariableFont_wght.ttf') format('ttf');
+  src:
+    local(""),
+    url("../public/fonts/Lexend-VariableFont_wght.ttf") format("ttf");
 }
 
 html {
@@ -167,7 +169,7 @@ h3 {
 h4 {
   font-size: calc(26rem / 16);
   font-weight: 700;
-  color: var(-dark--4-heading);
+  color: var(--dark--4-heading);
   margin-top: calc(24rem / 16);
   margin-bottom: calc(8rem / 16);
   letter-spacing: 0.05rem;
@@ -235,4 +237,26 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.32rem 0.64rem;
+}
+
+thead tr {
+  border-bottom: 1px solid var(--label);
+}
+
+tbody tr:nth-child(2n) {
+  background-color: var(--tertiary-background);
 }
