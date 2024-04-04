@@ -129,6 +129,8 @@ body {
   font-family: "Lexend", sans-serif;
   margin: 0;
   position: relative;
+  width: 100vw;
+  overflow-x: hidden;
 
   /* Font styling for body */
   font-size: calc(18rem / 16);
